@@ -1,0 +1,713 @@
+index,donor_id,organism_ontology_term_id,manner_of_death,sex_ontology_term_id,disease_free_text,disease_ontology_term_id,self_reported_ethnicity_ontology_term_id,worksheet,disease_ontology_term,organism,disease,self_reported_ethnicity_term_id
+0,B001,NCBITaxon:9606,unknown,PATO:0000383,"history_diabetes,history_hypertension",MONDO:0005148,HANCESTRO:0005,Hickey2023,,,,
+1,B004,NCBITaxon:9606,unknown,PATO:0000384,"history_diabetes,history_hypertension",MONDO:0005148,HANCESTRO:0568,Hickey2023,,,,
+2,B005,NCBITaxon:9606,unknown,PATO:0000383,healthy,PATO:0000461,HANCESTRO:0005,Hickey2023,,,,
+3,B006,NCBITaxon:9606,unknown,PATO:0000384,healthy,PATO:0000461,HANCESTRO:0005,Hickey2023,,,,
+4,B010,NCBITaxon:9606,unknown,PATO:0000384,healthy,PATO:0000461,HANCESTRO:0005,Hickey2023,,,,
+5,B011,NCBITaxon:9606,unknown,PATO:0000383,"history_diabetes,history_hypertension",MONDO:0005148,HANCESTRO:0568,Hickey2023,,,,
+6,B012,NCBITaxon:9606,unknown,PATO:0000384,healthy,PATO:0000461,HANCESTRO:0005,Hickey2023,,,,
+7,B008,NCBITaxon:9606,unknown,PATO:0000384,history_hypertension,PATO:0000461,HANCESTRO:0005,Hickey2023,,,,
+8,B009,NCBITaxon:9606,unknown,PATO:0000384,healthy,PATO:0000461,HANCESTRO:0005,Hickey2023,,,,
+0,A3_290B,NCBITaxon:9606,not_applicable,PATO:0000383,control,PATO:0000461,unknown,James2020,,,,
+1,A7_298C,NCBITaxon:9606,not_applicable,PATO:0000384,control,PATO:0000461,unknown,James2020,,,,
+2,A8_302C,NCBITaxon:9606,not_applicable,PATO:0000384,control,PATO:0000461,unknown,James2020,,,,
+3,A29_390C,NCBITaxon:9606,not_applicable,PATO:0000383,control,PATO:0000461,unknown,James2020,,,,
+0,1425_Jaeger2021,NCBITaxon:9606,not_applicable,PATO:0000383,neighbouring_inflamed,MONDO:0000147,unknown,Jaeger2021,,,,
+1,7420_Jaeger2021,NCBITaxon:9606,not_applicable,PATO:0000384,neighbouring_inflamed,MONDO:0005575,unknown,Jaeger2021,,,,
+2,1813_Jaeger2021,NCBITaxon:9606,not_applicable,PATO:0000383,neighbouring_inflamed,MONDO:0005011,unknown,Jaeger2021,,,,
+3,1818_Jaeger2021,NCBITaxon:9606,not_applicable,PATO:0000384,neighbouring_inflamed,MONDO:0005011,unknown,Jaeger2021,,,,
+0,P_001,NCBITaxon:9606,not_applicable,PATO:0000383,ulcerative colitis,MONDO:0005101,unknown,Huang2019,,,,
+1,P_002,NCBITaxon:9606,not_applicable,PATO:0000384,ulcerative colitis,MONDO:0005101,unknown,Huang2019,,,,
+2,P_003,NCBITaxon:9606,not_applicable,PATO:0000383,Control,PATO:0000461,unknown,Huang2019,,,,
+3,P_004,NCBITaxon:9606,not_applicable,PATO:0000384,Control,PATO:0000461,unknown,Huang2019,,,,
+4,P_005,NCBITaxon:9606,not_applicable,PATO:0000384,Control,PATO:0000461,unknown,Huang2019,,,,
+5,P_006,NCBITaxon:9606,not_applicable,PATO:0000384,Control,PATO:0000461,unknown,Huang2019,,,,
+6,P_007,NCBITaxon:9606,not_applicable,PATO:0000383,Control,PATO:0000461,unknown,Huang2019,,,,
+7,P_008,NCBITaxon:9606,not_applicable,PATO:0000384,Control,PATO:0000461,unknown,Huang2019,,,,
+8,P_009,NCBITaxon:9606,not_applicable,PATO:0000384,ulcerative colitis,MONDO:0005101,unknown,Huang2019,,,,
+9,P_010,NCBITaxon:9606,not_applicable,PATO:0000383,ulcerative colitis,MONDO:0005101,unknown,Huang2019,,,,
+10,P_011,NCBITaxon:9606,not_applicable,PATO:0000383,ulcerative colitis,MONDO:0005101,unknown,Huang2019,,,,
+11,P_012,NCBITaxon:9606,not_applicable,PATO:0000383,ulcerative colitis,MONDO:0005101,unknown,Huang2019,,,,
+12,P_013,NCBITaxon:9606,not_applicable,PATO:0000383,ulcerative colitis,MONDO:0005101,unknown,Huang2019,,,,
+13,P_014,NCBITaxon:9606,not_applicable,PATO:0000384,ulcerative colitis,MONDO:0005101,unknown,Huang2019,,,,
+14,P_015,NCBITaxon:9606,not_applicable,PATO:0000384,Crohn disease,MONDO:0005011,unknown,Huang2019,,,,
+15,P_016,NCBITaxon:9606,not_applicable,PATO:0000384,Crohn disease,MONDO:0005011,unknown,Huang2019,,,,
+16,P_017,NCBITaxon:9606,not_applicable,PATO:0000384,Crohn disease,MONDO:0005011,unknown,Huang2019,,,,
+17,P_018,NCBITaxon:9606,not_applicable,PATO:0000384,Control,PATO:0000461,unknown,Huang2019,,,,
+18,P_019,NCBITaxon:9606,not_applicable,PATO:0000384,Control,PATO:0000461,unknown,Huang2019,,,,
+19,P_020,NCBITaxon:9606,not_applicable,PATO:0000384,Control,PATO:0000461,unknown,Huang2019,,,,
+20,P_021,NCBITaxon:9606,not_applicable,PATO:0000384,Control,PATO:0000461,unknown,Huang2019,,,,
+21,P_022,NCBITaxon:9606,not_applicable,PATO:0000384,Control,PATO:0000461,unknown,Huang2019,,,,
+22,P_023,NCBITaxon:9606,not_applicable,PATO:0000384,ulcerative colitis,MONDO:0005101,unknown,Huang2019,,,,
+23,P_024,NCBITaxon:9606,not_applicable,PATO:0000384,ulcerative colitis,MONDO:0005101,unknown,Huang2019,,,,
+24,P_025,NCBITaxon:9606,not_applicable,PATO:0000384,Crohn disease,MONDO:0005011,unknown,Huang2019,,,,
+25,P_026,NCBITaxon:9606,not_applicable,PATO:0000384,ulcerative colitis,MONDO:0005101,unknown,Huang2019,,,,
+26,P_027,NCBITaxon:9606,not_applicable,PATO:0000383,ulcerative colitis,MONDO:0005101,unknown,Huang2019,,,,
+27,P_028,NCBITaxon:9606,not_applicable,PATO:0000384,Crohn disease,MONDO:0005011,unknown,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+,,,,,,,,Huang2019,,,,
+"","","","","",Crohn disease,,,Huang2019,,,,
+0,donor1_He2020,NCBITaxon:9606,brain_injury,PATO:0000384 ,not_applicable,PATO:0000461,unknown,He2020GenomeBio,,,,
+0,105446,NCBITaxon:9606,not_applicable,PATO:0000384,Crohns,MONDO:0005011,unknown,Kong2023,crohns_disease,,,
+1,127643,NCBITaxon:9606,not_applicable,PATO:0000384,Crohns,MONDO:0005011,unknown,Kong2023,crohns_disease,,,
+2,178961,NCBITaxon:9606,not_applicable,PATO:0000384,Crohns,MONDO:0005011,unknown,Kong2023,crohns_disease,,,
+3,158108,NCBITaxon:9606,not_applicable,PATO:0000384,Healthy,PATO:0000461,unknown,Kong2023,normal,,,
+4,180749,NCBITaxon:9606,not_applicable,PATO:0000384,Healthy,PATO:0000461,unknown,Kong2023,normal,,,
+5,110216,NCBITaxon:9606,not_applicable,PATO:0000383,Healthy,PATO:0000461,unknown,Kong2023,normal,,,
+6,199129,NCBITaxon:9606,not_applicable,PATO:0000384,Healthy,PATO:0000461,unknown,Kong2023,normal,,,
+7,152638,NCBITaxon:9606,not_applicable,PATO:0000383,Healthy,PATO:0000461,unknown,Kong2023,normal,,,
+8,158160,NCBITaxon:9606,not_applicable,PATO:0000384,Healthy,PATO:0000461,unknown,Kong2023,normal,,,
+9,101694,NCBITaxon:9606,not_applicable,PATO:0000383,Healthy,PATO:0000461,unknown,Kong2023,normal,,,
+10,102141,NCBITaxon:9606,not_applicable,PATO:0000384,Healthy,PATO:0000461,unknown,Kong2023,normal,,,
+11,157844,NCBITaxon:9606,not_applicable,PATO:0000384,Healthy,PATO:0000461,unknown,Kong2023,normal,,,
+12,180844,NCBITaxon:9606,not_applicable,PATO:0000383,Healthy,PATO:0000461,unknown,Kong2023,normal,,,
+13,130064,NCBITaxon:9606,not_applicable,PATO:0000384,Crohns,MONDO:0005011,unknown,Kong2023,crohns_disease,,,
+14,139892,NCBITaxon:9606,not_applicable,PATO:0000384,Crohns,MONDO:0005011,unknown,Kong2023,crohns_disease,,,
+15,182231,NCBITaxon:9606,not_applicable,PATO:0000384,Crohns,MONDO:0005011,unknown,Kong2023,crohns_disease,,,
+16,191305,NCBITaxon:9606,not_applicable,PATO:0000383,Crohns,MONDO:0005011,unknown,Kong2023,crohns_disease,,,
+17,127693,NCBITaxon:9606,not_applicable,PATO:0000383,Crohns,MONDO:0005011,unknown,Kong2023,crohns_disease,,,
+18,134300,NCBITaxon:9606,not_applicable,PATO:0000384,Crohns,MONDO:0005011,unknown,Kong2023,crohns_disease,,,
+19,104152,NCBITaxon:9606,not_applicable,PATO:0000384,Crohns,MONDO:0005011,unknown,Kong2023,crohns_disease,,,
+20,115208,NCBITaxon:9606,not_applicable,PATO:0000384,Crohns,MONDO:0005011,unknown,Kong2023,crohns_disease,,,
+21,104689,NCBITaxon:9606,not_applicable,PATO:0000384,Crohns,MONDO:0005011,unknown,Kong2023,crohns_disease,,,
+22,166301,NCBITaxon:9606,not_applicable,PATO:0000383,Crohns,MONDO:0005011,unknown,Kong2023,crohns_disease,,,
+23,148824,NCBITaxon:9606,not_applicable,PATO:0000384,Crohns,MONDO:0005011,unknown,Kong2023,crohns_disease,,,
+24,183146,NCBITaxon:9606,not_applicable,PATO:0000383,Crohns,MONDO:0005011,unknown,Kong2023,crohns_disease,,,
+25,174364,NCBITaxon:9606,not_applicable,PATO:0000384,Crohns,MONDO:0005011,unknown,Kong2023,crohns_disease,,,
+26,109389,NCBITaxon:9606,not_applicable,PATO:0000383,Crohns,MONDO:0005011,unknown,Kong2023,crohns_disease,,,
+27,158891,NCBITaxon:9606,not_applicable,PATO:0000384,Crohns,MONDO:0005011,unknown,Kong2023,crohns_disease,,,
+28,105598,NCBITaxon:9606,not_applicable,PATO:0000383,Crohns,MONDO:0005011,unknown,Kong2023,crohns_disease,,,
+29,192985,NCBITaxon:9606,not_applicable,PATO:0000384,Crohns,MONDO:0005011,unknown,Kong2023,crohns_disease,,,
+30,172428,NCBITaxon:9606,not_applicable,PATO:0000383,Crohns,MONDO:0005011,unknown,Kong2023,crohns_disease,,,
+31,148519,NCBITaxon:9606,not_applicable,PATO:0000383,Crohns,MONDO:0005011,unknown,Kong2023,crohns_disease,,,
+32,176196,NCBITaxon:9606,not_applicable,PATO:0000383,Crohns,MONDO:0005011,unknown,Kong2023,crohns_disease,,,
+33,134764,NCBITaxon:9606,not_applicable,PATO:0000384,Crohns,MONDO:0005011,unknown,Kong2023,crohns_disease,,,
+34,195045,NCBITaxon:9606,not_applicable,PATO:0000383,Crohns,MONDO:0005011,unknown,Kong2023,crohns_disease,,,
+35,165697,NCBITaxon:9606,not_applicable,PATO:0000383,Crohns,MONDO:0005011,unknown,Kong2023,crohns_disease,,,
+36,128346,NCBITaxon:9606,not_applicable,PATO:0000384,Crohns,MONDO:0005011,unknown,Kong2023,crohns_disease,,,
+37,168051,NCBITaxon:9606,not_applicable,PATO:0000384,Crohns,MONDO:0005011,unknown,Kong2023,crohns_disease,,,
+38,189696,NCBITaxon:9606,not_applicable,PATO:0000384,Crohns,MONDO:0005011,unknown,Kong2023,crohns_disease,,,
+39,125985,NCBITaxon:9606,not_applicable,PATO:0000384,Crohns,MONDO:0005011,unknown,Kong2023,crohns_disease,,,
+40,171336,NCBITaxon:9606,not_applicable,PATO:0000384,Crohns,MONDO:0005011,unknown,Kong2023,crohns_disease,,,
+41,119540,NCBITaxon:9606,not_applicable,PATO:0000383,Crohns,MONDO:0005011,unknown,Kong2023,crohns_disease,,,
+0,p011,NCBITaxon:9606,not_applicable,PATO:0000384,crohns disease,MONDO:0005011,,Zheng2024,crohns_disease,Homo sapiens,crohns_disease,unknown
+1,p014,NCBITaxon:9606,not_applicable,PATO:0000383,crohns disease,MONDO:0005011,,Zheng2024,crohns_disease,Homo sapiens,crohns_disease,unknown
+2,p016,NCBITaxon:9606,not_applicable,PATO:0000384,crohns disease,MONDO:0005011,,Zheng2024,crohns_disease,Homo sapiens,crohns_disease,unknown
+3,p018,NCBITaxon:9606,not_applicable,PATO:0000384,crohns disease,MONDO:0005011,,Zheng2024,crohns_disease,Homo sapiens,crohns_disease,unknown
+4,p019,NCBITaxon:9606,not_applicable,PATO:0000384,crohns disease,MONDO:0005011,,Zheng2024,crohns_disease,Homo sapiens,crohns_disease,unknown
+5,p022,NCBITaxon:9606,not_applicable,PATO:0000384,crohns disease,MONDO:0005011,,Zheng2024,crohns_disease,Homo sapiens,crohns_disease,unknown
+6,p024,NCBITaxon:9606,not_applicable,PATO:0000383,crohns disease,MONDO:0005011,,Zheng2024,crohns_disease,Homo sapiens,crohns_disease,unknown
+7,p026,NCBITaxon:9606,not_applicable,PATO:0000383,crohns disease,MONDO:0005011,,Zheng2024,crohns_disease,Homo sapiens,crohns_disease,unknown
+8,p027,NCBITaxon:9606,not_applicable,PATO:0000384,crohns disease,MONDO:0005011,,Zheng2024,crohns_disease,Homo sapiens,crohns_disease,unknown
+9,p031,NCBITaxon:9606,not_applicable,PATO:0000383,crohns disease,MONDO:0005011,,Zheng2024,crohns_disease,Homo sapiens,crohns_disease,unknown
+10,p032,NCBITaxon:9606,not_applicable,PATO:0000384,crohns disease,MONDO:0005011,,Zheng2024,crohns_disease,Homo sapiens,crohns_disease,unknown
+11,p041,NCBITaxon:9606,not_applicable,PATO:0000384,crohns disease,MONDO:0005011,,Zheng2024,crohns_disease,Homo sapiens,crohns_disease,unknown
+12,p042,NCBITaxon:9606,not_applicable,PATO:0000383,crohns disease,MONDO:0005011,,Zheng2024,crohns_disease,Homo sapiens,crohns_disease,unknown
+13,p048,NCBITaxon:9606,not_applicable,PATO:0000383,crohns disease,MONDO:0005011,,Zheng2024,crohns_disease,Homo sapiens,crohns_disease,unknown
+14,p009,NCBITaxon:9606,not_applicable,PATO:0000384,unknown,MONDO:0004335,,Zheng2024,functional_gastrointestinal_disorder,Homo sapiens,functional_gastrointestinal_disorder,unknown
+15,p017,NCBITaxon:9606,not_applicable,PATO:0000383,unknown,MONDO:0004335,,Zheng2024,functional_gastrointestinal_disorder,Homo sapiens,functional_gastrointestinal_disorder,unknown
+16,p023,NCBITaxon:9606,not_applicable,PATO:0000383,unknown,MONDO:0004335,,Zheng2024,functional_gastrointestinal_disorder,Homo sapiens,functional_gastrointestinal_disorder,unknown
+17,p028,NCBITaxon:9606,not_applicable,PATO:0000384,unknown,MONDO:0004335,,Zheng2024,functional_gastrointestinal_disorder,Homo sapiens,functional_gastrointestinal_disorder,unknown
+18,p030,NCBITaxon:9606,not_applicable,PATO:0000384,unknown,MONDO:0004335,,Zheng2024,functional_gastrointestinal_disorder,Homo sapiens,functional_gastrointestinal_disorder,unknown
+19,p033,NCBITaxon:9606,not_applicable,PATO:0000383,unknown,MONDO:0004335,,Zheng2024,functional_gastrointestinal_disorder,Homo sapiens,functional_gastrointestinal_disorder,unknown
+20,p034,NCBITaxon:9606,not_applicable,PATO:0000383,unknown,MONDO:0004335,,Zheng2024,functional_gastrointestinal_disorder,Homo sapiens,functional_gastrointestinal_disorder,unknown
+21,p035,NCBITaxon:9606,not_applicable,PATO:0000384,unknown,MONDO:0004335,,Zheng2024,functional_gastrointestinal_disorder,Homo sapiens,functional_gastrointestinal_disorder,unknown
+22,p037,NCBITaxon:9606,not_applicable,PATO:0000383,unknown,MONDO:0004335,,Zheng2024,functional_gastrointestinal_disorder,Homo sapiens,functional_gastrointestinal_disorder,unknown
+23,p043,NCBITaxon:9606,not_applicable,PATO:0000384,unknown,MONDO:0004335,,Zheng2024,functional_gastrointestinal_disorder,Homo sapiens,functional_gastrointestinal_disorder,unknown
+24,p044,NCBITaxon:9606,not_applicable,PATO:0000384,unknown,MONDO:0004335,,Zheng2024,functional_gastrointestinal_disorder,Homo sapiens,functional_gastrointestinal_disorder,unknown
+25,p049,NCBITaxon:9606,not_applicable,PATO:0000384,unknown,MONDO:0004335,,Zheng2024,functional_gastrointestinal_disorder,Homo sapiens,functional_gastrointestinal_disorder,unknown
+26,p050,NCBITaxon:9606,not_applicable,PATO:0000383,unknown,MONDO:0004335,,Zheng2024,functional_gastrointestinal_disorder,Homo sapiens,functional_gastrointestinal_disorder,unknown
+0,S7 (S90),NCBITaxon:9606,not_applicable,PATO:0000383,control,PATO:0000461,unknown,Kinchen2018,,,,
+1,S8 (S66),NCBITaxon:9606,not_applicable,PATO:0000384,control,PATO:0000461,unknown,Kinchen2018,,,,
+0,D1_60M_Wang2020,NCBITaxon:9606,not_applicable,PATO:0000384,neighbouring_cancer,MONDO:0005814,unknown,Wang2020,,,,
+1,D2_67F_Wang2020,NCBITaxon:9606,not_applicable,PATO:0000383,neighbouring_cancer,MONDO:0005814,unknown,Wang2020,,,,
+2,D3_54M_Wang2020,NCBITaxon:9606,not_applicable,PATO:0000384,neighbouring_cancer,MONDO:0005814,unknown,Wang2020,,,,
+3,D4_66F_Wang2020,NCBITaxon:9606,not_applicable,PATO:0000383,neighbouring_cancer,MONDO:0005814,unknown,Wang2020,,,,
+4,D5_50F_Wang2020,NCBITaxon:9606,not_applicable,PATO:0000383,neighbouring_cancer,MONDO:0005814,unknown,Wang2020,,,,
+0,7045,NCBITaxon:9606,not_applicable,PATO:0000384,"",PATO:0000461,HANCESTRO:0005,KarakashevaHelmsley,,,,
+1,7075,NCBITaxon:9606,not_applicable,PATO:0000383,"",PATO:0000461,HANCESTRO:0005,KarakashevaHelmsley,,,,
+2,7090,NCBITaxon:9606,not_applicable,PATO:0000383,"",PATO:0000461,unknown,KarakashevaHelmsley,,,,
+3,7125,NCBITaxon:9606,not_applicable,PATO:0000384,"",PATO:0000461,HANCESTRO:0568,KarakashevaHelmsley,,,,
+4,7147,NCBITaxon:9606,not_applicable,PATO:0000384,"",PATO:0000461,HANCESTRO:0005,KarakashevaHelmsley,,,,
+5,7152,NCBITaxon:9606,not_applicable,PATO:0000383,"",PATO:0000461,HANCESTRO:0005,KarakashevaHelmsley,,,,
+6,7109,NCBITaxon:9606,not_applicable,PATO:0000384,"",PATO:0000461,unknown,KarakashevaHelmsley,,,,
+7,7131,NCBITaxon:9606,not_applicable,PATO:0000384,"",PATO:0000461,HANCESTRO:0005,KarakashevaHelmsley,,,,
+8,7142,NCBITaxon:9606,not_applicable,PATO:0000384,"",PATO:0000461,unknown,KarakashevaHelmsley,,,,
+9,7172,NCBITaxon:9606,not_applicable,PATO:0000384,"",PATO:0000461,HANCESTRO:0005,KarakashevaHelmsley,,,,
+10,7175,NCBITaxon:9606,not_applicable,PATO:0000384,"",PATO:0000461,HANCESTRO:0005,KarakashevaHelmsley,,,,
+11,7200,NCBITaxon:9606,not_applicable,PATO:0000383,"",PATO:0000461,HANCESTRO:0005,KarakashevaHelmsley,,,,
+12,7051,NCBITaxon:9606,not_applicable,PATO:0000384,"",PATO:0000461,HANCESTRO:0005,KarakashevaHelmsley,,,,
+13,7052,NCBITaxon:9606,not_applicable,PATO:0000383,"",PATO:0000461,HANCESTRO:0005,KarakashevaHelmsley,,,,
+14,5241,NCBITaxon:9606,not_applicable,PATO:0000384,"",PATO:0000461,HANCESTRO:0568,KarakashevaHelmsley,,,,
+15,5242,NCBITaxon:9606,not_applicable,PATO:0000383,"",PATO:0000461,HANCESTRO:0005,KarakashevaHelmsley,,,,
+16,5243,NCBITaxon:9606,not_applicable,PATO:0000383,"",PATO:0000461,HANCESTRO:0005,KarakashevaHelmsley,,,,
+17,5244,NCBITaxon:9606,not_applicable,PATO:0000383,"",PATO:0000461,HANCESTRO:0568,KarakashevaHelmsley,,,,
+18,5245,NCBITaxon:9606,not_applicable,PATO:0000383,"",PATO:0000461,HANCESTRO:0568,KarakashevaHelmsley,,,,
+19,5246,NCBITaxon:9606,not_applicable,PATO:0000383,"",PATO:0000461,HANCESTRO:0568,KarakashevaHelmsley,,,,
+20,5248,NCBITaxon:9606,not_applicable,PATO:0000383,"",PATO:0000461,HANCESTRO:0568,KarakashevaHelmsley,,,,
+21,5249,NCBITaxon:9606,not_applicable,PATO:0000383,"",PATO:0000461,HANCESTRO:0005,KarakashevaHelmsley,,,,
+22,5250,NCBITaxon:9606,not_applicable,PATO:0000383,"",PATO:0000461,HANCESTRO:0568,KarakashevaHelmsley,,,,
+0,GCA29,NCBITaxon:9606,not_applicable,PATO:0000384,"",MONDO:0005011,HANCESTRO:0008,Maddipatla2023,,,,
+1,GCA16,NCBITaxon:9606,not_applicable,PATO:0000384,"",MONDO:0005011,HANCESTRO:0005,Maddipatla2023,,,,
+2,GCA11,NCBITaxon:9606,not_applicable,PATO:0000383,"",MONDO:0005011,HANCESTRO:0568,Maddipatla2023,,,,
+3,GCA18,NCBITaxon:9606,not_applicable,PATO:0000384,"",MONDO:0005011,HANCESTRO:0008,Maddipatla2023,,,,
+4,GCA27,NCBITaxon:9606,not_applicable,PATO:0000383,"",MONDO:0005011,HANCESTRO:0568,Maddipatla2023,,,,
+5,GCA20,NCBITaxon:9606,not_applicable,PATO:0000384,"",MONDO:0005011,HANCESTRO:0568,Maddipatla2023,,,,
+6,GCA21,NCBITaxon:9606,not_applicable,PATO:0000383,"",MONDO:0005011,HANCESTRO:0005,Maddipatla2023,,,,
+7,GCA19,NCBITaxon:9606,not_applicable,PATO:0000384,"",MONDO:0005011,HANCESTRO:0005,Maddipatla2023,,,,
+8,GCA26,NCBITaxon:9606,not_applicable,PATO:0000384,"",MONDO:0005011,HANCESTRO:0005,Maddipatla2023,,,,
+9,GCA10,NCBITaxon:9606,not_applicable,PATO:0000383,"Abdominal pain, diarrhea, weight loss",PATO:000461,HANCESTRO:0005,Maddipatla2023,,,,
+10,GCA28,NCBITaxon:9606,not_applicable,PATO:0000383,"",MONDO:0005011,HANCESTRO:0008,Maddipatla2023,,,,
+11,GCA17,NCBITaxon:9606,not_applicable,PATO:0000384,"",MONDO:0005011,HANCESTRO:0008,Maddipatla2023,,,,
+12,GCA5,NCBITaxon:9606,not_applicable,PATO:0000383,"",MONDO:0005011,HANCESTRO:0568,Maddipatla2023,,,,
+13,GCA2,NCBITaxon:9606,not_applicable,PATO:0000384,"",MONDO:0005011,HANCESTRO:0568,Maddipatla2023,,,,
+14,GCA3,NCBITaxon:9606,not_applicable,PATO:0000384,"",MONDO:0005011,HANCESTRO:0005,Maddipatla2023,,,,
+15,GCA12,NCBITaxon:9606,not_applicable,PATO:0000384,"Hematochezia, growth delay, imaging evidence of colitis/ileitis",PATO:000461,HANCESTRO:0568,Maddipatla2023,,,,
+16,GCA15,NCBITaxon:9606,not_applicable,PATO:0000383,Lower abdominal pain,PATO:000461,HANCESTRO:0568,Maddipatla2023,,,,
+17,GCA23,NCBITaxon:9606,not_applicable,PATO:0000384,"",MONDO:0005011,HANCESTRO:0005,Maddipatla2023,,,,
+18,GCA24,NCBITaxon:9606,not_applicable,PATO:0000383,"",MONDO:0005011,HANCESTRO:0568,Maddipatla2023,,,,
+19,GCA25,NCBITaxon:9606,not_applicable,PATO:0000384,"",MONDO:0005011,HANCESTRO:0005,Maddipatla2023,,,,
+20,GCA22,NCBITaxon:9606,not_applicable,PATO:0000384,"",MONDO:0005011,HANCESTRO:0005,Maddipatla2023,,,,
+21,GCA14,NCBITaxon:9606,not_applicable,PATO:0000384,"",MONDO:0005011,HANCESTRO:0008,Maddipatla2023,,,,
+22,GCA13,NCBITaxon:9606,not_applicable,PATO:0000383,"",MONDO:0005011,HANCESTRO:0568,Maddipatla2023,,,,
+23,GCA8,NCBITaxon:9606,not_applicable,PATO:0000384,"Abdominal pain in RLQ, diarrhea, anemia, weight loss, and abnormal CT of GI tract",PATO:000461,HANCESTRO:0568,Maddipatla2023,,,,
+24,GCA1,NCBITaxon:9606,not_applicable,PATO:0000383,Hematochezia,PATO:000461,HANCESTRO:0568,Maddipatla2023,,,,
+25,GCA7,NCBITaxon:9606,not_applicable,PATO:0000383,"Generalized abdominal pain, weight loss",PATO:000461,HANCESTRO:0568,Maddipatla2023,,,,
+26,GCA9,NCBITaxon:9606,not_applicable,PATO:0000384,"",MONDO:0005011,HANCESTRO:0568,Maddipatla2023,,,,
+0,Patient06,NCBITaxon:9606,unknown,PATO:0000383,organ_donor_or_healthy,PATO:0000461,,Nowicki2021,healthy,,,unknown
+1,Patient12,NCBITaxon:9606,not_applicable,PATO:0000383,barretts_8.9cm,MONDO:0013662,,Nowicki2021,barretts_esophagus,,,unknown
+2,Patient03,NCBITaxon:9606,not_applicable,PATO:0000383,barretts_1.5cm,MONDO:0013662,,Nowicki2021,barretts_esophagus,,,unknown
+3,Patient07,NCBITaxon:9606,not_applicable,PATO:0000384,barretts_2.5cm,MONDO:0013662,,Nowicki2021,barretts_esophagus,,,unknown
+4,Patient02,NCBITaxon:9606,not_applicable,PATO:0000383,organ_donor_or_healthy,PATO:0000461,,Nowicki2021,healthy,,,unknown
+5,Patient01,NCBITaxon:9606,not_applicable,PATO:0000384,organ_donor_or_healthy,PATO:0000461,,Nowicki2021,healthy,,,unknown
+6,Patient09,NCBITaxon:9606,not_applicable,PATO:0000384,unknown,MONDO:0013662,,Nowicki2021,barretts_esophagus,,,unknown
+7,Patient05,NCBITaxon:9606,unknown,PATO:0000384,organ_donor_or_healthy,PATO:0000461,,Nowicki2021,healthy,,,unknown
+8,Patient08,NCBITaxon:9606,not_applicable,PATO:0000384,organ_donor_or_healthy,PATO:0000461,,Nowicki2021,healthy,,,unknown
+9,Patient13,NCBITaxon:9606,unknown,PATO:0000383,organ_donor_or_healthy,PATO:0000461,,Nowicki2021,healthy,,,unknown
+10,Patient10,NCBITaxon:9606,unknown,PATO:0000383,organ_donor_or_healthy,PATO:0000461,,Nowicki2021,healthy,,,unknown
+11,Patient11,NCBITaxon:9606,unknown,PATO:0000383,organ_donor_or_healthy,PATO:0000461,,Nowicki2021,healthy,,,unknown
+12,Patient04,NCBITaxon:9606,not_applicable,PATO:0000384,organ_donor_or_healthy,PATO:0000461,,Nowicki2021,healthy,,,unknown
+13,Patient14,NCBITaxon:9606,not_applicable,PATO:0000384,barretts_2.4cm,MONDO:0013662,,Nowicki2021,barretts_esophagus,,,unknown
+0,patient5_Martin2019,NCBITaxon:9606,not_applicable,unknown,neighbouring_inflamed_CD,MONDO:0005011,unknown,Martin2019,,,,
+1,patient6_Martin2019,NCBITaxon:9606,not_applicable,unknown,neighbouring_inflamed_CD,MONDO:0005011,unknown,Martin2019,,,,
+2,patient7_Martin2019,NCBITaxon:9606,not_applicable,unknown,neighbouring_inflamed_CD,MONDO:0005011,unknown,Martin2019,,,,
+3,patient8_Martin2019,NCBITaxon:9606,not_applicable,unknown,neighbouring_inflamed_CD,MONDO:0005011,unknown,Martin2019,,,,
+4,patient10_Martin2019,NCBITaxon:9606,not_applicable,unknown,neighbouring_inflamed_CD,MONDO:0005011,unknown,Martin2019,,,,
+5,patient11_Martin2019,NCBITaxon:9606,not_applicable,unknown,neighbouring_inflamed_CD,MONDO:0005011,unknown,Martin2019,,,,
+6,patient12_Martin2019,NCBITaxon:9606,not_applicable,unknown,neighbouring_inflamed_CD,MONDO:0005011,unknown,Martin2019,,,,
+7,patient13_Martin2019,NCBITaxon:9606,not_applicable,unknown,neighbouring_inflamed_CD,MONDO:0005011,unknown,Martin2019,,,,
+8,patient14_Martin2019,NCBITaxon:9606,not_applicable,unknown,neighbouring_inflamed_CD,MONDO:0005011,unknown,Martin2019,,,,
+9,patient15_Martin2019,NCBITaxon:9606,not_applicable,unknown,neighbouring_inflamed_CD,MONDO:0005011,unknown,Martin2019,,,,
+10,patient16_Martin2019,NCBITaxon:9606,not_applicable,unknown,neighbouring_inflamed_CD,MONDO:0005011,unknown,Martin2019,,,,
+0,HT-185,NCBITaxon:9606,not_applicable,PATO:0000384,control,PATO:0000461,unknown,Yu2021,,,,
+1,HT-188,NCBITaxon:9606,not_applicable,PATO:0000383,control,PATO:0000461,unknown,Yu2021,,,,
+0,P9_Epcam-CD235ab-CD45-,NCBITaxon:9606,not_applicable,PATO:0000383,colorectal_cancer,PATO:0000461,unknown,agace_helmsley,,,,
+1,P8_Epcam-CD235ab-CD45-,NCBITaxon:9606,not_applicable,PATO:0000383,colorectal_cancer,PATO:0000461,unknown,agace_helmsley,,,,
+2,P7_Epcam-CD235ab-CD45-CD31-,NCBITaxon:9606,not_applicable,PATO:0000383,colorectal_cancer,PATO:0000461,unknown,agace_helmsley,,,,
+3,P1_HLADR+,NCBITaxon:9606,not_applicable,PATO:0000383,colorectal_cancer,PATO:0000461,unknown,agace_helmsley,,,,
+4,P2_HLADR+,NCBITaxon:9606,not_applicable,PATO:0000384,colorectal_cancer,PATO:0000461,unknown,agace_helmsley,,,,
+5,P3_HLADR+,NCBITaxon:9606,not_applicable,PATO:0000383,colorectal_cancer,PATO:0000461,unknown,agace_helmsley,,,,
+6,P4_HLADR+,NCBITaxon:9606,not_applicable,PATO:0000383,colorectal_cancer,PATO:0000461,unknown,agace_helmsley,,,,
+7,P5_HLADR+,NCBITaxon:9606,not_applicable,PATO:0000383,colorectal_cancer,PATO:0000461,unknown,agace_helmsley,,,,
+8,P6_HLADR+,NCBITaxon:9606,not_applicable,PATO:0000384,colorectal_cancer,PATO:0000461,unknown,agace_helmsley,,,,
+0,HA01,NCBITaxon:9606,not_applicable,PATO:0000383,"",PATO:0000461,unknown,BasuHelmsley,,,,
+1,HA02,NCBITaxon:9606,not_applicable,PATO:0000383,"",PATO:0000461,HANCESTRO:0010,BasuHelmsley,,,,
+2,HA04,NCBITaxon:9606,not_applicable,PATO:0000384,"",PATO:0000461,unknown,BasuHelmsley,,,,
+3,HA07,NCBITaxon:9606,not_applicable,PATO:0000384,"",PATO:0000461,unknown,BasuHelmsley,,,,
+4,HA08,NCBITaxon:9606,not_applicable,PATO:0000383,"",PATO:0000461,HANCESTRO:0010,BasuHelmsley,,,,
+5,HA11,NCBITaxon:9606,not_applicable,PATO:0000383,"",PATO:0000461,HANCESTRO:0010,BasuHelmsley,,,,
+6,HA14,NCBITaxon:9606,not_applicable,PATO:0000383,"",PATO:0000461,unknown,BasuHelmsley,,,,
+7,HA41,NCBITaxon:9606,not_applicable,PATO:0000384,"",PATO:0000461,HANCESTRO:0010,BasuHelmsley,,,,
+8,HA49,NCBITaxon:9606,not_applicable,PATO:0000383,"",PATO:0000461,unknown,BasuHelmsley,,,,
+9,HA50,NCBITaxon:9606,not_applicable,PATO:0000384,"",PATO:0000461,HANCESTRO:0010,BasuHelmsley,,,,
+10,HA51,NCBITaxon:9606,not_applicable,PATO:0000383,"",PATO:0000461,unknown,BasuHelmsley,,,,
+11,HA52,NCBITaxon:9606,not_applicable,PATO:0000383,"",PATO:0000461,HANCESTRO:0010,BasuHelmsley,,,,
+12,HA54,NCBITaxon:9606,not_applicable,PATO:0000383,"",PATO:0000461,unknown,BasuHelmsley,,,,
+13,HA55,NCBITaxon:9606,not_applicable,PATO:0000384,"",PATO:0000461,unknown,BasuHelmsley,,,,
+0,SC001,NCBITaxon:9606,"",PATO:0000383,neighbouring_cancer,"",unknown,Lee2020,,,,
+1,SC019,NCBITaxon:9606,"",PATO:0000383,neighbouring_cancer,"",unknown,Lee2020,,,,
+2,SC021,NCBITaxon:9606,"",PATO:0000383,neighbouring_cancer,"",unknown,Lee2020,,,,
+3,SC024,NCBITaxon:9606,"",PATO:0000383,neighbouring_cancer,"",unknown,Lee2020,,,,
+4,SC027,NCBITaxon:9606,"",PATO:0000384,neighbouring_cancer,"",unknown,Lee2020,,,,
+5,SC028,NCBITaxon:9606,"",PATO:0000384,neighbouring_cancer,"",unknown,Lee2020,,,,
+6,SC029,NCBITaxon:9606,"",PATO:0000383,neighbouring_cancer,"",unknown,Lee2020,,,,
+7,SC030,NCBITaxon:9606,"",PATO:0000384,neighbouring_cancer,"",unknown,Lee2020,,,,
+8,SC031,NCBITaxon:9606,"",PATO:0000384,neighbouring_cancer,"",unknown,Lee2020,,,,
+0,T024,NCBITaxon:9606,not_applicable,PATO:0000383,control,PATO:0000461,unknown,Elmentaite2021,,,,
+1,T036,NCBITaxon:9606,not_applicable,PATO:0000384,neighbouring_polyps,PATO:0000461,unknown,Elmentaite2021,,,,
+2,T044,NCBITaxon:9606,not_applicable,PATO:0000383,control,PATO:0000461,unknown,Elmentaite2021,,,,
+3,T057,NCBITaxon:9606,not_applicable,PATO:0000384,control,PATO:0000461,unknown,Elmentaite2021,,,,
+4,T110,NCBITaxon:9606,not_applicable,PATO:0000384,neighbouring_polyps,PATO:0000461,unknown,Elmentaite2021,,,,
+5,T160,NCBITaxon:9606,not_applicable,PATO:0000383,control,PATO:0000461,unknown,Elmentaite2021,,,,
+6,T161,NCBITaxon:9606,not_applicable,PATO:0000384,neighbouring_polyps,PATO:0000461,unknown,Elmentaite2021,,,,
+7,T182,NCBITaxon:9606,not_applicable,PATO:0000384,control,PATO:0000461,unknown,Elmentaite2021,,,,
+8,A34_417C,NCBITaxon:9606,unknown,PATO:0000384,control,PATO:0000461,unknown,Elmentaite2021,,,,
+9,A32_411C,NCBITaxon:9606,unknown,PATO:0000384,control,PATO:0000461,unknown,Elmentaite2021,,,,
+10,A38_432C,NCBITaxon:9606,unknown,PATO:0000383,control,PATO:0000461,unknown,Elmentaite2021,,,,
+11,A26_386C,NCBITaxon:9606,unknown,PATO:0000383,control,PATO:0000461,unknown,Elmentaite2021,,,,
+12,A39_440C,NCBITaxon:9606,unknown,PATO:0000384,control,PATO:0000461,unknown,Elmentaite2021,,,,
+13,A30_398B,NCBITaxon:9606,unknown,PATO:0000383,control,PATO:0000461,unknown,Elmentaite2021,,,,
+14,A33_414C,NCBITaxon:9606,unknown,PATO:0000384,control,PATO:0000461,unknown,Elmentaite2021,,,,
+0,CD1,NCBITaxon:9606,not_applicable,PATO:0000384,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+1,CD2,NCBITaxon:9606,not_applicable,PATO:0000383,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+2,CD3,NCBITaxon:9606,not_applicable,PATO:0000383,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+3,CD4,NCBITaxon:9606,not_applicable,PATO:0000384,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+4,CD5,NCBITaxon:9606,not_applicable,PATO:0000383,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+5,CD6,NCBITaxon:9606,not_applicable,PATO:0000384,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+6,CD7,NCBITaxon:9606,not_applicable,PATO:0000384,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+7,CD8,NCBITaxon:9606,not_applicable,PATO:0000384,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+8,CD9,NCBITaxon:9606,not_applicable,PATO:0000383,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+9,CD10,NCBITaxon:9606,not_applicable,PATO:0000383,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+10,CD11,NCBITaxon:9606,not_applicable,PATO:0000383,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+11,CD12,NCBITaxon:9606,not_applicable,PATO:0000384,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+12,CD13,NCBITaxon:9606,not_applicable,PATO:0000383,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+13,CD14,NCBITaxon:9606,not_applicable,PATO:0000384,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+14,CD15,NCBITaxon:9606,not_applicable,PATO:0000384,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+15,CD16,NCBITaxon:9606,not_applicable,PATO:0000383,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+16,CD17,NCBITaxon:9606,not_applicable,PATO:0000384,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+17,CD18,NCBITaxon:9606,not_applicable,PATO:0000384,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+18,CD19,NCBITaxon:9606,not_applicable,PATO:0000384,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+19,CD20,NCBITaxon:9606,not_applicable,PATO:0000384,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+20,CD21,NCBITaxon:9606,not_applicable,PATO:0000383,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+21,CD22,NCBITaxon:9606,not_applicable,PATO:0000383,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+22,CD23,NCBITaxon:9606,not_applicable,PATO:0000384,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+23,CD24,NCBITaxon:9606,not_applicable,PATO:0000383,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+24,CD25,NCBITaxon:9606,not_applicable,PATO:0000383,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+25,H1,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+26,H2,NCBITaxon:9606,not_applicable,PATO:0000384,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+27,H3,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+28,H4,NCBITaxon:9606,not_applicable,PATO:0000384,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+29,H5,NCBITaxon:9606,not_applicable,PATO:0000384,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+30,H6,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+31,H7,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+32,H8,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+33,H9,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+34,H10,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+35,H11,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+36,H12,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+37,H13,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+38,H14,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+39,H15,NCBITaxon:9606,not_applicable,PATO:0000384,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+40,H16,NCBITaxon:9606,not_applicable,PATO:0000384,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+41,H17,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+42,H18,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+43,H19,NCBITaxon:9606,not_applicable,PATO:0000384,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+44,H20,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+45,CD26,NCBITaxon:9606,not_applicable,PATO:0000384,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+46,H21,NCBITaxon:9606,not_applicable,PATO:0000384,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+47,H22,NCBITaxon:9606,not_applicable,PATO:0000384,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+48,H23,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+49,H24,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+50,H25,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+51,CD27,NCBITaxon:9606,not_applicable,PATO:0000384,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+52,CD28,NCBITaxon:9606,not_applicable,PATO:0000383,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+53,CD29,NCBITaxon:9606,not_applicable,PATO:0000384,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+54,CD30,NCBITaxon:9606,not_applicable,PATO:0000383,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+55,CD31,NCBITaxon:9606,not_applicable,PATO:0000383,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+56,CD32,NCBITaxon:9606,not_applicable,PATO:0000383,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+57,CD33,NCBITaxon:9606,not_applicable,PATO:0000383,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+58,CD34,NCBITaxon:9606,not_applicable,PATO:0000383,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+59,CD35,NCBITaxon:9606,not_applicable,PATO:0000384,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+60,CD36,NCBITaxon:9606,not_applicable,PATO:0000384,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+61,CD37,NCBITaxon:9606,not_applicable,PATO:0000384,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+62,CD38,NCBITaxon:9606,not_applicable,PATO:0000384,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+63,CD39,NCBITaxon:9606,not_applicable,PATO:0000383,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+64,CD40,NCBITaxon:9606,not_applicable,PATO:0000383,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+65,CD41,NCBITaxon:9606,not_applicable,PATO:0000383,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+66,CD42,NCBITaxon:9606,not_applicable,PATO:0000384,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+67,CD43,NCBITaxon:9606,not_applicable,PATO:0000383,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+68,CD44,NCBITaxon:9606,not_applicable,PATO:0000383,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+69,CD45,NCBITaxon:9606,not_applicable,PATO:0000383,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+70,CD46,NCBITaxon:9606,not_applicable,PATO:0000384,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+71,CD47,NCBITaxon:9606,not_applicable,PATO:0000383,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+72,CD48,NCBITaxon:9606,not_applicable,PATO:0000384,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+73,H26,NCBITaxon:9606,not_applicable,PATO:0000384,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+74,H27,NCBITaxon:9606,not_applicable,PATO:0000384,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+75,H28,NCBITaxon:9606,not_applicable,PATO:0000384,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+76,H29,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+77,H30,NCBITaxon:9606,not_applicable,PATO:0000384,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+78,H31,NCBITaxon:9606,not_applicable,PATO:0000384,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+79,H32,NCBITaxon:9606,not_applicable,PATO:0000384,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+80,H33,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+81,H34,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+82,H35,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+83,H36,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+84,H37,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+85,H38,NCBITaxon:9606,not_applicable,PATO:0000384,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+86,H39,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+87,H40,NCBITaxon:9606,not_applicable,PATO:0000384,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+88,H41,NCBITaxon:9606,not_applicable,PATO:0000384,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+89,H42,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+90,H43,NCBITaxon:9606,not_applicable,PATO:0000384,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+91,H44,NCBITaxon:9606,not_applicable,PATO:0000384,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+92,H45,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+93,H46,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+94,H47,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+95,H48,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+96,H49,NCBITaxon:9606,not_applicable,PATO:0000384,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+97,H50,NCBITaxon:9606,not_applicable,PATO:0000384,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+98,H51,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+99,H52,NCBITaxon:9606,not_applicable,PATO:0000384,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+100,H53,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+101,H54,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+102,H55,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+103,H56,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+104,H57,NCBITaxon:9606,not_applicable,PATO:0000384,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+105,H58,NCBITaxon:9606,not_applicable,PATO:0000384,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+106,H59,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+107,H60,NCBITaxon:9606,not_applicable,PATO:0000384,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+108,H61,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+109,H62,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+110,H63,NCBITaxon:9606,not_applicable,PATO:0000384,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+111,H64,NCBITaxon:9606,not_applicable,PATO:0000384,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+112,H65,NCBITaxon:9606,not_applicable,PATO:0000384,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+113,CD49,NCBITaxon:9606,not_applicable,PATO:0000383,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+114,H66,NCBITaxon:9606,not_applicable,PATO:0000384,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+115,H67,NCBITaxon:9606,not_applicable,PATO:0000384,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+116,H68,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+117,H69,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+118,H70,NCBITaxon:9606,not_applicable,PATO:0000383,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+119,H71,NCBITaxon:9606,not_applicable,PATO:0000384,surveillance biopsies,PATO:0000461,,Krzak2023,normal,Homo sapiens,normal,unknown
+120,CD50,NCBITaxon:9606,not_applicable,PATO:0000384,crohns disease,PATO:0000461,,Krzak2023,crohns_disease,Homo sapiens,crohns_disease,unknown
+0,C1,NCBITaxon:9606,not_applicable,PATO:0000383,CPI colitis,"",unknown,Luoma2020,,,,
+1,C2,NCBITaxon:9606,not_applicable,PATO:0000383,CPI colitis,"",unknown,Luoma2020,,,,
+2,C3,NCBITaxon:9606,not_applicable,PATO:0000384,CPI colitis,"",unknown,Luoma2020,,,,
+3,C4,NCBITaxon:9606,not_applicable,PATO:0000384,CPI colitis,"",unknown,Luoma2020,,,,
+4,C5,NCBITaxon:9606,not_applicable,PATO:0000384,CPI colitis,"",unknown,Luoma2020,,,,
+5,C6,NCBITaxon:9606,not_applicable,PATO:0000384,CPI colitis,"",unknown,Luoma2020,,,,
+6,C7,NCBITaxon:9606,not_applicable,PATO:0000383,CPI colitis,"",unknown,Luoma2020,,,,
+7,C8,NCBITaxon:9606,not_applicable,PATO:0000383,CPI colitis,"",unknown,Luoma2020,,,,
+8,CT1,NCBITaxon:9606,not_applicable,PATO:0000383,"melanoma, stage 1A","",unknown,Luoma2020,,,,
+9,CT2,NCBITaxon:9606,not_applicable,PATO:0000384,healthy,"",unknown,Luoma2020,,,,
+10,CT3,NCBITaxon:9606,not_applicable,PATO:0000384,healthy,"",unknown,Luoma2020,,,,
+11,CT4,NCBITaxon:9606,not_applicable,PATO:0000384,healthy,"",unknown,Luoma2020,,,,
+12,CT5,NCBITaxon:9606,not_applicable,PATO:0000383,gastric cancer stage 2,"",unknown,Luoma2020,,,,
+13,CT6,NCBITaxon:9606,not_applicable,PATO:0000384,healthy,"",unknown,Luoma2020,,,,
+14,CT7,NCBITaxon:9606,not_applicable,PATO:0000384,healthy,"",unknown,Luoma2020,,,,
+15,CT8,NCBITaxon:9606,not_applicable,PATO:0000383,healthy,"",unknown,Luoma2020,,,,
+16,NC1,NCBITaxon:9606,not_applicable,PATO:0000384,"melanoma, stage 4","",unknown,Luoma2020,,,,
+17,NC2,NCBITaxon:9606,not_applicable,PATO:0000384,"melanoma, stage 4","",unknown,Luoma2020,,,,
+18,NC3,NCBITaxon:9606,not_applicable,PATO:0000383,"melanoma, stage 4","",unknown,Luoma2020,,,,
+19,NC4,NCBITaxon:9606,not_applicable,PATO:0000384,"melanoma, stage 4","",unknown,Luoma2020,,,,
+20,NC5,NCBITaxon:9606,not_applicable,PATO:0000384,"melanoma, stage 4","",unknown,Luoma2020,,,,
+21,NC6,NCBITaxon:9606,not_applicable,PATO:0000383,"melanoma, stage 4","",unknown,Luoma2020,,,,
+0,A31_403C,NCBITaxon:9606,unknown,PATO:0000384,control,PATO:0000461,unknown,Dominguez2022,,,,
+1,A29_390C,NCBITaxon:9606,unknown,PATO:0000383,control,PATO:0000461,unknown,Dominguez2022,,,,
+2,A36_412C,NCBITaxon:9606,unknown,PATO:0000384,control,PATO:0000461,unknown,Dominguez2022,,,,
+3,A35_423C,NCBITaxon:9606,unknown,PATO:0000384,control,PATO:0000461,unknown,Dominguez2022,,,,
+4,A37_428C,NCBITaxon:9606,unknown,PATO:0000383,control,PATO:0000461,unknown,Dominguez2022,,,,
+0,C12,NCBITaxon:9606,not_applicable,"",healthy,PATO:0000461,unknown,Boland2020,,,,
+1,U4,NCBITaxon:9606,not_applicable,"",ulcerative colitis,MONDO:0005101,unknown,Boland2020,,,,
+2,U35,NCBITaxon:9606,not_applicable,"",ulcerative colitis,MONDO:0005101,unknown,Boland2020,,,,
+3,C19,NCBITaxon:9606,not_applicable,"",healthy,PATO:0000461,unknown,Boland2020,,,,
+4,C18,NCBITaxon:9606,not_applicable,"",healthy,PATO:0000461,unknown,Boland2020,,,,
+5,C21,NCBITaxon:9606,not_applicable,"",healthy,PATO:0000461,unknown,Boland2020,,,,
+6,U41,NCBITaxon:9606,not_applicable,"",ulcerative colitis,MONDO:0005101,unknown,Boland2020,,,,
+7,U44,NCBITaxon:9606,not_applicable,"",ulcerative colitis,MONDO:0005101,unknown,Boland2020,,,,
+8,C17,NCBITaxon:9606,not_applicable,"",healthy,PATO:0000461,unknown,Boland2020,,,,
+9,U45,NCBITaxon:9606,not_applicable,"",ulcerative colitis,MONDO:0005101,unknown,Boland2020,,,,
+10,U34,NCBITaxon:9606,not_applicable,"",ulcerative colitis,MONDO:0005101,unknown,Boland2020,,,,
+11,U5,NCBITaxon:9606,not_applicable,"",ulcerative colitis,MONDO:0005101,unknown,Boland2020,,,,
+12,C33,NCBITaxon:9606,not_applicable,"",healthy,PATO:0000461,unknown,Boland2020,,,,
+13,C16,NCBITaxon:9606,not_applicable,"",healthy,PATO:0000461,unknown,Boland2020,,,,
+14,C30,NCBITaxon:9606,not_applicable,"",healthy,PATO:0000461,unknown,Boland2020,,,,
+15,C9,NCBITaxon:9606,not_applicable,"",healthy,PATO:0000461,unknown,Boland2020,,,,
+0,206_Uzzan2022,NCBITaxon:9606,"",PATO:0000384,control,"",unknown,Uzzan2022,,,,
+1,219_Uzzan2022,NCBITaxon:9606,"",PATO:0000383,control,"",unknown,Uzzan2022,,,,
+2,221_Uzzan2022,NCBITaxon:9606,"",PATO:0000383,control,"",unknown,Uzzan2022,,,,
+3,237_Uzzan2022,NCBITaxon:9606,"",PATO:0000384,control,"",unknown,Uzzan2022,,,,
+4,204_Uzzan2022,NCBITaxon:9606,"",PATO:0000383,neighbouring_inflamed,"",unknown,Uzzan2022,,,,
+0,A1_Parikh2019,NCBITaxon:9606,not_applicable,"",ulcerative_colitis,MONDO:0005101,unknown,Parikh2019,ulcerative_colitis,,,
+1,B1_healthy,NCBITaxon:9606,not_applicable,"",healthy,PATO:0000461,unknown,Parikh2019,normal,,,
+2,C1_healthy,NCBITaxon:9606,not_applicable,"",healthy,PATO:0000461,unknown,Parikh2019,normal,,,
+3,A2_Parikh2019,NCBITaxon:9606,not_applicable,"",ulcerative_colitis,MONDO:0005101,unknown,Parikh2019,ulcerative_colitis,,,
+4,B2_Parikh2019,NCBITaxon:9606,not_applicable,"",ulcerative_colitis,MONDO:0005101,unknown,Parikh2019,ulcerative_colitis,,,
+5,C2_Parikh2019,NCBITaxon:9606,not_applicable,"",ulcerative_colitis,MONDO:0005101,unknown,Parikh2019,ulcerative_colitis,,,
+0,1193,NCBITaxon:9606,not_applicable,PATO:0000383,"Yes, Necrotizing enterocolitis",MONDO:0005313,unknown,Egozi2023,,,,
+1,1127,NCBITaxon:9606,not_applicable,PATO:0000383,"Yes, Cystic Fibrosis/meconium ileus",MONDO:0005413,unknown,Egozi2023,,,,
+2,1056,NCBITaxon:9606,not_applicable,PATO:0000383,abdominal mass not related to intestinal tissue,PATO:0000461,unknown,Egozi2023,,,,
+3,1155,NCBITaxon:9606,not_applicable,PATO:0000383,"Yes, Necrotizing enterocolitis",MONDO:0005313,unknown,Egozi2023,,,,
+4,1074,NCBITaxon:9606,not_applicable,PATO:0000383,"Yes, Necrotizing enterocolitis",MONDO:0005313,unknown,Egozi2023,,,,
+5,1095,NCBITaxon:9606,not_applicable,PATO:0000384,"Yes, Necrotizing enterocolitis",MONDO:0005313,unknown,Egozi2023,,,,
+6,1082,NCBITaxon:9606,not_applicable,PATO:0000384,"Yes, Meconium cyst",unknown,unknown,Egozi2023,,,,
+7,1212,NCBITaxon:9606,not_applicable,PATO:0000383,"yes, colonic atresia",MONDO:0010562,unknown,Egozi2023,,,,
+8,1109,NCBITaxon:9606,not_applicable,PATO:0000383,"Yes, Necrotizing enterocolitis",MONDO:0005313,unknown,Egozi2023,,,,
+9,1021,NCBITaxon:9606,not_applicable,PATO:0000383,"Yes, Necrotizing enterocolitis",MONDO:0005313,unknown,Egozi2023,,,,
+10,1214,NCBITaxon:9606,not_applicable,PATO:0000383,"Yes, Ileal atresia",HP:0011102,unknown,Egozi2023,,,,
