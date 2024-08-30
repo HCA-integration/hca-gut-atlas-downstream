@@ -1,0 +1,359 @@
+---
+title: "Comparing non-inflammed tissues from healthy and Crohn's disease patients"
+author: "Ricardo O. Ramirez Flores"
+date: "2024-08-30"
+output: html_document
+---
+
+# Introduction
+
+The availability of integrated single-cell atlases enables the use of tissue-focused frameworks that allow for both unsupervised analysis of samples across different cell types and the estimation of coordinated molecular programs, thereby better capturing the multicellular complexity of organs.
+
+In this tutorial, we demonstrate how the GCA can be used to compare non-inflamed tissue samples from various gut compartments in both healthy individuals and patients with Crohn's disease.
+
+```{r setup, include=TRUE, warning=FALSE, message=FALSE}
+library(MOFAcellulaR)
+library(tidyverse)
+library(cowplot)
+
+mofa_out = "./models/coldata/GCA_AT.hdf5"
+
+# Get the three datasets
+input_df <- tibble(pb_file = list.files("./data/pbulk/")) %>%
+  dplyr::mutate(study = gsub("_pbulk[.]csv","",pb_file),
+                coldata_file =  paste0("./data/coldata/",
+                                       gsub("_pbulk[.]csv",
+                                            "_coldata.csv",pb_file))) %>%
+  dplyr::mutate(pb_file = paste0("./data/pbulk/",pb_file))
+```
+
+# Extracting pseusobulk expression matrices of Kong2023 across cell lineages
+
+Here we import a collection of pseudobulk matrices that represents each patient sample as a collection of expression vectors of each major lineage.
+
+Each cell-type specific pseudobulk matrix is then filtered for lowly expressed genes, number of cells used for each pseudobulk profile, number of genes, and gene coverage across samples.
+
+```{r, warning= FALSE}
+
+input_list <- pmap(input_df, function(pb_file, study, coldata_file) {
+
+  print(study)
+
+  # Importing pb data
+  pb_data <- read_csv(pb_file,
+                      show_col_types = FALSE)
+
+  colnames(pb_data)[1] <- "sample_id"
+
+  pb_data <- pb_data %>%
+    column_to_rownames("sample_id") %>%
+    as.matrix() %>%
+    t()
+
+  # Importing coldata of the matrices - ignoring not annotated cell types
+  coldat <- read_csv(coldata_file,
+                     show_col_types = FALSE)[,-1]  %>%
+    column_to_rownames("colname") %>%
+    dplyr::rename(ncells = "psbulk_n_cells",
+                  cell_type = "lineage") %>%
+    dplyr::filter(title == "Kong2023")
+
+  pb_data <- pb_data[,rownames(coldat)]
+
+  # Importing meta_data
+  meta_data <- coldat %>%
+    dplyr::select(-c(cell_type, ncells, psbulk_counts)) %>%
+    unique() %>%
+    dplyr::mutate(disease_free_text = stringr::str_to_title(disease_free_text))
+
+  # Defining cts
+  cts <- coldat$cell_type %>%
+    unique() %>%
+    set_names()
+
+  # Defining parameters
+  n_samples <- nrow(meta_data)
+  min_samples <- (n_samples * 0.4) %>% floor()
+
+  # Creating MOFAcell object to make manipulations
+  MOFAcell_obj_temp <- MOFAcellulaR::create_init_exp(pb_data, coldat) %>%
+    MOFAcellulaR::filt_profiles(pb_dat = .,
+                                cts = cts,
+                                ncells = 10,
+                                counts_col = "ncells",
+                                ct_col = "cell_type") %>%
+    MOFAcellulaR::filt_views_bysamples(pb_dat_list = .,
+                                       nsamples = min_samples) %>%
+    MOFAcellulaR::filt_gex_byexpr(pb_dat_list = .,
+                                  min.count = 20,
+                                  min.prop = 0.4) %>%
+    MOFAcellulaR::filt_views_bygenes(pb_dat_list = .,
+                                     ngenes = 50) %>%
+    MOFAcellulaR::filt_samples_bycov(pb_dat_list = ., # Filtering of low quality samples
+                                     prop_coverage = 0.99) %>%
+    MOFAcellulaR::tmm_trns(pb_dat_list = .,
+                           scale_factor = 1000000) %>%
+    MOFAcellulaR::filt_views_bygenes(pb_dat_list = .,
+                                     ngenes = 50) %>%
+    MOFAcellulaR::pb_dat2MOFA(pb_dat_list = .,
+                              sample_column = "sample_id")
+
+  return(list("gex" = MOFAcell_obj_temp,
+              "meta" = meta_data))
+
+})
+
+
+MOFAcell_obj <- bind_rows(map(input_list, ~ .x[["gex"]])) %>%
+  dplyr::filter(view != "Stromal_Neural?")
+
+meta_data <- bind_rows(map(input_list, ~ .x[["meta"]])) %>%
+  unique()
+```
+
+This collection of matrices then is used for Multicellular Factor Analysis with MOFA.
+
+Multicellular Factor Analysis is used to estimate a latent space that captures the variability of patients across the distinct cell types. The estimated factors composing the latent space can be interpreted as a collection of multicellular programs that capture coordinated expression patterns of distinct cell types. The cell-type-specific gene expression patterns can be retrieved from the factor loadings, where each gene of each cell type would contain a weight that contributes to the factor score. Similarly, as in the application of MOFA to multi-omics data, the factors can be used for an unsupervised analysis of samples or can be associated with biological or technical covariates of the original samples. Additionally, the reconstruction errors per view and factor can be used to prioritize cell types associated with covariates of interest.
+
+```{r fit, include=TRUE, eval=FALSE}
+# Defining parameters
+n_samples <- nrow(meta_data)
+
+# Generating QC of feature and sample coverage
+view_completion <- MOFAcell_obj %>%
+  group_by(view) %>%
+  summarise(n_genes = length(unique(feature)),
+            n_ind = length(unique(sample))) %>%
+  dplyr::mutate(perc_samples = (n_ind/n_samples) * 100)
+
+# Building MOFA model
+
+MOFAobject <- create_mofa(MOFAcell_obj)
+
+data_opts <- get_default_data_options(MOFAobject)
+
+data_opts$center_groups <- TRUE
+
+model_opts <- get_default_model_options(MOFAobject)
+
+model_opts$num_factors <- 10
+
+model_opts$spikeslab_weights <- FALSE
+
+train_opts <- get_default_training_options(MOFAobject)
+
+# Prepare MOFA model:
+MOFAobject <- prepare_mofa(
+  object = MOFAobject,
+  data_options = data_opts,
+  model_options = model_opts,
+  training_options = train_opts
+)
+
+# Train model:
+model <- run_mofa(MOFAobject, mofa_out, use_basilisk = T)
+```
+
+```{r, include=FALSE}
+model <- MOFA2::load_model(mofa_out)
+```
+
+# Interpretation
+
+## Model fit
+
+We first evaluate how much our latent space explains the variability in expression of each lineage
+
+```{r, fig.height=3, fig.width=4}
+var_explained <- model@cache$variance_explained$r2_total %>%
+  map(., ~ enframe(.x, "view","R2_consensus")) %>%
+  enframe("study") %>%
+  unnest(c(value)) %>%
+  dplyr::mutate(R2_consensus = as.numeric(R2_consensus))
+
+var_explained %>%
+  ggplot(aes(x = view, y = R2_consensus)) +
+  geom_bar(stat = "identity") +
+  theme_bw() +
+  theme(axis.text = element_text(size =12),
+        axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5)) +
+  ylab("R2") + xlab("")
+```
+
+Here we observe a decent recovery of explained variance across cell-types (> 40) 
+
+## Association with meta-data
+
+Here then we ask the question if our inferred multicellular programs are associated with the radial tissue term or the disease condition. We assume that despite all tissues coming from non-inflammed regions, we could still trace a difference between healthy and Crohn's disease patients
+
+```{r, fig.height=7, fig.width=6}
+expl_var_radialtissue <- MOFAcellulaR::get_associations(model = model,
+                                              metadata = meta_data,
+                                              sample_id_column = "sample_id",
+                                              test_variable = "radial_tissue_term",
+                                              test_type = "categorical",
+                                              categorical_type = "parametric",
+                                              group = TRUE)
+
+expl_var_disease <- MOFAcellulaR::get_associations(model = model,
+                                                        metadata = meta_data,
+                                                        sample_id_column = "sample_id",
+                                                        test_variable = "disease_free_text",
+                                                        test_type = "categorical",
+                                                        categorical_type = "parametric",
+                                                        group = TRUE)
+
+expl_var_sample_site <- MOFAcellulaR::get_associations(model = model,
+                                                   metadata = meta_data,
+                                                   sample_id_column = "sample_id",
+                                                   test_variable = "sampled_site_condition",
+                                                   test_type = "categorical",
+                                                   categorical_type = "parametric",
+                                                   group = TRUE)
+
+
+assoc_list <- list("radial" = expl_var_radialtissue,
+                   "disease" = expl_var_disease,
+                   "site" = expl_var_sample_site)
+
+scores_hmap <- plot_MOFA_hmap(model = model,
+                              group = F,
+                              metadata = meta_data,
+                              sample_id_column = "sample_id",
+                              sample_anns = c("radial_tissue_term",
+                                              "sampled_site_condition",
+                                              "disease_free_text"),
+                              assoc_list = assoc_list)
+```
+
+Here observed main differences between the distinct classes of the radial tissue term.
+
+However we also observed differences between healthy and diseased patients in Factor 5 and 9.
+
+## Multicellular Factor Analysis dissection
+
+Distribution of tissue samples across multicellular program 1 and 5, show that only within EPI-LP samples, there's a difference between diseased and healthy patients.
+
+```{r, fig.height=3, fig.width=14}
+# Site
+main_facts_plt_radial <- MOFAcellulaR::get_tidy_factors(model = model,
+                                                      factor = "all",
+                                                      metadata = meta_data,
+                                                      group = T,
+                                                      sample_id_column = "sample_id") %>%
+  dplyr::filter(Factor %in% c("Factor1", "Factor5")) %>%
+  pivot_wider(values_from = value, names_from = Factor) %>%
+  ggplot(aes(x = Factor1, y = Factor5,
+             color = radial_tissue_term)) +
+  geom_point() +
+  theme_bw() +
+  theme(axis.text = element_text(size =13),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank()) +
+  ylab("MCP5") + xlab("MCP1")
+
+main_facts_plt_disease <- MOFAcellulaR::get_tidy_factors(model = model,
+                                                        factor = "all",
+                                                        metadata = meta_data,
+                                                        group = T,
+                                                        sample_id_column = "sample_id") %>%
+  dplyr::filter(Factor %in% c("Factor1", "Factor5")) %>%
+  pivot_wider(values_from = value, names_from = Factor) %>%
+  ggplot(aes(x = Factor1, y = Factor5,
+             color = disease_free_text)) +
+  geom_point() +
+  theme_bw() +
+  theme(axis.text = element_text(size =13),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank()) +
+  ylab("MCP5") + xlab("MCP1")
+
+bplot <- MOFAcellulaR::get_tidy_factors(model = model,
+                               factor = "Factor5",
+                               metadata = meta_data,
+                               group = T,
+                               sample_id_column = "sample_id") %>%
+  ggplot(aes(x = radial_tissue_term, y = value, fill = disease_free_text)) +
+  geom_boxplot() +
+  theme_bw() +
+  theme(axis.text = element_text(size =13),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank()) +
+  ylab("MCP5")
+
+cowplot::plot_grid(main_facts_plt_radial, main_facts_plt_disease, bplot, ncol = 3,
+                   align = "hv")
+
+```
+
+This multicellular program majorly explains Neural, Plasma, and Stromal cells
+
+```{r}
+model@cache$variance_explained$r2_per_factor[[1]]["Factor5",] %>%
+  sort(decreasing = T)
+```
+
+Similarly, distribution of tissue samples across multicellular program 1 and 9, show that only within LP samples, there's a difference between diseased and healthy patients.
+
+```{r, fig.height=3, fig.width=14}
+# Site
+main_facts_plt_radial <- MOFAcellulaR::get_tidy_factors(model = model,
+                                                      factor = "all",
+                                                      metadata = meta_data,
+                                                      group = T,
+                                                      sample_id_column = "sample_id") %>%
+  dplyr::filter(Factor %in% c("Factor1", "Factor9")) %>%
+  pivot_wider(values_from = value, names_from = Factor) %>%
+  ggplot(aes(x = Factor1, y = Factor9,
+             color = radial_tissue_term)) +
+  geom_point() +
+  theme_bw() +
+  theme(axis.text = element_text(size =13),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank()) +
+  ylab("MCP9") + xlab("MCP1")
+
+main_facts_plt_disease <- MOFAcellulaR::get_tidy_factors(model = model,
+                                                        factor = "all",
+                                                        metadata = meta_data,
+                                                        group = T,
+                                                        sample_id_column = "sample_id") %>%
+  dplyr::filter(Factor %in% c("Factor1", "Factor9")) %>%
+  pivot_wider(values_from = value, names_from = Factor) %>%
+  ggplot(aes(x = Factor1, y = Factor9,
+             color = disease_free_text)) +
+  geom_point() +
+  theme_bw() +
+  theme(axis.text = element_text(size =13),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank()) +
+  ylab("MCP9") + xlab("MCP1")
+
+bplot <- MOFAcellulaR::get_tidy_factors(model = model,
+                               factor = "Factor9",
+                               metadata = meta_data,
+                               group = T,
+                               sample_id_column = "sample_id") %>%
+  ggplot(aes(x = radial_tissue_term, y = value, fill = disease_free_text)) +
+  geom_boxplot() +
+  theme_bw() +
+  theme(axis.text = element_text(size =13),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank()) +
+  ylab("MCP9")
+
+
+cowplot::plot_grid(main_facts_plt_radial, main_facts_plt_disease, bplot, ncol = 3,
+                   align = "hv")
+```
+
+This multicellular program majorly explains immune cells
+
+```{r}
+model@cache$variance_explained$r2_per_factor[[1]]["Factor9",] %>%
+  sort(decreasing = T)
+```
+
+# Conclusion
+
+Here we demonstrate how Multicellular Factor Analysis can be used to explore differences across samples with clinically relevant features using tissue-centric descriptions 
