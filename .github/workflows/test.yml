@@ -1,0 +1,16 @@
+name: Test Environment
+on: [push, pull_request]
+jobs:
+  test-env:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Conda
+      uses: conda-incubator/setup-miniconda@v2
+      with:
+        environment-file: environment.yml
+        auto-activate-base: false
+    - name: Test Python Imports
+      run: conda run -n gca python -c "import scanpy, sklearn, numpy, pandas"
+    - name: Test R Imports
+      run: conda run -n gca Rscript -e "library(dplyr); library(Seurat); library(compositions)"
