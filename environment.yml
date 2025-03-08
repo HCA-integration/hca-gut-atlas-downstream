@@ -1,15 +1,15 @@
 name: gca
 channels:
-- conda-forge
-- bioconda
-- defaults
+  - conda-forge
+  - bioconda
+  - defaults
 dependencies:
-- python=3.10
-- r-base=4.4
-- r-dplyr=1.1.4
-- r-seurat=5.2.1
-- r-compositions=2.0
-- scanpy=1.10.4
-- scikit-learn=1.6.0
-- numpy=2.2.3
-- pandas=2.2.3
+  - python=3.10
+  - numpy
+  - r-base
+  - r-dplyr=1.1.4
+  - r-seurat=5.2.1
+  - r-compositions=2.0
+  - scanpy=1.10.4
+  - scikit-learn=1.6.0
+  - pandas=2.2.3
