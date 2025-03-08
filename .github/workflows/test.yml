@@ -11,9 +11,13 @@ jobs:
         activate-environment: gca
         environment-file: environment.yml
         auto-activate-base: false
-    - name: Install Dependencies
+    - name: Update or Create Environment
       run: |
-        conda env create -f environment.yml
+        if conda env list | grep -q 'gca'; then
+          conda env update -n gca -f environment.yml --prune
+        else
+          conda env create -f environment.yml
+        fi
     - name: Test Python Imports
       run: conda run -n gca python -c "import scanpy, sklearn, numpy, pandas"
     - name: Test R Imports
