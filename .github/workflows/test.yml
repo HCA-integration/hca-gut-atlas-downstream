@@ -8,8 +8,12 @@ jobs:
     - name: Setup Conda
       uses: conda-incubator/setup-miniconda@v2
       with:
+        activate-environment: gca
         environment-file: environment.yml
         auto-activate-base: false
+    - name: Install Dependencies
+      run: |
+        conda env create -f environment.yml
     - name: Test Python Imports
       run: conda run -n gca python -c "import scanpy, sklearn, numpy, pandas"
     - name: Test R Imports
