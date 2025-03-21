@@ -1,7 +1,7 @@
 name: Test Environment
 on: [push, pull_request]
 jobs:
-  test-env:
+  test-base-env:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -19,6 +19,6 @@ jobs:
           conda env create -f environment.yml
         fi
     - name: Test Python Imports
-      run: conda run -n gca python -c "import scanpy, sklearn, numpy, pandas"
+      run: conda run -n gca python -c "import scanpy, sklearn, numpy, pandas, decoupler"
     - name: Test R Imports
       run: conda run -n gca Rscript -e "library(dplyr); library(Seurat); library(compositions)"

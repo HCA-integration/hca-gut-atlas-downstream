@@ -4,12 +4,19 @@ channels:
   - bioconda
   - defaults
 dependencies:
-  - python=3.10
+  - python
   - numpy
+  - AnnData
+  - scanpy
+  - pandas
+  - scvi-tools
+  - scikit-learn
+  - jupyter
+  - ipykernel
   - r-base
-  - r-dplyr=1.1.4
-  - r-seurat=5.2.1
-  - r-compositions=2.0
-  - scanpy=1.10.4
-  - scikit-learn=1.6.0
-  - pandas=2.2.3
+  - r-dplyr
+  - r-seurat
+  - r-compositions
+post-link:
+  - echo "alias jupyter='$(which jupyter)'" > $CONDA_PREFIX/etc/conda/activate.d/jupyter_alias.sh
+  - echo "unalias jupyter" > $CONDA_PREFIX/etc/conda/deactivate.d/remove_jupyter_alias.sh

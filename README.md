@@ -4,7 +4,7 @@ The readme below documents locations and versioning for objects used by the HCA 
 
 ## Getting started
 
-We use a Conda environment to control package versions 
+We use two Conda environments to control package versions 
 1. **Install Miniconda (if you don't already have it)**
    - [Miniconda Installation Instructions](https://docs.conda.io/en/latest/miniconda.html)
 
@@ -12,18 +12,23 @@ We use a Conda environment to control package versions
 git clone https://github.com/HCA-integration/hca-gut-atlas-downstream.git
 cd hca-gut-atlas-downstream
 
-3. **Create the environment from `environment.yml`** 
+3. **Create the base environment from `environment.yml`** 
 conda env create -f environment.yml
 
 the yml file details package versions and names the resulting env "gca"
+this environment is used for everything except for decoupler, which requires very specific numpy versioning that breaks sklearn
 
 4. **Activate the new environment**
 conda activate gca
 
-5. **Validate installation (optional)**
-python -c "import scanpy; import numpy; import pandas; print('Python libraries OK')" Rscript -e "library(Seurat); library(dplyr); library(compositions); print('R libraries OK')"
+5. **Validate installation of base env(optional)**
+python -c "import scanpy; import numpy; import pandas; import decoupler as dc; print('Python libraries OK')" Rscript -e "library(Seurat); library(dplyr); library(compositions); print('R libraries OK')"
 
 Once the environment is activated, you’ll have all the packages (R and Python) needed for the project.
+
+6. **If you're a jupyter user, make the environment available to jupyter notebook**
+ python -m ipykernel install --user --name gca --display-name "Python (GCA)"
+ This allows you to explicitly select the environment within jupyter, which can be disconnected from active conda environments on some computers. You may have to install ipykernel first
 
 ## File Descriptions
 
