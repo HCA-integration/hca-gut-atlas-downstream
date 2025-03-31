@@ -31,20 +31,21 @@ Once the environment is activated, you’ll have all the packages (R and Python)
  This allows you to explicitly select the environment within jupyter, which can be disconnected from active conda environments on some computers. You may have to install ipykernel first
 
 ## File Descriptions
+You can find the newest concatenated h5ad and csv files in the working group's Google Drive:
 
-- **`gca_concatenated_anndata_March7_2025.h5ad`**: Initial NON-integrated h5ad object
-- **`gca_concatenated_metadata_March7_2025.csv`**: Cell-level metadata csv for all datasets in the h5ad (also present in anndata.obs in .h5ad above)
+- **`gca_concatenated_anndata_March28_2025.h5ad`**: non-integrated h5ad object with latest version of metadata. This is in the "concatenated_data" folder.
+- **`gca_concatenated_metadata_March28_2025.csv`**: Cell-level metadata csv for all datasets in the h5ad (also present in anndata.obs in .h5ad above). Find the metadata alone in the Google Drive's M Group / concatenated_metadata folder. 
 
 ---
 
 ## Version History
 
-### v0.2 (Initial Release)
+### v0.3 (Initial Release)
 
-**Release Date**: 2025-03-07
+**Release Date**: 2025-03-31
 **Files**:
-- `gca_concatenated_anndata_March7_2025.h5ad`
-- `gca_concatenated_metadata_March7_2025.csv`
+- `gca_concatenated_anndata_March28_2025.h5ad`
+- `gca_concatenated_metadata_March28_2025.csv`
   
 **Changes**:
 - Added several additional datasets for a total of 25
@@ -90,9 +91,8 @@ When you introduce new versions:
 
 ## Download Instructions
 
-- The data files are stored in [our S3 bucket / HPC location / external server].
-- You can pull the latest version via `aws s3 cp s3://bucket/h5ad_version_1.1.h5ad data/` (or other location).
-
+- The data files are stored in our Google Drive. We are currently looking for other easy-to-use storage places where we can store large data files
+- You can pull the latest version via the Google D
 ---
 
 ## Data Integrity Validation
