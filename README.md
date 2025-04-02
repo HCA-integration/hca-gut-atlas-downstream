@@ -92,12 +92,13 @@ When you introduce new versions:
 ## Download Instructions
 
 - The data files are stored in our Google Drive. We are currently looking for other easy-to-use storage places where we can store large data files
-- You can pull the latest version via the Google D
+- You can pull the latest version via the Google Drive - concatenated anndata is in the "concatenated_objects" folder, and a csv of concatenated obs from the anndata (cell-level metadata) is available in the "M_Group/concatenated_metadata" folder. 
+- The latest tables of dataset-level, donor-level, sample-level, and celltype-level metadata are available in the github data folders directly in csv format.
 ---
 
-## Data Integrity Validation
+## Data Integrity Validation - UNDER CONSTRUCTION
 
-- Use [`tests/validate_data_integrity.py`](../tests/test_data_integrity.py) to verify that the H5AD matches expected cell/gene counts and metadata columns.
+- Use [`tests/validate_data_integrity.py`](../tests/test_data_integrity.py) to verify that the H5AD matches expected cell/gene counts and metadata columns. 
 
 ---
 
