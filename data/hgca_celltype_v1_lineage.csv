@@ -1,0 +1,97 @@
+cell_state,plot_lineage,hgca_celltype_level1,hgca_celltype_level2,hgca_celltype_level3,qc_lineage
+Adipocytes,Stromal,Stromal,Adipocytes,nan,Stromal
+Angiogenic Pericytes,Stromal,Stromal,Pericytes,Angiogenic Pericytes,Stromal
+Arteriolar Endothelial,Endothelial,Stromal,Endothelial,Arteriolar Endothelial,Stromal
+BEST4 Colonocytes,Epithelial,Epithelial,Absorptive Epithelial,Colonocytes,Epithelial
+BEST4 Enterocytes,Epithelial,Epithelial,Absorptive Epithelial,Enterocytes,Epithelial
+Brunners Gland Cells,Epithelial,Epithelial,Secretory Epithelial,Brunners Gland Cells,Epithelial
+CD4 Memory,Lymphoid,Lymphoid,T Cells,CD4 T Cells,Lymphoid
+CD4 Naive,Lymphoid,Lymphoid,T Cells,CD4 T Cells,Lymphoid
+CD4 Tfh,Lymphoid,Lymphoid,T Cells,CD4 T Cells,Lymphoid
+CD4 Tfr,Lymphoid,Lymphoid,T Cells,CD4 T Cells,Lymphoid
+CD4 Th17,Lymphoid,Lymphoid,T Cells,CD4 T Cells,Lymphoid
+CD4 Tr1,Lymphoid,Lymphoid,T Cells,CD4 T Cells,Lymphoid
+CD4 pTreg,Lymphoid,Lymphoid,T Cells,CD4 T Cells,Lymphoid
+CD4 tTreg,Lymphoid,Lymphoid,T Cells,CD4 T Cells,Lymphoid
+CD8 Circulating Effector Memory,Lymphoid,Lymphoid,T Cells,CD8 T Cells,Lymphoid
+CD8 Effector Memory,Lymphoid,Lymphoid,T Cells,CD8 T Cells,Lymphoid
+CD8 IEL,Lymphoid,Lymphoid,T Cells,CD8 T Cells,Lymphoid
+CD8 Memory Exhausted,Lymphoid,Lymphoid,T Cells,CD8 T Cells,Lymphoid
+CD8 Naive,Lymphoid,Lymphoid,T Cells,CD8 T Cells,Lymphoid
+CD8 TRM,Lymphoid,Lymphoid,T Cells,CD8 T Cells,Lymphoid
+Capillary Endothelial,Endothelial,Stromal,Endothelial,Capillary Endothelial,Stromal
+Classical Monocytes,Myeloid,Myeloid,Monocytes,Classical Monocytes,Myeloid
+Colonocyte Progenitors,Epithelial,Epithelial,Absorptive Epithelial,Colonocytes,Epithelial
+Contractile Pericytes,Stromal,Stromal,Pericytes,Contractile Pericytes,Stromal
+Crypt Bottom Fibroblasts (S2A),Stromal,Stromal,Fibroblasts,Subepithelial fibroblasts (S2),Stromal
+Crypt Top Colonocytes,Epithelial,Epithelial,Absorptive Epithelial,Colonocytes,Epithelial
+Crypt Top Fibroblasts (S2B),Stromal,Stromal,Fibroblasts,Subepithelial fibroblasts (S2),Stromal
+Cycling Macrophages,Myeloid,Myeloid,Macrophages,Cycling Macrophages,Myeloid
+EEC Enterochromaffin (EC),Epithelial,Epithelial,Enteroendocrine Cells (EEC),Enterochromaffin Cells,Epithelial
+EEC L,Epithelial,Epithelial,Enteroendocrine Cells (EEC),L Cells (PYY+),Epithelial
+EEC N,Epithelial,Epithelial,Enteroendocrine Cells (EEC),N Cells (NTS+),Epithelial
+EEC Progenitors,Epithelial,Epithelial,Enteroendocrine Cells (EEC),EEC Progenitor,Epithelial
+EEC S,Epithelial,Epithelial,Enteroendocrine Cells (EEC),S Cells (SCT+),Epithelial
+Enterocyte Progenitors,Epithelial,Epithelial,Absorptive Epithelial,Enterocytes,Epithelial
+Enteroendocrine Cells (EEC),Epithelial,Epithelial,Enteroendocrine Cells (EEC),nan,Epithelial
+Eosinophils,Myeloid,Myeloid,Granulocytes,Eosinophils,Myeloid
+Epithelial,Epithelial,Epithelial,nan,nan,Stromal
+Fibroblastic Reticular Cells (FRC),Stromal,Stromal,Fibroblasts,Fibroblastic reticular cells (FRC),Stromal
+Follicle Associated Resident Macrophages,Myeloid,Myeloid,Macrophages,Tissue Resident Macrophages,Myeloid
+Follicular Dendritic Cells (fDC),Stromal,Stromal,Fibroblasts,Follicular Dendritic Cells (fDC),Myeloid
+Foveolar Cells,Epithelial,Epithelial,Secretory Epithelial,Foveolar Cells,Epithelial
+GC B Dark Zone (GC B DZ),Lymphoid,Lymphoid,B Cells,Germinal Center B Cells (GC B),Lymphoid
+GC B Light Zone (GC B LZ),Lymphoid,Lymphoid,B Cells,Germinal Center B Cells (GC B),Lymphoid
+Gamma Delta T Cells,Lymphoid,Lymphoid,T Cells,Unconventional T Cells,Lymphoid
+Glia,Glial,Stromal,Glia,nan,Stromal
+Goblet Cells,Epithelial,Epithelial,Secretory Epithelial,Goblet Cells,Epithelial
+Homeostatic Macrophages,Myeloid,Myeloid,Macrophages,Tissue Resident Macrophages,Myeloid
+ILC3,Lymphoid,Lymphoid,Innate Lymphoid Cells (ILC),ILC3,Lymphoid
+Interstitial Cells of Cajal (ICC),Stromal,Stromal,Fibroblasts,Interstitial Cells of Cajal (ICC),Stromal
+Intestinal Stem Cells (ISC),Epithelial,Epithelial,Proliferative Epithelial,Intestinal Stem Cells (ISC),Epithelial
+Lamina propria Fibroblasts (S1),Stromal,Stromal,Fibroblasts,Lamina propria fibroblasts (S1),Stromal
+Lower Crypt Colonocytes,Epithelial,Epithelial,Absorptive Epithelial,Colonocytes,Epithelial
+Lower Villus Enterocytes,Epithelial,Epithelial,Absorptive Epithelial,Enterocytes,Epithelial
+Lymphatic Endothelial,Endothelial,Stromal,Endothelial,Lymphatic Endothelial,Stromal
+M0 Macrophages,Myeloid,Myeloid,Macrophages,Tissue Resident Macrophages,Myeloid
+MAIT Cells,Lymphoid,Lymphoid,T Cells,Unconventional T Cells,Lymphoid
+Marginal Reticular Cells (MRC),Stromal,Stromal,Fibroblasts,Fibroblastic reticular cells (FRC),Stromal
+Mast Cells,Myeloid,Myeloid,Granulocytes,Mast Cells,Myeloid
+Mature Goblet Cells,Epithelial,Epithelial,Secretory Epithelial,Goblet Cells,Epithelial
+Medullary Sinus Endothelial,Endothelial,Stromal,Endothelial,Lymphatic Endothelial,Stromal
+Memory B,Lymphoid,Lymphoid,B Cells,Memory B Cells,Lymphoid
+Mesenchymal Lymphoid Tissue Organizer Cells (mLTo Cells),Stromal,Stromal,Fibroblasts,Mesenchymal Lymphoid Tissue Organizer Cells (mLTo Cells),Stromal
+Microfold Cells (M Cells),Epithelial,Epithelial,Follicle associated enterocyte (FAE),Microfold Cells (M Cells),Epithelial
+Mid Crypt Colonocytes,Epithelial,Epithelial,Absorptive Epithelial,Colonocytes,Epithelial
+Mid Villus Enterocytes,Epithelial,Epithelial,Absorptive Epithelial,Enterocytes,Epithelial
+"Monocyte Derived Dendritic Cells
+(MO DC)",Myeloid,Myeloid,Dendritic Cells,"Monocyte Derived Dendritic Cells
+(MO DC)",Myeloid
+Muscularis Propria Fibroblasts,Stromal,Stromal,Fibroblasts,Muscularis Propria Fibroblasts,Stromal
+Myofibroblasts,Stromal,Stromal,Fibroblasts,Myofibroblasts,Stromal
+NK Cells,Lymphoid,Lymphoid,Innate Lymphoid Cells (ILC),NK Cells,Lymphoid
+NKT Cells,Lymphoid,Lymphoid,T Cells,Unconventional T Cells,Lymphoid
+Naive B,Lymphoid,Lymphoid,B Cells,Naive B Cells,Lymphoid
+Neutrophils,Myeloid,Myeloid,Granulocytes,Neutrophils,Epithelial
+Nonclassical Monocytes,Myeloid,Myeloid,Monocytes,Nonclassical Monocytes,Myeloid
+Paneth Cells,Epithelial,Epithelial,Secretory Epithelial,Paneth Cells,Epithelial
+Perivascular Resident Macrophages,Myeloid,Myeloid,Macrophages,Tissue Resident Macrophages,Myeloid
+Plasma Cells,Lymphoid,Lymphoid,B Cells,Plasma Cells,Lymphoid
+Plasma IGA,Lymphoid,Lymphoid,B Cells,Plasma Cells,Lymphoid
+Plasma IGG,Lymphoid,Lymphoid,B Cells,Plasma Cells,Lymphoid
+Post Arteriole Capillary Endothelial (PAC),Endothelial,Stromal,Endothelial,Capillary Endothelial,Stromal
+Pre Venule Capillary Endothelial (PVC),Endothelial,Stromal,Endothelial,Capillary Endothelial,Stromal
+Secretory Pericytes,Stromal,Stromal,Pericytes,Secretory Pericyte,Stromal
+Secretory Progenitors,Epithelial,Epithelial,Proliferative Epithelial,Transiently Amplifying Cells (TA),Epithelial
+Smooth Muscle Cells (SMC),Stromal,Stromal,Smooth Muscle Cells (SMC),nan,Stromal
+Submucosal Fibroblasts (S3),Stromal,Stromal,Fibroblasts,Submucosal Fibroblasts (Crypt Support/Trophocytes/S3),Stromal
+Tolerogenic cDC2,Myeloid,Myeloid,Dendritic Cells,Conventional Dendritic Cells Type 2 (cDC2),Myeloid
+Transiently Amplifying Cells (TA),Epithelial,Epithelial,Proliferative Epithelial,Transiently Amplifying Cells (TA),Epithelial
+Tuft Cells,Epithelial,Epithelial,Secretory Epithelial,Tuft Cells,Epithelial
+Tuft Progenitors,Epithelial,Epithelial,Secretory Epithelial,Tuft Cells,Epithelial
+Venular Endothelial,Endothelial,Stromal,Endothelial,Venular Endothelial,Stromal
+Villus Tip Enterocytes,Epithelial,Epithelial,Absorptive Epithelial,Enterocytes,Epithelial
+cDC1,Myeloid,Myeloid,Dendritic Cells,Conventional Dendritic Cells Type 1 (cDC1),Myeloid
+cDC2,Myeloid,Myeloid,Dendritic Cells,Conventional Dendritic Cells Type 2 (cDC2),Myeloid
+migDC,Myeloid,Myeloid,Dendritic Cells,Migratory Dendritic Cells (migDC),Myeloid
+pDC,Myeloid,Myeloid,Dendritic Cells,Plasmacytoid Dendritic Cells (pDC),Lymphoid
