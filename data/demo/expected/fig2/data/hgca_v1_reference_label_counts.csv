@@ -1,0 +1,95 @@
+label,n_cells
+CD8 TRM,308
+CD4 Th17,145
+CD8 IEL,144
+Memory B,132
+Plasma IGA,123
+CD4 Memory,122
+Mid Villus Enterocytes,110
+Villus Tip Enterocytes,110
+Goblet Cells,108
+GC B Dark Zone (GC B DZ),98
+Naive B,84
+Plasma Cells,84
+Lower Crypt Colonocytes,83
+Lower Villus Enterocytes,81
+GC B Light Zone (GC B LZ),79
+NKT Cells,69
+CD4 Tfh,67
+CD8 Effector Memory,67
+CD4 Naive,62
+Transiently Amplifying Cells (TA),59
+Submucosal Fibroblasts (S3),58
+BEST4 Colonocytes,55
+BEST4 Enterocytes,47
+Venular Endothelial,46
+CD8 Circulating Effector Memory,45
+Secretory Progenitors,37
+Enterocyte Progenitors,37
+Colonocyte Progenitors,35
+NK Cells,34
+Lamina propria Fibroblasts (S1),33
+ILC3,33
+Mid Crypt Colonocytes,32
+Lymphatic Endothelial,31
+Arteriolar Endothelial,31
+Mature Goblet Cells,29
+Intestinal Stem Cells (ISC),27
+Tuft Cells,23
+M0 Macrophages,23
+CD4 pTreg,21
+CD8 Memory Exhausted,19
+Contractile Pericytes,19
+Crypt Top Colonocytes,18
+Plasma IGG,17
+CD4 tTreg,17
+Gamma Delta T Cells,16
+Mast Cells,14
+Paneth Cells,12
+MAIT Cells,12
+Follicle Associated Resident Macrophages,12
+Tuft Progenitors,12
+cDC2,12
+Brunners Gland Cells,12
+CD4 Tfr,12
+Post Arteriole Capillary Endothelial (PAC),10
+CD8 Naive,9
+Medullary Sinus Endothelial,7
+Cycling Macrophages,6
+Neutrophils,6
+Marginal Reticular Cells (MRC),6
+Eosinophils,6
+Monocyte Derived Dendritic Cells (MO DC),6
+Fibroblastic Reticular Cells (FRC),6
+Epithelial,6
+Adipocytes,6
+EEC Progenitors,6
+Microfold Cells (M Cells),6
+Interstitial Cells of Cajal (ICC),6
+Foveolar Cells,6
+Crypt Bottom Fibroblasts (S2A),6
+Glia,5
+Muscularis Propria Fibroblasts,5
+Classical Monocytes,5
+Homeostatic Macrophages,5
+CD4 Tr1,5
+Myofibroblasts,4
+Perivascular Resident Macrophages,4
+cDC1,4
+EEC L,4
+Nonclassical Monocytes,3
+Angiogenic Pericytes,3
+EEC N,3
+Pre Venule Capillary Endothelial (PVC),3
+Capillary Endothelial,1
+Crypt Top Fibroblasts (S2B),1
+Smooth Muscle Cells (SMC),1
+EEC S,1
+Tolerogenic cDC2,1
+Mesenchymal Lymphoid Tissue Organizer Cells (mLTo Cells),1
+migDC,1
+Follicular Dendritic Cells (fDC),1
+pDC,1
+EEC Enterochromaffin (EC),1
+Enteroendocrine Cells (EEC),1
+Secretory Pericytes,1

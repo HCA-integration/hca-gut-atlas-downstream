@@ -1,0 +1,228 @@
+tissue_level_1,hgca_celltype_v1,n_cells,present
+accessory,BEST4 Colonocytes,3,1
+accessory,Brunners Gland Cells,2,1
+accessory,CD4 Naive,5,1
+accessory,CD4 Th17,2,1
+accessory,CD4 tTreg,1,1
+accessory,CD8 Effector Memory,3,1
+accessory,CD8 IEL,10,1
+accessory,CD8 TRM,2,1
+accessory,Foveolar Cells,6,1
+accessory,GC B Dark Zone (GC B DZ),8,1
+accessory,GC B Light Zone (GC B LZ),2,1
+accessory,Goblet Cells,4,1
+accessory,Memory B,3,1
+accessory,Naive B,2,1
+accessory,Plasma Cells,1,1
+accessory,Plasma IGA,14,1
+colon,Angiogenic Pericytes,1,1
+colon,Arteriolar Endothelial,2,1
+colon,BEST4 Colonocytes,46,1
+colon,BEST4 Enterocytes,5,1
+colon,Brunners Gland Cells,7,1
+colon,CD4 Memory,46,1
+colon,CD4 Naive,15,1
+colon,CD4 Tfh,8,1
+colon,CD4 Tfr,1,1
+colon,CD4 Th17,62,1
+colon,CD4 pTreg,12,1
+colon,CD4 tTreg,4,1
+colon,CD8 Circulating Effector Memory,19,1
+colon,CD8 Effector Memory,20,1
+colon,CD8 IEL,60,1
+colon,CD8 Memory Exhausted,6,1
+colon,CD8 Naive,3,1
+colon,CD8 TRM,22,1
+colon,Classical Monocytes,1,1
+colon,Colonocyte Progenitors,35,1
+colon,Contractile Pericytes,4,1
+colon,Crypt Bottom Fibroblasts (S2A),5,1
+colon,Crypt Top Colonocytes,17,1
+colon,Cycling Macrophages,1,1
+colon,EEC Enterochromaffin (EC),1,1
+colon,EEC L,2,1
+colon,EEC Progenitors,4,1
+colon,Enterocyte Progenitors,2,1
+colon,Enteroendocrine Cells (EEC),1,1
+colon,Eosinophils,4,1
+colon,Epithelial,1,1
+colon,Fibroblastic Reticular Cells (FRC),3,1
+colon,Follicle Associated Resident Macrophages,1,1
+colon,GC B Dark Zone (GC B DZ),42,1
+colon,GC B Light Zone (GC B LZ),36,1
+colon,Gamma Delta T Cells,14,1
+colon,Glia,4,1
+colon,Goblet Cells,51,1
+colon,ILC3,13,1
+colon,Intestinal Stem Cells (ISC),13,1
+colon,Lamina propria Fibroblasts (S1),8,1
+colon,Lower Crypt Colonocytes,83,1
+colon,Lymphatic Endothelial,4,1
+colon,M0 Macrophages,1,1
+colon,MAIT Cells,10,1
+colon,Marginal Reticular Cells (MRC),2,1
+colon,Mast Cells,2,1
+colon,Memory B,54,1
+colon,Microfold Cells (M Cells),1,1
+colon,Mid Crypt Colonocytes,32,1
+colon,Mid Villus Enterocytes,4,1
+colon,Muscularis Propria Fibroblasts,1,1
+colon,Myofibroblasts,2,1
+colon,NK Cells,7,1
+colon,NKT Cells,17,1
+colon,Naive B,42,1
+colon,Perivascular Resident Macrophages,1,1
+colon,Plasma Cells,38,1
+colon,Plasma IGA,82,1
+colon,Plasma IGG,14,1
+colon,Post Arteriole Capillary Endothelial (PAC),2,1
+colon,Secretory Pericytes,1,1
+colon,Secretory Progenitors,12,1
+colon,Submucosal Fibroblasts (S3),1,1
+colon,Transiently Amplifying Cells (TA),6,1
+colon,Tuft Cells,17,1
+colon,Tuft Progenitors,4,1
+colon,Venular Endothelial,4,1
+colon,Villus Tip Enterocytes,7,1
+colon,cDC1,2,1
+colon,cDC2,3,1
+colon,migDC,1,1
+duodenum,Arteriolar Endothelial,2,1
+duodenum,BEST4 Enterocytes,3,1
+duodenum,Brunners Gland Cells,3,1
+duodenum,Contractile Pericytes,2,1
+duodenum,EEC L,2,1
+duodenum,EEC N,1,1
+duodenum,EEC Progenitors,1,1
+duodenum,Enterocyte Progenitors,9,1
+duodenum,Intestinal Stem Cells (ISC),7,1
+duodenum,Lower Villus Enterocytes,40,1
+duodenum,Lymphatic Endothelial,1,1
+duodenum,Mid Villus Enterocytes,37,1
+duodenum,Paneth Cells,1,1
+duodenum,Post Arteriole Capillary Endothelial (PAC),1,1
+duodenum,Transiently Amplifying Cells (TA),6,1
+duodenum,Tuft Cells,2,1
+duodenum,Tuft Progenitors,2,1
+duodenum,Venular Endothelial,3,1
+duodenum,Villus Tip Enterocytes,1,1
+ileum,Adipocytes,6,1
+ileum,Angiogenic Pericytes,2,1
+ileum,Arteriolar Endothelial,24,1
+ileum,BEST4 Colonocytes,6,1
+ileum,BEST4 Enterocytes,37,1
+ileum,CD4 Memory,53,1
+ileum,CD4 Naive,24,1
+ileum,CD4 Tfh,26,1
+ileum,CD4 Tfr,11,1
+ileum,CD4 Th17,63,1
+ileum,CD4 Tr1,4,1
+ileum,CD4 pTreg,8,1
+ileum,CD4 tTreg,9,1
+ileum,CD8 Circulating Effector Memory,19,1
+ileum,CD8 Effector Memory,9,1
+ileum,CD8 IEL,39,1
+ileum,CD8 Memory Exhausted,1,1
+ileum,CD8 Naive,6,1
+ileum,CD8 TRM,149,1
+ileum,Capillary Endothelial,1,1
+ileum,Classical Monocytes,2,1
+ileum,Contractile Pericytes,9,1
+ileum,Crypt Bottom Fibroblasts (S2A),1,1
+ileum,Crypt Top Colonocytes,1,1
+ileum,Crypt Top Fibroblasts (S2B),1,1
+ileum,Cycling Macrophages,4,1
+ileum,EEC N,2,1
+ileum,EEC Progenitors,1,1
+ileum,EEC S,1,1
+ileum,Enterocyte Progenitors,26,1
+ileum,Eosinophils,2,1
+ileum,Epithelial,5,1
+ileum,Fibroblastic Reticular Cells (FRC),3,1
+ileum,Follicle Associated Resident Macrophages,11,1
+ileum,Follicular Dendritic Cells (fDC),1,1
+ileum,GC B Dark Zone (GC B DZ),48,1
+ileum,GC B Light Zone (GC B LZ),41,1
+ileum,Gamma Delta T Cells,2,1
+ileum,Glia,1,1
+ileum,Goblet Cells,53,1
+ileum,Homeostatic Macrophages,3,1
+ileum,ILC3,19,1
+ileum,Interstitial Cells of Cajal (ICC),6,1
+ileum,Intestinal Stem Cells (ISC),7,1
+ileum,Lamina propria Fibroblasts (S1),25,1
+ileum,Lower Villus Enterocytes,39,1
+ileum,Lymphatic Endothelial,15,1
+ileum,M0 Macrophages,22,1
+ileum,MAIT Cells,2,1
+ileum,Marginal Reticular Cells (MRC),4,1
+ileum,Mast Cells,2,1
+ileum,Mature Goblet Cells,29,1
+ileum,Medullary Sinus Endothelial,7,1
+ileum,Memory B,75,1
+ileum,Mesenchymal Lymphoid Tissue Organizer Cells (mLTo Cells),1,1
+ileum,Microfold Cells (M Cells),5,1
+ileum,Mid Villus Enterocytes,56,1
+ileum,Monocyte Derived Dendritic Cells (MO DC),3,1
+ileum,Muscularis Propria Fibroblasts,4,1
+ileum,Myofibroblasts,2,1
+ileum,NK Cells,20,1
+ileum,NKT Cells,47,1
+ileum,Naive B,38,1
+ileum,Neutrophils,6,1
+ileum,Paneth Cells,11,1
+ileum,Perivascular Resident Macrophages,3,1
+ileum,Plasma Cells,45,1
+ileum,Plasma IGA,21,1
+ileum,Plasma IGG,3,1
+ileum,Post Arteriole Capillary Endothelial (PAC),6,1
+ileum,Pre Venule Capillary Endothelial (PVC),3,1
+ileum,Secretory Progenitors,25,1
+ileum,Smooth Muscle Cells (SMC),1,1
+ileum,Submucosal Fibroblasts (S3),42,1
+ileum,Tolerogenic cDC2,1,1
+ileum,Transiently Amplifying Cells (TA),41,1
+ileum,Tuft Cells,4,1
+ileum,Tuft Progenitors,6,1
+ileum,Venular Endothelial,36,1
+ileum,Villus Tip Enterocytes,102,1
+ileum,cDC1,1,1
+ileum,cDC2,9,1
+ileum,pDC,1,1
+jejunum,Arteriolar Endothelial,3,1
+jejunum,BEST4 Enterocytes,2,1
+jejunum,CD4 Memory,23,1
+jejunum,CD4 Tfh,1,1
+jejunum,CD4 Th17,16,1
+jejunum,CD4 pTreg,1,1
+jejunum,CD8 Circulating Effector Memory,3,1
+jejunum,CD8 Effector Memory,35,1
+jejunum,CD8 IEL,35,1
+jejunum,CD8 Memory Exhausted,12,1
+jejunum,CD8 TRM,135,1
+jejunum,Classical Monocytes,2,1
+jejunum,Contractile Pericytes,4,1
+jejunum,Cycling Macrophages,1,1
+jejunum,Homeostatic Macrophages,2,1
+jejunum,ILC3,1,1
+jejunum,Lower Villus Enterocytes,2,1
+jejunum,Lymphatic Endothelial,11,1
+jejunum,Mast Cells,10,1
+jejunum,Mid Villus Enterocytes,13,1
+jejunum,Monocyte Derived Dendritic Cells (MO DC),3,1
+jejunum,NK Cells,7,1
+jejunum,NKT Cells,5,1
+jejunum,Naive B,2,1
+jejunum,Nonclassical Monocytes,3,1
+jejunum,Plasma IGA,6,1
+jejunum,Post Arteriole Capillary Endothelial (PAC),1,1
+jejunum,Submucosal Fibroblasts (S3),15,1
+jejunum,Transiently Amplifying Cells (TA),6,1
+jejunum,Venular Endothelial,3,1
+jejunum,cDC1,1,1
+mesentery,CD4 Naive,18,1
+mesentery,CD4 Tfh,32,1
+mesentery,CD4 Th17,2,1
+mesentery,CD4 Tr1,1,1
+mesentery,CD4 tTreg,3,1
+mesentery,CD8 Circulating Effector Memory,4,1

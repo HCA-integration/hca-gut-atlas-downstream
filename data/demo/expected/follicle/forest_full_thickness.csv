@@ -1,0 +1,181 @@
+celltype,short_name,role,dataset_id,inference,n_A,n_B,delta_CLR,ci_lo,ci_hi,p_value,n_datasets_both_arms,n_datasets_total,is_pooled,arm_mean_CLR,arm_present
+CD4 Tfr,Tfr,featured,ALL (pooled),mixed,36,11,-0.08272730242480325,-0.3749649095031201,0.19390055067300194,0.42860461811363637,1,16,True,,
+CD4 Tfr,Tfr,featured,BasuHelmsley,one-arm (no within-study contrast),1,0,,,,,0,1,False,1.0563579698731815,rest
+CD4 Tfr,Tfr,featured,Dominguez2022,one-arm (no within-study contrast),0,1,,,,,0,1,False,-0.815936181837297,full
+CD4 Tfr,Tfr,featured,Elmentaite2020,within-study,1,8,-1.4250354285155598,,,,1,1,False,,
+CD4 Tfr,Tfr,featured,HamiltonHelmsley,one-arm (no within-study contrast),6,0,,,,,0,1,False,-0.6590628921690909,rest
+CD4 Tfr,Tfr,featured,Huang2019,one-arm (no within-study contrast),1,0,,,,,0,1,False,-1.0407230791518511,rest
+CD4 Tfr,Tfr,featured,Jaeger2021,one-arm (no within-study contrast),2,0,,,,,0,1,False,1.3019472120683704,rest
+CD4 Tfr,Tfr,featured,James2020_3p,one-arm (no within-study contrast),0,2,,,,,0,1,False,-0.5542668044423622,full
+CD4 Tfr,Tfr,featured,Kong2023_v2,one-arm (no within-study contrast),1,0,,,,,0,1,False,-0.6290054464272266,rest
+CD4 Tfr,Tfr,featured,Kong2023_v3,one-arm (no within-study contrast),9,0,,,,,0,1,False,-0.367930703069778,rest
+CD4 Tfr,Tfr,featured,Krzak2023,one-arm (no within-study contrast),4,0,,,,,0,1,False,-0.45600454059291395,rest
+CD4 Tfr,Tfr,featured,Lee2020,one-arm (no within-study contrast),1,0,,,,,0,1,False,-0.9048551636416052,rest
+CD4 Tfr,Tfr,featured,Luoma2020,one-arm (no within-study contrast),2,0,,,,,0,1,False,-1.052952170690325,rest
+CD4 Tfr,Tfr,featured,Martin2019,one-arm (no within-study contrast),1,0,,,,,0,1,False,-0.9650019229730966,rest
+CD4 Tfr,Tfr,featured,Wells2025,one-arm (no within-study contrast),1,0,,,,,0,1,False,-0.4921569937994405,rest
+CD4 Tfr,Tfr,featured,Wells2025_2,one-arm (no within-study contrast),4,0,,,,,0,1,False,-0.6046384047608964,rest
+CD4 Tfr,Tfr,featured,Zheng2024,one-arm (no within-study contrast),2,0,,,,,0,1,False,-0.021683013351886382,rest
+Medullary Sinus Endothelial,Med. sinus endo.,featured,ALL (pooled),mixed,21,9,0.11730983099404514,-0.2881189531582199,0.5728367449084697,1.0,1,9,True,,
+Medullary Sinus Endothelial,Med. sinus endo.,featured,BasuHelmsley,one-arm (no within-study contrast),3,0,,,,,0,1,False,-0.0457755120278382,rest
+Medullary Sinus Endothelial,Med. sinus endo.,featured,Elmentaite2020,within-study,1,9,0.13352507617731144,,,,1,1,False,,
+Medullary Sinus Endothelial,Med. sinus endo.,featured,HamiltonHelmsley,one-arm (no within-study contrast),2,0,,,,,0,1,False,-0.16021429209743296,rest
+Medullary Sinus Endothelial,Med. sinus endo.,featured,Kinchen2018,one-arm (no within-study contrast),2,0,,,,,0,1,False,-0.12508098056472017,rest
+Medullary Sinus Endothelial,Med. sinus endo.,featured,Kong2023_v2,one-arm (no within-study contrast),4,0,,,,,0,1,False,-0.18580528973098842,rest
+Medullary Sinus Endothelial,Med. sinus endo.,featured,Kong2023_v3,one-arm (no within-study contrast),4,0,,,,,0,1,False,-0.0739843682893195,rest
+Medullary Sinus Endothelial,Med. sinus endo.,featured,Lee2020,one-arm (no within-study contrast),1,0,,,,,0,1,False,-0.1831020481113521,rest
+Medullary Sinus Endothelial,Med. sinus endo.,featured,Martin2019,one-arm (no within-study contrast),2,0,,,,,0,1,False,-0.0457755120278382,rest
+Medullary Sinus Endothelial,Med. sinus endo.,featured,Zheng2024,one-arm (no within-study contrast),2,0,,,,,0,1,False,0.26561422669557166,rest
+Follicle Associated Resident Macrophages,FARM,featured,ALL (pooled),between-study,31,8,-0.26718707527804736,-0.503840500357906,-0.055344928865458,0.4935313166556319,0,14,True,,
+Follicle Associated Resident Macrophages,FARM,featured,ArendsHelmsley,one-arm (no within-study contrast),0,3,,,,,0,1,False,-0.09695750729494901,full
+Follicle Associated Resident Macrophages,FARM,featured,BasuHelmsley,one-arm (no within-study contrast),4,0,,,,,0,1,False,0.17286068637214355,rest
+Follicle Associated Resident Macrophages,FARM,featured,Elmentaite2020,one-arm (no within-study contrast),0,3,,,,,0,1,False,-0.0793054685368822,full
+Follicle Associated Resident Macrophages,FARM,featured,He2020,one-arm (no within-study contrast),0,1,,,,,0,1,False,-0.0686632680417576,full
+Follicle Associated Resident Macrophages,FARM,featured,Huang2019,one-arm (no within-study contrast),1,0,,,,,0,1,False,-0.0686632680417576,rest
+Follicle Associated Resident Macrophages,FARM,featured,James2020_3p,one-arm (no within-study contrast),0,1,,,,,0,1,False,-0.0686632680417576,full
+Follicle Associated Resident Macrophages,FARM,featured,Kong2023_v2,one-arm (no within-study contrast),3,0,,,,,0,1,False,-0.1144387800695954,rest
+Follicle Associated Resident Macrophages,FARM,featured,Kong2023_v3,one-arm (no within-study contrast),8,0,,,,,0,1,False,0.1832607642029185,rest
+Follicle Associated Resident Macrophages,FARM,featured,Krzak2023,one-arm (no within-study contrast),4,0,,,,,0,1,False,0.7552959484593249,rest
+Follicle Associated Resident Macrophages,FARM,featured,Lee2020,one-arm (no within-study contrast),1,0,,,,,0,1,False,-0.407169543179533,rest
+Follicle Associated Resident Macrophages,FARM,featured,Luoma2020,one-arm (no within-study contrast),1,0,,,,,0,1,False,-0.0686632680417576,rest
+Follicle Associated Resident Macrophages,FARM,featured,Martin2019,one-arm (no within-study contrast),1,0,,,,,0,1,False,-0.205989804125271,rest
+Follicle Associated Resident Macrophages,FARM,featured,Wells2025_2,one-arm (no within-study contrast),6,0,,,,,0,1,False,-0.16062522241731103,rest
+Follicle Associated Resident Macrophages,FARM,featured,Zheng2024,one-arm (no within-study contrast),2,0,,,,,0,1,False,1.2902214087012798,rest
+Tuft Progenitors,Tuft progenitors,featured,ALL (pooled),mixed,70,17,-0.08610899874308402,-0.2859813184013487,0.1557583521954619,0.013652558439160772,1,15,True,,
+Tuft Progenitors,Tuft progenitors,featured,ArendsHelmsley,one-arm (no within-study contrast),0,3,,,,,0,1,False,0.2755692750376951,full
+Tuft Progenitors,Tuft progenitors,featured,BasuHelmsley,one-arm (no within-study contrast),5,0,,,,,0,1,False,0.15019682547833096,rest
+Tuft Progenitors,Tuft progenitors,featured,Burclaff2022,one-arm (no within-study contrast),4,0,,,,,0,1,False,-0.32818871314586917,rest
+Tuft Progenitors,Tuft progenitors,featured,Elmentaite2020,within-study,1,13,-0.23306491525859502,,,,1,1,False,,
+Tuft Progenitors,Tuft progenitors,featured,HamiltonHelmsley,one-arm (no within-study contrast),12,0,,,,,0,1,False,-0.0620263105726598,rest
+Tuft Progenitors,Tuft progenitors,featured,Huang2019,one-arm (no within-study contrast),1,0,,,,,0,1,False,-0.0392361531667169,rest
+Tuft Progenitors,Tuft progenitors,featured,James2020_5p,one-arm (no within-study contrast),0,1,,,,,0,1,False,1.059376135501393,full
+Tuft Progenitors,Tuft progenitors,featured,Kong2023_v2,one-arm (no within-study contrast),4,0,,,,,0,1,False,-0.2284932458519845,rest
+Tuft Progenitors,Tuft progenitors,featured,Kong2023_v3,one-arm (no within-study contrast),20,0,,,,,0,1,False,0.004046583054749893,rest
+Tuft Progenitors,Tuft progenitors,featured,Krzak2023,one-arm (no within-study contrast),12,0,,,,,0,1,False,-0.09954227641743425,rest
+Tuft Progenitors,Tuft progenitors,featured,Lee2020,one-arm (no within-study contrast),2,0,,,,,0,1,False,-0.09895113473497315,rest
+Tuft Progenitors,Tuft progenitors,featured,Luoma2020,one-arm (no within-study contrast),2,0,,,,,0,1,False,-0.0392361531667169,rest
+Tuft Progenitors,Tuft progenitors,featured,Martin2019,one-arm (no within-study contrast),1,0,,,,,0,1,False,-0.0784723063334373,rest
+Tuft Progenitors,Tuft progenitors,featured,Wang2020,one-arm (no within-study contrast),4,0,,,,,0,1,False,0.2164859945699518,rest
+Tuft Progenitors,Tuft progenitors,featured,Yu2021,one-arm (no within-study contrast),2,0,,,,,0,1,False,1.059376135501393,rest
+BEST4 Enterocytes,BEST4 enterocytes,featured,ALL (pooled),mixed,70,17,0.15251389965465845,-0.24505356385239155,0.6001040442292266,0.526811668941976,1,15,True,,
+BEST4 Enterocytes,BEST4 enterocytes,featured,ArendsHelmsley,one-arm (no within-study contrast),0,3,,,,,0,1,False,-0.09063482118500803,full
+BEST4 Enterocytes,BEST4 enterocytes,featured,BasuHelmsley,one-arm (no within-study contrast),5,0,,,,,0,1,False,0.574249532718349,rest
+BEST4 Enterocytes,BEST4 enterocytes,featured,Burclaff2022,one-arm (no within-study contrast),4,0,,,,,0,1,False,-0.11636424804906831,rest
+BEST4 Enterocytes,BEST4 enterocytes,featured,Elmentaite2020,within-study,1,13,0.3570039179231065,,,,1,1,False,,
+BEST4 Enterocytes,BEST4 enterocytes,featured,HamiltonHelmsley,one-arm (no within-study contrast),12,0,,,,,0,1,False,0.07209351546351517,rest
+BEST4 Enterocytes,BEST4 enterocytes,featured,Huang2019,one-arm (no within-study contrast),1,0,,,,,0,1,False,1.059376135501393,rest
+BEST4 Enterocytes,BEST4 enterocytes,featured,James2020_5p,one-arm (no within-study contrast),0,1,,,,,0,1,False,-0.0392361531667169,full
+BEST4 Enterocytes,BEST4 enterocytes,featured,Kong2023_v2,one-arm (no within-study contrast),4,0,,,,,0,1,False,-0.2284932458519845,rest
+BEST4 Enterocytes,BEST4 enterocytes,featured,Kong2023_v3,one-arm (no within-study contrast),20,0,,,,,0,1,False,0.17680981320137149,rest
+BEST4 Enterocytes,BEST4 enterocytes,featured,Krzak2023,one-arm (no within-study contrast),12,0,,,,,0,1,False,-0.1910933004731101,rest
+BEST4 Enterocytes,BEST4 enterocytes,featured,Lee2020,one-arm (no within-study contrast),2,0,,,,,0,1,False,-0.09895113473497315,rest
+BEST4 Enterocytes,BEST4 enterocytes,featured,Luoma2020,one-arm (no within-study contrast),2,0,,,,,0,1,False,-0.0392361531667169,rest
+BEST4 Enterocytes,BEST4 enterocytes,featured,Martin2019,one-arm (no within-study contrast),1,0,,,,,0,1,False,-0.0784723063334373,rest
+BEST4 Enterocytes,BEST4 enterocytes,featured,Wang2020,one-arm (no within-study contrast),4,0,,,,,0,1,False,0.2164859945699518,rest
+BEST4 Enterocytes,BEST4 enterocytes,featured,Yu2021,one-arm (no within-study contrast),2,0,,,,,0,1,False,-0.0392361531667169,rest
+BEST4 Colonocytes,BEST4 colonocytes,featured,ALL (pooled),mixed,70,17,0.18134448557572372,-0.23956151269757495,0.6857531401201392,0.563804472090611,1,15,True,,
+BEST4 Colonocytes,BEST4 colonocytes,featured,ArendsHelmsley,one-arm (no within-study contrast),0,3,,,,,0,1,False,-0.09063482118500803,full
+BEST4 Colonocytes,BEST4 colonocytes,featured,BasuHelmsley,one-arm (no within-study contrast),5,0,,,,,0,1,False,0.574249532718349,rest
+BEST4 Colonocytes,BEST4 colonocytes,featured,Burclaff2022,one-arm (no within-study contrast),4,0,,,,,0,1,False,0.5459381772207508,rest
+BEST4 Colonocytes,BEST4 colonocytes,featured,Elmentaite2020,within-study,1,13,0.45704650502554606,,,,1,1,False,,
+BEST4 Colonocytes,BEST4 colonocytes,featured,HamiltonHelmsley,one-arm (no within-study contrast),12,0,,,,,0,1,False,0.34674658763054267,rest
+BEST4 Colonocytes,BEST4 colonocytes,featured,Huang2019,one-arm (no within-study contrast),1,0,,,,,0,1,False,-0.0392361531667169,rest
+BEST4 Colonocytes,BEST4 colonocytes,featured,James2020_5p,one-arm (no within-study contrast),0,1,,,,,0,1,False,-0.0392361531667169,full
+BEST4 Colonocytes,BEST4 colonocytes,featured,Kong2023_v2,one-arm (no within-study contrast),4,0,,,,,0,1,False,-0.2284932458519845,rest
+BEST4 Colonocytes,BEST4 colonocytes,featured,Kong2023_v3,one-arm (no within-study contrast),20,0,,,,,0,1,False,-0.10581464581206106,rest
+BEST4 Colonocytes,BEST4 colonocytes,featured,Krzak2023,one-arm (no within-study contrast),12,0,,,,,0,1,False,0.15416792672618432,rest
+BEST4 Colonocytes,BEST4 colonocytes,featured,Lee2020,one-arm (no within-study contrast),2,0,,,,,0,1,False,-0.09895113473497315,rest
+BEST4 Colonocytes,BEST4 colonocytes,featured,Luoma2020,one-arm (no within-study contrast),2,0,,,,,0,1,False,0.5100699911673381,rest
+BEST4 Colonocytes,BEST4 colonocytes,featured,Martin2019,one-arm (no within-study contrast),1,0,,,,,0,1,False,-0.0784723063334373,rest
+BEST4 Colonocytes,BEST4 colonocytes,featured,Wang2020,one-arm (no within-study contrast),4,0,,,,,0,1,False,-0.0581670775970757,rest
+BEST4 Colonocytes,BEST4 colonocytes,featured,Yu2021,one-arm (no within-study contrast),2,0,,,,,0,1,False,-0.0392361531667169,rest
+Lamina propria Fibroblasts (S1),S1 fibroblasts,negative_control,ALL (pooled),mixed,21,9,-0.007972882761821065,-0.7632797207863631,0.8229089958579929,0.5156983940653587,1,9,True,,
+Lamina propria Fibroblasts (S1),S1 fibroblasts,negative_control,BasuHelmsley,one-arm (no within-study contrast),3,0,,,,,0,1,False,-0.0457755120278382,rest
+Lamina propria Fibroblasts (S1),S1 fibroblasts,negative_control,Elmentaite2020,within-study,1,9,0.367116835678803,,,,1,1,False,,
+Lamina propria Fibroblasts (S1),S1 fibroblasts,negative_control,HamiltonHelmsley,one-arm (no within-study contrast),2,0,,,,,0,1,False,-0.16021429209743296,rest
+Lamina propria Fibroblasts (S1),S1 fibroblasts,negative_control,Kinchen2018,one-arm (no within-study contrast),2,0,,,,,0,1,False,-0.12508098056472017,rest
+Lamina propria Fibroblasts (S1),S1 fibroblasts,negative_control,Kong2023_v2,one-arm (no within-study contrast),4,0,,,,,0,1,False,0.491207260544564,rest
+Lamina propria Fibroblasts (S1),S1 fibroblasts,negative_control,Kong2023_v3,one-arm (no within-study contrast),4,0,,,,,0,1,False,0.603028181986233,rest
+Lamina propria Fibroblasts (S1),S1 fibroblasts,negative_control,Lee2020,one-arm (no within-study contrast),1,0,,,,,0,1,False,-0.1831020481113521,rest
+Lamina propria Fibroblasts (S1),S1 fibroblasts,negative_control,Martin2019,one-arm (no within-study contrast),2,0,,,,,0,1,False,-0.0457755120278382,rest
+Lamina propria Fibroblasts (S1),S1 fibroblasts,negative_control,Zheng2024,one-arm (no within-study contrast),2,0,,,,,0,1,False,1.3257459947956172,rest
+Goblet Cells,Goblet cells,negative_control,ALL (pooled),mixed,70,17,-0.2627410012120709,-0.6760563316979965,0.26465097407739213,0.00271465278783155,1,15,True,,
+Goblet Cells,Goblet cells,negative_control,ArendsHelmsley,one-arm (no within-study contrast),0,3,,,,,0,1,False,0.9823237871043923,full
+Goblet Cells,Goblet cells,negative_control,BasuHelmsley,one-arm (no within-study contrast),5,0,,,,,0,1,False,-0.06952563225529106,rest
+Goblet Cells,Goblet cells,negative_control,Burclaff2022,one-arm (no within-study contrast),4,0,,,,,0,1,False,0.7303379130034455,rest
+Goblet Cells,Goblet cells,negative_control,Elmentaite2020,within-study,1,13,-0.06404764007888585,,,,1,1,False,,
+Goblet Cells,Goblet cells,negative_control,HamiltonHelmsley,one-arm (no within-study contrast),12,0,,,,,0,1,False,0.29776436555536595,rest
+Goblet Cells,Goblet cells,negative_control,Huang2019,one-arm (no within-study contrast),1,0,,,,,0,1,False,-0.0392361531667169,rest
+Goblet Cells,Goblet cells,negative_control,James2020_5p,one-arm (no within-study contrast),0,1,,,,,0,1,False,-0.0392361531667169,full
+Goblet Cells,Goblet cells,negative_control,Kong2023_v2,one-arm (no within-study contrast),4,0,,,,,0,1,False,-0.2284932458519845,rest
+Goblet Cells,Goblet cells,negative_control,Kong2023_v3,one-arm (no within-study contrast),20,0,,,,,0,1,False,0.3514754467298695,rest
+Goblet Cells,Goblet cells,negative_control,Krzak2023,one-arm (no within-study contrast),12,0,,,,,0,1,False,0.6055096269098861,rest
+Goblet Cells,Goblet cells,negative_control,Lee2020,one-arm (no within-study contrast),2,0,,,,,0,1,False,1.3176555372931347,rest
+Goblet Cells,Goblet cells,negative_control,Luoma2020,one-arm (no within-study contrast),2,0,,,,,0,1,False,-0.0392361531667169,rest
+Goblet Cells,Goblet cells,negative_control,Martin2019,one-arm (no within-study contrast),1,0,,,,,0,1,False,-0.0784723063334373,rest
+Goblet Cells,Goblet cells,negative_control,Wang2020,one-arm (no within-study contrast),4,0,,,,,0,1,False,0.7465518786199744,rest
+Goblet Cells,Goblet cells,negative_control,Yu2021,one-arm (no within-study contrast),2,0,,,,,0,1,False,-0.0392361531667169,rest
+Villus Tip Enterocytes,Villus-tip enterocytes,negative_control,ALL (pooled),mixed,70,17,-0.36261525687609675,-0.68213573838832,0.02049478456651056,0.00013480786442301957,1,15,True,,
+Villus Tip Enterocytes,Villus-tip enterocytes,negative_control,ArendsHelmsley,one-arm (no within-study contrast),0,3,,,,,0,1,False,-0.09063482118500803,full
+Villus Tip Enterocytes,Villus-tip enterocytes,negative_control,BasuHelmsley,one-arm (no within-study contrast),5,0,,,,,0,1,False,-0.06952563225529106,rest
+Villus Tip Enterocytes,Villus-tip enterocytes,negative_control,Burclaff2022,one-arm (no within-study contrast),4,0,,,,,0,1,False,0.07417076496265583,rest
+Villus Tip Enterocytes,Villus-tip enterocytes,negative_control,Elmentaite2020,within-study,1,13,-0.04861143273564349,,,,1,1,False,,
+Villus Tip Enterocytes,Villus-tip enterocytes,negative_control,HamiltonHelmsley,one-arm (no within-study contrast),12,0,,,,,0,1,False,0.12107573753869177,rest
+Villus Tip Enterocytes,Villus-tip enterocytes,negative_control,Huang2019,one-arm (no within-study contrast),1,0,,,,,0,1,False,-0.0392361531667169,rest
+Villus Tip Enterocytes,Villus-tip enterocytes,negative_control,James2020_5p,one-arm (no within-study contrast),0,1,,,,,0,1,False,-0.0392361531667169,full
+Villus Tip Enterocytes,Villus-tip enterocytes,negative_control,Kong2023_v2,one-arm (no within-study contrast),4,0,,,,,0,1,False,1.349440456436244,rest
+Villus Tip Enterocytes,Villus-tip enterocytes,negative_control,Kong2023_v3,one-arm (no within-study contrast),20,0,,,,,0,1,False,0.5659918430124341,rest
+Villus Tip Enterocytes,Villus-tip enterocytes,negative_control,Krzak2023,one-arm (no within-study contrast),12,0,,,,,0,1,False,0.16869737565491583,rest
+Villus Tip Enterocytes,Villus-tip enterocytes,negative_control,Lee2020,one-arm (no within-study contrast),2,0,,,,,0,1,False,-0.09895113473497315,rest
+Villus Tip Enterocytes,Villus-tip enterocytes,negative_control,Luoma2020,one-arm (no within-study contrast),2,0,,,,,0,1,False,-0.0392361531667169,rest
+Villus Tip Enterocytes,Villus-tip enterocytes,negative_control,Martin2019,one-arm (no within-study contrast),1,0,,,,,0,1,False,-0.0784723063334373,rest
+Villus Tip Enterocytes,Villus-tip enterocytes,negative_control,Wang2020,one-arm (no within-study contrast),4,0,,,,,0,1,False,-0.0581670775970757,rest
+Villus Tip Enterocytes,Villus-tip enterocytes,negative_control,Yu2021,one-arm (no within-study contrast),2,0,,,,,0,1,False,-0.0392361531667169,rest
+CD8 IEL,CD8 IEL,negative_control,ALL (pooled),mixed,36,11,0.2636890042559594,-0.5172139835858977,1.0143330654343206,0.6241149561615238,1,16,True,,
+CD8 IEL,CD8 IEL,negative_control,BasuHelmsley,one-arm (no within-study contrast),1,0,,,,,0,1,False,-0.042254318794928,rest
+CD8 IEL,CD8 IEL,negative_control,Dominguez2022,one-arm (no within-study contrast),0,1,,,,,0,1,False,-0.815936181837297,full
+CD8 IEL,CD8 IEL,negative_control,Elmentaite2020,within-study,1,8,1.3515102939260184,,,,1,1,False,,
+CD8 IEL,CD8 IEL,negative_control,HamiltonHelmsley,one-arm (no within-study contrast),6,0,,,,,0,1,False,1.0894411388614154,rest
+CD8 IEL,CD8 IEL,negative_control,Huang2019,one-arm (no within-study contrast),1,0,,,,,0,1,False,0.0578892095162584,rest
+CD8 IEL,CD8 IEL,negative_control,Jaeger2021,one-arm (no within-study contrast),2,0,,,,,0,1,False,-0.0520778884827346,rest
+CD8 IEL,CD8 IEL,negative_control,James2020_3p,one-arm (no within-study contrast),0,2,,,,,0,1,False,-0.5542668044423622,full
+CD8 IEL,CD8 IEL,negative_control,Kong2023_v2,one-arm (no within-study contrast),1,0,,,,,0,1,False,-0.6290054464272266,rest
+CD8 IEL,CD8 IEL,negative_control,Kong2023_v3,one-arm (no within-study contrast),9,0,,,,,0,1,False,0.5442146760021039,rest
+CD8 IEL,CD8 IEL,negative_control,Krzak2023,one-arm (no within-study contrast),4,0,,,,,0,1,False,-0.32829813465141644,rest
+CD8 IEL,CD8 IEL,negative_control,Lee2020,one-arm (no within-study contrast),1,0,,,,,0,1,False,-0.9048551636416052,rest
+CD8 IEL,CD8 IEL,negative_control,Luoma2020,one-arm (no within-study contrast),2,0,,,,,0,1,False,0.695301610042915,rest
+CD8 IEL,CD8 IEL,negative_control,Martin2019,one-arm (no within-study contrast),1,0,,,,,0,1,False,0.1336103656950129,rest
+CD8 IEL,CD8 IEL,negative_control,Wells2025,one-arm (no within-study contrast),1,0,,,,,0,1,False,1.7050675835367786,rest
+CD8 IEL,CD8 IEL,negative_control,Wells2025_2,one-arm (no within-study contrast),4,0,,,,,0,1,False,1.5642951501253006,rest
+CD8 IEL,CD8 IEL,negative_control,Zheng2024,one-arm (no within-study contrast),2,0,,,,,0,1,False,0.2722103190991729,rest
+Homeostatic Macrophages,Homeostatic mac.,negative_control,ALL (pooled),between-study,31,8,0.08277409732187474,-0.14924476304135348,0.3728034311089708,0.773262288967739,0,14,True,,
+Homeostatic Macrophages,Homeostatic mac.,negative_control,ArendsHelmsley,one-arm (no within-study contrast),0,3,,,,,0,1,False,-0.09695750729494901,full
+Homeostatic Macrophages,Homeostatic mac.,negative_control,BasuHelmsley,one-arm (no within-study contrast),4,0,,,,,0,1,False,-0.1017923857948838,rest
+Homeostatic Macrophages,Homeostatic mac.,negative_control,Elmentaite2020,one-arm (no within-study contrast),0,3,,,,,0,1,False,0.28689862768582114,full
+Homeostatic Macrophages,Homeostatic mac.,negative_control,He2020,one-arm (no within-study contrast),0,1,,,,,0,1,False,-0.0686632680417576,full
+Homeostatic Macrophages,Homeostatic mac.,negative_control,Huang2019,one-arm (no within-study contrast),1,0,,,,,0,1,False,-0.0686632680417576,rest
+Homeostatic Macrophages,Homeostatic mac.,negative_control,James2020_3p,one-arm (no within-study contrast),0,1,,,,,0,1,False,-0.0686632680417576,full
+Homeostatic Macrophages,Homeostatic mac.,negative_control,Kong2023_v2,one-arm (no within-study contrast),3,0,,,,,0,1,False,-0.1144387800695954,rest
+Homeostatic Macrophages,Homeostatic mac.,negative_control,Kong2023_v3,one-arm (no within-study contrast),8,0,,,,,0,1,False,-0.017918974851344083,rest
+Homeostatic Macrophages,Homeostatic mac.,negative_control,Krzak2023,one-arm (no within-study contrast),4,0,,,,,0,1,False,-0.0686632680417576,rest
+Homeostatic Macrophages,Homeostatic mac.,negative_control,Lee2020,one-arm (no within-study contrast),1,0,,,,,0,1,False,-0.407169543179533,rest
+Homeostatic Macrophages,Homeostatic mac.,negative_control,Luoma2020,one-arm (no within-study contrast),1,0,,,,,0,1,False,-0.0686632680417576,rest
+Homeostatic Macrophages,Homeostatic mac.,negative_control,Martin2019,one-arm (no within-study contrast),1,0,,,,,0,1,False,0.8926224845428383,rest
+Homeostatic Macrophages,Homeostatic mac.,negative_control,Wells2025_2,one-arm (no within-study contrast),6,0,,,,,0,1,False,0.10761442965503902,rest
+Homeostatic Macrophages,Homeostatic mac.,negative_control,Zheng2024,one-arm (no within-study contrast),2,0,,,,,0,1,False,-0.3576970243008848,rest
+Paneth Cells,Paneth cells,negative_control,ALL (pooled),mixed,70,17,-0.22746175844066202,-0.36717678324141284,-0.10139192592892166,0.007858905395042054,1,15,True,,
+Paneth Cells,Paneth cells,negative_control,ArendsHelmsley,one-arm (no within-study contrast),0,3,,,,,0,1,False,-0.09063482118500803,full
+Paneth Cells,Paneth cells,negative_control,BasuHelmsley,one-arm (no within-study contrast),5,0,,,,,0,1,False,0.15019682547833096,rest
+Paneth Cells,Paneth cells,negative_control,Burclaff2022,one-arm (no within-study contrast),4,0,,,,,0,1,False,-0.32818871314586906,rest
+Paneth Cells,Paneth cells,negative_control,Elmentaite2020,within-study,1,13,-1.331677203926705,,,,1,1,False,,
+Paneth Cells,Paneth cells,negative_control,HamiltonHelmsley,one-arm (no within-study contrast),12,0,,,,,0,1,False,-0.15357733462833564,rest
+Paneth Cells,Paneth cells,negative_control,Huang2019,one-arm (no within-study contrast),1,0,,,,,0,1,False,-0.0392361531667169,rest
+Paneth Cells,Paneth cells,negative_control,James2020_5p,one-arm (no within-study contrast),0,1,,,,,0,1,False,-0.0392361531667169,full
+Paneth Cells,Paneth cells,negative_control,Kong2023_v2,one-arm (no within-study contrast),4,0,,,,,0,1,False,0.5326373635788713,rest
+Paneth Cells,Paneth cells,negative_control,Kong2023_v3,one-arm (no within-study contrast),20,0,,,,,0,1,False,0.0040465830547499245,rest
+Paneth Cells,Paneth cells,negative_control,Krzak2023,one-arm (no within-study contrast),12,0,,,,,0,1,False,-0.007991252361758478,rest
+Paneth Cells,Paneth cells,negative_control,Lee2020,one-arm (no within-study contrast),2,0,,,,,0,1,False,-0.09895113473497315,rest
+Paneth Cells,Paneth cells,negative_control,Luoma2020,one-arm (no within-study contrast),2,0,,,,,0,1,False,-0.0392361531667169,rest
+Paneth Cells,Paneth cells,negative_control,Martin2019,one-arm (no within-study contrast),1,0,,,,,0,1,False,-0.0784723063334373,rest
+Paneth Cells,Paneth cells,negative_control,Wang2020,one-arm (no within-study contrast),4,0,,,,,0,1,False,-0.0581670775970757,rest
+Paneth Cells,Paneth cells,negative_control,Yu2021,one-arm (no within-study contrast),2,0,,,,,0,1,False,-0.0392361531667169,rest

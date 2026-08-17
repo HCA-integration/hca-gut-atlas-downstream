@@ -1,0 +1,13 @@
+celltype,short_name,n_donors,n_samples,n_multi_sample_donors,max_samples_per_donor,mean_samples_per_donor,frac_samples_from_multi
+CD4 Tfr,Tfr,41,47,4,4,1.146341463414634,0.2127659574468085
+Medullary Sinus Endothelial,Med. sinus endo.,21,30,3,5,1.4285714285714286,0.4
+Follicle Associated Resident Macrophages,FARM,37,39,2,2,1.054054054054054,0.10256410256410256
+Tuft Progenitors,Tuft progenitors,70,87,9,6,1.2428571428571429,0.2988505747126437
+BEST4 Enterocytes,BEST4 enterocytes,70,87,9,6,1.2428571428571429,0.2988505747126437
+BEST4 Colonocytes,BEST4 colonocytes,70,87,9,6,1.2428571428571429,0.2988505747126437
+Lamina propria Fibroblasts (S1),S1 fibroblasts,21,30,3,5,1.4285714285714286,0.4
+Goblet Cells,Goblet cells,70,87,9,6,1.2428571428571429,0.2988505747126437
+Villus Tip Enterocytes,Villus-tip enterocytes,70,87,9,6,1.2428571428571429,0.2988505747126437
+CD8 IEL,CD8 IEL,41,47,4,4,1.146341463414634,0.2127659574468085
+Homeostatic Macrophages,Homeostatic mac.,37,39,2,2,1.054054054054054,0.10256410256410256
+Paneth Cells,Paneth cells,70,87,9,6,1.2428571428571429,0.2988505747126437

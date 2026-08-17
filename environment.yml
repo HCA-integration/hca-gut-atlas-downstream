@@ -1,22 +1,8 @@
-name: gca
+name: hgca-downstream
 channels:
   - conda-forge
-  - bioconda
-  - defaults
 dependencies:
-  - python
-  - numpy
-  - AnnData
-  - scanpy
-  - pandas
-  - scvi-tools
-  - scikit-learn
-  - jupyter
-  - ipykernel
-  - r-base
-  - r-dplyr
-  - r-seurat
-  - r-compositions
-post-link:
-  - echo "alias jupyter='$(which jupyter)'" > $CONDA_PREFIX/etc/conda/activate.d/jupyter_alias.sh
-  - echo "unalias jupyter" > $CONDA_PREFIX/etc/conda/deactivate.d/remove_jupyter_alias.sh
+  - python=3.12
+  - pip
+  - pip:
+      - -r requirements.txt

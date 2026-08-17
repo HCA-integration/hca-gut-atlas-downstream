@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+title: "Human Gut Cell Atlas v1 downstream analyses"
+message: If you use this software, please cite the HGCA v1 paper and this repository.
+type: software
+license: MIT
+repository-code: https://github.com/HCA-integration/hca-gut-atlas-downstream
+keywords:
+  - single-cell
+  - gut
+  - cell atlas
+  - composition
+abstract: >
+  Downstream analysis code and a laptop-scale demo slice for
+  The Human Gut Cell Atlas v1.0. Demo results are for software
+  checking, not manuscript figures.

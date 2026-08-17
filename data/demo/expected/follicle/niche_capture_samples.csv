@@ -1,0 +1,129 @@
+sample_id,donor_id,dataset_id,segment,radial_layer,context,collection,sample_total_cells,detect_GC,n_support,detect_fDC,detect_Tfh,detect_Tfr,niche_primary,niche_strict,niche_loose
+4918STDY7923744,T182,Elmentaite2020,ileum,EPI_LP,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+Burclaff2022_donor1_duodenum,Burclaff2022_donor1,Burclaff2022,duodenum,EPI,not_full_thickness,surgical resection,60.0,False,0,False,False,False,False,False,False
+Burclaff2022_donor2_ascending-colon,Burclaff2022_donor2,Burclaff2022,colon,EPI,not_full_thickness,surgical resection,60.0,False,0,False,False,False,False,False,False
+Burclaff2022_donor2_descending-colon,Burclaff2022_donor2,Burclaff2022,colon,EPI,not_full_thickness,surgical resection,60.0,False,0,False,False,False,False,False,False
+Burclaff2022_donor2_duodenum,Burclaff2022_donor2,Burclaff2022,duodenum,EPI,not_full_thickness,surgical resection,1.0,False,0,False,False,False,False,False,False
+GSM3584931,FA602_FA604,Huang2019,colon,EPI_LP,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+GSM3587010,D3_54M_Wang2020,Wang2020,colon,EPI,not_full_thickness,surgical resection,1.0,False,0,False,False,False,False,False,False
+GSM3587011,D2_67F_Wang2020,Wang2020,colon,EPI,not_full_thickness,surgical resection,1.0,False,0,False,False,False,False,False,False
+GSM3587012,D4_66F_Wang2020,Wang2020,colon,EPI,not_full_thickness,surgical resection,1.0,False,0,False,False,False,False,False,False
+GSM3587013,D5_50F_Wang2020,Wang2020,colon,EPI,not_full_thickness,surgical resection,12.0,False,0,False,False,False,False,False,False
+GSM3972021,patient12_Martin2019,Martin2019,ileum,EPI_LP,not_full_thickness,surgical resection,60.0,False,0,False,False,False,False,False,False
+H110216_E,110216,Kong2023_v3,ileum,EPI,not_full_thickness,biopsy,60.0,False,0,False,False,False,False,False,False
+H157844_L,157844,Kong2023_v3,ileum,LP,not_full_thickness,biopsy,60.0,False,1,False,True,False,False,False,False
+H158108_N1,158108,Kong2023_v2,ileum,EPI_LP,not_full_thickness,biopsy,64.0,True,0,False,False,False,False,False,True
+H158160_E,158160,Kong2023_v3,ileum,EPI,not_full_thickness,biopsy,60.0,False,0,False,False,False,False,False,False
+H18,H18,Krzak2023,ileum,EPI_LP,not_full_thickness,biopsy,63.0,True,0,False,False,False,False,False,True
+H180749_E,180749,Kong2023_v3,ileum,EPI,not_full_thickness,biopsy,2.0,False,0,False,False,False,False,False,False
+H180749_L,180749,Kong2023_v3,ileum,LP,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+H180844_N4,180844,Kong2023_v2,ileum,EPI_LP,not_full_thickness,biopsy,60.0,False,0,False,False,False,False,False,False
+H2,H2,Krzak2023,ileum,EPI_LP,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+H20,H20,Krzak2023,ileum,EPI_LP,not_full_thickness,biopsy,12.0,False,0,False,False,False,False,False,False
+H3,H3,Krzak2023,ileum,EPI_LP,not_full_thickness,biopsy,2.0,False,0,False,False,False,False,False,False
+H30,H30,Krzak2023,ileum,EPI_LP,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+H42,H42,Krzak2023,ileum,EPI_LP,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+H46,H46,Krzak2023,ileum,EPI_LP,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+H52,H52,Krzak2023,ileum,EPI_LP,not_full_thickness,biopsy,60.0,False,0,False,False,False,False,False,False
+H54,H54,Krzak2023,ileum,EPI_LP,not_full_thickness,biopsy,61.0,True,1,False,True,False,True,False,True
+H57,H57,Krzak2023,ileum,EPI_LP,not_full_thickness,biopsy,2.0,False,0,False,False,False,False,False,False
+H6,H6,Krzak2023,ileum,EPI_LP,not_full_thickness,biopsy,60.0,True,0,False,False,False,False,False,True
+H9,H9,Krzak2023,ileum,EPI_LP,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+HA08-TI,HA08,BasuHelmsley,ileum,WM,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+HA14-TI,HA14,BasuHelmsley,ileum,WM,not_full_thickness,biopsy,12.0,False,0,False,False,False,False,False,False
+HA41-TI,HA41,BasuHelmsley,ileum,WM,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+HA51-TI,HA51,BasuHelmsley,ileum,WM,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+HA52-AC,HA52,BasuHelmsley,colon,WM,not_full_thickness,biopsy,15.0,False,0,False,False,False,False,False,False
+HT-185-Adult-duo,HT-185,Yu2021,duodenum,EPI_LP,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+HT-188-Adult-Duo,HT-188,Yu2021,duodenum,EPI_LP,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+Helm_CH_7045_RC_Epi,7045,HamiltonHelmsley,colon,EPI,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+Helm_CH_7090_RC_Epi,7090,HamiltonHelmsley,colon,EPI,not_full_thickness,biopsy,4.0,False,0,False,False,False,False,False,False
+Helm_CH_7131_RC_Epi,7131,HamiltonHelmsley,colon,EPI,not_full_thickness,biopsy,2.0,False,0,False,False,False,False,False,False
+Helm_CH_7142_RC_Epi,7142,HamiltonHelmsley,colon,EPI,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+Helm_CH_7142_RC_Str,7142,HamiltonHelmsley,colon,LP,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+Helm_CH_7175_RC_Epi,7175,HamiltonHelmsley,colon,EPI,not_full_thickness,biopsy,60.0,False,0,False,False,False,False,False,False
+Helm_I3_5242_RC_Epi,5242,HamiltonHelmsley,colon,EPI,not_full_thickness,biopsy,12.0,False,0,False,False,False,False,False,False
+Helm_I3_5243_RC_Epi,5243,HamiltonHelmsley,colon,EPI,not_full_thickness,biopsy,60.0,False,0,False,False,False,False,False,False
+Helm_I3_5245_RC_Epi,5245,HamiltonHelmsley,colon,EPI,not_full_thickness,biopsy,2.0,False,0,False,False,False,False,False,False
+Helm_I3_5249_RC_Epi,5249,HamiltonHelmsley,colon,EPI,not_full_thickness,biopsy,60.0,True,0,False,False,False,False,False,True
+Helm_I3_5249_RC_Str,5249,HamiltonHelmsley,colon,LP,not_full_thickness,biopsy,61.0,True,0,False,False,False,False,False,True
+Helm_I3_5250_RC_Str,5250,HamiltonHelmsley,colon,LP,not_full_thickness,biopsy,2.0,False,0,False,False,False,False,False,False
+Human_colon_16S8000489,A34_417C,Elmentaite2020,jejunum,EPI_LP_MUSC,full_thickness,surgical resection,60.0,False,0,False,False,False,False,False,False
+Human_colon_16S8000493,A34_417C,Elmentaite2020,ileum,EPI_LP_MUSC,full_thickness,surgical resection,60.0,False,0,False,False,False,False,False,False
+Human_colon_16S8000511,A32_411C,Elmentaite2020,colon,EPI_LP_MUSC,full_thickness,surgical resection,60.0,False,0,False,False,False,False,False,False
+Human_colon_16S8000513,A32_411C,Elmentaite2020,ileum,EPI_LP_MUSC,full_thickness,surgical resection,60.0,False,0,False,False,False,False,False,False
+Human_colon_16S8000515,A32_411C,Elmentaite2020,ileum,EPI_LP_MUSC,full_thickness,surgical resection,60.0,False,0,False,False,False,False,False,False
+Human_colon_16S8001865,A32_411C,Elmentaite2020,colon,EPI_LP_MUSC,full_thickness,surgical resection,60.0,False,0,False,False,False,False,False,False
+Human_colon_16S8001869,A34_417C,Elmentaite2020,colon,EPI_LP_MUSC,full_thickness,surgical resection,60.0,True,0,False,False,False,False,False,True
+Human_colon_16S8001878,A34_417C,Elmentaite2020,duodenum,EPI_LP_MUSC,full_thickness,surgical resection,60.0,False,0,False,False,False,False,False,False
+Human_colon_16S8001879,A34_417C,Elmentaite2020,duodenum,EPI_LP_MUSC,full_thickness,surgical resection,1.0,False,0,False,False,False,False,False,False
+Human_colon_16S8001883,A34_417C,Elmentaite2020,ileum,EPI_LP_MUSC,full_thickness,surgical resection,60.0,False,0,False,False,False,False,False,False
+Human_colon_16S8002629,A38_432C,Elmentaite2020,colon,EPI_LP_MUSC,full_thickness,surgical resection,12.0,False,0,False,False,False,False,False,False
+N109389_L3,109389,Kong2023_v3,ileum,LP,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+N119540_L2,119540,Kong2023_v3,ileum,LP,not_full_thickness,biopsy,61.0,True,1,False,True,False,True,False,True
+N125985_L2,125985,Kong2023_v3,ileum,LP,not_full_thickness,biopsy,2.0,False,0,False,False,False,False,False,False
+N130064_N1,130064,Kong2023_v2,ileum,EPI_LP,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+N134300_L,134300,Kong2023_v2,ileum,LP,not_full_thickness,biopsy,2.0,False,0,False,False,False,False,False,False
+N148519_E1,148519,Kong2023_v3,ileum,EPI,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+N148824_E1,148824,Kong2023_v3,ileum,EPI,not_full_thickness,biopsy,10.0,False,0,False,False,False,False,False,False
+N165697_E2,165697,Kong2023_v3,ileum,EPI,not_full_thickness,biopsy,60.0,False,0,False,False,False,False,False,False
+N168051_E1,168051,Kong2023_v3,ileum,EPI,not_full_thickness,biopsy,60.0,False,0,False,False,False,False,False,False
+N168051_L1,168051,Kong2023_v3,ileum,LP,not_full_thickness,biopsy,61.0,False,0,False,False,False,False,False,False
+N168051_L2,168051,Kong2023_v3,ileum,LP,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+N171336_L1,171336,Kong2023_v3,ileum,LP,not_full_thickness,biopsy,60.0,False,0,False,False,False,False,False,False
+N171336_L2,171336,Kong2023_v3,ileum,LP,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+N172428_E2,172428,Kong2023_v3,ileum,EPI,not_full_thickness,biopsy,60.0,True,0,False,False,False,False,False,True
+N174364_L2,174364,Kong2023_v3,ileum,LP,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+N191305_L1,191305,Kong2023_v3,ileum,LP,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+N192985_L,192985,Kong2023_v3,ileum,LP,not_full_thickness,biopsy,12.0,False,0,False,False,False,False,False,False
+NC1_CD45,NC1,Luoma2020,colon,EPI_LP,not_full_thickness,biopsy,60.0,True,0,False,False,False,False,False,True
+NC2_CD45,NC2,Luoma2020,colon,EPI_LP,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+Pan_T7935488,A29_390C,James2020_5p,colon,EPI_LP_MUSC,full_thickness,surgical resection,1.0,False,0,False,False,False,False,False,False
+SR1803_20221111_004_N_E,SR1803_20221111_004_N_E,ArendsHelmsley,ileum,EPI_LP_MUSC,full_thickness,surgical resection,3.0,False,0,False,False,False,False,False,False
+SR1803_20221207_006_N_E,SR1803_20221207_006_N_E,ArendsHelmsley,ileum,EPI_LP_MUSC,full_thickness,surgical resection,14.0,False,0,False,False,False,False,False,False
+SR1803_20230131_007_N_E,SR1803_20230131_007_N_E,ArendsHelmsley,ileum,EPI_LP_MUSC,full_thickness,surgical resection,5.0,False,0,False,False,False,False,False,False
+scrEXT017,SC024,Lee2020,colon,EPI_LP,not_full_thickness,surgical resection,65.0,True,1,False,True,False,True,False,True
+scrEXT032,SC031,Lee2020,colon,EPI_LP,not_full_thickness,surgical resection,8.0,False,0,False,False,False,False,False,False
+4861STDY7208414,A7_298C,James2020_3p,colon,EPI_LP_MUSC,full_thickness,surgical resection,60.0,False,0,False,False,False,False,False,False
+4918STDY7333456,T036,Elmentaite2020,ileum,EPI_LP,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+640C-JEJLP-127,640C,Wells2025,jejunum,LP,not_full_thickness,surgical resection,60.0,False,0,False,False,False,False,False,False
+647C-JEJLP-144,647C,Wells2025_2,jejunum,LP,not_full_thickness,surgical resection,60.0,False,0,False,False,False,False,False,False
+768B-JEJEPI-277,768B,Wells2025_2,jejunum,EPI,not_full_thickness,surgical resection,60.0,False,0,False,False,False,False,False,False
+CT3_CD45,CT3,Luoma2020,colon,EPI_LP,not_full_thickness,biopsy,60.0,True,0,False,False,False,False,False,True
+D512-JEJEPI-1,D512,Wells2025_2,jejunum,EPI,not_full_thickness,surgical resection,61.0,False,0,False,False,False,False,False,False
+D533-JEJLP-1,D533,Wells2025_2,jejunum,LP,not_full_thickness,surgical resection,60.0,False,0,False,False,False,False,False,False
+GSM3584930,FA602_FA604,Huang2019,colon,EPI_LP,not_full_thickness,biopsy,60.0,True,0,False,False,False,False,False,True
+GSM4766839,7420_Jaeger2021,Jaeger2021,ileum,LP,not_full_thickness,surgical resection,2.0,False,0,False,False,False,False,False,False
+GSM4766840,1425_Jaeger2021,Jaeger2021,ileum,LP,not_full_thickness,surgical resection,1.0,False,0,False,False,False,False,False,False
+HA11-TI,HA11,BasuHelmsley,ileum,WM,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+Helm_CH_7109_RC_Str,7109,HamiltonHelmsley,colon,LP,not_full_thickness,biopsy,60.0,True,0,False,False,False,False,False,True
+Helm_I3_5246_RC_Str,5246,HamiltonHelmsley,colon,LP,not_full_thickness,biopsy,60.0,False,0,False,False,False,False,False,False
+Pan_T8010320,A37_428C,Dominguez2022,ileum,EPI_LP_MUSC,full_thickness,surgical resection,60.0,False,0,False,False,False,False,False,False
+WTDAtest7844024,A33_414C,Elmentaite2020,colon,EPI_LP_MUSC,full_thickness,surgical resection,3.0,False,0,False,False,False,False,False,False
+p023_T0D_ILE_LPS_3p,p023,Zheng2024,ileum,LP,not_full_thickness,biopsy,62.0,True,2,False,True,False,True,False,True
+p050_T0D_ILE_LPS_3p,p050,Zheng2024,ileum,LP,not_full_thickness,biopsy,61.0,True,0,False,False,False,False,False,True
+778C-JEJLP-296,778C,Wells2025_2,jejunum,LP,not_full_thickness,surgical resection,1.0,False,0,False,False,False,False,False,False
+D523-JEJLP-1,D523,Wells2025_2,jejunum,LP,not_full_thickness,surgical resection,1.0,False,0,False,False,False,False,False,False
+D564-JEJLP-1,D564,Wells2025_2,jejunum,LP,not_full_thickness,surgical resection,1.0,False,0,False,False,False,False,False,False
+GSM4850586,donor1_He2020,He2020,colon,EPI_LP_MUSC,full_thickness,surgical resection,1.0,False,0,False,False,False,False,False,False
+H10,H10,Krzak2023,ileum,EPI_LP,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+H101694_L,101694,Kong2023_v3,ileum,LP,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+H152638_L,152638,Kong2023_v3,ileum,LP,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+H17,H17,Krzak2023,ileum,EPI_LP,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+H35,H35,Krzak2023,ileum,EPI_LP,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+HA01-AC,HA01,BasuHelmsley,colon,WM,not_full_thickness,biopsy,2.0,False,0,False,False,False,False,False,False
+HA01-TI,HA01,BasuHelmsley,ileum,WM,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+HA02-TI,HA02,BasuHelmsley,ileum,WM,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+N119540_E2,119540,Kong2023_v3,ileum,EPI,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+N148519_L2,148519,Kong2023_v3,ileum,LP,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+4918STDY7714149,T036,Elmentaite2020,ileum,EPI_LP,not_full_thickness,biopsy,2.0,False,0,False,False,False,False,False,False
+GSM3140593,S7 (S90),Kinchen2018,colon,EPI_LP,not_full_thickness,biopsy,4.0,False,0,False,False,False,False,False,False
+GSM3140594,S8 (S66),Kinchen2018,colon,EPI_LP,not_full_thickness,biopsy,2.0,False,0,False,False,False,False,False,False
+GSM3972023,patient13_Martin2019,Martin2019,ileum,EPI_LP,not_full_thickness,surgical resection,1.0,False,0,False,False,False,False,False,False
+H158108_N2,158108,Kong2023_v2,ileum,EPI_LP,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+H158108_N3,158108,Kong2023_v2,ileum,EPI_LP,not_full_thickness,biopsy,2.0,False,0,False,False,False,False,False,False
+HA41-AC,HA41,BasuHelmsley,colon,WM,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+HA49-AC,HA49,BasuHelmsley,colon,WM,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+HA50-AC,HA50,BasuHelmsley,colon,WM,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+N148519_L1,148519,Kong2023_v3,ileum,LP,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False
+N195045_L2,195045,Kong2023_v3,ileum,LP,not_full_thickness,biopsy,1.0,False,0,False,False,False,False,False,False

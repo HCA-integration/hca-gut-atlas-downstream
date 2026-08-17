@@ -1,0 +1,95 @@
+celltype,lineage,is_follicle_tlo
+BEST4 Colonocytes,epithelial,False
+BEST4 Enterocytes,epithelial,False
+Brunners Gland Cells,epithelial,False
+Colonocyte Progenitors,epithelial,False
+Crypt Top Colonocytes,epithelial,False
+EEC Enterochromaffin (EC),epithelial,False
+EEC L,epithelial,False
+EEC N,epithelial,False
+EEC Progenitors,epithelial,False
+EEC S,epithelial,False
+Enterocyte Progenitors,epithelial,False
+Enteroendocrine Cells (EEC),epithelial,False
+Epithelial,epithelial,False
+Foveolar Cells,epithelial,False
+Goblet Cells,epithelial,False
+Intestinal Stem Cells (ISC),epithelial,False
+Lower Crypt Colonocytes,epithelial,False
+Lower Villus Enterocytes,epithelial,False
+Mature Goblet Cells,epithelial,False
+Microfold Cells (M Cells),epithelial,False
+Mid Crypt Colonocytes,epithelial,False
+Mid Villus Enterocytes,epithelial,False
+Paneth Cells,epithelial,False
+Secretory Progenitors,epithelial,False
+Transiently Amplifying Cells (TA),epithelial,False
+Tuft Cells,epithelial,False
+Tuft Progenitors,epithelial,False
+Villus Tip Enterocytes,epithelial,False
+CD4 Memory,lymphoid,False
+CD4 Naive,lymphoid,False
+CD4 Tfh,lymphoid,True
+CD4 Tfr,lymphoid,True
+CD4 Th17,lymphoid,False
+CD4 Tr1,lymphoid,False
+CD4 pTreg,lymphoid,False
+CD4 tTreg,lymphoid,False
+CD8 Circulating Effector Memory,lymphoid,False
+CD8 Effector Memory,lymphoid,False
+CD8 IEL,lymphoid,False
+CD8 Memory Exhausted,lymphoid,False
+CD8 Naive,lymphoid,False
+CD8 TRM,lymphoid,False
+GC B Dark Zone (GC B DZ),lymphoid,True
+GC B Light Zone (GC B LZ),lymphoid,True
+Gamma Delta T Cells,lymphoid,False
+ILC3,lymphoid,False
+MAIT Cells,lymphoid,False
+Memory B,lymphoid,False
+NK Cells,lymphoid,False
+NKT Cells,lymphoid,False
+Naive B,lymphoid,False
+Plasma Cells,lymphoid,False
+Plasma IGA,lymphoid,False
+Plasma IGG,lymphoid,False
+Classical Monocytes,myeloid,False
+Cycling Macrophages,myeloid,False
+Eosinophils,myeloid,False
+Follicle Associated Resident Macrophages,myeloid,True
+Homeostatic Macrophages,myeloid,False
+M0 Macrophages,myeloid,False
+Mast Cells,myeloid,False
+Monocyte Derived Dendritic Cells (MO DC),myeloid,False
+Neutrophils,myeloid,False
+Nonclassical Monocytes,myeloid,False
+Perivascular Resident Macrophages,myeloid,True
+Tolerogenic cDC2,myeloid,False
+cDC1,myeloid,False
+cDC2,myeloid,False
+migDC,myeloid,False
+pDC,myeloid,False
+Adipocytes,stroma,False
+Angiogenic Pericytes,stroma,False
+Arteriolar Endothelial,stroma,False
+Capillary Endothelial,stroma,False
+Contractile Pericytes,stroma,False
+Crypt Bottom Fibroblasts (S2A),stroma,False
+Crypt Top Fibroblasts (S2B),stroma,False
+Fibroblastic Reticular Cells (FRC),stroma,True
+Follicular Dendritic Cells (fDC),stroma,True
+Glia,stroma,False
+Interstitial Cells of Cajal (ICC),stroma,False
+Lamina propria Fibroblasts (S1),stroma,False
+Lymphatic Endothelial,stroma,True
+Marginal Reticular Cells (MRC),stroma,True
+Medullary Sinus Endothelial,stroma,True
+Mesenchymal Lymphoid Tissue Organizer Cells (mLTo Cells),stroma,True
+Muscularis Propria Fibroblasts,stroma,False
+Myofibroblasts,stroma,False
+Post Arteriole Capillary Endothelial (PAC),stroma,False
+Pre Venule Capillary Endothelial (PVC),stroma,False
+Secretory Pericytes,stroma,False
+Smooth Muscle Cells (SMC),stroma,False
+Submucosal Fibroblasts (S3),stroma,False
+Venular Endothelial,stroma,False

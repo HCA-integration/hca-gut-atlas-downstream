@@ -1,0 +1,34 @@
+segment,radial_layer,dataset_id,n_samples,n_pos,capture_rate,ci_lo,ci_hi,collection
+colon,EPI,Burclaff2022,2,0,0.0,0.0,0.657619772493347,surgical resection
+colon,EPI,HamiltonHelmsley,9,0,0.0,2.7755575615628914e-17,0.29914504841954415,biopsy
+colon,EPI,Wang2020,4,0,0.0,0.0,0.4898908364545974,surgical resection
+colon,EPI_LP,Huang2019,2,0,0.0,0.0,0.657619772493347,biopsy
+colon,EPI_LP,Kinchen2018,2,0,0.0,0.0,0.657619772493347,biopsy
+colon,EPI_LP,Lee2020,2,1,0.5,0.09453120573423068,0.9054687942657693,surgical resection
+colon,EPI_LP,Luoma2020,3,0,0.0,0.0,0.5614970317550455,biopsy
+colon,EPI_LP_MUSC,Elmentaite2020,5,0,0.0,0.0,0.43448246478317487,surgical resection
+colon,EPI_LP_MUSC,He2020,1,0,0.0,0.0,0.7934506856227627,surgical resection
+colon,EPI_LP_MUSC,James2020_3p,1,0,0.0,0.0,0.7934506856227627,surgical resection
+colon,EPI_LP_MUSC,James2020_5p,1,0,0.0,0.0,0.7934506856227627,surgical resection
+colon,LP,HamiltonHelmsley,5,0,0.0,0.0,0.43448246478317487,biopsy
+colon,WM,BasuHelmsley,5,0,0.0,0.0,0.43448246478317487,biopsy
+duodenum,EPI,Burclaff2022,2,0,0.0,0.0,0.657619772493347,surgical resection
+duodenum,EPI_LP,Yu2021,2,0,0.0,0.0,0.657619772493347,biopsy
+duodenum,EPI_LP_MUSC,Elmentaite2020,2,0,0.0,0.0,0.657619772493347,surgical resection
+ileum,EPI,Kong2023_v3,9,0,0.0,2.7755575615628914e-17,0.29914504841954415,biopsy
+ileum,EPI_LP,Elmentaite2020,3,0,0.0,0.0,0.5614970317550455,biopsy
+ileum,EPI_LP,Kong2023_v2,5,0,0.0,0.0,0.43448246478317487,biopsy
+ileum,EPI_LP,Krzak2023,15,1,0.06666666666666667,0.011866895493268553,0.2981652987378003,biopsy
+ileum,EPI_LP,Martin2019,2,0,0.0,0.0,0.657619772493347,surgical resection
+ileum,EPI_LP_MUSC,ArendsHelmsley,3,0,0.0,0.0,0.5614970317550455,surgical resection
+ileum,EPI_LP_MUSC,Dominguez2022,1,0,0.0,0.0,0.7934506856227627,surgical resection
+ileum,EPI_LP_MUSC,Elmentaite2020,4,0,0.0,0.0,0.4898908364545974,surgical resection
+ileum,LP,Jaeger2021,2,0,0.0,0.0,0.657619772493347,surgical resection
+ileum,LP,Kong2023_v2,1,0,0.0,0.0,0.7934506856227627,biopsy
+ileum,LP,Kong2023_v3,17,1,0.058823529411764705,0.010460400984997592,0.26982030637575405,biopsy
+ileum,LP,Zheng2024,2,1,0.5,0.09453120573423068,0.9054687942657693,biopsy
+ileum,WM,BasuHelmsley,7,0,0.0,2.7755575615628914e-17,0.3543304350666875,biopsy
+jejunum,EPI,Wells2025_2,2,0,0.0,0.0,0.657619772493347,surgical resection
+jejunum,EPI_LP_MUSC,Elmentaite2020,1,0,0.0,0.0,0.7934506856227627,surgical resection
+jejunum,LP,Wells2025,1,0,0.0,0.0,0.7934506856227627,surgical resection
+jejunum,LP,Wells2025_2,5,0,0.0,0.0,0.43448246478317487,surgical resection
