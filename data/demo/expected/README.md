@@ -1,9 +1,12 @@
-# Expected demo outputs
+# Local demo outputs
 
-Fingerprints from `python software/src/run_demo.py` on the bundled
-slice. **Not manuscript figures.**
+`python src/run_demo.py` writes tables and plots here. This directory is
+gitignored except for this README.
 
-A clean clone should reproduce the CSV shapes and the smoke-test
-counts (94 ileum collection MWU tests; 17 samples with ≥3 GC B cells).
-Exact p-values can move with library versions; treat large shape or
-column-name changes as a real failure.
+**Not manuscript figures.** A successful run should print 94 ileum
+collection Mann–Whitney tests and 17 samples with ≥3 GC B cells. Exact
+p-values can move with library versions.
+
+Also written locally: Fig. 1 / Fig. 2 tables, Theil’s U, ED Table 1
+counts, compositional correlations (many pairs fail support gates on
+the slice), and a taxonomy path-distance smoke.

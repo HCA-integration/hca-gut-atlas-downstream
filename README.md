@@ -44,8 +44,8 @@ python src/run_demo.py
 | | |
 |---|---|
 | Input | `data/demo/hgca_all_lineages_v1_demo.h5ad` (3,185 cells, 94 types) |
-| Expected output | `data/demo/expected/` — donor-age counts, CLR + MWU tables, follicle niche rates, Figure 2 sidecar CSVs |
-| Runtime | about 20 seconds on a laptop |
+| Expected output | Local `data/demo/expected/` (gitignored) plus the smoke-test line: 94 ileum MWU tests and 17 samples with ≥3 GC B cells |
+| Runtime | about 30 seconds on a laptop |
 
 The smoke test `python src/smoke_demo_slice.py` is a shorter check: it
 should report 94 Mann–Whitney tests on ileum biopsy vs resection and 17
@@ -82,18 +82,28 @@ optional for review.
 ## Repository layout
 
 ```
-data/demo/                 bundled slice + expected demo tables
-src/run_demo.py            one-command laptop check
-analyses/fig1_donor_age    Figure 1 donor-age counts
-analyses/fig2_label_set    Figure 2 metadata / author-crosswalk tables
+data/demo/                      bundled slice + companion CSVs
+src/run_demo.py                 one-command laptop check
+analyses/fig1_donor_age         Figure 1 donor-age counts
+analyses/fig2_label_set         Figure 2 metadata / author-crosswalk tables
 analyses/fig_sampling_depth_radial
-                           Figure 3 CLR, contrasts, follicle niche
+                                Figure 3 CLR, contrasts, follicle, Theil’s U
+analyses/supp5compositionalCorrelations
+                                Supp. Fig. 11 correlations
+analyses/supp_table_datasets    ED Table 1 live counts
+analyses/reference_uncertainty  Frozen SCANVI recipes + taxonomy-path smoke
+analyses/visium_cell2location   Supp. Fig. 9 notebooks (not a laptop demo)
+analyses/fig4_hgca_taurus_refinement
+                                Figure 4a–b (needs TAURUS obs)
+analyses/fig5_organoid_benchmark
+                                Figure 5 (needs frozen HEOCA files)
+analyses/s7_prepub_contributions
+                                Supp. Fig. 6 (needs lineage objects)
 ```
 
-This first publication cut covers the analyses that already have a
-laptop demo. Additional paper analyses (organoid benchmark, LIANA,
-Visium, Xenium, mapping) live in sibling repositories or will be added
-from the local publication tree.
+See [docs/CHECKLIST.md](docs/CHECKLIST.md) for package status and
+[docs/related-repositories.md](docs/related-repositories.md) for
+collaborator code that is still outside this tree.
 
 ## License
 

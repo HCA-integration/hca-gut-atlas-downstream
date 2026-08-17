@@ -443,11 +443,11 @@ def run_niche_capture(d: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, pd.D
 
     sample = meta.set_index("sample_id")
     sample = sample.join(piv.add_prefix("n_"), how="left").fillna(0)
-    sample["detect_GC"] = gc.reindex(sample.index).fillna(False).astype(bool)
-    sample["n_support"] = support_n.reindex(sample.index).fillna(0).astype(int)
-    sample["detect_fDC"] = fdc.reindex(sample.index).fillna(False).astype(bool)
-    sample["detect_Tfh"] = tfh.reindex(sample.index).fillna(False).astype(bool)
-    sample["detect_Tfr"] = tfr.reindex(sample.index).fillna(False).astype(bool)
+    sample["detect_GC"] = gc.reindex(sample.index, fill_value=False).astype(bool)
+    sample["n_support"] = support_n.reindex(sample.index, fill_value=0).astype(int)
+    sample["detect_fDC"] = fdc.reindex(sample.index, fill_value=False).astype(bool)
+    sample["detect_Tfh"] = tfh.reindex(sample.index, fill_value=False).astype(bool)
+    sample["detect_Tfr"] = tfr.reindex(sample.index, fill_value=False).astype(bool)
     sample["niche_primary"] = sample["detect_GC"] & (sample["n_support"] >= MIN_SUPPORT_TYPES)
     sample["niche_strict"] = sample["detect_GC"] & sample["detect_fDC"]
     sample["niche_loose"] = sample["detect_GC"] | (

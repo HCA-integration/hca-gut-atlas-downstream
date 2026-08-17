@@ -1,0 +1,21 @@
+{
+  "frozen_utc": "2026-08-08T18:45:00Z",
+  "before_any_jackknife_results": true,
+  "source_table": "fig_identity_state_hgca_pangi_v1/out/tables/A_lodo_paired_summary.csv",
+  "resolution": "broad_family",
+  "comparison": "native_taxonomies",
+  "delta_macro_f1_hgca_minus_pangi": {
+    "stroma": 0.209,
+    "myeloid": 0.275,
+    "epithelial": 0.33,
+    "lymphoid": 0.024
+  },
+  "prediction": "If LODO measures genuine reference-coordinate robustness, HGCA should show a larger jackknife-stability advantage over PanGI in stroma/myeloid/epithelial than in lymphoid. Lymphoid is the prespecified near-null control (broad-family CI crosses 0).",
+  "primary_jackknife_summaries": [
+    "median_stable_naming_depth",
+    "median_leaf_agreement",
+    "median_tree_distance",
+    "sample_level_composition_displacement"
+  ],
+  "note": "Do not modify this prediction after seeing jackknife results."
+}

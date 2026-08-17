@@ -1,0 +1,91 @@
+{
+  "frozen_utc": "2026-08-09T02:50:00Z",
+  "lineage": "myeloid",
+  "purpose": "Freeze project-matched full-reference SCANVI recipes for myeloid reference jackknife. Do not redesign for performance or matching.",
+  "sources_verified_from_code": [
+    "reference_mapping_benchmark/configs/myeloid.yaml",
+    "reference_mapping_benchmark/configs/pangi_myeloid.yaml",
+    "reference_mapping_benchmark/scripts/train_pangi_full_reference.py",
+    "reference_mapping_benchmark/notebooks/04_train_full_models.ipynb",
+    "reference_uncertainty/configs/stroma_scanvi_recipe_frozen.json"
+  ],
+  "shared_preprocess": {
+    "gene_filter_min_cells": 10,
+    "normalization_target_sum": 10000,
+    "hvg_count": 4000,
+    "counts_layer": "counts",
+    "n_latent": 30,
+    "n_layers": 2,
+    "dropout_rate": 0.1,
+    "gene_likelihood": "nb",
+    "n_epochs": 10,
+    "batch_size": 256,
+    "early_stopping": false,
+    "unlabeled_category": "Unknown"
+  },
+  "PanGI": {
+    "reference_h5ad": "reference_uncertainty/data/pangi_healthy_full.h5ad",
+    "lineage_subset": {
+      "column": "level_1_annot",
+      "values": ["Myeloid"]
+    },
+    "n_cells_expected": 33213,
+    "labels_key": "level_3_annot",
+    "n_labels_expected": 16,
+    "batch_key": "sampleID",
+    "study_key": "study",
+    "counts_source": ".raw.X integer counts",
+    "model_class": "direct SCANVI from scratch (no scVI pretraining)",
+    "use_scvi_pretrain": false,
+    "note": "pangi_myeloid.yaml LODO uses frozen latents; jackknife uses full SCANVI retrain matching stroma PanGI recipe"
+  },
+  "HGCA": {
+    "reference_h5ad": "reference_uncertainty/data/hgca_myeloid.h5ad",
+    "n_cells_expected": 50296,
+    "labels_key": "hgca_celltype_v1",
+    "n_labels_expected": 16,
+    "exclude_labels": [],
+    "batch_key": "sample_id",
+    "study_key": "dataset_id",
+    "model_class": "SCANVI with scVI pretrain (myeloid.yaml / notebook 04 parity)",
+    "use_scvi_pretrain": true,
+    "scvi_epochs": 10,
+    "scanvi_epochs": 10
+  },
+  "paired_shared_studies_exact_name": [
+    "Dominguez2022",
+    "Huang2019",
+    "Lee2020",
+    "Martin2019",
+    "Uzzan2022",
+    "Yu2021"
+  ],
+  "screening_design": {
+    "full_seeds": 3,
+    "omit_seeds": 1,
+    "backfill_if_A_or_strong_B": {
+      "full_seeds": 10,
+      "omit_seeds": 3
+    }
+  },
+  "unavoidable_implementation_differences": [
+    {
+      "item": "scVI pretraining",
+      "HGCA": true,
+      "PanGI": false,
+      "action": "Do not redesign. Document in all comparative claims."
+    },
+    {
+      "item": "reference size",
+      "HGCA": 50296,
+      "PanGI": 33213,
+      "action": "Report omission fractions; size-adjust instability contrasts."
+    }
+  ],
+  "forbidden_changes": [
+    "Do not enable MapQC",
+    "Do not use pangi_myeloid.yaml frozen-latent LODO recipe for jackknife training",
+    "Do not change HVG count, epochs, latent dim, or likelihood to chase performance",
+    "Do not discard model checkpoints"
+  ]
+}

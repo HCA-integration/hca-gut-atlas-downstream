@@ -12,9 +12,11 @@ Other Code Availability entries are separate:
 | [scAtlasTb](https://github.com/HCA-integration/scAtlasTb) | Integration method benchmark |
 
 Atlas construction (QC, scVI, scAtlasTb recipes), Xenium Segger/resolVI,
-and TAURUS Milo/SampleCLR are collaborator packages and are not in this
-tree. Visium cell2location notebooks and segment GO scripts are still
-being collected.
+TAURUS Milo/SampleCLR, LIANA, and segment GO are still collaborator
+packages. Visium cell2location notebooks are in
+`analyses/visium_cell2location` but are not a laptop demo (Sanger `/nfs`
+paths; GPU). Frozen SCANVI recipes for the mapping jackknife are in
+`analyses/reference_uncertainty`.
 
 A DOI for a tagged release (Zenodo) is required at publication, not at
 initial review.

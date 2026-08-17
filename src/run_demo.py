@@ -81,10 +81,65 @@ def main() -> int:
             str(EXPECTED / "follicle"),
         ]
     )
+    run(
+        [
+            sys.executable,
+            str(
+                ANALYSES
+                / "fig_sampling_depth_radial"
+                / "revision"
+                / "src"
+                / "08_theils_u_heatmap.py"
+            ),
+            "--h5ad",
+            str(DEMO),
+            "--outdir",
+            str(EXPECTED / "theils_u"),
+        ]
+    )
+    run(
+        [
+            sys.executable,
+            str(ANALYSES / "supp_table_datasets" / "src" / "build_supp_table_datasets.py"),
+            "--h5ad",
+            str(DEMO),
+            "--outdir",
+            str(EXPECTED / "tables"),
+        ]
+    )
+    run(
+        [
+            sys.executable,
+            str(
+                ANALYSES
+                / "supp5compositionalCorrelations"
+                / "src"
+                / "compute_compositional_correlations.py"
+            ),
+            "--clr-long",
+            str(EXPECTED / "clr" / "clr_long.csv"),
+            "--lineage-map",
+            str(EXPECTED / "clr" / "celltype_lineage_map.csv"),
+            "--outdir",
+            str(EXPECTED / "correlations"),
+        ]
+    )
+    run(
+        [
+            sys.executable,
+            str(ANALYSES / "reference_uncertainty" / "src" / "smoke_taxonomy_paths.py"),
+            "--taxonomy",
+            str(TAX),
+            "--h5ad",
+            str(DEMO),
+            "--outdir",
+            str(EXPECTED / "mapping"),
+        ]
+    )
 
     elapsed = time.time() - t0
     print(f"\nDemo finished in {elapsed:.0f}s. Outputs under {EXPECTED}")
-    print("Compare donor-age, CLR, and follicle tables to the checked-in expected/ copies.")
+    print("Wrote local demo tables under data/demo/expected/ (gitignored; not paper results).")
     return 0
 
 
