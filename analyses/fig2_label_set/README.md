@@ -12,6 +12,10 @@ Input: all-cells h5ad and the taxonomy CSV. Required obs columns include
 Script: `src/build_fig2_atlas_evidence.py`
 
 Output: sidecar CSVs under the figure directory (`data/` and `out/`).
+The compositional enrichment table (`mean_clr` plus display-only
+`row_z`) is also checked in at
+[`data/fig2/celltype_compositional_enrichment_long.csv`](../../data/fig2/README.md)
+and is the input for the Figure 3a heatmap.
 
 ```bash
 python analyses/fig2_label_set/src/build_fig2_atlas_evidence.py \
@@ -24,4 +28,10 @@ python analyses/fig2_label_set/src/build_fig2_atlas_evidence.py \
 fixtures for a non-demo run are in `data/cap/` (see
 [`sfig4_cap_votes`](../sfig4_cap_votes/)). Paper LODO numbers need
 `HGCA_BENCHMARK_RESULTS`.
-R and cairosvg are used only for the optional ARBOL sidecar renderer.
+
+Figure 2b trees are built with
+[ARBOL](https://github.com/jo-m-lab/ARBOL). Install that package to
+rebuild the dendrograms. This repository vendors `src/arbol.R` plus
+frozen Post-CAP SVGs and the v1 graph under `data/arbol/` so the sidecar
+overlays can be re-rendered without rerunning ARBOL
+(`ARBOL_ROOT`, `ARBOL_GRAPH`, `ARBOL_R` override).

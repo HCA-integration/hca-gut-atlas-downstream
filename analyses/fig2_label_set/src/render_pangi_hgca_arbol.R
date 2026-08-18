@@ -28,7 +28,7 @@ script_arg <- grep("^--file=", commandArgs(trailingOnly = FALSE), value = TRUE)
 if (length(script_arg) != 1) stop("Cannot determine script location")
 script_path <- normalizePath(sub("^--file=", "", script_arg))
 figure_dir <- normalizePath(file.path(dirname(script_path), ".."))
-gca_root <- normalizePath(file.path(figure_dir, "..", ".."))
+repo_root <- normalizePath(file.path(figure_dir, "..", ".."))
 
 data_dir <- file.path(figure_dir, "data")
 out_dir <- file.path(figure_dir, "out")
@@ -42,10 +42,21 @@ composition_path <- file.path(
 )
 cap_summary_path <- file.path(data_dir, "cap_celltype_summary.csv")
 dataset_counts_path <- file.path(data_dir, "dataset_celltype_counts_long.csv")
-graph_path <- file.path(gca_root, "ARBOL", "taxonomy_rose_ggraph_v1.rds")
-taxonomy_path <- file.path(gca_root, "ontology", "GCA_taxonomy_2026_CAP.csv")
-arbol_source <- file.path(
-  gca_root, "reference_mapping_benchmark", "src", "visualization", "arbol.R"
+arbol_data <- Sys.getenv(
+  "ARBOL_ROOT",
+  file.path(repo_root, "data", "arbol")
+)
+graph_path <- Sys.getenv(
+  "ARBOL_GRAPH",
+  file.path(arbol_data, "taxonomy_rose_ggraph_v1.rds")
+)
+taxonomy_path <- Sys.getenv(
+  "HGCA_TAXONOMY",
+  file.path(repo_root, "data", "demo", "GCA_taxonomy_2026_CAP.csv")
+)
+arbol_source <- Sys.getenv(
+  "ARBOL_R",
+  file.path(figure_dir, "src", "arbol.R")
 )
 
 required_paths <- c(
@@ -193,7 +204,7 @@ reference_leaf_orders <- list(
 
 postcap_svg_paths <- setNames(
   file.path(
-    gca_root, "ARBOL",
+    arbol_data,
     paste0(
       c("epithelial", "myeloid", "lymphoid", "stromal"),
       "_annotated_taxonomy_dendrogram_PostCAP_V1.svg"

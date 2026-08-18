@@ -15,9 +15,13 @@ script_arg <- grep("^--file=", commandArgs(trailingOnly = FALSE), value = TRUE)
 if (length(script_arg) != 1) stop("Cannot determine script location")
 script_path <- normalizePath(sub("^--file=", "", script_arg))
 figure_dir <- normalizePath(file.path(dirname(script_path), ".."))
-gca_root <- normalizePath(file.path(figure_dir, "..", ".."))
+repo_root <- normalizePath(file.path(figure_dir, "..", ".."))
 data_dir <- file.path(figure_dir, "data")
 out_dir <- file.path(figure_dir, "out")
+arbol_data <- Sys.getenv(
+  "ARBOL_ROOT",
+  file.path(repo_root, "data", "arbol")
+)
 dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
 
 drop_groups <- c("Tissue", "Radial layer")
@@ -74,7 +78,7 @@ reference_leaf_orders <- list(
 
 postcap_svg_paths <- setNames(
   file.path(
-    gca_root, "ARBOL",
+    arbol_data,
     paste0(names(reference_leaf_orders),
            "_annotated_taxonomy_dendrogram_PostCAP_V1.svg")
   ),

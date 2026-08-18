@@ -9,6 +9,10 @@
 #   TISSUE(panels n-q): x = gut segment proximal -> distal
 #                       (duodenum, jejunum, ileum, colon only)
 #
+# This file also writes ileum-vs-colon boxplots for the collection-method
+# story. Supplementary Figure 8 example trajectories are the spline type
+# only: src/render_sfig8_segment_examples.R.
+#
 # Each facet: raw per-sample points + one natural-spline curve per collection
 # method with 95% band. Curve separation = a sampling-method effect on that
 # cell type not explained by the x-axis (age, or gut segment).

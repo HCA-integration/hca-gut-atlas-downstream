@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render Supplemental Figure S7 — prepublication contributions strengthen the atlas.
+"""Render Supplementary Figure 6 — prepublication contributions strengthen the atlas.
 
 Source analysis:
   hca-gut-atlas-downstream/vignettes/Prepub_vs_postPub.ipynb
@@ -15,10 +15,10 @@ Panels (plot_specs.md: Wong palette, Helvetica/Arial 5–7 pt, 90/180 mm):
   g  Ileum-vs-colon pseudobulk DESeq2 power curve (~ dataset_id + seg)
 
 Usage:
-  ~/miniforge3/envs/scanpy/bin/python src/render_s7_prepub.py
-  ~/miniforge3/envs/scanpy/bin/python src/render_s7_prepub.py --skip-power
+  ~/miniforge3/envs/scanpy/bin/python src/render_s6_prepub.py
+  ~/miniforge3/envs/scanpy/bin/python src/render_s6_prepub.py --skip-power
   ~/miniforge3/envs/patpy/bin/python src/compute_deseq2_power.py
-  ~/miniforge3/envs/scanpy/bin/python src/render_s7_prepub.py --skip-bars --skip-power --plot-deseq2
+  ~/miniforge3/envs/scanpy/bin/python src/render_s6_prepub.py --skip-bars --skip-power --plot-deseq2
 """
 
 from __future__ import annotations
@@ -34,7 +34,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-LOG = logging.getLogger("render_s7")
+LOG = logging.getLogger("render_s6")
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
@@ -292,7 +292,7 @@ def plot_provenance_by_lineage() -> None:
     )
     ax.legend(loc="upper left", bbox_to_anchor=(1.02, 1), title="")
     fig.tight_layout()
-    save_figure(fig, "s7_a_provenance_by_lineage")
+    save_figure(fig, "s6_a_provenance_by_lineage")
     plt.close(fig)
 
 
@@ -333,7 +333,7 @@ def plot_provenance_by_lineage_segment() -> None:
     )
     axes[-1].legend(loc="upper left", bbox_to_anchor=(1.02, 1), title="")
     fig.tight_layout()
-    save_figure(fig, "s7_b_provenance_by_lineage_and_segment")
+    save_figure(fig, "s6_b_provenance_by_lineage_and_segment")
     plt.close(fig)
 
 
@@ -422,7 +422,7 @@ def plot_myeloid_published_vs_all(obs_myeloid: pd.DataFrame) -> None:
     )
     ax.legend(loc="upper left", bbox_to_anchor=(1.02, 1), title="")
     fig.tight_layout()
-    save_figure(fig, "s7_e_myeloid_published_vs_contributed_by_segment")
+    save_figure(fig, "s6_e_myeloid_published_vs_contributed_by_segment")
     plt.close(fig)
 
 
@@ -676,14 +676,14 @@ def plot_power_curve(curve: pd.DataFrame, marks: pd.DataFrame) -> None:
         xlabel="Cells per segment (balanced)",
         ylabel=f"DE genes (FDR < {POWER_FDR:g})",
         title="Ileum vs colon power (Wilcoxon)",
-        stem="s7_f_de_power_ileum_vs_colon",
+        stem="s6_f_de_power_ileum_vs_colon",
     )
 
 
 # Panel-g variants (must match compute_deseq2_power.VARIANTS keys)
 DESEQ2_VARIANTS = {
     "epithelial_omega": {
-        "stem": "s7_g_de_power_deseq2_epithelial_omega",
+        "stem": "s6_g_de_power_deseq2_epithelial_omega",
         "title": "Ileum vs colon (DESeq2, epithelial)",
         "colors": {
             "Goblet": PAL["vermillion"],
@@ -691,7 +691,7 @@ DESEQ2_VARIANTS = {
         },
     },
     "lymphoid_t": {
-        "stem": "s7_g_de_power_deseq2_lymphoid_t",
+        "stem": "s6_g_de_power_deseq2_lymphoid_t",
         "title": "Ileum vs colon (DESeq2, T cells)",
         "colors": {
             "CD8 IEL": PAL["vermillion"],
@@ -700,7 +700,7 @@ DESEQ2_VARIANTS = {
         },
     },
     "lymphoid_b": {
-        "stem": "s7_g_de_power_deseq2_lymphoid_b",
+        "stem": "s6_g_de_power_deseq2_lymphoid_b",
         "title": "Ileum vs colon (DESeq2, B / plasma)",
         "colors": {
             "Memory B": PAL["vermillion"],
@@ -709,7 +709,7 @@ DESEQ2_VARIANTS = {
         },
     },
     "myeloid_dc_mast": {
-        "stem": "s7_g_de_power_deseq2_myeloid_dc_mast",
+        "stem": "s6_g_de_power_deseq2_myeloid_dc_mast",
         "title": "Ileum vs colon (DESeq2, myeloid)",
         "colors": {
             "cDC2": PAL["hca_blue"],
@@ -823,7 +823,7 @@ def plot_deseq2_recovery_power() -> None:
                 frameon=False,
             )
             fig.tight_layout()
-            save_figure(fig, "s7_g_de_power_deseq2_recovery_slope")
+            save_figure(fig, "s6_g_de_power_deseq2_recovery_slope")
             plt.close(fig)
 
             # Also write as the main panel-g stem for Illustrator drop-in
@@ -866,7 +866,7 @@ def plot_deseq2_recovery_power() -> None:
                 frameon=False,
             )
             fig.tight_layout()
-            save_figure(fig, "s7_g_de_power_deseq2_recovery")
+            save_figure(fig, "s6_g_de_power_deseq2_recovery")
             plt.close(fig)
 
     # Optional balanced downsampling curve (no operating-point markers — those
@@ -903,7 +903,7 @@ def plot_deseq2_recovery_power() -> None:
             mpl.ticker.FuncFormatter(lambda v, _: f"{v:.0%}")
         )
         fig.tight_layout()
-        save_figure(fig, "s7_g_de_power_deseq2_recovery_curve")
+        save_figure(fig, "s6_g_de_power_deseq2_recovery_curve")
         plt.close(fig)
 
 
@@ -933,7 +933,7 @@ def plot_deseq2_analytical_power() -> None:
 
     for design, dsub in marks.groupby("design", sort=False):
         title = design_titles.get(design, design)
-        stem = f"s7_g_de_power_deseq2_analytical_{design}"
+        stem = f"s6_g_de_power_deseq2_analytical_{design}"
 
         wide = dsub.pivot(index="celltype_short", columns="point", values="power_mean")
         need = ["Published only", "Published + contributed"]
@@ -1128,7 +1128,7 @@ def main(argv: list[str] | None = None) -> int:
         format="%(asctime)s %(levelname)s %(message)s",
         handlers=[
             logging.StreamHandler(sys.stdout),
-            logging.FileHandler(ROOT / "logs" / "render_s7.log"),
+            logging.FileHandler(ROOT / "logs" / "render_s6.log"),
         ],
     )
     (ROOT / "logs").mkdir(parents=True, exist_ok=True)
@@ -1147,10 +1147,10 @@ def main(argv: list[str] | None = None) -> int:
         plot_provenance_by_lineage()
         plot_provenance_by_lineage_segment()
         plot_gap_coverage(
-            "lymphoid", "s7_c_lymphoid_coverage_by_segment", "Lymphoid coverage"
+            "lymphoid", "s6_c_lymphoid_coverage_by_segment", "Lymphoid coverage"
         )
         plot_gap_coverage(
-            "myeloid", "s7_d_myeloid_coverage_by_segment", "Myeloid coverage"
+            "myeloid", "s6_d_myeloid_coverage_by_segment", "Myeloid coverage"
         )
         plot_myeloid_published_vs_all(obs_by_lineage["myeloid"])
     else:

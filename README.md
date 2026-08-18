@@ -21,6 +21,11 @@ scipy 1.16.2, statsmodels 0.14.6, matplotlib 3.10.7, h5py 3.15.1).
 Some figure scripts also use R with ggplot2. Atlas construction,
 scVI, cell2location, and Xenium require a GPU and live in other
 repositories ([docs/related-repositories.md](docs/related-repositories.md)).
+Query mapping onto the four lineage scANVI models will be on
+[ArchMap](https://www.archmap.bio/). The Fig. 2c LODO and Fig. 4c / S14
+mapping-stability screens are in this repo
+(`analyses/fig2c_fig4c_sfig14_scanvi/`); lymphoid mapping-stability
+took about 24 hours on a GPU, and LODO is as long or longer.
 
 ```bash
 git clone https://github.com/HCA-integration/hca-gut-atlas-downstream.git

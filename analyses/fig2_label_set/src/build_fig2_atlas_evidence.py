@@ -528,7 +528,13 @@ def build_celltype_tables(
 def build_compositional_enrichment(
     df: pd.DataFrame, ordered_types: list[str]
 ) -> pd.DataFrame:
-    """Compute per-sample CLR composition and category-wise row z-scores."""
+    """Per-sample CLR over all taxonomy labels, then category-mean row z-scores.
+
+    ``mean_clr`` is the unscaled mean CLR in each annotation level. ``row_z``
+    z-scores those means across levels for each cell type (heatmap display
+    only). This is a global composition, not the within-lineage CLR in
+    ``data/composition/clr_long.csv``.
+    """
     d = df.dropna(
         subset=["dataset_id", "sample_id", "hgca_celltype_v1"]
     ).copy()
@@ -1462,6 +1468,8 @@ def main() -> int:
     celltypes.to_csv(data_dir / "celltype_atlas_summary.csv", index=False)
     tissue.to_csv(data_dir / "celltype_tissue_presence_long.csv", index=False)
     dataset.to_csv(data_dir / "dataset_celltype_counts_long.csv", index=False)
+    # Global (all-types) CLR category means + display row_z. Figure 3a reads
+    # this table; do not substitute data/composition/clr_long.csv.
     composition = build_compositional_enrichment(df, order)
     composition.to_csv(
         data_dir / "celltype_compositional_enrichment_long.csv", index=False

@@ -174,7 +174,7 @@ p_a <- ggplot(d_a, aes(segment, centrality_rank_pct,
   theme_gca(6) +
   theme(legend.position = "right")
 
-save_panel(p_a, file.path(OUT, "sfig12_a_centrality_bump_tissue_level_1"), 180, 85)
+save_panel(p_a, file.path(OUT, "sfig13_a_centrality_bump_tissue_level_1"), 180, 85)
 
 ## --------------------------------------------------------------------------
 ## b — ACKR1 sink (PVC / venular)
@@ -200,7 +200,7 @@ p_b <- ggplot(b, aes(ensemble_score, y, colour = segment)) +
   theme_gca(6) +
   theme(legend.position = "right")
 
-save_panel(p_b, file.path(OUT, "sfig12_b_ackr1_sink_pvc_venular"), 180, 95)
+save_panel(p_b, file.path(OUT, "sfig13_b_ackr1_sink_pvc_venular"), 180, 95)
 
 ## Also a deep-PV mac↔endo companion (curated concept-pack edges)
 ## Ban unsupported C1q–CD93 (and other sticky hits aligned with panel d)
@@ -236,7 +236,7 @@ p_b2 <- ggplot(dp_top, aes(ensemble_score, y, colour = segment)) +
   theme_gca(6) +
   theme(legend.position = "right")
 
-save_panel(p_b2, file.path(OUT, "sfig12_b2_deep_perivascular_pv_mac"), 180, 95)
+save_panel(p_b2, file.path(OUT, "sfig13_b2_deep_perivascular_pv_mac"), 180, 95)
 
 ## --------------------------------------------------------------------------
 ## c — Lymphatic / sinus CCL21 → CCR7
@@ -262,7 +262,7 @@ p_c <- ggplot(c, aes(ensemble_score, y, colour = segment)) +
   theme_gca(6) +
   theme(legend.position = "right")
 
-save_panel(p_c, file.path(OUT, "sfig12_c_lymphatic_ccl21_ccr7"), 140, 85)
+save_panel(p_c, file.path(OUT, "sfig13_c_lymphatic_ccl21_ccr7"), 140, 85)
 
 ## --------------------------------------------------------------------------
 ## d — Macrophage subtype niche contrast (PV vs FARM)
@@ -304,7 +304,7 @@ p_d <- ggplot(d, aes(ensemble_score, y, colour = segment)) +
   theme_gca(6) +
   theme(legend.position = "bottom", legend.box = "horizontal")
 
-save_panel(p_d, file.path(OUT, "sfig12_d_macrophage_subtype_niches"), 180, 95)
+save_panel(p_d, file.path(OUT, "sfig13_d_macrophage_subtype_niches"), 180, 95)
 
 ## --------------------------------------------------------------------------
 ## e — Follicle exploratory L–R (nominal; not FDR)
@@ -344,7 +344,7 @@ p_e <- ggplot(ex_plot, aes(beta, y, colour = lr_pair)) +
   theme_gca(6) +
   theme(legend.position = "right")
 
-save_panel(p_e, file.path(OUT, "sfig12_e_follicle_exploratory_lr"), 160, 85)
+save_panel(p_e, file.path(OUT, "sfig13_e_follicle_exploratory_lr"), 160, 85)
 
 ## --------------------------------------------------------------------------
 ## Optional assembled preview (stacked; Illustrator will do final layout)
@@ -358,6 +358,6 @@ assembled <- (p_a / p_b / p_c / p_d / p_e) +
     )
   )
 
-save_panel(assembled, file.path(OUT, "sfig12_assembled_preview"), 180, 280)
+save_panel(assembled, file.path(OUT, "sfig13_assembled_preview"), 180, 280)
 
 message("Done. Panels in ", OUT)

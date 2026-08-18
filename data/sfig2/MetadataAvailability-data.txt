@@ -1,0 +1,11 @@
+Category	Title	SubCategory	Count
+Metadata in external file	External File	GEO accession(GSE)	113
+Metadata in external file	External File	E-MTAB	8
+Metadata in external file	External File	INSDC	21
+Metadata in external file	External File	EGA	4
+Metadata in external file	External File	Other	4
+Metadata in external file	External File	Upon Request	17
+Metadata in supplentary material	SupMat	Other	71	
+Metadata in supplentary material	SupMat	Table	11
+No single cell data	NoSc	NA	58
+Metadata in both (S.f.+ E.f.)	Both	NA	8

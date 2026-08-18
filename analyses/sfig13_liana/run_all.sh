@@ -6,5 +6,5 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")" && pwd)"
 mkdir -p "$ROOT/logs" "$ROOT/out" "$ROOT/data"
 python "$ROOT/src/00_extract_curated_tables.py" 2>&1 | tee "$ROOT/logs/00_extract.log"
-Rscript "$ROOT/src/01_render_supp_fig12.R" 2>&1 | tee "$ROOT/logs/01_render.log"
+Rscript "$ROOT/src/01_render_sfig13.R" 2>&1 | tee "$ROOT/logs/01_render.log"
 echo "Done → $ROOT/out"

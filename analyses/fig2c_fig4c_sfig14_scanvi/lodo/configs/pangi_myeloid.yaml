@@ -1,0 +1,100 @@
+# PanGI Healthy — **myeloid benchmark** (subset at load time), LODO by ``study``.
+# The ``.h5ad`` on disk is the **pan-lineage** PanGI reference (~1M+ cells); this config keeps
+# ``lineage_subset: Myeloid`` so only myeloid rows are used. Do not confuse the filename
+# ``pangi_healthy_full.h5ad`` with “myeloid-only on disk”.
+# Embeddings ``X_scANVI`` / ``X_scvi`` are fixed latents (no re-training scVI/SCANVI).
+# Local source default: ``sync_data_to_e3.sh`` ``LOCAL_PANGI_H5AD`` (CELLxGENE UUID filename) → lab share.
+
+lineage: pangi_myeloid
+display_name: "PanGI Healthy (Myeloid)"
+
+# Reference label for comparison plots vs HGCA (see workflows/slurm/run_lineage_benchmark.py)
+benchmark:
+  split_mode: leave_one_dataset_out
+  dataset_id_column: study
+  holdout_dataset_id: null
+  lodo_fold_index: 0
+  test_size: 0.2
+  random_state: 42
+  max_lodo_folds: null
+  reference_name: "PanGI Healthy"
+
+data:
+  input_path: ""  # set HGCA_OBJECTS or PANGI_H5AD
+  format: h5ad
+  # Large object: load backed, subset Myeloid in obs, then materialize
+  load_backed: true
+  lineage_subset:
+    column: level_1_annot
+    value: "Myeloid"
+  split_copy_adata: true
+
+labels:
+  - level_3_annot
+
+# No HGCA CSV merge; labels already in obs
+taxonomy:
+  skip_external_annotations: true
+
+batch_key: sampleID
+
+random_seed: 42
+
+training:
+  exclude_hgca_celltype_v1_labels: []
+
+# Logistic regression on frozen X_scANVI (copied to X_scanvi for mapQC)
+scanvi:
+  use_pretrained_embedding: true
+  pretrained_obsm_key: X_scANVI
+  use_scvi_pretrain: false
+  n_latent: 30
+  n_layers: 2
+  dropout_rate: 0.1
+  gene_likelihood: nb
+  n_epochs: 0
+  batch_size: 2048
+  train_size: 0.9
+  learning_rate: 0.001
+  early_stopping: false
+  early_stopping_patience: 20
+  unlabeled_category: "Unknown"
+  # sklearn LogisticRegression (multinomial); saga scales to large n
+  frozen_latent_solver: saga
+  frozen_latent_max_iter: 500
+
+scimilarity:
+  model_dir: ""  # optional; not used for SCANVI LODO
+  k_neighbors: 50
+  weighting: true
+  lora:
+    rank: 8
+    alpha: 16
+    dropout: 0.1
+    epochs: 10
+    learning_rate: 0.0001
+    batch_size: 128
+    target_modules: ["network.0.1", "network.1.1", "network.2.1", "network.3.1"]
+
+output:
+  results_dir: "results/{lineage}"
+  predictions_dir: "results/{lineage}/predictions_v1"
+  models_dir: "results/{lineage}/models_v1"
+  plots_dir: "results/{lineage}/plots_v1"
+  advanced_plots_dir: "results/{lineage}/plots_v1/advanced"
+
+# Fixed mapQC protocol (same hyperparameters as HGCA myeloid benchmark)
+mapqc:
+  enabled: true
+  adata_emb_loc: X_scanvi
+  n_nhoods: 120
+  k_min: 20
+  k_max: 2500
+  min_n_cells: 5
+  min_n_samples_r: 3
+  exclude_same_study: false
+  match_scanvi_accuracy: false
+  max_mapqc_attempts: 1
+  query_control_label: query_holdout
+  seed: 42
+  n_neighbors_umap: 15

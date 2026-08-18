@@ -7,9 +7,13 @@ lineage is present. Rebuilt with
 `analyses/fig3_clr_contrasts/src/recompute_clr_tables.py` and
 pseudocount 1.
 
-Use this for Figure 3 / Supplementary Figures 7, 11, and 12 instead of
-the bundled 3,185-cell subset. It is still not a substitute for the
-h5ad when an analysis needs expression.
+Use this for Figure 3 contrasts and Supplementary Figures 7, 8, 11, and
+12 instead of the bundled 3,185-cell subset. It is still not a
+substitute for the h5ad when an analysis needs expression.
+
+Figure 3a is a different table:
+[`data/fig2/celltype_compositional_enrichment_long.csv`](../fig2/README.md)
+(global CLR category means + display `row_z`).
 
 ```bash
 python analyses/fig3_clr_contrasts/src/recompute_clr_tables.py \

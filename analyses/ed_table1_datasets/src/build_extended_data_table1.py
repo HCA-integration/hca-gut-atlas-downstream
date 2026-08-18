@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build HGCA v1 dataset-level supplementary table.
+"""Build Extended Data Table 1 (dataset inventory).
 
 Starts from metadata/tier_1_dataset.csv, restricts to dataset_ids present in
 hgca_all_lineages_v1.h5ad, and enriches with live atlas counts plus curated DOIs.
@@ -457,14 +457,14 @@ def write_xlsx(pretty: pd.DataFrame, dictionary: pd.DataFrame, path: Path) -> No
 
     # Totals row note
     note = wb.create_sheet("README", 0)
-    note["A1"] = "HGCA v1 — Supplementary dataset table"
+    note["A1"] = "HGCA v1 — Extended Data Table 1"
     note["A1"].font = Font(name="Arial", size=12, bold=True)
     lines = [
         "",
         "One row per dataset_id retained in hgca_all_lineages_v1.h5ad (27 datasets; 24 studies).",
         "Counts (donors / samples / cells) are from the final integrated atlas object, not the original publications.",
         "Source tables: metadata/tier_1_dataset.csv + byTheNumbers/plots/hgca_v1_included_studies_dois.csv + live obs from the h5ad.",
-        "Rebuild: python src/build_supp_table_datasets.py",
+        "Rebuild: python src/build_extended_data_table1.py",
         "",
         f"Totals: {pretty['Donors (n)'].sum()} donor-rows summed across datasets (not unique across studies); "
         f"{pretty['Samples (n)'].sum()} samples; {pretty['Cells (n)'].sum():,} cells.",
@@ -509,9 +509,9 @@ def main() -> None:
     pretty, dictionary, full = build_table(args.h5ad)
 
     full_path = DATA / "datasets_internal_full.csv"
-    pretty_csv = OUT / "SuppTable_HGCA_v1_datasets.csv"
-    pretty_xlsx = OUT / "SuppTable_HGCA_v1_datasets.xlsx"
-    dict_csv = OUT / "SuppTable_HGCA_v1_datasets_column_dictionary.csv"
+    pretty_csv = OUT / "ExtendedDataTable1_HGCA_v1_datasets.csv"
+    pretty_xlsx = OUT / "ExtendedDataTable1_HGCA_v1_datasets.xlsx"
+    dict_csv = OUT / "ExtendedDataTable1_HGCA_v1_datasets_column_dictionary.csv"
 
     full.to_csv(full_path, index=False)
     pretty.to_csv(pretty_csv, index=False)

@@ -97,7 +97,7 @@ def main() -> int:
     run(
         [
             sys.executable,
-            str(ANALYSES / "ed_table1_datasets" / "src" / "build_supp_table_datasets.py"),
+            str(ANALYSES / "ed_table1_datasets" / "src" / "build_extended_data_table1.py"),
             "--h5ad",
             str(DEMO),
             "--outdir",

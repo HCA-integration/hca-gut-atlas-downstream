@@ -7,7 +7,9 @@ Input: four lineage h5ads (`HGCA_OBJECTS`). Bar-panel rendering also
 needs `HGCA_CAP_DIR`. These are not the bundled subset.
 
 Scripts: `src/compute_deseq2_analytical_power.py` (and related power
-scripts); `src/render_s7_prepub.py` (filename is historical).
+scripts); `src/render_s6_prepub.py`. Bar panels also accept
+`HGCA_CAP_DIR` as the four lineage h5ads (historical name; not the CAP
+vote tables).
 
 ```bash
 export HGCA_OBJECTS=/path/to/lineage-h5ads

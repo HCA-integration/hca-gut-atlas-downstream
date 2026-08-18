@@ -18,7 +18,7 @@ Connectome, log2FC, NATMI, SingleCellSignalR), `n_perms=1000`,
 | `src/ccc_centrality_gut_axis.R` | Node centrality and bump charts (panel a) |
 | `src/focus_three_groups_liana.R` | BEST4 / macrophage / lymphatic focus |
 | `src/00_extract_curated_tables.py` | Curated edges for panels b–e |
-| `src/01_render_supp_fig12.R` | Panel renderer (filename is historical) |
+| `src/01_render_sfig13.R` | Panel renderer |
 
 ## Rebuild the paper run
 
