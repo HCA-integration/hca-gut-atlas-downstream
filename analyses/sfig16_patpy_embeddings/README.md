@@ -20,3 +20,8 @@ python analyses/sfig16_patpy_embeddings/src/stage4_plots.py
 Requires [patpy](https://github.com/lueckenlab/patpy). Stage 1 is heavy; stages 2–4 read the CSVs it writes
 under `data/<labelset>/`. `LABELSET` is `hgca_v1` (default) or
 `author_final_analysis`.
+
+Stage 3 CLR prediction refits the cell-type vocabulary, CLR, variance
+filter, scaler, and classifier inside each leave-one-patient-out fold.
+Stage 1 embeddings used for Supplementary Figure 16a and the
+distance-KNN supplement are still fit on the full tissue×disease group.

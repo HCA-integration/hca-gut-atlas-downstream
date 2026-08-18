@@ -18,10 +18,11 @@ python analyses/fig3_clr_contrasts/fig3i_sfig12_follicle/src/compute_defensibili
   --clr-long /path/to/clr_long.csv --outdir /tmp/follicle
 ```
 
-Primary niche rule: at least one GC B compartment (LZ or DZ) with at
-least three cells, and at least one support type among {fDC, Tfh, Tfr,
-FARM, FRC, mLTo} with at least three cells. This is a composition
-proxy, not histology.
+Primary composition call used in the figures: a sample is follicle+ if
+**either** GC B LZ **or** GC B DZ has at least **3** cells
+(`(n_LZ >= 3) | (n_DZ >= 3)`). This is a composition proxy, not
+histology. The k-scan in Supplementary Figure 12 compares other cutoffs;
+k=3 is the main-text rule.
 
 GSVA on lymphoid pseudobulk needs the lineage objects and `decoupler`.
 The bundled subset was built so 17 samples have at least three GC B

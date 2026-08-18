@@ -17,3 +17,5 @@ jobs:
         run: python src/run_demo.py
       - name: Check smoke counts
         run: python tests/test_demo_slice.py
+      - name: Check published numbers
+        run: python tests/test_published_numbers.py

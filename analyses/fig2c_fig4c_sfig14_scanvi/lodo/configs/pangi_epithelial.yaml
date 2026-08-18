@@ -36,6 +36,8 @@ random_seed: 42
 training:
   exclude_hgca_celltype_v1_labels: []
 
+# Submitted LODO used this frozen-latent + logistic path for PanGI.
+# HGCA lineage YAMLs retrain scVI/scANVI per fold (n_epochs: 10).
 scanvi:
   use_pretrained_embedding: true
   pretrained_obsm_key: X_scANVI

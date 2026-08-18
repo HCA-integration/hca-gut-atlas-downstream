@@ -26,7 +26,7 @@ CLR = HERE.parent.parent / "data" / "clr_long.csv"
 
 GC = ["GC B Light Zone (GC B LZ)", "GC B Dark Zone (GC B DZ)"]
 K_MAX = 40
-PRIMARY_K = 5  # main-text cutoff
+PRIMARY_K = 3  # main-text cutoff (OR rule: LZ>=k or DZ>=k)
 FOLLICLE_PROGRAMS = ["GC_module", "GC_DZ", "GC_LZ", "Tfh", "Tfr", "FARM", "fDC"]
 
 
@@ -197,7 +197,8 @@ def threshold_scan(m: pd.DataFrame, gsva_gc: pd.DataFrame) -> tuple[pd.DataFrame
                 primary_cutoff=PRIMARY_K,
                 note=(
                     "Best k maximizes concordance of composition call with "
-                    "GC-module GSVA>0 (Youden). Primary main-text cutoff remains k=5."
+                    "GC-module GSVA>0 (Youden). Primary main-text cutoff is k=3 "
+                    "(OR: LZ>=3 or DZ>=3)."
                 ),
             )
         ]
@@ -415,9 +416,9 @@ def main() -> None:
     # Use best for violins/model; also export primary-k variants in rates already
     viol = gsva_violin_table(m, best)
     viol.to_csv(DATA / "follicle_gsva_by_call_bestk.csv", index=False)
-    # also at primary k=5 for comparison
-    viol5 = gsva_violin_table(m, PRIMARY_K)
-    viol5.to_csv(DATA / "follicle_gsva_by_call_k5.csv", index=False)
+    # also at the primary k=3 cutoff
+    viol_primary = gsva_violin_table(m, PRIMARY_K)
+    viol_primary.to_csv(DATA / "follicle_gsva_by_call_k3.csv", index=False)
 
     study, site = study_frac_tables(m, best)
     study.to_csv(DATA / "follicle_capture_by_study_bestk.csv", index=False)

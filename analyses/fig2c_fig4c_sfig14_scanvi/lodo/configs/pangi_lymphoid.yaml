@@ -38,6 +38,7 @@ random_seed: 42
 training:
   exclude_hgca_celltype_v1_labels: []
 
+# Submitted LODO: PanGI frozen latent + logistic; HGCA retrains scVI/scANVI.
 scanvi:
   use_pretrained_embedding: true
   pretrained_obsm_key: X_scANVI

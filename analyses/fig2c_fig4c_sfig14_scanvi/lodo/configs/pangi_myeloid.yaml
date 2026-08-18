@@ -44,6 +44,7 @@ training:
   exclude_hgca_celltype_v1_labels: []
 
 # Logistic regression on frozen X_scANVI (copied to X_scanvi for mapQC)
+# Submitted LODO: PanGI frozen latent + logistic; HGCA retrains scVI/scANVI.
 scanvi:
   use_pretrained_embedding: true
   pretrained_obsm_key: X_scANVI

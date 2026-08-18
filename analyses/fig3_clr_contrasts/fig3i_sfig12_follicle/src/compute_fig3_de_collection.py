@@ -160,7 +160,7 @@ def main() -> None:
     rates.to_csv(DATA / "fig3_e_capture_by_cutoff.csv", index=False)
     fish.to_csv(DATA / "fig3_e_fisher_by_cutoff.csv", index=False)
 
-    # Compact stats summary (pooled + segment) for k=5 primary
+    # Compact stats summary (pooled + segment) for every cutoff; k=3 is primary
     summ_rows = []
     for _, r in fish.iterrows():
         summ_rows.append(

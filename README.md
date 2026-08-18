@@ -39,6 +39,12 @@ python -m pip install -r requirements.txt
 
 Install time should be no more than a few minutes if Python is already present.
 A conda specification is provided in `environment.yml`.
+`requirements.txt` is the demo / CI stack only. Do not add scvi-tools,
+scanpy, LIANA, cell2location, or torch there — they would turn the
+30-second laptop check into a GPU install. Versions named in Methods
+when you rerun those analyses: scvi-tools 1.3.0, scanpy 1.11.5,
+LIANA 1.7.1, cell2location 0.1.4, decoupler 1.4.0, DESeq2 1.42.1,
+gprofiler2 0.2.3. Cite this repository with `CITATION.cff`.
 
 ## Verification
 
@@ -60,6 +66,12 @@ To run a script on the full atlas, pass the object path or set
 the atlas (`hgca_celltype_v1`, `sample_id`, `donor_id`, `dataset_id`,
 `tissue_level_1`, and the covariates listed in each analysis README).
 
+## Citation
+
+See [CITATION.cff](CITATION.cff). Authors listed there are the CRediT
+Methodology contributors from the manuscript author-contributions draft.
+
 ## License
 
-MIT. See [LICENSE](LICENSE).
+Code is MIT. See [LICENSE](LICENSE). Bundled tables, CAP fixtures, the
+taxonomy CSV, ARBOL SVGs, and the demo h5ad are [CC-BY-4.0](DATA_LICENSE.md).

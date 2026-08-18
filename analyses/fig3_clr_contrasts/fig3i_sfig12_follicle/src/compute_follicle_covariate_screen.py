@@ -26,7 +26,7 @@ DATA = HERE.parent / "data"
 CLR = HERE.parent.parent / "data" / "clr_long.csv"
 
 GC = ["GC B Light Zone (GC B LZ)", "GC B Dark Zone (GC B DZ)"]
-CUT = 5
+CUT = 3
 BAD = {"nan", "None", "unknown", "Unknown", "NA", "n/a", "N/A", "", "None"}
 
 PRETTY = {

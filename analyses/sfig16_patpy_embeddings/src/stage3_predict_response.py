@@ -10,11 +10,11 @@ Design
 ------
 * Samples: Treatment == "Pre", Disease in {CD, UC}, Remission_status in
   {Remission, Non_Remission}. Healthy / Not_avail dropped.
-* Features: CLR-transformed cell-type composition (hgca_celltype_v1), computed
-  directly from obs so the feature vocabulary is shared across tissues (lets us
-  pool a disease across sites and still stratify).
-* Models: regularised logistic regression (L2, balanced) and KNN, both
-  evaluated with leave-one-PATIENT-out CV (cross_val_predict probabilities).
+* Features: CLR-transformed cell-type composition (hgca_celltype_v1).
+  Inside each leave-one-patient-out fold the cell-type vocabulary, CLR,
+  variance filter, scaler, and classifier are fit on training patients
+  only.
+* Models: regularised logistic regression (L2, balanced) and KNN.
 * Positive class = Non_Remission (the clinically important "non-responder").
 * Stratification: out-of-fold predictions are sliced by Site and Inflammation
   to report per-stratum ROC-AUC / F1; disease (CD vs UC) is modelled separately.
@@ -42,7 +42,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import (
     accuracy_score, balanced_accuracy_score, f1_score, roc_auc_score,
 )
-from sklearn.model_selection import LeaveOneGroupOut, cross_val_predict
+from sklearn.model_selection import LeaveOneGroupOut
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
@@ -71,7 +71,12 @@ def clr(counts: pd.DataFrame, pseudocount: float = 1.0) -> pd.DataFrame:
 
 
 def build_cohort():
-    """Per-sample CLR composition + metadata for the pre-treatment cohort."""
+    """Per-sample raw counts + metadata for the pre-treatment cohort.
+
+    CLR and the cell-type vocabulary are fit inside each LOPO fold
+    (see ``run_cv``). Computing CLR on the full table would not leak
+    values across samples, but the column set and variance filter would.
+    """
     usecols = [C.SAMPLE_KEY, C.PATIENT_KEY, C.DISEASE_KEY, "Site", C.TISSUE_KEY,
                C.TREATMENT_KEY, C.REMISSION_KEY, "Inflammation", "Age", "Gender",
                C.CELLTYPE_KEY]
@@ -80,21 +85,18 @@ def build_cohort():
     obs[C.CELLTYPE_KEY] = obs[C.CELLTYPE_KEY].astype(str)
     obs = obs[~obs[C.CELLTYPE_KEY].isin(DROP_CELLTYPES)]
 
-    # Native-CLR cell-type composition (shared vocabulary across all samples).
     counts = pd.crosstab(obs[C.SAMPLE_KEY], obs[C.CELLTYPE_KEY])
-    comp_clr = clr(counts)
 
     meta = obs.drop_duplicates(C.SAMPLE_KEY).set_index(C.SAMPLE_KEY)
     meta = meta.drop(columns=[C.CELLTYPE_KEY])
     meta["n_cells"] = counts.sum(axis=1)
 
-    # Pre-treatment cohort with a usable response label.
     keep = (meta[C.TREATMENT_KEY].astype(str) == "Pre") & \
            (meta[C.DISEASE_KEY].astype(str).isin(C.DISEASES)) & \
            (meta[C.REMISSION_KEY].astype(str).isin(VALID_REMISSION))
     meta = meta[keep].copy()
-    comp_clr = comp_clr.loc[meta.index]
-    return comp_clr, meta
+    counts = counts.loc[meta.index]
+    return counts, meta
 
 
 # --------------------------------------------------------------------------
@@ -129,29 +131,54 @@ def make_models():
     }
 
 
-def run_cv(X, meta, disease):
-    """LOPO-CV out-of-fold P(Non_Remission) per model for one disease cohort."""
+def _fold_clr(train_counts: pd.DataFrame, test_counts: pd.DataFrame):
+    """CLR on train-defined cell types; drop zero-variance train columns."""
+    train_clr = clr(train_counts)
+    keep = train_clr.var() > 0
+    train_clr = train_clr.loc[:, keep]
+    test_aligned = test_counts.reindex(columns=train_counts.columns, fill_value=0)
+    test_clr = clr(test_aligned).reindex(columns=train_clr.columns, fill_value=0)
+    return train_clr, test_clr
+
+
+def run_cv(counts, meta, disease):
+    """Nested LOPO-CV: CLR vocabulary, variance filter, scaler, and model
+    are fit on training patients only."""
     sub = meta[meta[C.DISEASE_KEY].astype(str) == disease]
     if sub.shape[0] < 8 or sub[C.REMISSION_KEY].nunique() < 2:
         log(f"  {disease}: too few samples / single class (n={sub.shape[0]}), skip")
         return None
-    Xd = X.loc[sub.index]
-    Xd = Xd.loc[:, Xd.var() > 0]
+    Xc = counts.loc[sub.index]
     y = sub[C.REMISSION_KEY].astype(str)
     groups = sub[C.PATIENT_KEY].astype(str)
     cv = LeaveOneGroupOut()
     log(f"  {disease}: n={sub.shape[0]} samples, {groups.nunique()} patients, "
-        f"{(y == POS_LABEL).sum()} non-remission / {(y != POS_LABEL).sum()} remission, "
-        f"{Xd.shape[1]} features")
+        f"{(y == POS_LABEL).sum()} non-remission / {(y != POS_LABEL).sum()} remission "
+        f"(CLR + scaler refit per held-out patient)")
 
-    oof = {}
-    classes = np.unique(y.values)
-    pos_idx = int(np.where(classes == POS_LABEL)[0][0])
-    for name, model in make_models().items():
-        proba = cross_val_predict(model, Xd.values, y.values, cv=cv,
-                                  groups=groups.values, method="predict_proba")
-        oof[name] = pd.Series(proba[:, pos_idx], index=sub.index)
-    return sub, y, oof, Xd
+    oof = {name: pd.Series(index=sub.index, dtype=float) for name in make_models()}
+    # Full-cohort CLR is used only for the interpretability refit, not for CV.
+    full_clr = clr(Xc)
+    full_clr = full_clr.loc[:, full_clr.var() > 0]
+
+    n_features = []
+    for train_idx, test_idx in cv.split(Xc, y, groups):
+        train_ids = Xc.index[train_idx]
+        test_ids = Xc.index[test_idx]
+        train_clr, test_clr = _fold_clr(Xc.loc[train_ids], Xc.loc[test_ids])
+        n_features.append(train_clr.shape[1])
+        y_train = y.loc[train_ids]
+        classes = np.unique(y_train.values)
+        if POS_LABEL not in classes or len(classes) < 2:
+            continue
+        pos_idx = int(np.where(classes == POS_LABEL)[0][0])
+        for name, model in make_models().items():
+            model.fit(train_clr.values, y_train.values)
+            proba = model.predict_proba(test_clr.values)
+            oof[name].loc[test_ids] = proba[:, pos_idx]
+
+    log(f"  {disease}: median train features per fold = {float(np.median(n_features)):.0f}")
+    return sub, y, oof, full_clr
 
 
 def stratified_metrics(disease, model_name, y, proba, meta):
@@ -207,7 +234,12 @@ def loo_distance_knn(D, y, k=5):
 
 
 def representation_knn_supplement():
-    """Per tissue x disease group, LOO distance-KNN AUC for each representation."""
+    """Per tissue x disease group, LOO distance-KNN AUC for each representation.
+
+    Neighbors exclude the held-out sample. The Stage 1 embeddings themselves
+    were still fit on the full tissue×disease group (HVG / PCA / representation
+    fitting). Nested refits of those representations are a separate heavy run.
+    """
     rows = []
     for tissue, disease, label in C.GROUPS:
         meta_path = C.group_meta_path(label)
@@ -241,7 +273,7 @@ def representation_knn_supplement():
 
 # --------------------------------------------------------------------------
 def main():
-    comp_clr, meta = build_cohort()
+    counts, meta = build_cohort()
     log(f"pre-treatment cohort: {meta.shape[0]} samples, "
         f"{meta[C.PATIENT_KEY].nunique()} patients "
         f"(CD={(meta[C.DISEASE_KEY] == 'CD').sum()}, UC={(meta[C.DISEASE_KEY] == 'UC').sum()})")
@@ -249,7 +281,7 @@ def main():
 
     overall_rows, strat_rows, oof_rows, coef_frames = [], [], [], []
     for disease in C.DISEASES:
-        res = run_cv(comp_clr, meta, disease)
+        res = run_cv(counts, meta, disease)
         if res is None:
             continue
         sub, y, oof, Xd = res
