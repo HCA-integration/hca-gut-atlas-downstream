@@ -17,6 +17,6 @@ python analyses/sfig16_patpy_embeddings/src/stage3_predict_response.py
 python analyses/sfig16_patpy_embeddings/src/stage4_plots.py
 ```
 
-Requires patpy. Stage 1 is heavy; stages 2–4 read the CSVs it writes
+Requires [patpy](https://github.com/lueckenlab/patpy). Stage 1 is heavy; stages 2–4 read the CSVs it writes
 under `data/<labelset>/`. `LABELSET` is `hgca_v1` (default) or
 `author_final_analysis`.

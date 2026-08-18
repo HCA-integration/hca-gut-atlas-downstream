@@ -25,7 +25,7 @@ listed here are still being prepared.
 | Supplementary Figure 9 | Visium cell2location + NMF compartments | [`sfig9_visium_cell2location`](sfig9_visium_cell2location/) | Teichmann notebooks as received (including NMF). Four healthy adult Visium sections + 5k/type HGCA reference; GPU |
 | Supplementary Figure 11 | Sample-level CLR Spearman correlations | [`sfig11_compositional_correlations`](sfig11_compositional_correlations/) | Full-atlas tables in `data/composition/` |
 | Supplementary Figure 13 | LIANA rank-aggregate CCC | [`sfig13_liana`](sfig13_liana/) | All-cells h5ad; not the bundled subset |
-| Supplementary Figure 16a,c | patpy embeddings and pretreatment remission AUC | [`sfig16_patpy_embeddings`](sfig16_patpy_embeddings/) | TAURUS h5ad (`TAURUS_H5AD`). SampleCLR attention (16b) is not here |
+| Supplementary Figure 16a,c | [patpy](https://github.com/lueckenlab/patpy) embeddings and pretreatment remission AUC | [`sfig16_patpy_embeddings`](sfig16_patpy_embeddings/) | TAURUS h5ad (`TAURUS_H5AD`). SampleCLR attention (16b) is not here |
 | Extended Data Table 1 | Dataset inventory with live counts | [`ed_table1_datasets`](ed_table1_datasets/) | All-cells h5ad. DOI / PI enrichment needs local metadata |
 | Extended Data Table 2 | CAP taxonomy | `data/demo/GCA_taxonomy_2026_CAP.csv` | Bundled file |
 | Extended Data Table 5 | GC-module gene list | `data/demo/follicle_gsva_gc_b_gene_list.csv` | Bundled file |

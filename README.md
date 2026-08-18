@@ -1,12 +1,11 @@
 # Human Gut Cell Atlas v1 analyses
 
 Analysis and figure-generation code for *The Human Gut Cell Atlas v1.0*.
-Code is still being consolidated during manuscript preparation; not every
-paper analysis is in the tree yet.
+
 
 This repository is for reproducing the manuscript analyses. Tutorials for
 using the atlas as a resource are maintained separately in the
-[HGCA CodeBook](https://github.com/HCA-integration/hca-gut-atlas-tutorial).
+[HGCA CodeBook](LINK GOES HERE).
 
 ## Analyses
 
@@ -15,39 +14,43 @@ tables to directories and scripts.
 
 ## Environment
 
-Tested on macOS 15 with Python 3.12 and the packages in
-`requirements.txt` (anndata 0.12.3, pandas 2.3.3, numpy 2.3.4,
-scipy 1.16.2, statsmodels 0.14.6, matplotlib 3.10.7, h5py 3.15.1).
-Some figure scripts also use R with ggplot2. Atlas construction,
-scVI, cell2location, and Xenium require a GPU and live in other
-repositories ([docs/related-repositories.md](docs/related-repositories.md)).
-Query mapping onto the four lineage scANVI models will be on
-[ArchMap](https://www.archmap.bio/). The Fig. 2c LODO and Fig. 4c / S14
-mapping-stability screens are in this repo
-(`analyses/fig2c_fig4c_sfig14_scanvi/`); lymphoid mapping-stability
-took about 24 hours on a GPU, and LODO is as long or longer.
+So far the demos here were tested by Kyle (with AI help) 
+on macOS 15 with: 
 
+Python 3.12 and the packages in `requirements.txt` 
+(anndata 0.12.3, pandas 2.3.3, numpy 2.3.4,
+scipy 1.16.2, statsmodels 0.14.6, matplotlib 3.10.7, h5py 3.15.1).
+
+Atlas construction, mapping stability / LODO and scANVI mapping, 
+and possibly cell2location and Xenium analysis can be sped up with GPUs.
+lymphoid mapping-stability took about 24 hours on a GPU, 
+and LODO is as long or longer. Other lineages took ~12 (epi), 6 (stroma), 2 hours. 
+
+
+Query mapping onto the four lineage scANVI models can be done without GPUs (or any code)
+at [ArchMap](https://www.archmap.bio/) UPDATE THIS LINK ONCE UPLOAD IS DONE. 
+
+To reproduce figures, install the requirements!
 ```bash
 git clone https://github.com/HCA-integration/hca-gut-atlas-downstream.git
 cd hca-gut-atlas-downstream
 python -m pip install -r requirements.txt
 ```
 
-Typical install time is a few minutes if Python is already present.
-A conda specification is in `environment.yml`.
+Install time should be no more than a few minutes if Python is already present.
+A conda specification is provided in `environment.yml`.
 
 ## Verification
 
 `data/demo/hgca_all_lineages_v1_demo.h5ad` is a 3,185-cell subset of the
-all-cells object (94 cell types). It is only for checking that
-representative scripts execute. Values from this subset are not the
-manuscript results.
+all-cells object (94 cell types). Might be useful to check that
+representative scripts execute on your machine. 
 
 ```bash
 python src/run_demo.py
 ```
 
-Runtime is about 30 seconds. Output is written under
+Runtime = ~30 seconds. Output is written under
 `data/demo/expected/` (gitignored). A shorter check is
 `python src/smoke_demo_slice.py` (94 ileum biopsy-versus-resection
 Mann–Whitney tests; 17 samples with at least three germinal-centre B cells).
