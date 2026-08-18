@@ -37,9 +37,18 @@ REPO_ROOT = HERE.parents[3]
 DEFAULT_METADATA = REPO_ROOT / "data" / "demo" / "hgca_all_lineages_v1_demo.h5ad"
 DEFAULT_TAXONOMY = REPO_ROOT / "data" / "demo" / "GCA_taxonomy_2026_CAP.csv"
 DEFAULT_BENCHMARK_RESULTS = Path(os.environ.get("HGCA_BENCHMARK_RESULTS", ""))
-DEFAULT_CAP_LABELS = Path(os.environ.get("HGCA_CAP_LABELS", ""))
-DEFAULT_CAP_FEEDBACK = Path(os.environ.get("HGCA_CAP_FEEDBACK", ""))
-DEFAULT_CAP_BRIDGE = Path(os.environ.get("HGCA_CAP_BRIDGE", ""))
+DEFAULT_CAP_LABELS = Path(
+    os.environ.get("HGCA_CAP_LABELS")
+    or str(REPO_ROOT / "data" / "cap" / "cap_labels_901.csv")
+)
+DEFAULT_CAP_FEEDBACK = Path(
+    os.environ.get("HGCA_CAP_FEEDBACK")
+    or str(REPO_ROOT / "data" / "cap" / "cap_feedback_901.csv")
+)
+DEFAULT_CAP_BRIDGE = Path(
+    os.environ.get("HGCA_CAP_BRIDGE")
+    or str(REPO_ROOT / "data" / "cap" / "taxonomy_marker_source_report.csv")
+)
 LODO_LINEAGE_DIRS = {
     "myeloid": "myeloid_hgca_v0_v1_pangi",
     "lymphoid": "lymphoid_hgca_v0_v1_pangi",
@@ -569,9 +578,8 @@ def build_compositional_enrichment(
             .unstack(fill_value=0)
             .reindex(columns=celltypes, fill_value=0)
         )
-        # A 0.5 pseudocount supports finite CLR values for absent cell types;
-        # CLR then removes sample/stratum library-size differences.
-        logged = np.log(counts.astype(float) + 0.5)
+        # Pseudocount 1 matches Methods / patpy CLR.
+        logged = np.log(counts.astype(float) + 1.0)
         clr = logged.sub(logged.mean(axis=1), axis=0)
         stratum_metadata = one_annotation.drop_duplicates(
             "_sample_stratum"

@@ -26,7 +26,7 @@ def main() -> None:
     rows = []
     for lin, sub in obs.groupby("lin", observed=True):
         ct = pd.crosstab(sub["sample_id"], sub["ct"])
-        x = np.log(ct.astype(float) + 0.5)
+        x = np.log(ct.astype(float) + 1.0)
         x = x.sub(x.mean(axis=1), axis=0)
         long = x.stack().rename("clr").reset_index()
         long.columns = ["sample_id", "ct", "clr"]

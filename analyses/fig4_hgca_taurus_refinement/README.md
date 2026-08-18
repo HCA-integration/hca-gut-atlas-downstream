@@ -1,10 +1,12 @@
-# P11 — TAURUS label refinement (Fig. 4a–b)
+# Figure 4a–b — TAURUS label refinement
 
-Per-cell concordance between author labels and HGCA-transferred v1 labels.
+Per-cell concordance between author labels and HGCA-transferred v1
+labels.
 
-**No laptop demo on the healthy slice.** Needs a TAURUS obs CSV.
+Input: TAURUS obs CSV (`TAURUS_OBS` or `--obs`) and the taxonomy CSV.
+The healthy atlas subset is not sufficient.
 
-## Instructions for use
+Script: `src/build_fig4_metrics.py`
 
 ```bash
 export TAURUS_OBS=/path/to/taurus_gca_v1_label_transfer_obs.csv
@@ -14,5 +16,4 @@ python analyses/fig4_hgca_taurus_refinement/src/build_fig4_metrics.py \
   --out-dir /tmp/fig4
 ```
 
-Milo, SampleCLR, and patpy embeddings are not in this folder (Chris Lance /
-patpy).
+Milo, SampleCLR, and patpy embeddings are not in this directory.

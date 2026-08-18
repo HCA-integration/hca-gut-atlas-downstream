@@ -1,10 +1,7 @@
 #!/usr/bin/env python3
-"""Laptop demo for Nature software review (Figures 1–3 tables).
+"""Run representative analysis scripts on the bundled subset.
 
-Runs the wired analysis scripts against the bundled demo slice and writes
-only under data/demo/expected/.
-
-DEMO MODE: results are for software checking, not manuscript figures.
+Writes under data/demo/expected/. Results are not manuscript values.
 """
 from __future__ import annotations
 
@@ -26,7 +23,7 @@ def run(cmd: list[str]) -> None:
 
 
 def main() -> int:
-    print("DEMO MODE: results are for software checking, not manuscript figures.")
+    print("Verification subset: results are not manuscript values.")
     if not DEMO.is_file():
         raise SystemExit(f"Missing demo slice: {DEMO}")
     t0 = time.time()
@@ -58,7 +55,7 @@ def main() -> int:
     run(
         [
             sys.executable,
-            str(ANALYSES / "fig_sampling_depth_radial" / "src" / "recompute_clr_tables.py"),
+            str(ANALYSES / "fig3_clr_contrasts" / "src" / "recompute_clr_tables.py"),
             "--all-cells",
             str(DEMO),
             "--outdir",
@@ -70,8 +67,8 @@ def main() -> int:
             sys.executable,
             str(
                 ANALYSES
-                / "fig_sampling_depth_radial"
-                / "rare_cell_defensibility"
+                / "fig3_clr_contrasts"
+                / "fig3i_sfig12_follicle"
                 / "src"
                 / "compute_defensibility.py"
             ),
@@ -86,8 +83,8 @@ def main() -> int:
             sys.executable,
             str(
                 ANALYSES
-                / "fig_sampling_depth_radial"
-                / "revision"
+                / "fig3_clr_contrasts"
+                / "fig3c_sfig7_covariates"
                 / "src"
                 / "08_theils_u_heatmap.py"
             ),
@@ -100,7 +97,7 @@ def main() -> int:
     run(
         [
             sys.executable,
-            str(ANALYSES / "supp_table_datasets" / "src" / "build_supp_table_datasets.py"),
+            str(ANALYSES / "ed_table1_datasets" / "src" / "build_supp_table_datasets.py"),
             "--h5ad",
             str(DEMO),
             "--outdir",
@@ -112,7 +109,7 @@ def main() -> int:
             sys.executable,
             str(
                 ANALYSES
-                / "supp5compositionalCorrelations"
+                / "sfig11_compositional_correlations"
                 / "src"
                 / "compute_compositional_correlations.py"
             ),
@@ -127,7 +124,7 @@ def main() -> int:
     run(
         [
             sys.executable,
-            str(ANALYSES / "reference_uncertainty" / "src" / "smoke_taxonomy_paths.py"),
+            str(ANALYSES / "fig2c_fig4c_sfig14_scanvi" / "src" / "smoke_taxonomy_paths.py"),
             "--taxonomy",
             str(TAX),
             "--h5ad",
@@ -138,8 +135,7 @@ def main() -> int:
     )
 
     elapsed = time.time() - t0
-    print(f"\nDemo finished in {elapsed:.0f}s. Outputs under {EXPECTED}")
-    print("Wrote local demo tables under data/demo/expected/ (gitignored; not paper results).")
+    print(f"\nFinished in {elapsed:.0f}s. Outputs under {EXPECTED} (not manuscript values).")
     return 0
 
 

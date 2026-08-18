@@ -10,6 +10,6 @@ keywords:
   - cell atlas
   - composition
 abstract: >
-  Downstream analysis code and a laptop-scale demo slice for
-  The Human Gut Cell Atlas v1.0. Demo results are for software
-  checking, not manuscript figures.
+  Analysis and figure-generation code for The Human Gut Cell Atlas v1.0.
+  A small bundled subset is included to check that representative
+  scripts execute; those results are not manuscript values.

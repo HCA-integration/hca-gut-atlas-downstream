@@ -859,7 +859,7 @@ def main() -> None:
     )
     depth = int(config["filters"]["primary_min_confident_cells"])
     rarefied = rarefy(counts, depth, seed)
-    transformed = clr(rarefied, pseudocount=0.5)
+    transformed = clr(rarefied, pseudocount=1.0)
     distance = distance_frame(transformed)
     coordinates, pca_loadings, pca_variance = clr_pca(transformed)
 
@@ -1028,7 +1028,7 @@ def main() -> None:
         )
         strict_rarefied = rarefy(strict_counts, depth, seed)
         if len(strict_rarefied) >= 4:
-            strict_distance = distance_frame(clr(strict_rarefied, 0.5))
+            strict_distance = distance_frame(clr(strict_rarefied, 1.0))
             sensitivity = pd.concat(
                 [
                     sensitivity,
@@ -1036,7 +1036,7 @@ def main() -> None:
                         [
                             {
                                 "min_confident_cells": depth,
-                                "pseudocount": 0.5,
+                                "pseudocount": 1.0,
                                 "annotation_level": "strict_confidence_plus_distance",
                                 "rare_subtypes_excluded": False,
                                 "n_samples": len(strict_rarefied),

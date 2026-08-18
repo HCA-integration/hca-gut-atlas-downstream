@@ -1,18 +1,15 @@
-# Pre-publication archive
+# Archive branches
 
-This repository was rebuilt on 2026-08-17 for the HGCA v1 Nature
-submission. The previous working-group layout (Drive-oriented README,
-exploratory vignettes, checkpoints) is not on `main`.
+The repository was reorganized on 2026-08-17 for the HGCA v1
+manuscript. The previous working-group layout is not on `main`.
 
-Read-only snapshots:
+These branches are read-only snapshots. Do not merge them into `main`.
+Copy individual files if something is needed later.
 
-| Branch | What it preserves |
+| Branch | Contents |
 |---|---|
-| `archive/kk-local-archive-pre-publication-2026-08-17` | Local pre-restructure working state, including previously uncommitted analysis code |
+| `archive/kk-local-archive-pre-publication-2026-08-17` | Local pre-restructure working state |
 | `archive/origin-main-pre-restructure-2026-08-17` | `origin/main` immediately before the rebuild |
-
-Do not merge these branches back into `main`. Copy individual files from
-them if something is needed later.
 
 ```bash
 git show archive/origin-main-pre-restructure-2026-08-17:README.md

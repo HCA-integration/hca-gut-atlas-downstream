@@ -1,16 +1,13 @@
-# P12 — Organoid benchmark (Fig. 5)
+# Figure 5 — organoid benchmark
 
-Frozen sysVI label-transfer outputs. Mapping itself is not retrained here.
+Downstream tables on frozen sysVI label-transfer outputs. Mapping is
+not retrained here.
 
-**No laptop demo yet.** Inputs are collaborator HEOCA files, not the healthy
-atlas slice.
+Input (environment variables): `HGCA_OBJECTS`, `HEOCA_QUERY`,
+`HEOCA_METADATA`, `HEOCA_DISTANCES`. Requires `pyyaml` in addition to
+the root environment.
 
-## System requirements
-
-- Python 3.12 with `pandas`, `numpy`, `pyyaml`
-- Frozen query h5ad, metadata workbook, and per-cell distance CSV
-
-## Instructions for use
+Script: `src/01_build_tables.py` (see `config.yaml`)
 
 ```bash
 export HGCA_OBJECTS=/path/to/lineage-h5ads
@@ -20,6 +17,6 @@ export HEOCA_DISTANCES=/path/to/organoid_per_cell_distances.csv
 python analyses/fig5_organoid_benchmark/src/01_build_tables.py
 ```
 
-Confidence threshold 0.5; k=30 in the frozen mapping; proximity formula and
-HC3 OLS are in the paper Methods. A tiny 2–3 sample demo table is still to
-be added.
+Confidence threshold 0.5; k=30 in the frozen mapping. Proximity and
+HC3 OLS are described in Methods. A small organoid subset for a
+verification run has not been added.
