@@ -16,3 +16,17 @@ Requires ggplot2 and svglite.
 
 Supplementary Figure 1b–c (QC and the integration UMAP) are not in this
 directory.
+
+
+# Supplementary Figure 1b — QC metrics by lineage
+
+Python script 
+
+analyses/sfig1_dataset_selection/src/S1_QC.py
+
+Derived code based on the full adata object.
+
+Ensure to enter the right path to the test object or the full HGCA object to reproduce the QC plots.
+
+
+
