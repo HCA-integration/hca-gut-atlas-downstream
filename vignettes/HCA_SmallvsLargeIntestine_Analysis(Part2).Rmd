@@ -1,0 +1,442 @@
+---
+title: "HGCA_SmallvsLargeIntestine_Vignette (Part 2 - in R)"
+author: "Abdalla Ahmed"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+# Introduction
+
+In this vignette, we will determine the differences in gene expression between the small intestine and the large intestine across each cell type in the intestine.
+
+The input required is the pseudobulk data which is obtained from part 1 of this vignette.
+## Download the integrated h5ad object and perpare it to be ingested into seurat
+
+```{r, message=FALSE}
+
+####load libraries####
+library(DESeq2)
+library(gprofiler2)
+library(dplyr)
+library(ggplot2)
+library(purrr)
+library(stringr)
+library(tidyr) 
+library(tibble)
+
+
+####Differential analysis and pathway enrichment####
+process_cell_type_region <- function(cell_type) {
+  # Create safe filename (replace special characters)
+  safe_cell_type <- gsub("/", "_", cell_type)
+  
+  # Define file paths
+  counts_file <- paste0("./pseudobulk_outputs_regions/", safe_cell_type, "_pseudobulk_counts.csv")
+  metadata_file <- paste0("./pseudobulk_outputs_regions/", safe_cell_type, "_metadata.csv")
+  
+  # Read data
+  counts <- read.csv(counts_file, check.names = FALSE, , row.names = 1)
+  metadata <- read.csv(metadata_file, check.names = FALSE, row.names = 1)
+  
+  # Skip if not enough samples
+  if (nrow(metadata) < 4) {  # At least 2 donors with both regions
+    message(paste("Skipping", cell_type, "- insufficient samples with both regions"))
+    return(data.frame())
+  }
+  
+  # Define the condition - now comparing regions
+  metadata$Region <- factor(metadata$intestine_region)
+  
+  # Run DESeq2 - now comparing regions while controlling for age and other factors
+  dds <- DESeqDataSetFromMatrix(
+    countData = counts,
+    colData = metadata,
+    design = ~ Region)
+  #+ sample_source + disease_ontology_term)
+  
+  dds <- DESeq(dds)
+  res_comparison <- results(dds, contrast = c("Region", "small intestine", "large intestine"))
+  res_comparison <- res_comparison[order(res_comparison$padj), ]
+  
+  # Perform enrichment analysis (same as before but with new direction labels)
+  perform_enrichment <- function(de_genes, direction) {
+    de_df <- as.data.frame(de_genes)
+    
+    if (direction == "up") {
+      sig_genes <- rownames(de_df[de_df$padj < 0.05 & de_df$log2FoldChange > 0, ])
+    } else {
+      sig_genes <- rownames(de_df[de_df$padj < 0.05 & de_df$log2FoldChange < 0, ])
+    }
+    
+    if (length(sig_genes) == 0) {
+      return(data.frame())
+    }
+    
+    enrich_go <- gost(
+      query = sig_genes,
+      organism = "hsapiens",
+      significant = TRUE,
+      sources = c("GO:BP"),
+      evcodes=TRUE
+    )
+    
+    if (is.null(enrich_go$result) || nrow(enrich_go$result) == 0) {
+      return(data.frame())
+    }
+    
+    enrich_go$result %>%
+      mutate(Direction = ifelse(direction == "up", "Higher in small intestine", "Higher in large intestine"),
+             CellType = cell_type)
+  }
+  
+  up_enriched <- perform_enrichment(res_comparison, "up")
+  down_enriched <- perform_enrichment(res_comparison, "down")
+  
+  up_enriched <- up_enriched[up_enriched$term_size >= 5 & up_enriched$term_size <= 350, ]
+  down_enriched <- down_enriched[down_enriched$term_size >= 5 & down_enriched$term_size <= 350, ]
+  
+  return(bind_rows(up_enriched, down_enriched))
+}
+
+# Get all cell type files by region
+cell_type_files <- list.files(path = "./pseudobulk_outputs_regions/", 
+                              pattern = "_pseudobulk_counts.csv",
+                              full.names = FALSE)
+
+# Process all cell types and combine results (by region)
+all_enrichments <- map_dfr(cell_types, ~ {
+  result <- tryCatch(
+    process_cell_type_region(.x),
+    error = function(e) {
+      message("Error processing ", .x, ": ", e$message)
+      return(data.frame())
+    }
+  )
+  if (nrow(result) > 0) result else NULL
+})
+
+saveRDS(all_enrichments, "all_enrichments_region(nobatchcorrection).rds")
+
+```
+
+## Assign pathways to categories and create figure
+
+```{r, message=FALSE}
+all_enrichments <- readRDS("all_enrichments_region(nobatchcorrection).rds")
+all_enrichments <- all_enrichments |> dplyr::select(-parents)
+
+#Note: the assignments below were created through manual curation and review of all the differential pathways across each cell type
+category_keywords <- list(
+  Immune_Response = c("immune", "inflamm", "interferon", "cytokine", "chemokine", "leukocyte",  "phagocytosis", "interleukin", "NF-kappaB", "lipopolysaccharide", "bacteria", "antigen", "viral",
+                      "lymphocyte", "T cell", "B cell", "myeloid", "antigen", "defense", "complement", "MHC"),
+  Metabolism = c("insulin", "metaboli", "biosynthe", "catabolic", "lipid", "fatty acid", "steroid", "glucose",
+                 "cholesterol", "amino", "organic acid", "carboxylic acid", "triglyceride", "saccharide"),
+  Mitochondrial_Energy = c("oxidative phosphorylation", "mitochondr", "respiration", 
+                           "electron transport", "ATP synthesis", "aerobic respiration", "electron", "proton", "energy", "respiratory chain complex"),
+  Digestion_and_Absorption = c("digest", "absorption", "intestinal"),
+  Transport_And_Secretion = c("transport", "secretion", "vesicle", "exocytosis", "endocytosis", 
+                              "golgi", "endosome", "ion transport", "trafic"),
+  Cell_Cycle_And_Division = c("cell cycle", "mitotic", "mitosis", "replication", "division", "centrosome",
+                              "spindle", "segregation", "anaphase", "telophase", "duplication", "separation"),
+  Stress_Response = c("stress", "apopto", "repair", "hypoxia", "oxygen", "shear", "protein folding", "chaperone", "unfolded protein", "telomere", "ubiquitination", "stabili", "refolding", "oxidative", "reactive oxygen"),
+  Cell_Adhesion_And_Matrix = c("cell adhesion", "extracellular matrix", "collagen", 
+                               "integrin", "junction"),
+  Protein_Glycosylation = c("glycan", "glycosylation"),
+  Translation = c("ribosom", "translat", "rRNA")
+)
+
+
+# Function to assign categories
+assign_category <- function(term, categories) {
+  found <- sapply(names(categories), function(cat) {
+    any(sapply(categories[[cat]], function(keyword) grepl(keyword, term, ignore.case = TRUE)))
+  })
+  if (any(found)) {
+    # Return first matching category, or paste all matches if multiple wanted
+    names(categories)[which(found)[1]]
+  } else {
+    "Other"
+  }
+}
+
+unique_terms <- unique(all_enrichments$term_name)
+
+category <- sapply(unique_terms, assign_category, categories = category_keywords)
+write.csv(category, "top_pathways_cat.csv", row.names = TRUE)
+
+category <- read.csv("top_pathways_cat.csv")
+Master_Cell_Annotation <- read.csv("unique_prelim_annotations.csv")
+
+# Add 'master' cell type annotation to all_enrichments
+all_enrichments <- all_enrichments %>%
+  filter(CellType != "doublet") %>%
+  #  filter(CellType != "Epithelial") %>%
+  filter(CellType != "lowQ") %>%
+  # Replace underscores with spaces for matching
+  mutate(CellType_clean = str_replace_all(CellType, "_", " ")) %>%
+  left_join(Master_Cell_Annotation %>% 
+              dplyr::select(hgca_celltype_v1, cell_type), 
+            by = c("CellType_clean" = "hgca_celltype_v1")) %>%
+  dplyr::select(-CellType_clean) 
+
+all_enrichments_toSave <- all_enrichments %>%
+  dplyr::select(-query, -evidence_codes) 
+write.csv(all_enrichments_toSave, "all_enrichments_HGCApaper.csv", row.names = TRUE)
+
+
+top_n_per_celltype <- 1  # Number of top pathways to show per cell type per direction
+
+top_pathways <- all_enrichments %>% group_by(CellType, Direction) %>% arrange(p_value) %>%
+  slice_head(n = top_n_per_celltype) %>% ungroup() %>% distinct(term_name) %>% 
+  as.data.frame()
+
+all_terms_with_categories <- all_enrichments %>% distinct(term_name) %>%
+  mutate(category = sapply(term_name, assign_category, categories = category_keywords))
+
+# Count how many pathways we have per category in our initial selection
+category_counts <- top_pathways %>%
+  left_join(all_terms_with_categories, by = "term_name") %>% group_by(category) %>%
+  summarise(n = n()) %>% ungroup()
+
+all_categories <- names(category_keywords)
+
+categories_needing_more <- all_categories[!all_categories %in% category_counts$category | 
+                                            all_categories %in% category_counts$category[category_counts$n < 3]]
+
+term_frequencies <- all_enrichments %>% 
+  dplyr::count(term_name, name = "n")
+
+supplemental_pathways <- map_dfr(categories_needing_more, function(cat) {
+  # How many are we missing? (3 if new category, 3-current if existing)
+  needed <- ifelse(cat %in% category_counts$category, 
+                   3 - category_counts$n[category_counts$category == cat],
+                   3)
+  
+  all_terms_with_categories %>%
+    filter(category == cat) %>%
+    filter(!term_name %in% top_pathways$term_name) %>%
+    left_join(term_frequencies, by = "term_name") %>%
+    arrange(desc(n)) %>%
+    slice_head(n = needed)
+})
+
+top_pathways <- unique(c(top_pathways$term_name, supplemental_pathways$term_name))
+
+#create the figure
+library(ggplot2)
+
+# 1. Project palette (Wong colorblind-safe + HCA blue)
+PAL_GCA <- c(
+  hgca       = "#0072B2",  # HCA blue (Wong "Blue")
+  taurus     = "#D55E00",  # Vermillion
+  shared     = "#009E73",  # Bluish green
+  null       = "#E0E0E0",  # Light grey
+  text       = "#000000"
+)
+
+# 2. Theme: Helvetica, no gridlines, thin axes, sentence-case labels.
+theme_gca <- function(base_size = 6, base_family = "Helvetica") {
+  theme_classic(base_size = base_size, base_family = base_family) +
+    theme(
+      text             = element_text(family = base_family, color = "black"),
+      plot.title       = element_text(family = base_family, face = "bold",
+                                      size = 7, color = "black", hjust = 0),
+      axis.line        = element_line(color = "black", linewidth = 0.25),
+      axis.ticks       = element_line(color = "black", linewidth = 0.25),
+      axis.text        = element_text(color = "black", size = 6),
+      axis.title       = element_text(color = "black", size = 6),
+      panel.grid       = element_blank(),
+      panel.background = element_blank(),
+      plot.background  = element_blank(),
+      legend.position  = "right",
+      legend.key       = element_blank(),
+      legend.text      = element_text(color = "black", size = 6),
+      legend.title     = element_text(color = "black", size = 6, face = "bold"),
+      strip.background = element_blank(),
+      strip.text       = element_text(color = "black", size = 6, face = "bold")
+    )
+}
+
+# 3. Save as Illustrator-editable PDF + SVG + 300 dpi PNG preview.
+save_figure <- function(p, base, width_mm, height_mm) {
+  width_in  <- width_mm  / 25.4
+  height_in <- height_mm / 25.4
+  ggplot2::ggsave(paste0(base, ".pdf"), p,
+                  width = width_in, height = height_in,
+                  device = grDevices::cairo_pdf)
+  ggplot2::ggsave(paste0(base, ".svg"), p,
+                  width = width_in, height = height_in,
+                  device = svglite::svglite)
+  ggplot2::ggsave(paste0(base, ".png"), p,
+                  width = width_in, height = height_in, dpi = 300)
+}
+
+
+{
+  terms_to_keep <- category %>% filter(x != "Other") %>% pull(X)
+  
+  enrichments_filtered <- all_enrichments %>%
+    filter(term_name %in% terms_to_keep) %>%
+    filter(term_name %in% top_pathways)
+  
+  if (nrow(enrichments_filtered) == 0) {
+    message("No enrichments found")
+  } else {
+    
+    # ---- master cell type ordering ----
+    desired_cell_type_order <- c("epithelial", "stroma", "myeloid", "lymphoid")
+    
+    master_celltype_colors <- c(
+      "epithelial" = "#A65628", "stroma" = "#377EB8",
+      "myeloid" = "#4DAF4A", "lymphoid" = "#FF7F00"
+    )
+    
+    # ---- build plot_data ----
+    plot_data <- enrichments_filtered %>%
+      mutate(
+        Direction_Label = ifelse(Direction == "Higher in small intestine",
+                                 "Higher in small intestine", "Higher in large intestine"),
+        Enrichment = -log10(p_value),
+        shape = ifelse(Direction == "Higher in small intestine", 24, 25),
+        cell_type = factor(cell_type, levels = desired_cell_type_order)
+      )
+    
+    # ---- build CellType order (your original logic) ----
+    cell_types_ordered <- plot_data %>%
+      arrange(cell_type, CellType) %>%
+      pull(CellType) %>%
+      unique()
+    
+    celltype_mapping <- data.frame(
+      CellType = cell_types_ordered,
+      cell_type_group = sapply(cell_types_ordered, function(ct) {
+        plot_data %>%
+          filter(CellType == ct) %>%
+          pull(cell_type) %>%
+          as.character() %>%
+          unique() %>%
+          dplyr::first()
+      })
+    ) %>%
+      mutate(x_position = 1:n())
+    
+    vline_positions <- celltype_mapping %>%
+      group_by(cell_type_group) %>%
+      summarize(last_x = max(x_position), .groups = "drop") %>%
+      pull(last_x) + 0.5
+    
+    vline_positions <- sort(vline_positions)
+    vline_positions <- vline_positions[-length(vline_positions)]
+    
+    # ---- add category + set category order ----
+    category_order <- c(
+      "Digestion_and_Absorption", "Transport_And_Secretion", "Metabolism", "Mitochondrial_Energy",
+      "Immune_Response", "Stress_Response", "Cell_Cycle_And_Division", "Cell_Adhesion_And_Matrix",
+      "Protein_Glycosylation", "Translation"
+    )
+    
+    plot_data <- plot_data %>%
+      left_join(category %>% select(X, x), by = c("term_name" = "X")) %>%
+      mutate(category = factor(x, levels = category_order))
+    
+    # ---- (A) keep your column clustering within each master cell type ----
+    unique_celltypes <- plot_data %>%
+      distinct(CellType, cell_type) %>%
+      arrange(cell_type, CellType)
+    
+    celltype_order_clustered <- unique_celltypes %>%
+      group_by(cell_type) %>%
+      nest() %>%
+      mutate(
+        clustered_order = map(data, ~ {
+          mat <- plot_data %>%
+            filter(CellType %in% .x$CellType) %>%
+            group_by(term_name, CellType) %>%
+            summarize(avg_enrich = mean(Enrichment, na.rm = TRUE), .groups = "drop") %>%
+            pivot_wider(names_from = CellType, values_from = avg_enrich, values_fill = 0) %>%
+            column_to_rownames("term_name") %>%
+            as.matrix()
+          
+          if (ncol(mat) > 1) hclust(dist(t(mat)), method = "complete")$order else 1
+        }),
+        ordered_celltypes = map2(data, clustered_order, ~ .x$CellType[.y])
+      ) %>%
+      unnest(ordered_celltypes) %>%
+      pull(ordered_celltypes) %>%
+      unique()
+    
+    plot_data <- plot_data %>%
+      mutate(CellType = factor(CellType, levels = celltype_order_clustered))
+    
+    # ---- (B) cluster ROWS (term_name) within each category ----
+    term_order_clustered <- plot_data %>%
+      filter(!is.na(category)) %>%
+      group_by(category) %>%
+      nest() %>%
+      mutate(
+        term_levels = map(data, ~ {
+          df_cat <- .x
+          
+          # term x CellType matrix (mean enrichment); fill missing as 0
+          mat <- df_cat %>%
+            group_by(term_name, CellType) %>%
+            summarize(avg_enrich = mean(Enrichment, na.rm = TRUE), .groups = "drop") %>%
+            pivot_wider(names_from = CellType, values_from = avg_enrich, values_fill = 0) %>%
+            column_to_rownames("term_name") %>%
+            as.matrix()
+          
+          if (nrow(mat) <= 1) return(rownames(mat))
+          
+          ord <- hclust(dist(mat), method = "complete")$order
+          rownames(mat)[ord]
+        })
+      ) %>%
+      arrange(category) %>%
+      pull(term_levels) %>%
+      unlist(use.names = FALSE) %>%
+      unique()
+    
+    plot_data <- plot_data %>%
+      mutate(term_name = factor(term_name, levels = term_order_clustered))
+    
+    # ---- plot ----
+    heatmap_plot <- ggplot(plot_data, aes(x = CellType, y = term_name)) +
+      geom_point(aes(fill = Direction_Label, size = Enrichment, shape = shape),
+                 stroke = 0.25, na.rm = TRUE) +
+      geom_vline(xintercept = vline_positions,
+                 color = "black", linewidth = 0.25, linetype = "solid") +
+      scale_shape_identity() +
+      scale_fill_manual(
+        values = c(
+          "Higher in small intestine" = "#0072B2",  # Vermillion from PAL_GCA
+          "Higher in large intestine" = "#D55E00"   # HCA blue from PAL_GCA
+        )
+      ) +
+      scale_size_continuous(range = c(0.5, 3), name = "-log10(p-value)") +
+      facet_grid(category ~ ., scales = "free_y", space = "free_y") +
+      theme_gca() +
+      theme(
+        axis.text.x = element_text(angle = 45, hjust = 1),
+        axis.title = element_blank(),
+        panel.spacing.y = unit(0.3, "lines"),
+        #legend.position = "none"
+      ) +
+      guides(
+        fill = guide_legend(override.aes = list(shape = 24, size = 2), order = 1),
+        size = guide_legend(override.aes = list(shape = 24, fill = "grey50"), order = 2)
+      )
+    
+    save_figure(
+      heatmap_plot,
+      base = "Figures/ALLcategories_Pathway_Enrichment_Heatmap_clusterRowsWithinCategory(hgca)",
+      width_mm = (1.6*180),
+      height_mm = (1.6*170)
+    )
+    
+    message("Plot saved successfully")
+  }
+}
+
+
+```
+
