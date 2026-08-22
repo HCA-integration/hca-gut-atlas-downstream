@@ -1,0 +1,78 @@
+{
+  "frozen_utc": "2026-08-09T04:00:00Z",
+  "lineage": "epithelial",
+  "purpose": "Freeze project-matched SCANVI recipes for epithelial reference jackknife screening. Do not redesign.",
+  "sources_verified_from_code": [
+    "reference_mapping_benchmark/configs/epithelial.yaml",
+    "reference_mapping_benchmark/configs/pangi_epithelial.yaml",
+    "reference_uncertainty/configs/stroma_scanvi_recipe_frozen.json"
+  ],
+  "shared_preprocess": {
+    "hvg_count": 4000,
+    "n_latent": 30,
+    "n_layers": 2,
+    "dropout_rate": 0.1,
+    "gene_likelihood": "nb",
+    "n_epochs": 10,
+    "unlabeled_category": "Unknown"
+  },
+  "PanGI": {
+    "reference_h5ad": "reference_uncertainty/data/pangi_healthy_full.h5ad",
+    "lineage_subset": {"column": "level_1_annot", "values": ["Epithelial"]},
+    "n_cells_expected": 371724,
+    "labels_key": "level_3_annot",
+    "n_labels_expected": 52,
+    "batch_key": "sampleID",
+    "study_key": "study",
+    "model_class": "direct SCANVI (no scVI pretraining)",
+    "use_scvi_pretrain": false
+  },
+  "HGCA": {
+    "reference_h5ad": "reference_uncertainty/data/hgca_epithelial.h5ad",
+    "n_cells_expected": 269780,
+    "labels_key": "hgca_celltype_v1",
+    "n_labels_expected": 28,
+    "batch_key": "sample_id",
+    "study_key": "dataset_id",
+    "model_class": "SCVI pretrain -> SCANVI (epithelial.yaml)",
+    "use_scvi_pretrain": true,
+    "scvi_epochs": 10,
+    "scanvi_epochs": 10,
+    "batch_size_from_config": 512
+  },
+  "paired_shared_studies_exact_name": [
+    "Huang2019",
+    "Lee2020",
+    "Martin2019",
+    "Parikh2019",
+    "Uzzan2022",
+    "Wang2020",
+    "Yu2021"
+  ],
+  "screening_design": {
+    "full_seeds": 3,
+    "omit_seeds": 1
+  },
+  "runtime_gate": {
+    "estimated_total_hours_conservative": 15.1,
+    "submission_buffer_hours_expected": 22.4,
+    "decision": "PASS"
+  },
+  "unavoidable_implementation_differences": [
+    {
+      "item": "scVI pretraining",
+      "HGCA": true,
+      "PanGI": false
+    },
+    {
+      "item": "taxonomy size",
+      "HGCA": 28,
+      "PanGI": 52
+    }
+  ],
+  "forbidden_changes": [
+    "Do not enable MapQC",
+    "Do not discard checkpoints",
+    "Do not alter frozen LODO prediction"
+  ]
+}

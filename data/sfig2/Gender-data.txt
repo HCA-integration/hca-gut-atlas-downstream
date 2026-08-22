@@ -1,0 +1,10 @@
+Category	Count
+Gender	174
+Sex	77
+biological_sex	15
+Characteristics[sex]	15
+gender	15
+Gender Female	5
+Gender Male	5
+Gender: Female	5
+GENDER	4

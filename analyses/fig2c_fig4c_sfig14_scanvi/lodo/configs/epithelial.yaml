@@ -1,0 +1,65 @@
+lineage: epithelial
+display_name: Epithelial
+data:
+  input_path: ""  # set HGCA_OBJECTS or PANGI_H5AD
+  format: h5ad
+  n_cells: ~120000
+  n_genes: ~36000
+labels:
+  - hgca_celltype_v1
+  - hgca_celltype_level_1
+
+scanvi:
+  n_latent: 30
+  n_layers: 2
+  dropout_rate: 0.1
+  gene_likelihood: nb
+  n_epochs: 10
+  batch_size: 512
+  train_size: 0.8
+  learning_rate: 0.001
+  early_stopping: false
+  early_stopping_patience: 20
+  unlabeled_category: Unknown
+  use_scvi_pretrain: true
+  scvi_epochs: 10
+scimilarity:
+  model_dir: ""  # optional; not used for SCANVI LODO
+  k_neighbors: 50
+  weighting: true
+  lora:
+    rank: 8
+    alpha: 16
+    dropout: 0.1
+    epochs: 10
+    learning_rate: 0.0001
+    batch_size: 256
+    target_modules:
+    - network.0.1
+    - network.1.1
+    - network.2.1
+    - network.3
+taxonomy:
+  skip_external_annotations: true
+
+output:
+  results_dir: results/{lineage}
+  predictions_dir: results/{lineage}/predictions_v1
+  models_dir: results/{lineage}/models_v1
+  plots_dir: results/{lineage}/plots_v1
+  advanced_plots_dir: results/{lineage}/plots_v1/advanced
+batch_key: sample_id
+random_seed: 42
+
+training:
+  exclude_hgca_celltype_v1_labels:
+    - Epithelial
+
+benchmark:
+  split_mode: leave_one_dataset_out
+  dataset_id_column: null
+  holdout_dataset_id: null
+  lodo_fold_index: 0
+  test_size: 0.2
+  random_state: 42
+  max_lodo_folds: null

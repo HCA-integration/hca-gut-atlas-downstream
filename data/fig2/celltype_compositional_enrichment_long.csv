@@ -1,0 +1,1223 @@
+annotation_group,annotation_column,annotation_level,level_order,hgca_celltype_v1,n_samples,mean_clr,row_z
+Tissue,tissue_level_1,duodenum,0,Epithelial,10,-0.5832329239825489,1.1528726479903435
+Tissue,tissue_level_1,duodenum,0,Enterocyte Progenitors,10,3.035286075436899,1.6942191539154716
+Tissue,tissue_level_1,duodenum,0,Lower Villus Enterocytes,10,4.236341991626978,1.899994544248451
+Tissue,tissue_level_1,duodenum,0,Mid Villus Enterocytes,10,3.885436319787483,1.7343883901321957
+Tissue,tissue_level_1,duodenum,0,Villus Tip Enterocytes,10,2.245744237417598,1.2448399171588056
+Tissue,tissue_level_1,duodenum,0,BEST4 Enterocytes,10,1.9230921865562216,1.8830782305530382
+Tissue,tissue_level_1,duodenum,0,Colonocyte Progenitors,10,-0.6930941528493598,-0.4996520920327648
+Tissue,tissue_level_1,duodenum,0,Lower Crypt Colonocytes,10,-0.4222891327391388,-0.402868270938227
+Tissue,tissue_level_1,duodenum,0,Mid Crypt Colonocytes,10,-0.6930941528493598,-0.3729033995468069
+Tissue,tissue_level_1,duodenum,0,Crypt Top Colonocytes,10,-0.5832329239825489,-0.34759936140996595
+Tissue,tissue_level_1,duodenum,0,BEST4 Colonocytes,10,-0.4733716951157379,-0.3489898685571428
+Tissue,tissue_level_1,duodenum,0,Microfold Cells (M Cells),10,-0.42228913273913876,1.6579318892451138
+Tissue,tissue_level_1,duodenum,0,Enteroendocrine Cells (EEC),10,-0.5832329239825489,1.2346858979248196
+Tissue,tissue_level_1,duodenum,0,EEC Progenitors,10,-0.007975660099985538,1.9434850860804347
+Tissue,tissue_level_1,duodenum,0,EEC S,10,-0.5832329239825489,1.0831919284723508
+Tissue,tissue_level_1,duodenum,0,EEC Enterochromaffin (EC),10,0.12195263831304051,1.671604178182486
+Tissue,tissue_level_1,duodenum,0,EEC L,10,0.037222852274320185,1.9860637229265743
+Tissue,tissue_level_1,duodenum,0,EEC N,10,-0.5832329239825489,0.37095631968951676
+Tissue,tissue_level_1,duodenum,0,Brunners Gland Cells,10,0.704814514994509,2.031198876920006
+Tissue,tissue_level_1,duodenum,0,Paneth Cells,10,-0.09270544613870589,1.6646936422444467
+Tissue,tissue_level_1,duodenum,0,Tuft Cells,10,0.7416710840405343,1.6000806483623722
+Tissue,tissue_level_1,duodenum,0,Tuft Progenitors,10,-0.007975660099985538,1.5326991240342631
+Tissue,tissue_level_1,duodenum,0,Goblet Cells,10,1.1910921617240111,0.6905008282348815
+Tissue,tissue_level_1,duodenum,0,Mature Goblet Cells,10,0.2590773028191153,0.29864920059901007
+Tissue,tissue_level_1,duodenum,0,Foveolar Cells,10,-0.6930941528493598,0.47925901233671003
+Tissue,tissue_level_1,duodenum,0,Intestinal Stem Cells (ISC),10,2.0869184958607185,1.5230802695309074
+Tissue,tissue_level_1,duodenum,0,Transiently Amplifying Cells (TA),10,2.328383524714489,1.2794479448368747
+Tissue,tissue_level_1,duodenum,0,Secretory Progenitors,10,0.9026222755651585,0.9920924084281426
+Tissue,tissue_level_1,duodenum,0,Arteriolar Endothelial,10,-0.05093192606870804,1.310777856588492
+Tissue,tissue_level_1,duodenum,0,Capillary Endothelial,10,-0.6930941528493598,-0.012232062451048558
+Tissue,tissue_level_1,duodenum,0,Post Arteriole Capillary Endothelial (PAC),10,-0.5832329239825489,-0.9854460623666627
+Tissue,tissue_level_1,duodenum,0,Pre Venule Capillary Endothelial (PVC),10,-0.49850313794382844,0.6160796079161155
+Tissue,tissue_level_1,duodenum,0,Venular Endothelial,10,-0.23358216783590086,-0.1632315559533963
+Tissue,tissue_level_1,duodenum,0,Lymphatic Endothelial,10,-0.253649237382116,0.48453800733573915
+Tissue,tissue_level_1,duodenum,0,Medullary Sinus Endothelial,10,-0.24650334098390142,1.4869054212629937
+Tissue,tissue_level_1,duodenum,0,Crypt Top Fibroblasts (S2B),10,-0.6930941528493598,-0.6438631803694205
+Tissue,tissue_level_1,duodenum,0,Crypt Bottom Fibroblasts (S2A),10,-0.5832329239825489,-0.2740257724274515
+Tissue,tissue_level_1,duodenum,0,Lamina propria Fibroblasts (S1),10,0.26237683855641625,0.6294237720242991
+Tissue,tissue_level_1,duodenum,0,Submucosal Fibroblasts (S3),10,-0.1954207786073024,0.3413733450472854
+Tissue,tissue_level_1,duodenum,0,Mesenchymal Lymphoid Tissue Organizer Cells (mLTo Cells),10,-0.6930941528493598,0.42259142641615144
+Tissue,tissue_level_1,duodenum,0,Fibroblastic Reticular Cells (FRC),10,-0.6930941528493598,0.756075613649357
+Tissue,tissue_level_1,duodenum,0,Marginal Reticular Cells (MRC),10,-0.6930941528493598,0.7298104724587272
+Tissue,tissue_level_1,duodenum,0,Follicular Dendritic Cells (fDC),10,-0.6930941528493598,0.6814557224771371
+Tissue,tissue_level_1,duodenum,0,Muscularis Propria Fibroblasts,10,-0.6930941528493598,-0.09040883254553567
+Tissue,tissue_level_1,duodenum,0,Myofibroblasts,10,-0.6930941528493598,-0.5964681082477202
+Tissue,tissue_level_1,duodenum,0,Interstitial Cells of Cajal (ICC),10,-0.6930941528493598,0.7026920240116563
+Tissue,tissue_level_1,duodenum,0,Angiogenic Pericytes,10,-0.6930941528493598,-0.6875866478965088
+Tissue,tissue_level_1,duodenum,0,Contractile Pericytes,10,-0.04311544878377438,1.353489704101438
+Tissue,tissue_level_1,duodenum,0,Secretory Pericytes,10,-0.6930941528493598,0.31607940851345495
+Tissue,tissue_level_1,duodenum,0,Glia,10,-0.6930941528493598,-0.6611566115043246
+Tissue,tissue_level_1,duodenum,0,Smooth Muscle Cells (SMC),10,-0.6930941528493598,0.24159398429860526
+Tissue,tissue_level_1,duodenum,0,Adipocytes,10,-0.6930941528493598,-0.13776735167577192
+Tissue,tissue_level_1,duodenum,0,Plasma Cells,10,0.1622969245857802,-0.7795449238573025
+Tissue,tissue_level_1,duodenum,0,Plasma IGA,10,1.0194859273694987,-0.05213100552211341
+Tissue,tissue_level_1,duodenum,0,Plasma IGG,10,-0.43659921710320615,-0.6570578341500508
+Tissue,tissue_level_1,duodenum,0,GC B Dark Zone (GC B DZ),10,-0.3635104662489269,-0.4635133616491517
+Tissue,tissue_level_1,duodenum,0,GC B Light Zone (GC B LZ),10,-0.5832329239825489,-0.8838477511838141
+Tissue,tissue_level_1,duodenum,0,Memory B,10,0.23140900832725153,-1.141284207391641
+Tissue,tissue_level_1,duodenum,0,Naive B,10,-0.25614936760265766,-1.0949091366861916
+Tissue,tissue_level_1,duodenum,0,CD4 Tfh,10,0.043106902276613554,-0.9791382226293769
+Tissue,tissue_level_1,duodenum,0,CD4 Th17,10,0.9853514467830132,-1.3550491888489327
+Tissue,tissue_level_1,duodenum,0,CD4 Tr1,10,-0.4733716951157379,-0.8308930073249751
+Tissue,tissue_level_1,duodenum,0,CD4 Tfr,10,-0.42228913273913876,-0.8136739158556986
+Tissue,tissue_level_1,duodenum,0,CD4 pTreg,10,-0.08106441095426475,-1.1855341454855572
+Tissue,tissue_level_1,duodenum,0,CD4 tTreg,10,-0.20256667500551684,-0.9051175942267807
+Tissue,tissue_level_1,duodenum,0,CD4 Naive,10,-0.5321503616059498,-1.0276200204431245
+Tissue,tissue_level_1,duodenum,0,CD4 Memory,10,1.200669072362239,-1.0852862209529603
+Tissue,tissue_level_1,duodenum,0,CD8 Effector Memory,10,0.1529681311434245,-0.9535596657319261
+Tissue,tissue_level_1,duodenum,0,CD8 Circulating Effector Memory,10,0.43018069635106226,-1.238599304296237
+Tissue,tissue_level_1,duodenum,0,CD8 Memory Exhausted,10,-0.6930941528493598,-0.19937010219003243
+Tissue,tissue_level_1,duodenum,0,CD8 TRM,10,1.4672598595219224,-0.9386420249874124
+Tissue,tissue_level_1,duodenum,0,CD8 IEL,10,0.34548178403904595,-0.8276563398659675
+Tissue,tissue_level_1,duodenum,0,CD8 Naive,10,-0.6930941528493598,-0.8859388251726068
+Tissue,tissue_level_1,duodenum,0,Gamma Delta T Cells,10,-0.5832329239825489,-1.1948206629075522
+Tissue,tissue_level_1,duodenum,0,MAIT Cells,10,-0.5832329239825489,-1.354241507170258
+Tissue,tissue_level_1,duodenum,0,NKT Cells,10,0.7316432611433372,-0.2797943441848662
+Tissue,tissue_level_1,duodenum,0,NK Cells,10,0.17072295894755418,-0.9015612123795503
+Tissue,tissue_level_1,duodenum,0,ILC3,10,-0.2276981178336075,-1.167284292824811
+Tissue,tissue_level_1,duodenum,0,Classical Monocytes,10,-0.5832329239825489,-1.8768411045242313
+Tissue,tissue_level_1,duodenum,0,Nonclassical Monocytes,10,-0.6930941528493598,0.06524487351311692
+Tissue,tissue_level_1,duodenum,0,Cycling Macrophages,10,-0.4222891327391388,-0.12802127729227186
+Tissue,tissue_level_1,duodenum,0,Homeostatic Macrophages,10,0.7071467595757737,0.8312482794521062
+Tissue,tissue_level_1,duodenum,0,M0 Macrophages,10,0.4500437598918059,-0.17620203310202834
+Tissue,tissue_level_1,duodenum,0,Perivascular Resident Macrophages,10,-0.5832329239825489,-0.4913408980540398
+Tissue,tissue_level_1,duodenum,0,Follicle Associated Resident Macrophages,10,-0.6930941528493598,-0.5094241460905896
+Tissue,tissue_level_1,duodenum,0,migDC,10,-0.6930941528493598,-0.1696369386171886
+Tissue,tissue_level_1,duodenum,0,cDC1,10,-0.6930941528493598,-1.218317737443144
+Tissue,tissue_level_1,duodenum,0,cDC2,10,-0.005467691660283181,-0.485800033872117
+Tissue,tissue_level_1,duodenum,0,Tolerogenic cDC2,10,-0.5832329239825489,0.05381283302657455
+Tissue,tissue_level_1,duodenum,0,pDC,10,-0.6930941528493598,0.2897496624793308
+Tissue,tissue_level_1,duodenum,0,Monocyte Derived Dendritic Cells (MO DC),10,-0.6930941528493598,-0.2227598231382546
+Tissue,tissue_level_1,duodenum,0,Mast Cells,10,0.6072401798466939,-0.025568673453450978
+Tissue,tissue_level_1,duodenum,0,Neutrophils,10,-0.6930941528493598,0.7839664148958314
+Tissue,tissue_level_1,duodenum,0,Eosinophils,10,-0.6930941528493598,0.7633777284676486
+Tissue,tissue_level_1,jejunum,1,Epithelial,45,-0.8094920258660464,-0.006736238502671287
+Tissue,tissue_level_1,jejunum,1,Enterocyte Progenitors,45,-0.32074612750812176,-0.593822711138359
+Tissue,tissue_level_1,jejunum,1,Lower Villus Enterocytes,45,-0.024737826935960456,-0.3920919277267819
+Tissue,tissue_level_1,jejunum,1,Mid Villus Enterocytes,45,-0.0649818746627753,-0.4345335914473983
+Tissue,tissue_level_1,jejunum,1,Villus Tip Enterocytes,45,-0.20504904122475276,-0.48477494114368636
+Tissue,tissue_level_1,jejunum,1,BEST4 Enterocytes,45,-0.19927162219909933,-0.24392793285757805
+Tissue,tissue_level_1,jejunum,1,Colonocyte Progenitors,45,-0.7850784194511996,-0.5957824355127719
+Tissue,tissue_level_1,jejunum,1,Lower Crypt Colonocytes,45,-0.7606648130363526,-0.7029270636434637
+Tissue,tissue_level_1,jejunum,1,Mid Crypt Colonocytes,45,-0.8094920258660464,-0.5397835298106273
+Tissue,tissue_level_1,jejunum,1,Crypt Top Colonocytes,45,-0.8094920258660464,-0.5964086880188262
+Tissue,tissue_level_1,jejunum,1,BEST4 Colonocytes,45,-0.7850784194511996,-0.6942565014523727
+Tissue,tissue_level_1,jejunum,1,Microfold Cells (M Cells),45,-0.7737267389230663,-0.3180376517371223
+Tissue,tissue_level_1,jejunum,1,Enteroendocrine Cells (EEC),45,-0.8094920258660464,-0.15691491335856636
+Tissue,tissue_level_1,jejunum,1,EEC Progenitors,45,-0.693008758864721,-0.8309439805066766
+Tissue,tissue_level_1,jejunum,1,EEC S,45,-0.7379614519800864,0.12249935761108141
+Tissue,tissue_level_1,jejunum,1,EEC Enterochromaffin (EC),45,-0.6679006514831163,-0.8584856370244551
+Tissue,tissue_level_1,jejunum,1,EEC L,45,-0.6328298655068941,-0.5513406771721374
+Tissue,tissue_level_1,jejunum,1,EEC N,45,-0.7850784194511996,-0.6269478544865192
+Tissue,tissue_level_1,jejunum,1,Brunners Gland Cells,45,-0.8094920258660464,-0.32508344129350253
+Tissue,tissue_level_1,jejunum,1,Paneth Cells,45,-0.6760723132636789,-0.2504570526909772
+Tissue,tissue_level_1,jejunum,1,Tuft Cells,45,-0.59406294716444,-0.9825836701916955
+Tissue,tissue_level_1,jejunum,1,Tuft Progenitors,45,-0.6891342391503926,-0.7959305165757298
+Tissue,tissue_level_1,jejunum,1,Goblet Cells,45,-0.4562846751623561,-1.0324656767184013
+Tissue,tissue_level_1,jejunum,1,Mature Goblet Cells,45,-0.7174223652795679,-0.941793008170421
+Tissue,tissue_level_1,jejunum,1,Foveolar Cells,45,-0.8094920258660464,0.08325312460544378
+Tissue,tissue_level_1,jejunum,1,Intestinal Stem Cells (ISC),45,-0.35633022568988776,-0.9245287666777144
+Tissue,tissue_level_1,jejunum,1,Transiently Amplifying Cells (TA),45,-0.29306869710236705,-0.8441940596752279
+Tissue,tissue_level_1,jejunum,1,Secretory Progenitors,45,-0.5429842817772375,-0.9762979114456589
+Tissue,tissue_level_1,jejunum,1,Arteriolar Endothelial,45,-0.6066538182374276,-0.8316367411286163
+Tissue,tissue_level_1,jejunum,1,Capillary Endothelial,45,-0.8094920258660464,-1.388608778795303
+Tissue,tissue_level_1,jejunum,1,Post Arteriole Capillary Endothelial (PAC),45,-0.7073782514186111,-1.3384912154776534
+Tissue,tissue_level_1,jejunum,1,Pre Venule Capillary Endothelial (PVC),45,-0.8094920258660464,-0.5696570970608109
+Tissue,tissue_level_1,jejunum,1,Venular Endothelial,45,-0.5836724167357581,-1.8896093323680518
+Tissue,tissue_level_1,jejunum,1,Lymphatic Endothelial,45,-0.5695809646272713,-0.5257611973846467
+Tissue,tissue_level_1,jejunum,1,Medullary Sinus Endothelial,45,-0.7221181229166169,-0.7154522437801966
+Tissue,tissue_level_1,jejunum,1,Crypt Top Fibroblasts (S2B),45,-0.8094920258660464,-1.1256361581179326
+Tissue,tissue_level_1,jejunum,1,Crypt Bottom Fibroblasts (S2A),45,-0.8094920258660464,-0.995648861340142
+Tissue,tissue_level_1,jejunum,1,Lamina propria Fibroblasts (S1),45,-0.7850784194511996,-1.2479376888173697
+Tissue,tissue_level_1,jejunum,1,Submucosal Fibroblasts (S3),45,-0.5312455504675527,-0.47669253839852516
+Tissue,tissue_level_1,jejunum,1,Mesenchymal Lymphoid Tissue Organizer Cells (mLTo Cells),45,-0.8094920258660464,-0.1111947024689703
+Tissue,tissue_level_1,jejunum,1,Fibroblastic Reticular Cells (FRC),45,-0.8094920258660464,-0.010186049345560793
+Tissue,tissue_level_1,jejunum,1,Marginal Reticular Cells (MRC),45,-0.8094920258660464,-0.13371818757364334
+Tissue,tissue_level_1,jejunum,1,Follicular Dendritic Cells (fDC),45,-0.8094920258660464,0.12870422160549286
+Tissue,tissue_level_1,jejunum,1,Muscularis Propria Fibroblasts,45,-0.8094920258660464,-0.6519138081797551
+Tissue,tissue_level_1,jejunum,1,Myofibroblasts,45,-0.8094920258660464,-1.1058807206308545
+Tissue,tissue_level_1,jejunum,1,Interstitial Cells of Cajal (ICC),45,-0.8094920258660464,0.22361050633854723
+Tissue,tissue_level_1,jejunum,1,Angiogenic Pericytes,45,-0.8094920258660464,-1.4573542870766505
+Tissue,tissue_level_1,jejunum,1,Contractile Pericytes,45,-0.6503793768083547,-0.9014261117311277
+Tissue,tissue_level_1,jejunum,1,Secretory Pericytes,45,-0.8094920258660464,-0.1850427835921778
+Tissue,tissue_level_1,jejunum,1,Glia,45,-0.8094920258660464,-1.1853767586612005
+Tissue,tissue_level_1,jejunum,1,Smooth Muscle Cells (SMC),45,-0.7850784194511996,-0.3250792979011488
+Tissue,tissue_level_1,jejunum,1,Adipocytes,45,-0.8094920258660464,-0.47139585995550376
+Tissue,tissue_level_1,jejunum,1,Plasma Cells,45,0.8103927941001768,0.3404209168314637
+Tissue,tissue_level_1,jejunum,1,Plasma IGA,45,1.284855857939477,0.25616759222771834
+Tissue,tissue_level_1,jejunum,1,Plasma IGG,45,-0.3054916655363218,-0.18436388173649837
+Tissue,tissue_level_1,jejunum,1,GC B Dark Zone (GC B DZ),45,-0.7850784194511996,-1.691207473609288
+Tissue,tissue_level_1,jejunum,1,GC B Light Zone (GC B LZ),45,-0.7362512066215058,-1.378292762520602
+Tissue,tissue_level_1,jejunum,1,Memory B,45,0.9791173948940732,-0.630298585001351
+Tissue,tissue_level_1,jejunum,1,Naive B,45,0.2546592965087334,-0.7162567236246542
+Tissue,tissue_level_1,jejunum,1,CD4 Tfh,45,0.4623192767599212,-0.6869966663719524
+Tissue,tissue_level_1,jejunum,1,CD4 Th17,45,4.357235052184412,1.6281223769337219
+Tissue,tissue_level_1,jejunum,1,CD4 Tr1,45,0.04592572148690899,-0.09772096052745337
+Tissue,tissue_level_1,jejunum,1,CD4 Tfr,45,-0.5840026526772003,-1.231385400027027
+Tissue,tissue_level_1,jejunum,1,CD4 pTreg,45,0.6525094737685833,0.10917210388573863
+Tissue,tissue_level_1,jejunum,1,CD4 tTreg,45,0.3897229761005922,-0.49611816693152017
+Tissue,tissue_level_1,jejunum,1,CD4 Naive,45,0.1450439286592245,-0.5925546793543718
+Tissue,tissue_level_1,jejunum,1,CD4 Memory,45,4.5631363399935125,1.9976798621493674
+Tissue,tissue_level_1,jejunum,1,CD8 Effector Memory,45,2.871966433873677,2.0523114071411923
+Tissue,tissue_level_1,jejunum,1,CD8 Circulating Effector Memory,45,2.6961497691630094,0.7074066137975875
+Tissue,tissue_level_1,jejunum,1,CD8 Memory Exhausted,45,0.014278480565023337,1.7387336233211805
+Tissue,tissue_level_1,jejunum,1,CD8 TRM,45,5.769800293100241,2.060507915851436
+Tissue,tissue_level_1,jejunum,1,CD8 IEL,45,4.070545880984697,1.7687216665572225
+Tissue,tissue_level_1,jejunum,1,CD8 Naive,45,-0.295479943538069,-0.5188998947783292
+Tissue,tissue_level_1,jejunum,1,Gamma Delta T Cells,45,0.051803620769976244,0.43459497492309507
+Tissue,tissue_level_1,jejunum,1,MAIT Cells,45,0.40736744551908993,0.25700603016589846
+Tissue,tissue_level_1,jejunum,1,NKT Cells,45,3.5185014600094413,2.0583832704475284
+Tissue,tissue_level_1,jejunum,1,NK Cells,45,2.8894070009651722,1.7821397355881021
+Tissue,tissue_level_1,jejunum,1,ILC3,45,1.510533025521555,1.0050911990622053
+Tissue,tissue_level_1,jejunum,1,Classical Monocytes,45,0.5197841117844075,1.2827724611082028
+Tissue,tissue_level_1,jejunum,1,Nonclassical Monocytes,45,-0.5399747223640431,0.7147174508308003
+Tissue,tissue_level_1,jejunum,1,Cycling Macrophages,45,-0.15184488298915874,1.1004261850196648
+Tissue,tissue_level_1,jejunum,1,Homeostatic Macrophages,45,0.6704784752735533,0.7637739498444843
+Tissue,tissue_level_1,jejunum,1,M0 Macrophages,45,1.5580545938145318,1.3906489784866285
+Tissue,tissue_level_1,jejunum,1,Perivascular Resident Macrophages,45,-0.3603823847577271,0.27438078956949
+Tissue,tissue_level_1,jejunum,1,Follicle Associated Resident Macrophages,45,-0.7850784194511996,-1.0637042875826959
+Tissue,tissue_level_1,jejunum,1,migDC,45,-0.7850784194511996,-0.7806339099867161
+Tissue,tissue_level_1,jejunum,1,cDC1,45,-0.6458917913936079,-0.964979269428551
+Tissue,tissue_level_1,jejunum,1,cDC2,45,0.4210678645940089,0.5393543004017157
+Tissue,tissue_level_1,jejunum,1,Tolerogenic cDC2,45,-0.4495117822566578,0.9959940220591443
+Tissue,tissue_level_1,jejunum,1,pDC,45,-0.8094920258660464,-0.2753502284536211
+Tissue,tissue_level_1,jejunum,1,Monocyte Derived Dendritic Cells (MO DC),45,0.014499492368666192,2.1234604347037447
+Tissue,tissue_level_1,jejunum,1,Mast Cells,45,2.6253779659528043,2.017028103555019
+Tissue,tissue_level_1,jejunum,1,Neutrophils,45,-0.8094920258660464,0.21682391680964647
+Tissue,tissue_level_1,jejunum,1,Eosinophils,45,-0.8094920258660464,0.2430546936060346
+Tissue,tissue_level_1,ileum,2,Epithelial,252,-1.1375293815093717,-1.6879726154663601
+Tissue,tissue_level_1,ileum,2,Enterocyte Progenitors,252,2.1228973877050787,1.0721799753581225
+Tissue,tissue_level_1,ileum,2,Lower Villus Enterocytes,252,2.0632541569802116,0.7310642635930583
+Tissue,tissue_level_1,ileum,2,Mid Villus Enterocytes,252,2.5411642596481507,0.9963345748284156
+Tissue,tissue_level_1,ileum,2,Villus Tip Enterocytes,252,2.640326712294957,1.5233112665464277
+Tissue,tissue_level_1,ileum,2,BEST4 Enterocytes,252,0.6851846511367657,0.6424629568154993
+Tissue,tissue_level_1,ileum,2,Colonocyte Progenitors,252,-1.0938905186831303,-0.9185138575987505
+Tissue,tissue_level_1,ileum,2,Lower Crypt Colonocytes,252,-0.9285242712385555,-0.8517785009810036
+Tissue,tissue_level_1,ileum,2,Mid Crypt Colonocytes,252,-1.0905802021958633,-0.9427808549835272
+Tissue,tissue_level_1,ileum,2,Crypt Top Colonocytes,252,-1.0990580335206293,-0.9148344343141077
+Tissue,tissue_level_1,ileum,2,BEST4 Colonocytes,252,-1.0190547560244738,-0.9534239033685237
+Tissue,tissue_level_1,ileum,2,Microfold Cells (M Cells),252,-0.917998027607867,-1.1292077344579359
+Tissue,tissue_level_1,ileum,2,Enteroendocrine Cells (EEC),252,-0.9001568129179567,-0.7145463640537044
+Tissue,tissue_level_1,ileum,2,EEC Progenitors,252,-0.4641943187248493,0.09576953848043962
+Tissue,tissue_level_1,ileum,2,EEC S,252,-0.9254638939967649,-1.0416828742953426
+Tissue,tissue_level_1,ileum,2,EEC Enterochromaffin (EC),252,-0.12186747063719496,0.8905898020103719
+Tissue,tissue_level_1,ileum,2,EEC L,252,-0.6154428020934657,-0.4854980799566239
+Tissue,tissue_level_1,ileum,2,EEC N,252,-0.35360942589776645,1.5061921925321498
+Tissue,tissue_level_1,ileum,2,Brunners Gland Cells,252,-1.2597511797819236,-1.0256930301438834
+Tissue,tissue_level_1,ileum,2,Paneth Cells,252,-0.43000170053407183,0.5573747449817819
+Tissue,tissue_level_1,ileum,2,Tuft Cells,252,0.32052380044994205,0.7857852596282926
+Tissue,tissue_level_1,ileum,2,Tuft Progenitors,252,-0.7188905367067753,-0.8976563093877375
+Tissue,tissue_level_1,ileum,2,Goblet Cells,252,2.0045453902959154,1.5412792505080206
+Tissue,tissue_level_1,ileum,2,Mature Goblet Cells,252,1.5767569970295516,1.9724905379130562
+Tissue,tissue_level_1,ileum,2,Foveolar Cells,252,-1.2738271769814682,-1.4964961350389627
+Tissue,tissue_level_1,ileum,2,Intestinal Stem Cells (ISC),252,1.4985663612541755,0.9336781393123861
+Tissue,tissue_level_1,ileum,2,Transiently Amplifying Cells (TA),252,2.458162281385424,1.3845818918400132
+Tissue,tissue_level_1,ileum,2,Secretory Progenitors,252,1.2794478468982173,1.5051917736223093
+Tissue,tissue_level_1,ileum,2,Arteriolar Endothelial,252,-0.7518620422266878,-1.391442325841332
+Tissue,tissue_level_1,ileum,2,Capillary Endothelial,252,-0.6693520571146016,0.26851248141061507
+Tissue,tissue_level_1,ileum,2,Post Arteriole Capillary Endothelial (PAC),252,0.19995884046773274,1.2417989101678186
+Tissue,tissue_level_1,ileum,2,Pre Venule Capillary Endothelial (PVC),252,-1.0789674953195953,-1.5971116706206192
+Tissue,tissue_level_1,ileum,2,Venular Endothelial,252,-0.0067013765616579695,0.955571258983803
+Tissue,tissue_level_1,ileum,2,Lymphatic Endothelial,252,-0.8066077205388217,-1.283734906081118
+Tissue,tissue_level_1,ileum,2,Medullary Sinus Endothelial,252,-0.4691808191317724,0.45578639498170065
+Tissue,tissue_level_1,ileum,2,Crypt Top Fibroblasts (S2B),252,-0.2982400865806862,0.9904451996049822
+Tissue,tissue_level_1,ileum,2,Crypt Bottom Fibroblasts (S2A),252,-0.4954943555827171,0.005804635359038002
+Tissue,tissue_level_1,ileum,2,Lamina propria Fibroblasts (S1),252,0.5878690127875869,1.2128056960116609
+Tissue,tissue_level_1,ileum,2,Submucosal Fibroblasts (S3),252,-0.769168345760425,-1.0562701575390099
+Tissue,tissue_level_1,ileum,2,Mesenchymal Lymphoid Tissue Organizer Cells (mLTo Cells),252,-1.1912451008678666,-1.8618666934081898
+Tissue,tissue_level_1,ileum,2,Fibroblastic Reticular Cells (FRC),252,-1.0617539378172467,-1.670857564660049
+Tissue,tissue_level_1,ileum,2,Marginal Reticular Cells (MRC),252,-1.0199462140752582,-1.6950287032430151
+Tissue,tissue_level_1,ileum,2,Follicular Dendritic Cells (fDC),252,-1.1628829269473884,-1.5494823801298445
+Tissue,tissue_level_1,ileum,2,Muscularis Propria Fibroblasts,252,-0.9358042978943167,-1.2612459840122907
+Tissue,tissue_level_1,ileum,2,Myofibroblasts,252,-0.41390356659191746,0.6254030669909684
+Tissue,tissue_level_1,ileum,2,Interstitial Cells of Cajal (ICC),252,-1.257495642180386,-1.6203257002633216
+Tissue,tissue_level_1,ileum,2,Angiogenic Pericytes,252,-0.6587685441829059,-0.4605829917144946
+Tissue,tissue_level_1,ileum,2,Contractile Pericytes,252,-0.7166951644802461,-1.1476724497067459
+Tissue,tissue_level_1,ileum,2,Secretory Pericytes,252,-1.1921739604783683,-1.8325850022086583
+Tissue,tissue_level_1,ileum,2,Glia,252,-0.5324192003438408,0.062473855822104046
+Tissue,tissue_level_1,ileum,2,Smooth Muscle Cells (SMC),252,-0.9404262628153462,-1.2821067932973402
+Tissue,tissue_level_1,ileum,2,Adipocytes,252,-1.198889605349285,-1.5875170587690506
+Tissue,tissue_level_1,ileum,2,Plasma Cells,252,0.8477027841300374,0.4048958137031125
+Tissue,tissue_level_1,ileum,2,Plasma IGA,252,0.6246054919851523,-0.5108909119152524
+Tissue,tissue_level_1,ileum,2,Plasma IGG,252,-0.5867103276144643,-1.198267042015974
+Tissue,tissue_level_1,ileum,2,GC B Dark Zone (GC B DZ),252,0.3289940023012314,1.553204588771491
+Tissue,tissue_level_1,ileum,2,GC B Light Zone (GC B LZ),252,0.23387212375451863,1.7564479548199032
+Tissue,tissue_level_1,ileum,2,Memory B,252,1.9400542502189226,0.026407860877270786
+Tissue,tissue_level_1,ileum,2,Naive B,252,1.1921331793493102,-0.02132577812615669
+Tissue,tissue_level_1,ileum,2,CD4 Tfh,252,1.2682008436197516,-0.12539231155828745
+Tissue,tissue_level_1,ileum,2,CD4 Th17,252,2.3879275548409735,-0.11416259427547701
+Tissue,tissue_level_1,ileum,2,CD4 Tr1,252,-0.3429839097399998,-0.6468045130922491
+Tissue,tissue_level_1,ileum,2,CD4 Tfr,252,-0.11088099348152133,-0.009296173771097236
+Tissue,tissue_level_1,ileum,2,CD4 pTreg,252,0.40498950307342113,-0.32768321440888926
+Tissue,tissue_level_1,ileum,2,CD4 tTreg,252,0.7276056537107272,-0.26279681583673825
+Tissue,tissue_level_1,ileum,2,CD4 Naive,252,0.6256899842897042,-0.2837622941528448
+Tissue,tissue_level_1,ileum,2,CD4 Memory,252,1.9465547621490862,-0.4014014124313387
+Tissue,tissue_level_1,ileum,2,CD8 Effector Memory,252,0.29418778470333906,-0.7974403805044711
+Tissue,tissue_level_1,ileum,2,CD8 Circulating Effector Memory,252,1.0765542311851166,-0.6834960863492359
+Tissue,tissue_level_1,ileum,2,CD8 Memory Exhausted,252,-1.1367674641514716,-1.414973953577358
+Tissue,tissue_level_1,ileum,2,CD8 TRM,252,2.869742674098704,0.03897952565243012
+Tissue,tissue_level_1,ileum,2,CD8 IEL,252,1.0981312086369572,-0.30305800767206176
+Tissue,tissue_level_1,ileum,2,CD8 Naive,252,-0.22235170588460243,-0.45139498800842737
+Tissue,tissue_level_1,ileum,2,Gamma Delta T Cells,252,-0.5425091254929849,-1.0903290479932977
+Tissue,tissue_level_1,ileum,2,MAIT Cells,252,-0.22810976026807633,-0.7766207626173035
+Tissue,tissue_level_1,ileum,2,NKT Cells,252,1.3403585862143867,0.23091859676918175
+Tissue,tissue_level_1,ileum,2,NK Cells,252,0.6988068362667056,-0.3802725373203924
+Tissue,tissue_level_1,ileum,2,ILC3,252,0.27788070869735343,-0.5354310113027194
+Tissue,tissue_level_1,ileum,2,Classical Monocytes,252,0.004106009759534977,-0.1943974046540687
+Tissue,tissue_level_1,ileum,2,Nonclassical Monocytes,252,-1.0841311122817046,-1.5933805606596503
+Tissue,tissue_level_1,ileum,2,Cycling Macrophages,252,-0.16078431850797442,1.059820304555419
+Tissue,tissue_level_1,ileum,2,Homeostatic Macrophages,252,0.8258038431346707,1.0495924784973654
+Tissue,tissue_level_1,ileum,2,M0 Macrophages,252,1.4455668738438539,1.2315787849187825
+Tissue,tissue_level_1,ileum,2,Perivascular Resident Macrophages,252,-0.8465646910925574,-1.396157398914913
+Tissue,tissue_level_1,ileum,2,Follicle Associated Resident Macrophages,252,-0.3821881665397225,1.3640377017750527
+Tissue,tissue_level_1,ileum,2,migDC,252,-0.7228386940581593,-0.3672122986732643
+Tissue,tissue_level_1,ileum,2,cDC1,252,-0.13977803670406058,1.7513696440544444
+Tissue,tissue_level_1,ileum,2,cDC2,252,0.9758284119552915,1.8726902234507332
+Tissue,tissue_level_1,ileum,2,Tolerogenic cDC2,252,-0.7039733387195419,-0.7969078985864999
+Tissue,tissue_level_1,ileum,2,pDC,252,-1.0503123135002534,-1.4445083474943639
+Tissue,tissue_level_1,ileum,2,Monocyte Derived Dendritic Cells (MO DC),252,-0.8691068850304542,-0.8063781762315163
+Tissue,tissue_level_1,ileum,2,Mast Cells,252,0.09587741561229028,-0.5431289417851081
+Tissue,tissue_level_1,ileum,2,Neutrophils,252,-1.1573769646526393,-1.4782271018778101
+Tissue,tissue_level_1,ileum,2,Eosinophils,252,-1.2446453762510887,-1.702172534644823
+Tissue,tissue_level_1,colon,3,Epithelial,166,-0.9449498908769719,-0.7009763495277788
+Tissue,tissue_level_1,colon,3,Enterocyte Progenitors,166,-0.38659855468275656,-0.6387189162935876
+Tissue,tissue_level_1,colon,3,Lower Villus Enterocytes,166,-0.8414437009761151,-0.831407914560718
+Tissue,tissue_level_1,colon,3,Mid Villus Enterocytes,166,-0.8830260648784309,-0.8836693382791646
+Tissue,tissue_level_1,colon,3,Villus Tip Enterocytes,166,-0.8598395881952317,-0.9468846869903613
+Tissue,tissue_level_1,colon,3,BEST4 Enterocytes,166,-1.0213321074989843,-1.067786553003677
+Tissue,tissue_level_1,colon,3,Colonocyte Progenitors,166,1.6304971092884057,1.9286721680638967
+Tissue,tissue_level_1,colon,3,Lower Crypt Colonocytes,166,2.0981582002275467,1.8321693746243422
+Tissue,tissue_level_1,colon,3,Mid Crypt Colonocytes,166,1.0197044894312435,2.0827433672846225
+Tissue,tissue_level_1,colon,3,Crypt Top Colonocytes,166,1.5987474670763246,2.0518491790188635
+Tissue,tissue_level_1,colon,3,BEST4 Colonocytes,166,1.443157006997278,1.773881921380517
+Tissue,tissue_level_1,colon,3,Microfold Cells (M Cells),166,-0.8628614603826779,-0.8192005652926808
+Tissue,tissue_level_1,colon,3,Enteroendocrine Cells (EEC),166,-1.0371326640818872,-1.5570128284707137
+Tissue,tissue_level_1,colon,3,EEC Progenitors,166,-0.4579794160148572,0.1209403028649717
+Tissue,tissue_level_1,colon,3,EEC S,166,-0.9733923847076227,-1.3392656507517129
+Tissue,tissue_level_1,colon,3,EEC Enterochromaffin (EC),166,-0.494020111999807,-0.3015045018025635
+Tissue,tissue_level_1,colon,3,EEC L,166,-0.5408580280035786,-0.20305502893411867
+Tissue,tissue_level_1,colon,3,EEC N,166,-0.9493451731681847,-1.4390664446583055
+Tissue,tissue_level_1,colon,3,Brunners Gland Cells,166,-1.0631325287760496,-0.7197516382954045
+Tissue,tissue_level_1,colon,3,Paneth Cells,166,-1.0738136573074708,-1.556212751851782
+Tissue,tissue_level_1,colon,3,Tuft Cells,166,-0.07836625557420596,0.014524596462998548
+Tissue,tissue_level_1,colon,3,Tuft Progenitors,166,-0.31796931581217314,0.4729452909418516
+Tissue,tissue_level_1,colon,3,Goblet Cells,166,0.8855215241170808,0.3709091223753709
+Tissue,tissue_level_1,colon,3,Mature Goblet Cells,166,-0.17178948241163305,-0.24867852947350186
+Tissue,tissue_level_1,colon,3,Foveolar Cells,166,-1.0901272127357973,-0.8715167816200217
+Tissue,tissue_level_1,colon,3,Intestinal Stem Cells (ISC),166,0.6940933086699123,0.1277693935004045
+Tissue,tissue_level_1,colon,3,Transiently Amplifying Cells (TA),166,0.5010884832964445,-0.200846249463779
+Tissue,tissue_level_1,colon,3,Secretory Progenitors,166,0.2162723351042487,0.05753343594194794
+Tissue,tissue_level_1,colon,3,Arteriolar Endothelial,166,-0.24066791672771293,0.5793091816478332
+Tissue,tissue_level_1,colon,3,Capillary Endothelial,166,-0.6065581953815345,1.0110347198225125
+Tissue,tissue_level_1,colon,3,Post Arteriole Capillary Endothelial (PAC),166,0.21010696511266777,1.2706582018790247
+Tissue,tissue_level_1,colon,3,Pre Venule Capillary Endothelial (PVC),166,-0.8146081574761028,-0.5891638552542222
+Tissue,tissue_level_1,colon,3,Venular Endothelial,166,-0.0026819492705689005,0.9753920051229954
+Tissue,tissue_level_1,colon,3,Lymphatic Endothelial,166,-0.653034402811537,-0.7926319639389687
+Tissue,tissue_level_1,colon,3,Medullary Sinus Endothelial,166,-0.8766167045275539,-1.430865532800478
+Tissue,tissue_level_1,colon,3,Crypt Top Fibroblasts (S2B),166,-0.18684640414855028,1.4515057387439467
+Tissue,tissue_level_1,colon,3,Crypt Bottom Fibroblasts (S2A),166,0.13179084140296565,2.0064467209582886
+Tissue,tissue_level_1,colon,3,Lamina propria Fibroblasts (S1),166,0.44371244716816327,0.9544328647596829
+Tissue,tissue_level_1,colon,3,Submucosal Fibroblasts (S3),166,-0.10196669505623342,0.5690265851532247
+Tissue,tissue_level_1,colon,3,Mesenchymal Lymphoid Tissue Organizer Cells (mLTo Cells),166,-0.8913661295930582,-0.48665913108542197
+Tissue,tissue_level_1,colon,3,Fibroblastic Reticular Cells (FRC),166,-0.909466440122294,-0.6683300423543761
+Tissue,tissue_level_1,colon,3,Marginal Reticular Cells (MRC),166,-0.8524120564345566,-0.45213187954944767
+Tissue,tissue_level_1,colon,3,Follicular Dendritic Cells (fDC),166,-1.0717867161230055,-1.1168836912373181
+Tissue,tissue_level_1,colon,3,Muscularis Propria Fibroblasts,166,-0.4997725090287954,0.8421774947619367
+Tissue,tissue_level_1,colon,3,Myofibroblasts,166,-0.1736592047106237,1.6768269875872173
+Tissue,tissue_level_1,colon,3,Interstitial Cells of Cajal (ICC),166,-1.096745359053075,-0.9586942837169572
+Tissue,tissue_level_1,colon,3,Angiogenic Pericytes,166,-0.3890521221063478,1.3231177589016516
+Tissue,tissue_level_1,colon,3,Contractile Pericytes,166,-0.3435462897770794,0.23791832952069522
+Tissue,tissue_level_1,colon,3,Secretory Pericytes,166,-0.710582246945195,0.24078875395142393
+Tissue,tissue_level_1,colon,3,Glia,166,-0.14697093841439493,1.7984140354252938
+Tissue,tissue_level_1,colon,3,Smooth Muscle Cells (SMC),166,-0.7771870736681403,-0.27646430121681426
+Tissue,tissue_level_1,colon,3,Adipocytes,166,-0.721633650092033,-0.21956944689757688
+Tissue,tissue_level_1,colon,3,Plasma Cells,166,1.4918395339044856,1.5180199522973086
+Tissue,tissue_level_1,colon,3,Plasma IGA,166,1.6898346119031078,0.7266594135779795
+Tissue,tissue_level_1,colon,3,Plasma IGG,166,-0.10280263149516154,0.5464092847727077
+Tissue,tissue_level_1,colon,3,GC B Dark Zone (GC B DZ),166,-0.058397211190746943,0.4250402958822799
+Tissue,tissue_level_1,colon,3,GC B Light Zone (GC B LZ),166,-0.17018107572994953,0.45083868150748113
+Tissue,tissue_level_1,colon,3,Memory B,166,1.8071837120968337,-0.06439616892824576
+Tissue,tissue_level_1,colon,3,Naive B,166,1.3587565825938572,0.1021888725519589
+Tissue,tissue_level_1,colon,3,CD4 Tfh,166,1.4473384841063894,-0.000554515105947244
+Tissue,tissue_level_1,colon,3,CD4 Th17,166,1.989959073089484,-0.4662531163020842
+Tissue,tissue_level_1,colon,3,CD4 Tr1,166,0.04791071097975098,-0.09491844550848856
+Tissue,tissue_level_1,colon,3,CD4 Tfr,166,0.03201015242079384,0.35979648250562557
+Tissue,tissue_level_1,colon,3,CD4 pTreg,166,0.7460642208895101,0.2742896445702436
+Tissue,tissue_level_1,colon,3,CD4 tTreg,166,0.9980748503656356,-0.076027139334238
+Tissue,tissue_level_1,colon,3,CD4 Naive,166,0.9790333247204852,-0.056755889734165
+Tissue,tissue_level_1,colon,3,CD4 Memory,166,2.0641111461417148,-0.2936167662608677
+Tissue,tissue_level_1,colon,3,CD8 Effector Memory,166,1.2521285018221344,0.2615695821804461
+Tissue,tissue_level_1,colon,3,CD8 Circulating Effector Memory,166,1.5640649567609657,-0.26482366557893294
+Tissue,tissue_level_1,colon,3,CD8 Memory Exhausted,166,-0.7680038094851491,-0.40461225850842664
+Tissue,tissue_level_1,colon,3,CD8 TRM,166,2.10742987389789,-0.4924019743981148
+Tissue,tissue_level_1,colon,3,CD8 IEL,166,2.394676169414916,0.6006367296246491
+Tissue,tissue_level_1,colon,3,CD8 Naive,166,0.29049707562405824,0.022017339345242488
+Tissue,tissue_level_1,colon,3,Gamma Delta T Cells,166,0.401463270119091,1.3317731062853735
+Tissue,tissue_level_1,colon,3,MAIT Cells,166,0.418929985514176,0.2758129220932716
+Tissue,tissue_level_1,colon,3,NKT Cells,166,0.6700348512773274,-0.33148387933251466
+Tissue,tissue_level_1,colon,3,NK Cells,166,0.34441323061450224,-0.7301059275721932
+Tissue,tissue_level_1,colon,3,ILC3,166,0.3424696921856587,-0.4547101443959984
+Tissue,tissue_level_1,colon,3,Classical Monocytes,166,0.05996999596868019,-0.03437393907451179
+Tissue,tissue_level_1,colon,3,Nonclassical Monocytes,166,-0.9509736818074418,-1.0285789591580512
+Tissue,tissue_level_1,colon,3,Cycling Macrophages,166,-0.5168889459333754,-0.5577249983404277
+Tissue,tissue_level_1,colon,3,Homeostatic Macrophages,166,0.1614586487612857,-0.17288758762547385
+Tissue,tissue_level_1,colon,3,M0 Macrophages,166,0.2785269278673037,-0.41874598080932607
+Tissue,tissue_level_1,colon,3,Perivascular Resident Macrophages,166,-0.47598778894182203,-0.12284313233873048
+Tissue,tissue_level_1,colon,3,Follicle Associated Resident Macrophages,166,-0.8141080529714976,-1.2386314786070458
+Tissue,tissue_level_1,colon,3,migDC,166,-0.8392338978712792,-1.1403566595408734
+Tissue,tissue_level_1,colon,3,cDC1,166,-0.5415816033903019,-0.40513899000008335
+Tissue,tissue_level_1,colon,3,cDC2,166,0.1628722276063437,-0.081204460684769
+Tissue,tissue_level_1,colon,3,Tolerogenic cDC2,166,-0.8416663257142021,-1.7670741754644395
+Tissue,tissue_level_1,colon,3,pDC,166,-0.937761713091345,-0.8980865756257792
+Tissue,tissue_level_1,colon,3,Monocyte Derived Dendritic Cells (MO DC),166,-0.8339104102679231,-0.6896746379075808
+Tissue,tissue_level_1,colon,3,Mast Cells,166,0.1449524386521216,-0.4934591498695697
+Tissue,tissue_level_1,colon,3,Neutrophils,166,-1.0901272127357973,-1.1505562320473426
+Tissue,tissue_level_1,colon,3,Eosinophils,166,-1.0620913070119569,-0.8861173536431466
+Tissue,tissue_level_1,mesentery,4,Epithelial,12,-0.7899858316085835,0.09323567871222152
+Tissue,tissue_level_1,mesentery,4,Enterocyte Progenitors,12,-0.7899858316085835,-0.913736234848047
+Tissue,tissue_level_1,mesentery,4,Lower Villus Enterocytes,12,-0.7899858316085835,-0.8037281030396644
+Tissue,tissue_level_1,mesentery,4,Mid Villus Enterocytes,12,-0.7899858316085835,-0.8325868965787492
+Tissue,tissue_level_1,mesentery,4,Villus Tip Enterocytes,12,-0.7899858316085835,-0.8975863245566916
+Tissue,tissue_level_1,mesentery,4,BEST4 Enterocytes,12,-0.7899858316085835,-0.8359342415992731
+Tissue,tissue_level_1,mesentery,4,Colonocyte Progenitors,12,-0.7899858316085835,-0.6009110431944452
+Tissue,tissue_level_1,mesentery,4,Lower Crypt Colonocytes,12,-0.7899858316085835,-0.7289278371799769
+Tissue,tissue_level_1,mesentery,4,Mid Crypt Colonocytes,12,-0.7899858316085835,-0.5118174153596343
+Tissue,tissue_level_1,mesentery,4,Crypt Top Colonocytes,12,-0.7899858316085835,-0.5749583993122088
+Tissue,tissue_level_1,mesentery,4,BEST4 Colonocytes,12,-0.7899858316085835,-0.6996922702039816
+Tissue,tissue_level_1,mesentery,4,Microfold Cells (M Cells),12,-0.7899858316085835,-0.4094549370397511
+Tissue,tissue_level_1,mesentery,4,Enteroendocrine Cells (EEC),12,-0.7899858316085835,-0.036942565162321
+Tissue,tissue_level_1,mesentery,4,EEC Progenitors,12,-0.7899858316085835,-1.2237074979166698
+Tissue,tissue_level_1,mesentery,4,EEC S,12,-0.7899858316085835,-0.2005143468401034
+Tissue,tissue_level_1,mesentery,4,EEC Enterochromaffin (EC),12,-0.7899858316085835,-1.2495537946349224
+Tissue,tissue_level_1,mesentery,4,EEC L,12,-0.7899858316085835,-1.1464703278788098
+Tissue,tissue_level_1,mesentery,4,EEC N,12,-0.7899858316085835,-0.6512096150221474
+Tissue,tissue_level_1,mesentery,4,Brunners Gland Cells,12,-0.7899858316085835,-0.2947315281343754
+Tissue,tissue_level_1,mesentery,4,Paneth Cells,12,-0.7899858316085835,-0.6244267896010561
+Tissue,tissue_level_1,mesentery,4,Tuft Cells,12,-0.7899858316085835,-1.3614038776738786
+Tissue,tissue_level_1,mesentery,4,Tuft Progenitors,12,-0.7899858316085835,-1.1407048682814043
+Tissue,tissue_level_1,mesentery,4,Goblet Cells,12,-0.7899858316085835,-1.3814786665499952
+Tissue,tissue_level_1,mesentery,4,Mature Goblet Cells,12,-0.7899858316085835,-1.0339699841487007
+Tissue,tissue_level_1,mesentery,4,Foveolar Cells,12,-0.7899858316085835,0.14961660336143232
+Tissue,tissue_level_1,mesentery,4,Intestinal Stem Cells (ISC),12,-0.7899858316085835,-1.3589582908955742
+Tissue,tissue_level_1,mesentery,4,Transiently Amplifying Cells (TA),12,-0.7899858316085835,-1.24674730509269
+Tissue,tissue_level_1,mesentery,4,Secretory Progenitors,12,-0.7899858316085835,-1.3126241803134966
+Tissue,tissue_level_1,mesentery,4,Arteriolar Endothelial,12,-0.5538847196038987,-0.6282017337733137
+Tissue,tissue_level_1,mesentery,4,Capillary Endothelial,12,-0.7899858316085835,-1.1579527461321366
+Tissue,tissue_level_1,mesentery,4,Post Arteriole Capillary Endothelial (PAC),12,-0.3322307113302044,-0.2716446134745707
+Tissue,tissue_level_1,mesentery,4,Pre Venule Capillary Endothelial (PVC),12,-0.31836231362861495,1.302919542559608
+Tissue,tissue_level_1,mesentery,4,Venular Endothelial,12,-0.2925935349431363,-0.454230557067876
+Tissue,tissue_level_1,mesentery,4,Lymphatic Endothelial,12,0.14375735411840393,1.7553808151935921
+Tissue,tissue_level_1,mesentery,4,Medullary Sinus Endothelial,12,-0.6984348075529075,-0.6057854859200942
+Tissue,tissue_level_1,mesentery,4,Crypt Top Fibroblasts (S2B),12,-0.7899858316085835,-1.044899654534129
+Tissue,tissue_level_1,mesentery,4,Crypt Bottom Fibroblasts (S2A),12,-0.7899858316085835,-0.9334364683984901
+Tissue,tissue_level_1,mesentery,4,Lamina propria Fibroblasts (S1),12,-0.7899858316085835,-1.256733278305614
+Tissue,tissue_level_1,mesentery,4,Submucosal Fibroblasts (S3),12,-0.7899858316085835,-1.1069813509306077
+Tissue,tissue_level_1,mesentery,4,Mesenchymal Lymphoid Tissue Organizer Cells (mLTo Cells),12,-0.5901612255420525,0.8946289935829029
+Tissue,tissue_level_1,mesentery,4,Fibroblastic Reticular Cells (FRC),12,-0.7899858316085835,0.11822565151329166
+Tissue,tissue_level_1,mesentery,4,Marginal Reticular Cells (MRC),12,-0.7899858316085835,0.010993716114350389
+Tissue,tissue_level_1,mesentery,4,Follicular Dendritic Cells (fDC),12,-0.6984348075529075,0.6560939626226422
+Tissue,tissue_level_1,mesentery,4,Muscularis Propria Fibroblasts,12,-0.7899858316085835,-0.5578156528837138
+Tissue,tissue_level_1,mesentery,4,Myofibroblasts,12,-0.7899858316085835,-1.0205123103943325
+Tissue,tissue_level_1,mesentery,4,Interstitial Cells of Cajal (ICC),12,-0.7899858316085835,0.3038959695235328
+Tissue,tissue_level_1,mesentery,4,Angiogenic Pericytes,12,-0.576240051820122,0.08519813885727542
+Tissue,tissue_level_1,mesentery,4,Contractile Pericytes,12,-0.6068837834972318,-0.7399165987335072
+Tissue,tissue_level_1,mesentery,4,Secretory Pericytes,12,-0.7899858316085835,-0.10106369898693937
+Tissue,tissue_level_1,mesentery,4,Glia,12,-0.6984348075529075,-0.6852092743412691
+Tissue,tissue_level_1,mesentery,4,Smooth Muscle Cells (SMC),12,-0.7899858316085835,-0.3553116349851527
+Tissue,tissue_level_1,mesentery,4,Adipocytes,12,-0.09504733303161877,1.5764002976645812
+Tissue,tissue_level_1,mesentery,4,Plasma Cells,12,-0.35056920172827116,-1.665822046327604
+Tissue,tissue_level_1,mesentery,4,Plasma IGA,12,-0.4846890277644462,-1.7996350593618677
+Tissue,tissue_level_1,mesentery,4,Plasma IGG,12,-0.36863201449622435,-0.41200951122109253
+Tissue,tissue_level_1,mesentery,4,GC B Dark Zone (GC B DZ),12,-0.310604778373114,-0.30944092563746173
+Tissue,tissue_level_1,mesentery,4,GC B Light Zone (GC B LZ),12,-0.33864413142488176,-0.0935127256994932
+Tissue,tissue_level_1,mesentery,4,Memory B,12,4.912266713970874,2.0576246600360943
+Tissue,tissue_level_1,mesentery,4,Naive B,12,3.978554027674514,2.0441931767231183
+Tissue,tissue_level_1,mesentery,4,CD4 Tfh,12,4.476033064952785,2.11008820952127
+Tissue,tissue_level_1,mesentery,4,CD4 Th17,12,3.5790102203018606,0.9396116031516459
+Tissue,tissue_level_1,mesentery,4,CD4 Tr1,12,1.6406672790622112,2.1538210161876155
+Tissue,tissue_level_1,mesentery,4,CD4 Tfr,12,0.6319371579993253,1.9094282015520665
+Tissue,tissue_level_1,mesentery,4,CD4 pTreg,12,1.687772160260612,1.93633784391007
+Tissue,tissue_level_1,mesentery,4,CD4 tTreg,12,4.241161142311406,2.1634521991918056
+Tissue,tissue_level_1,mesentery,4,CD4 Naive,12,4.363590900030805,2.1176624671605846
+Tissue,tissue_level_1,mesentery,4,CD4 Memory,12,2.8431703930523096,0.4206840859953356
+Tissue,tissue_level_1,mesentery,4,CD8 Effector Memory,12,0.8418347549777216,-0.19201293892004587
+Tissue,tissue_level_1,mesentery,4,CD8 Circulating Effector Memory,12,3.9916270431399137,1.81995773912547
+Tissue,tissue_level_1,mesentery,4,CD8 Memory Exhausted,12,-0.7899858316085835,-0.4648399757810861
+Tissue,tissue_level_1,mesentery,4,CD8 TRM,12,2.9806108294774205,0.11626182590694492
+Tissue,tissue_level_1,mesentery,4,CD8 IEL,12,-0.3531735803536132,-1.3146206913427751
+Tissue,tissue_level_1,mesentery,4,CD8 Naive,12,2.5999995229020745,2.1539263308779018
+Tissue,tissue_level_1,mesentery,4,Gamma Delta T Cells,12,0.2961008550117605,1.0614277722504761
+Tissue,tissue_level_1,mesentery,4,MAIT Cells,12,1.3771363318375567,1.8343704022910106
+Tissue,tissue_level_1,mesentery,4,NKT Cells,12,-0.21905375431743815,-1.0774303633955489
+Tissue,tissue_level_1,mesentery,4,NK Cells,12,2.019396468117822,0.9233241999617132
+Tissue,tissue_level_1,mesentery,4,ILC3,12,2.0565158584827548,1.687439878551725
+Tissue,tissue_level_1,mesentery,4,Classical Monocytes,12,0.04918589775491189,-0.06526519633024636
+Tissue,tissue_level_1,mesentery,4,Nonclassical Monocytes,12,-0.5643149815167325,0.6114756166992824
+Tissue,tissue_level_1,mesentery,4,Cycling Macrophages,12,-0.7899858316085835,-1.7982216126450443
+Tissue,tissue_level_1,mesentery,4,Homeostatic Macrophages,12,-0.6984348075529075,-1.7552014483060996
+Tissue,tissue_level_1,mesentery,4,M0 Macrophages,12,-0.4104960906418717,-1.393101447837425
+Tissue,tissue_level_1,mesentery,4,Perivascular Resident Macrophages,12,-0.49370682648446557,-0.18372632058414828
+Tissue,tissue_level_1,mesentery,4,Follicle Associated Resident Macrophages,12,-0.5362756284649648,0.43553521593390765
+Tissue,tissue_level_1,mesentery,4,migDC,12,-0.3812129334053809,1.902005175269
+Tissue,tissue_level_1,mesentery,4,cDC1,12,-0.3812129334053809,0.45557119310383765
+Tissue,tissue_level_1,mesentery,4,cDC2,12,-0.3364510223984339,-1.2812999426213783
+Tissue,tissue_level_1,mesentery,4,Tolerogenic cDC2,12,-0.515332759441556,0.5322282648501956
+Tissue,tissue_level_1,mesentery,4,pDC,12,-0.442120225783947,1.5082026731399947
+Tissue,tissue_level_1,mesentery,4,Monocyte Derived Dendritic Cells (MO DC),12,-0.7899858316085835,-0.5440306839741579
+Tissue,tissue_level_1,mesentery,4,Mast Cells,12,-0.515332759441556,-1.1617467300425683
+Tissue,tissue_level_1,mesentery,4,Neutrophils,12,-0.7899858316085835,0.3118668196790655
+Tissue,tissue_level_1,mesentery,4,Eosinophils,12,-0.7899858316085835,0.330251494815523
+Tissue,tissue_level_1,accessory,5,Epithelial,23,-0.5838759841035336,1.1495768767942434
+Tissue,tissue_level_1,accessory,5,Enterocyte Progenitors,23,-0.3593200721938156,-0.6201212669936005
+Tissue,tissue_level_1,accessory,5,Lower Villus Enterocytes,23,-0.418368919330911,-0.6038308625143449
+Tissue,tissue_level_1,accessory,5,Mid Villus Enterocytes,23,-0.3298088355369527,-0.5799331386552996
+Tissue,tissue_level_1,accessory,5,Villus Tip Enterocytes,23,-0.1400535442571631,-0.43890523101449397
+Tissue,tissue_level_1,accessory,5,BEST4 Enterocytes,23,-0.3329437613587503,-0.3778924599080096
+Tissue,tissue_level_1,accessory,5,Colonocyte Progenitors,23,0.44160025456531005,0.6861872602748358
+Tissue,tissue_level_1,accessory,5,Lower Crypt Colonocytes,23,0.9954533502896952,0.8543322981183288
+Tissue,tissue_level_1,accessory,5,Mid Crypt Colonocytes,23,-0.2345301134730049,0.28454183241597336
+Tissue,tissue_level_1,accessory,5,Crypt Top Colonocytes,23,0.08019706514122014,0.3819517040362453
+Tissue,tissue_level_1,accessory,5,BEST4 Colonocytes,23,0.6745118939823243,0.922480622201504
+Tissue,tissue_level_1,accessory,5,Microfold Cells (M Cells),23,-0.5361102324223114,1.0179689992823784
+Tissue,tissue_level_1,accessory,5,Enteroendocrine Cells (EEC),23,-0.5838759841035336,1.230730773120483
+Tissue,tissue_level_1,accessory,5,EEC Progenitors,23,-0.5139004226933553,-0.10554344900249944
+Tissue,tissue_level_1,accessory,5,EEC S,23,-0.5361102324223114,1.3757715858037232
+Tissue,tissue_level_1,accessory,5,EEC Enterochromaffin (EC),23,-0.4475501486283532,-0.1526500467309161
+Tissue,tissue_level_1,accessory,5,EEC L,23,-0.3815298819227717,0.4003003910151149
+Tissue,tissue_level_1,accessory,5,EEC N,23,-0.48834448074108927,0.8400754019453057
+Tissue,tissue_level_1,accessory,5,Brunners Gland Cells,23,-0.3858813366426405,0.33406076094716053
+Tissue,tissue_level_1,accessory,5,Paneth Cells,23,-0.5361102324223114,0.209028206917587
+Tissue,tissue_level_1,accessory,5,Tuft Cells,23,-0.1150494380070958,-0.056402956588089116
+Tissue,tissue_level_1,accessory,5,Tuft Progenitors,23,-0.2139212281692234,0.8286472792687566
+Tissue,tissue_level_1,accessory,5,Goblet Cells,23,0.35042057987711656,-0.188744857849876
+Tissue,tissue_level_1,accessory,5,Mature Goblet Cells,23,-0.012786743733085044,-0.04669821671944295
+Tissue,tissue_level_1,accessory,5,Foveolar Cells,23,-0.34724912712432515,1.6558841763553955
+Tissue,tissue_level_1,accessory,5,Intestinal Stem Cells (ISC),23,0.2660470779937132,-0.30104074477040943
+Tissue,tissue_level_1,accessory,5,Transiently Amplifying Cells (TA),23,0.2895149915177247,-0.37224222244519145
+Tissue,tissue_level_1,accessory,5,Secretory Progenitors,23,-0.02125729701916015,-0.265895526233244
+Tissue,tissue_level_1,accessory,5,Arteriolar Endothelial,23,-0.14161070245592072,0.9611937625069362
+Tissue,tissue_level_1,accessory,5,Capillary Endothelial,23,-0.5838759841035336,1.2792463861453673
+Tissue,tissue_level_1,accessory,5,Post Arteriole Capillary Endothelial (PAC),23,-0.20747906968119648,0.08312477927204392
+Tissue,tissue_level_1,accessory,5,Pre Venule Capillary Endothelial (PVC),23,-0.44057872905986706,0.8369334724599284
+Tissue,tissue_level_1,accessory,5,Venular Endothelial,23,-0.08365227637956547,0.5761081812825256
+Tissue,tissue_level_1,accessory,5,Lymphatic Endothelial,23,-0.2919027933933301,0.3622092448754029
+Tissue,tissue_level_1,accessory,5,Medullary Sinus Endothelial,23,-0.3928129773786449,0.8094114462560725
+Tissue,tissue_level_1,accessory,5,Crypt Top Fibroblasts (S2B),23,-0.4475501486283532,0.37244805467255376
+Tissue,tissue_level_1,accessory,5,Crypt Bottom Fibroblasts (S2A),23,-0.43747181758238257,0.19085974584875762
+Tissue,tissue_level_1,accessory,5,Lamina propria Fibroblasts (S1),23,-0.2517176237618809,-0.29199136567265926
+Tissue,tissue_level_1,accessory,5,Submucosal Fibroblasts (S3),23,0.37443813143408056,1.729544116667632
+Tissue,tissue_level_1,accessory,5,Mesenchymal Lymphoid Tissue Organizer Cells (mLTo Cells),23,-0.5361102324223114,1.1425001069635303
+Tissue,tissue_level_1,accessory,5,Fibroblastic Reticular Cells (FRC),23,-0.5838759841035336,1.475072391197335
+Tissue,tissue_level_1,accessory,5,Marginal Reticular Cells (MRC),23,-0.5838759841035336,1.5400745817930286
+Tissue,tissue_level_1,accessory,5,Follicular Dendritic Cells (fDC),23,-0.5838759841035336,1.2001121646618957
+Tissue,tissue_level_1,accessory,5,Muscularis Propria Fibroblasts,23,-0.3179676308216626,1.7192067828593551
+Tissue,tissue_level_1,accessory,5,Myofibroblasts,23,-0.4606927952315242,0.4206310846947208
+Tissue,tissue_level_1,accessory,5,Interstitial Cells of Cajal (ICC),23,-0.5361102324223114,1.3488214841065438
+Tissue,tissue_level_1,accessory,5,Angiogenic Pericytes,23,-0.4080911463715966,1.197208028928725
+Tissue,tissue_level_1,accessory,5,Contractile Pericytes,23,-0.08509567070172183,1.1976071265492456
+Tissue,tissue_level_1,accessory,5,Secretory Pericytes,23,-0.4037396916517278,1.5618233223228972
+Tissue,tissue_level_1,accessory,5,Glia,23,-0.3973342692709948,0.6708547532593964
+Tissue,tissue_level_1,accessory,5,Smooth Muscle Cells (SMC),23,-0.4080911463715966,1.9973680431018488
+Tissue,tissue_level_1,accessory,5,Adipocytes,23,-0.35201864526590876,0.8398494196333229
+Tissue,tissue_level_1,accessory,5,Plasma Cells,23,0.7187361479727971,0.18203028735302146
+Tissue,tissue_level_1,accessory,5,Plasma IGA,23,2.252055221198159,1.3798299709935358
+Tissue,tissue_level_1,accessory,5,Plasma IGG,23,0.27409956785807343,1.9052889843509087
+Tissue,tissue_level_1,accessory,5,GC B Dark Zone (GC B DZ),23,-0.037493294547144576,0.4859168762421311
+Tissue,tissue_level_1,accessory,5,GC B Light Zone (GC B LZ),23,-0.26378856883137125,0.14836660307652508
+Tissue,tissue_level_1,accessory,5,Memory B,23,1.5384439173996807,-0.2480535595921275
+Tissue,tissue_level_1,accessory,5,Naive B,23,0.7974584221135044,-0.3138904108380742
+Tissue,tissue_level_1,accessory,5,CD4 Tfh,23,0.9918065854577564,-0.3180064938557063
+Tissue,tissue_level_1,accessory,5,CD4 Th17,23,1.8023109623102105,-0.632269080658874
+Tissue,tissue_level_1,accessory,5,CD4 Tr1,23,-0.22730591260602234,-0.4834840897344491
+Tissue,tissue_level_1,accessory,5,CD4 Tfr,23,-0.19046687519788305,-0.21486919440386884
+Tissue,tissue_level_1,accessory,5,CD4 pTreg,23,0.13364778888858717,-0.8065822324716061
+Tissue,tissue_level_1,accessory,5,CD4 tTreg,23,0.4950401652432069,-0.42339248286252884
+Tissue,tissue_level_1,accessory,5,CD4 Naive,23,0.8230472352779747,-0.1569695834760783
+Tissue,tissue_level_1,accessory,5,CD4 Memory,23,1.688441239425154,-0.638059548499537
+Tissue,tissue_level_1,accessory,5,CD8 Effector Memory,23,0.6800491670245293,-0.3708680041651955
+Tissue,tissue_level_1,accessory,5,CD8 Circulating Effector Memory,23,1.4760095835683054,-0.3404452966986522
+Tissue,tissue_level_1,accessory,5,CD8 Memory Exhausted,23,-0.3483933579207327,0.7450626667357224
+Tissue,tissue_level_1,accessory,5,CD8 TRM,23,1.6880954743155676,-0.7847052680252851
+Tissue,tissue_level_1,accessory,5,CD8 IEL,23,1.6419381443382937,0.07597664269893294
+Tissue,tissue_level_1,accessory,5,CD8 Naive,23,-0.07969698167496865,-0.31970996226378073
+Tissue,tissue_level_1,accessory,5,Gamma Delta T Cells,23,-0.3290591917789307,-0.5426461425580951
+Tissue,tissue_level_1,accessory,5,MAIT Cells,23,0.10406459812201325,-0.23632708476261907
+Tissue,tissue_level_1,accessory,5,NKT Cells,23,0.3492851632316551,-0.6005932803037792
+Tissue,tissue_level_1,accessory,5,NK Cells,23,0.3814717563107719,-0.6935242582776787
+Tissue,tissue_level_1,accessory,5,ILC3,23,0.2781410640074999,-0.5351056290904015
+Tissue,tissue_level_1,accessory,5,Classical Monocytes,23,0.38200627229655415,0.8881051834748551
+Tissue,tissue_level_1,accessory,5,Nonclassical Monocytes,23,-0.41836891933091097,1.2305215787745007
+Tissue,tissue_level_1,accessory,5,Cycling Macrophages,23,-0.32283741596846666,0.32372139870266003
+Tissue,tissue_level_1,accessory,5,Homeostatic Macrophages,23,-0.13397631067048038,-0.7165256718623825
+Tissue,tissue_level_1,accessory,5,M0 Macrophages,23,0.12618229285704388,-0.6341783016566308
+Tissue,tissue_level_1,accessory,5,Perivascular Resident Macrophages,23,0.11845656321584606,1.919686960322343
+Tissue,tissue_level_1,accessory,5,Follicle Associated Resident Macrophages,23,-0.4405787290598671,1.0121869945713697
+Tissue,tissue_level_1,accessory,5,migDC,23,-0.5838759841035336,0.5558346315490414
+Tissue,tissue_level_1,accessory,5,cDC1,23,-0.39501487880554736,0.3814951597134967
+Tissue,tissue_level_1,accessory,5,cDC2,23,-0.037896178440244295,-0.5637400866741846
+Tissue,tissue_level_1,accessory,5,Tolerogenic cDC2,23,-0.45150544333294995,0.9819469541150241
+Tissue,tissue_level_1,accessory,5,pDC,23,-0.5838759841035336,0.8199928159544394
+Tissue,tissue_level_1,accessory,5,Monocyte Derived Dendritic Cells (MO DC),23,-0.5838759841035336,0.13938288654776426
+Tissue,tissue_level_1,accessory,5,Mast Cells,23,0.8369008530211568,0.20687539159567783
+Tissue,tissue_level_1,accessory,5,Neutrophils,23,-0.5838759841035336,1.3161261825406099
+Tissue,tissue_level_1,accessory,5,Eosinophils,23,-0.5838759841035336,1.251605971398766
+Collection method,sample_collection_method,biopsy,0,Epithelial,309,-1.1522468223377775,-0.9999999999999997
+Collection method,sample_collection_method,biopsy,0,Enterocyte Progenitors,309,1.5075863516497041,1.0
+Collection method,sample_collection_method,biopsy,0,Lower Villus Enterocytes,309,1.262724266891285,1.0
+Collection method,sample_collection_method,biopsy,0,Mid Villus Enterocytes,309,1.5766316570256371,1.0
+Collection method,sample_collection_method,biopsy,0,Villus Tip Enterocytes,309,1.6798142703161316,1.0
+Collection method,sample_collection_method,biopsy,0,BEST4 Enterocytes,309,0.10999019368215474,1.0
+Collection method,sample_collection_method,biopsy,0,Colonocyte Progenitors,309,-0.31852844909089223,-1.0
+Collection method,sample_collection_method,biopsy,0,Lower Crypt Colonocytes,309,-0.14084045062281725,-1.0
+Collection method,sample_collection_method,biopsy,0,Mid Crypt Colonocytes,309,-0.6445614916255402,-1.0
+Collection method,sample_collection_method,biopsy,0,Crypt Top Colonocytes,309,-0.3722338875137577,-1.0
+Collection method,sample_collection_method,biopsy,0,BEST4 Colonocytes,309,-0.49910504678182915,-1.0
+Collection method,sample_collection_method,biopsy,0,Microfold Cells (M Cells),309,-0.939954366615115,-0.9999999999999994
+Collection method,sample_collection_method,biopsy,0,Enteroendocrine Cells (EEC),309,-1.0203333285567495,-1.0
+Collection method,sample_collection_method,biopsy,0,EEC Progenitors,309,-0.4678453825732805,1.000000000000001
+Collection method,sample_collection_method,biopsy,0,EEC S,309,-1.0224749709501364,-0.9999999999999997
+Collection method,sample_collection_method,biopsy,0,EEC Enterochromaffin (EC),309,-0.1907477265667428,1.0
+Collection method,sample_collection_method,biopsy,0,EEC L,309,-0.6340307583527613,-0.9999999999999996
+Collection method,sample_collection_method,biopsy,0,EEC N,309,-0.5859961858206423,0.9999999999999986
+Collection method,sample_collection_method,biopsy,0,Brunners Gland Cells,309,-1.2959857569163555,-1.0000000000000004
+Collection method,sample_collection_method,biopsy,0,Paneth Cells,309,-0.6830993125706849,-1.0
+Collection method,sample_collection_method,biopsy,0,Tuft Cells,309,0.23226413873976287,1.0
+Collection method,sample_collection_method,biopsy,0,Tuft Progenitors,309,-0.622228905904265,-1.0000000000000002
+Collection method,sample_collection_method,biopsy,0,Goblet Cells,309,1.686627134892373,1.0
+Collection method,sample_collection_method,biopsy,0,Mature Goblet Cells,309,1.0941982328825266,1.0
+Collection method,sample_collection_method,biopsy,0,Foveolar Cells,309,-1.3134387601033573,-1.0
+Collection method,sample_collection_method,biopsy,0,Intestinal Stem Cells (ISC),309,1.2738131517185922,1.0000000000000002
+Collection method,sample_collection_method,biopsy,0,Transiently Amplifying Cells (TA),309,2.0002869068320317,1.0
+Collection method,sample_collection_method,biopsy,0,Secretory Progenitors,309,0.989795583677105,1.0000000000000002
+Collection method,sample_collection_method,biopsy,0,Arteriolar Endothelial,309,-0.7995156602082218,-1.0
+Collection method,sample_collection_method,biopsy,0,Capillary Endothelial,309,-0.582019623031353,1.0
+Collection method,sample_collection_method,biopsy,0,Post Arteriole Capillary Endothelial (PAC),309,0.24366001753497618,1.0
+Collection method,sample_collection_method,biopsy,0,Pre Venule Capillary Endothelial (PVC),309,-1.160577151099329,-1.0
+Collection method,sample_collection_method,biopsy,0,Venular Endothelial,309,-0.12526483782198677,-1.0
+Collection method,sample_collection_method,biopsy,0,Lymphatic Endothelial,309,-1.0082280239158323,-1.0000000000000002
+Collection method,sample_collection_method,biopsy,0,Medullary Sinus Endothelial,309,-0.7150512151163825,-1.0
+Collection method,sample_collection_method,biopsy,0,Crypt Top Fibroblasts (S2B),309,-0.14973292902635923,1.0
+Collection method,sample_collection_method,biopsy,0,Crypt Bottom Fibroblasts (S2A),309,-0.180699382075197,0.9999999999999999
+Collection method,sample_collection_method,biopsy,0,Lamina propria Fibroblasts (S1),309,0.6599482615820891,1.0
+Collection method,sample_collection_method,biopsy,0,Submucosal Fibroblasts (S3),309,-1.050096149051744,-0.9999999999999999
+Collection method,sample_collection_method,biopsy,0,Mesenchymal Lymphoid Tissue Organizer Cells (mLTo Cells),309,-1.1847824492597498,-1.0
+Collection method,sample_collection_method,biopsy,0,Fibroblastic Reticular Cells (FRC),309,-1.0609596529155876,-1.0000000000000004
+Collection method,sample_collection_method,biopsy,0,Marginal Reticular Cells (MRC),309,-1.0033507444023024,-1.0
+Collection method,sample_collection_method,biopsy,0,Follicular Dendritic Cells (fDC),309,-1.2131071308272683,-0.9999999999999997
+Collection method,sample_collection_method,biopsy,0,Muscularis Propria Fibroblasts,309,-1.041133896447128,-1.0000000000000002
+Collection method,sample_collection_method,biopsy,0,Myofibroblasts,309,-0.2551856177177147,1.0000000000000002
+Collection method,sample_collection_method,biopsy,0,Interstitial Cells of Cajal (ICC),309,-1.3001198385180086,-1.0000000000000004
+Collection method,sample_collection_method,biopsy,0,Angiogenic Pericytes,309,-0.5698510574824242,1.0
+Collection method,sample_collection_method,biopsy,0,Contractile Pericytes,309,-0.8354467890964301,-1.0
+Collection method,sample_collection_method,biopsy,0,Secretory Pericytes,309,-1.0853156294142743,-1.0
+Collection method,sample_collection_method,biopsy,0,Glia,309,-0.43012229647011924,0.999999999999997
+Collection method,sample_collection_method,biopsy,0,Smooth Muscle Cells (SMC),309,-0.9918041327169261,-1.0
+Collection method,sample_collection_method,biopsy,0,Adipocytes,309,-1.316180824376455,-1.0
+Collection method,sample_collection_method,biopsy,0,Plasma Cells,309,1.3531186594527767,1.0
+Collection method,sample_collection_method,biopsy,0,Plasma IGA,309,0.9169606065914662,-1.0000000000000004
+Collection method,sample_collection_method,biopsy,0,Plasma IGG,309,-0.6456278246140067,-1.0
+Collection method,sample_collection_method,biopsy,0,GC B Dark Zone (GC B DZ),309,0.3535138583287396,1.0
+Collection method,sample_collection_method,biopsy,0,GC B Light Zone (GC B LZ),309,0.2507980617972078,1.0
+Collection method,sample_collection_method,biopsy,0,Memory B,309,2.11875794614886,1.0000000000000002
+Collection method,sample_collection_method,biopsy,0,Naive B,309,1.4733596699323483,0.9999999999999997
+Collection method,sample_collection_method,biopsy,0,CD4 Tfh,309,1.5316478197391352,1.0000000000000002
+Collection method,sample_collection_method,biopsy,0,CD4 Th17,309,2.5613114452828567,1.0
+Collection method,sample_collection_method,biopsy,0,CD4 Tr1,309,-0.132880447591258,-1.0
+Collection method,sample_collection_method,biopsy,0,CD4 Tfr,309,0.0030248289652475575,0.9999999999999998
+Collection method,sample_collection_method,biopsy,0,CD4 pTreg,309,0.6266568367086514,1.0000000000000002
+Collection method,sample_collection_method,biopsy,0,CD4 tTreg,309,0.9605906040188009,1.0
+Collection method,sample_collection_method,biopsy,0,CD4 Naive,309,0.8720416970887226,1.0000000000000004
+Collection method,sample_collection_method,biopsy,0,CD4 Memory,309,2.222209374060113,-1.0
+Collection method,sample_collection_method,biopsy,0,CD8 Effector Memory,309,0.7336346068479896,-1.0000000000000002
+Collection method,sample_collection_method,biopsy,0,CD8 Circulating Effector Memory,309,1.409507913863985,-0.9999999999999986
+Collection method,sample_collection_method,biopsy,0,CD8 Memory Exhausted,309,-1.1213595742399336,-1.0
+Collection method,sample_collection_method,biopsy,0,CD8 TRM,309,2.955449699419584,1.0000000000000013
+Collection method,sample_collection_method,biopsy,0,CD8 IEL,309,1.7123967807370228,-1.0
+Collection method,sample_collection_method,biopsy,0,CD8 Naive,309,-0.0031484094000187673,-0.9999999999999999
+Collection method,sample_collection_method,biopsy,0,Gamma Delta T Cells,309,-0.12141121090988552,0.9999999999999997
+Collection method,sample_collection_method,biopsy,0,MAIT Cells,309,0.04551066411751392,-1.0
+Collection method,sample_collection_method,biopsy,0,NKT Cells,309,1.260428620484591,0.9999999999999967
+Collection method,sample_collection_method,biopsy,0,NK Cells,309,0.6906852537327514,-1.0
+Collection method,sample_collection_method,biopsy,0,ILC3,309,0.29816162194556606,-1.0
+Collection method,sample_collection_method,biopsy,0,Classical Monocytes,309,-0.12279507889040604,-1.0
+Collection method,sample_collection_method,biopsy,0,Nonclassical Monocytes,309,-1.1678246149048683,-1.0
+Collection method,sample_collection_method,biopsy,0,Cycling Macrophages,309,-0.2703739927836607,0.9999999999999994
+Collection method,sample_collection_method,biopsy,0,Homeostatic Macrophages,309,0.7273359915327834,1.0
+Collection method,sample_collection_method,biopsy,0,M0 Macrophages,309,1.2277410412996714,1.0000000000000002
+Collection method,sample_collection_method,biopsy,0,Perivascular Resident Macrophages,309,-1.043401121745792,-1.0
+Collection method,sample_collection_method,biopsy,0,Follicle Associated Resident Macrophages,309,-0.5129413436708745,1.0000000000000007
+Collection method,sample_collection_method,biopsy,0,migDC,309,-0.7937285324443681,-1.0
+Collection method,sample_collection_method,biopsy,0,cDC1,309,-0.2514221418661586,1.0000000000000002
+Collection method,sample_collection_method,biopsy,0,cDC2,309,0.7430268339076191,1.0000000000000002
+Collection method,sample_collection_method,biopsy,0,Tolerogenic cDC2,309,-0.8111814523413472,-1.0
+Collection method,sample_collection_method,biopsy,0,pDC,309,-1.0791486123807994,-1.0
+Collection method,sample_collection_method,biopsy,0,Monocyte Derived Dendritic Cells (MO DC),309,-0.8950456819022551,-1.0000000000000004
+Collection method,sample_collection_method,biopsy,0,Mast Cells,309,0.11406467454720487,-0.9999999999999998
+Collection method,sample_collection_method,biopsy,0,Neutrophils,309,-1.2737653343347684,-1.0
+Collection method,sample_collection_method,biopsy,0,Eosinophils,309,-1.2710232700616706,-1.0000000000000002
+Collection method,sample_collection_method,surgical resection,1,Epithelial,193,-0.7908977509898839,1.0000000000000002
+Collection method,sample_collection_method,surgical resection,1,Enterocyte Progenitors,193,0.016195297105318487,-1.0
+Collection method,sample_collection_method,surgical resection,1,Lower Villus Enterocytes,193,0.06334972698346508,-1.0
+Collection method,sample_collection_method,surgical resection,1,Mid Villus Enterocytes,193,0.1320032657097905,-1.0
+Collection method,sample_collection_method,surgical resection,1,Villus Tip Enterocytes,193,0.021220333430469005,-1.0
+Collection method,sample_collection_method,surgical resection,1,BEST4 Enterocytes,193,-0.1955202343528691,-1.0
+Collection method,sample_collection_method,surgical resection,1,Colonocyte Progenitors,193,0.2686264542731281,1.0
+Collection method,sample_collection_method,surgical resection,1,Lower Crypt Colonocytes,193,0.6880240066913994,1.0
+Collection method,sample_collection_method,surgical resection,1,Mid Crypt Colonocytes,193,0.18332709804597414,1.0
+Collection method,sample_collection_method,surgical resection,1,Crypt Top Colonocytes,193,0.27748683131797897,1.0
+Collection method,sample_collection_method,surgical resection,1,BEST4 Colonocytes,193,0.5334581443253629,1.0
+Collection method,sample_collection_method,surgical resection,1,Microfold Cells (M Cells),193,-0.7511687357543109,1.0000000000000007
+Collection method,sample_collection_method,surgical resection,1,Enteroendocrine Cells (EEC),193,-0.7714455367169148,1.0
+Collection method,sample_collection_method,surgical resection,1,EEC Progenitors,193,-0.523326521311643,-0.999999999999999
+Collection method,sample_collection_method,surgical resection,1,EEC S,193,-0.7238664820155624,1.0000000000000004
+Collection method,sample_collection_method,surgical resection,1,EEC Enterochromaffin (EC),193,-0.5304993783149353,-1.0000000000000002
+Collection method,sample_collection_method,surgical resection,1,EEC L,193,-0.4938790006929425,1.0000000000000004
+Collection method,sample_collection_method,surgical resection,1,EEC N,193,-0.6606252010624605,-1.0000000000000016
+Collection method,sample_collection_method,surgical resection,1,Brunners Gland Cells,193,-0.7316673312478024,0.9999999999999996
+Collection method,sample_collection_method,surgical resection,1,Paneth Cells,193,-0.6668211499821418,1.0
+Collection method,sample_collection_method,surgical resection,1,Tuft Cells,193,-0.18367102807243613,-1.0
+Collection method,sample_collection_method,surgical resection,1,Tuft Progenitors,193,-0.45163422456203567,0.9999999999999997
+Collection method,sample_collection_method,surgical resection,1,Goblet Cells,193,0.6265916127930962,-1.0
+Collection method,sample_collection_method,surgical resection,1,Mature Goblet Cells,193,-0.04533006882973122,-1.0000000000000002
+Collection method,sample_collection_method,surgical resection,1,Foveolar Cells,193,-0.8131483504516219,1.0
+Collection method,sample_collection_method,surgical resection,1,Intestinal Stem Cells (ISC),193,0.5218835544628359,-0.9999999999999999
+Collection method,sample_collection_method,surgical resection,1,Transiently Amplifying Cells (TA),193,0.47577040221959516,-1.0
+Collection method,sample_collection_method,surgical resection,1,Secretory Progenitors,193,0.14040627955628393,-0.9999999999999999
+Collection method,sample_collection_method,surgical resection,1,Arteriolar Endothelial,193,-0.10405271340253591,1.0000000000000002
+Collection method,sample_collection_method,surgical resection,1,Capillary Endothelial,193,-0.807193656039773,-1.0
+Collection method,sample_collection_method,surgical resection,1,Post Arteriole Capillary Endothelial (PAC),193,-0.18884300053901087,-1.0
+Collection method,sample_collection_method,surgical resection,1,Pre Venule Capillary Endothelial (PVC),193,-0.5381982090528972,1.0
+Collection method,sample_collection_method,surgical resection,1,Venular Endothelial,193,0.013143415580445102,1.0
+Collection method,sample_collection_method,surgical resection,1,Lymphatic Endothelial,193,-0.1724492685657003,0.9999999999999999
+Collection method,sample_collection_method,surgical resection,1,Medullary Sinus Endothelial,193,-0.49314704151942446,1.0
+Collection method,sample_collection_method,surgical resection,1,Crypt Top Fibroblasts (S2B),193,-0.637497906363047,-0.9999999999999999
+Collection method,sample_collection_method,surgical resection,1,Crypt Bottom Fibroblasts (S2A),193,-0.5645199018663829,-1.0
+Collection method,sample_collection_method,surgical resection,1,Lamina propria Fibroblasts (S1),193,-0.155952596849972,-1.0
+Collection method,sample_collection_method,surgical resection,1,Submucosal Fibroblasts (S3),193,0.45075028514297927,1.0
+Collection method,sample_collection_method,surgical resection,1,Mesenchymal Lymphoid Tissue Organizer Cells (mLTo Cells),193,-0.7504317039096933,1.0
+Collection method,sample_collection_method,surgical resection,1,Fibroblastic Reticular Cells (FRC),193,-0.8132847095620747,0.9999999999999996
+Collection method,sample_collection_method,surgical resection,1,Marginal Reticular Cells (MRC),193,-0.8018576559634198,1.0
+Collection method,sample_collection_method,surgical resection,1,Follicular Dendritic Cells (fDC),193,-0.8356551142954235,1.0000000000000002
+Collection method,sample_collection_method,surgical resection,1,Muscularis Propria Fibroblasts,193,-0.2965062888427577,1.0
+Collection method,sample_collection_method,surgical resection,1,Myofibroblasts,193,-0.6099099370489462,-1.0
+Collection method,sample_collection_method,surgical resection,1,Interstitial Cells of Cajal (ICC),193,-0.8413474059465536,0.9999999999999996
+Collection method,sample_collection_method,surgical resection,1,Angiogenic Pericytes,193,-0.5915409757644084,-1.0
+Collection method,sample_collection_method,surgical resection,1,Contractile Pericytes,193,-0.09544476680590856,0.9999999999999999
+Collection method,sample_collection_method,surgical resection,1,Secretory Pericytes,193,-0.7520512286227918,1.0
+Collection method,sample_collection_method,surgical resection,1,Glia,193,-0.4483783068938035,-1.000000000000003
+Collection method,sample_collection_method,surgical resection,1,Smooth Muscle Cells (SMC),193,-0.6251730165725166,1.0
+Collection method,sample_collection_method,surgical resection,1,Adipocytes,193,-0.3513293847716774,1.0
+Collection method,sample_collection_method,surgical resection,1,Plasma Cells,193,0.4848059296425229,-1.0
+Collection method,sample_collection_method,surgical resection,1,Plasma IGA,193,1.3915371852578602,0.9999999999999996
+Collection method,sample_collection_method,surgical resection,1,Plasma IGG,193,0.09507951909482229,1.0
+Collection method,sample_collection_method,surgical resection,1,GC B Dark Zone (GC B DZ),193,-0.4123133023533118,-1.0
+Collection method,sample_collection_method,surgical resection,1,GC B Light Zone (GC B LZ),193,-0.49691909159784203,-1.0
+Collection method,sample_collection_method,surgical resection,1,Memory B,193,1.4243302871740628,-0.9999999999999997
+Collection method,sample_collection_method,surgical resection,1,Naive B,193,0.7548465419952435,-1.0000000000000002
+Collection method,sample_collection_method,surgical resection,1,CD4 Tfh,193,0.9550518620537286,-0.9999999999999998
+Collection method,sample_collection_method,surgical resection,1,CD4 Th17,193,2.233036683695662,-1.0
+Collection method,sample_collection_method,surgical resection,1,CD4 Tr1,193,-0.13277615052632663,1.0
+Collection method,sample_collection_method,surgical resection,1,CD4 Tfr,193,-0.2635414514879684,-1.0
+Collection method,sample_collection_method,surgical resection,1,CD4 pTreg,193,0.435992228895316,-0.9999999999999997
+Collection method,sample_collection_method,surgical resection,1,CD4 tTreg,193,0.673607657703582,-1.0
+Collection method,sample_collection_method,surgical resection,1,CD4 Naive,193,0.638503491863002,-0.9999999999999996
+Collection method,sample_collection_method,surgical resection,1,CD4 Memory,193,2.2632723988769747,1.0
+Collection method,sample_collection_method,surgical resection,1,CD8 Effector Memory,193,1.0974449651229714,0.9999999999999997
+Collection method,sample_collection_method,surgical resection,1,CD8 Circulating Effector Memory,193,1.5692476435885718,1.0000000000000013
+Collection method,sample_collection_method,surgical resection,1,CD8 Memory Exhausted,193,-0.4727213057777903,1.0000000000000002
+Collection method,sample_collection_method,surgical resection,1,CD8 TRM,193,2.6356564428341382,-0.9999999999999986
+Collection method,sample_collection_method,surgical resection,1,CD8 IEL,193,1.8925936802688514,1.0
+Collection method,sample_collection_method,surgical resection,1,CD8 Naive,193,0.011928331004526244,1.0
+Collection method,sample_collection_method,surgical resection,1,Gamma Delta T Cells,193,-0.2076147671982348,-1.0000000000000002
+Collection method,sample_collection_method,surgical resection,1,MAIT Cells,193,0.1524054421910711,1.0
+Collection method,sample_collection_method,surgical resection,1,NKT Cells,193,1.1947026804284986,-1.0000000000000033
+Collection method,sample_collection_method,surgical resection,1,NK Cells,193,0.956411027270813,1.0
+Collection method,sample_collection_method,surgical resection,1,ILC3,193,0.6814321557381966,1.0
+Collection method,sample_collection_method,surgical resection,1,Classical Monocytes,193,0.39309711913829914,1.0
+Collection method,sample_collection_method,surgical resection,1,Nonclassical Monocytes,193,-0.6105126136119574,1.0
+Collection method,sample_collection_method,surgical resection,1,Cycling Macrophages,193,-0.36651114573720206,-1.0000000000000007
+Collection method,sample_collection_method,surgical resection,1,Homeostatic Macrophages,193,0.18620833641291235,-1.0
+Collection method,sample_collection_method,surgical resection,1,M0 Macrophages,193,0.537489504878791,-0.9999999999999999
+Collection method,sample_collection_method,surgical resection,1,Perivascular Resident Macrophages,193,0.02493862166844796,1.0
+Collection method,sample_collection_method,surgical resection,1,Follicle Associated Resident Macrophages,193,-0.6828112346151943,-0.9999999999999993
+Collection method,sample_collection_method,surgical resection,1,migDC,193,-0.7070944801192856,1.0
+Collection method,sample_collection_method,surgical resection,1,cDC1,193,-0.5030732597418057,-0.9999999999999998
+Collection method,sample_collection_method,surgical resection,1,cDC2,193,0.2970705209075282,-0.9999999999999999
+Collection method,sample_collection_method,surgical resection,1,Tolerogenic cDC2,193,-0.5652424891385359,1.0
+Collection method,sample_collection_method,surgical resection,1,pDC,193,-0.7719321201337537,1.0
+Collection method,sample_collection_method,surgical resection,1,Monocyte Derived Dendritic Cells (MO DC),193,-0.5702714477199005,0.9999999999999997
+Collection method,sample_collection_method,surgical resection,1,Mast Cells,193,0.7785303932020421,1.0
+Collection method,sample_collection_method,surgical resection,1,Neutrophils,193,-0.7528170176337512,1.0
+Collection method,sample_collection_method,surgical resection,1,Eosinophils,193,-0.8470396975976836,0.9999999999999998
+Radial layer,radial_tissue_term,EPI,0,Epithelial,112,-0.7918680181050004,0.7941747993082212
+Radial layer,radial_tissue_term,EPI,0,Enterocyte Progenitors,112,1.4109105321407707,0.915715258043599
+Radial layer,radial_tissue_term,EPI,0,Lower Villus Enterocytes,112,1.1798899224226935,0.8450299082294818
+Radial layer,radial_tissue_term,EPI,0,Mid Villus Enterocytes,112,1.5344125664045087,0.7567326939029879
+Radial layer,radial_tissue_term,EPI,0,Villus Tip Enterocytes,112,1.8128799420210127,0.7161853228191282
+Radial layer,radial_tissue_term,EPI,0,BEST4 Enterocytes,112,0.4775534848609938,1.4175507339072033
+Radial layer,radial_tissue_term,EPI,0,Colonocyte Progenitors,112,0.9892796021160696,0.8283148678505012
+Radial layer,radial_tissue_term,EPI,0,Lower Crypt Colonocytes,112,1.267934051764303,0.5581903888463984
+Radial layer,radial_tissue_term,EPI,0,Mid Crypt Colonocytes,112,0.5040286287310948,0.791342284261436
+Radial layer,radial_tissue_term,EPI,0,Crypt Top Colonocytes,112,0.652315020303784,0.40512133075933915
+Radial layer,radial_tissue_term,EPI,0,BEST4 Colonocytes,112,0.7685540429054257,0.8776173178777493
+Radial layer,radial_tissue_term,EPI,0,Microfold Cells (M Cells),112,-0.4841757808896647,1.2717331033200243
+Radial layer,radial_tissue_term,EPI,0,Enteroendocrine Cells (EEC),112,-0.7526318649382822,0.4957071350334466
+Radial layer,radial_tissue_term,EPI,0,EEC Progenitors,112,0.15669359141176226,1.8628890449511981
+Radial layer,radial_tissue_term,EPI,0,EEC S,112,-0.4431479250848916,1.539044512845653
+Radial layer,radial_tissue_term,EPI,0,EEC Enterochromaffin (EC),112,0.3038335403264984,1.114932221828507
+Radial layer,radial_tissue_term,EPI,0,EEC L,112,-0.0013506498036606831,1.8357013738260448
+Radial layer,radial_tissue_term,EPI,0,EEC N,112,-0.17551991216559684,1.4651557227699097
+Radial layer,radial_tissue_term,EPI,0,Brunners Gland Cells,112,-0.7774980367439817,0.8759031682202054
+Radial layer,radial_tissue_term,EPI,0,Paneth Cells,112,-0.45434055442862586,1.5158006371185904
+Radial layer,radial_tissue_term,EPI,0,Tuft Cells,112,0.8168905442267972,0.8117312960652227
+Radial layer,radial_tissue_term,EPI,0,Tuft Progenitors,112,0.2895447063618072,1.6333806497356003
+Radial layer,radial_tissue_term,EPI,0,Goblet Cells,112,1.8099285685476807,0.1937630528460191
+Radial layer,radial_tissue_term,EPI,0,Mature Goblet Cells,112,1.0894730486688426,0.1791541124513343
+Radial layer,radial_tissue_term,EPI,0,Foveolar Cells,112,-0.7646847820538983,0.9961507930469419
+Radial layer,radial_tissue_term,EPI,0,Intestinal Stem Cells (ISC),112,1.7548445711121816,0.6987655147351274
+Radial layer,radial_tissue_term,EPI,0,Transiently Amplifying Cells (TA),112,1.989310415781345,0.9404982990556185
+Radial layer,radial_tissue_term,EPI,0,Secretory Progenitors,112,1.4495773173184283,1.002283219577903
+Radial layer,radial_tissue_term,EPI,0,Arteriolar Endothelial,112,-0.782058979813321,-0.2800298876713354
+Radial layer,radial_tissue_term,EPI,0,Capillary Endothelial,112,-0.7587111246522833,-0.4549381505894981
+Radial layer,radial_tissue_term,EPI,0,Post Arteriole Capillary Endothelial (PAC),112,-0.7503148006928796,-1.1776739925494635
+Radial layer,radial_tissue_term,EPI,0,Pre Venule Capillary Endothelial (PVC),112,-0.7918680181050004,0.536746319568665
+Radial layer,radial_tissue_term,EPI,0,Venular Endothelial,112,-0.7596276795992484,-1.2957378375320343
+Radial layer,radial_tissue_term,EPI,0,Lymphatic Endothelial,112,-0.782058979813321,0.021973356365815953
+Radial layer,radial_tissue_term,EPI,0,Medullary Sinus Endothelial,112,-0.7548757437622189,-0.4571674649946167
+Radial layer,radial_tissue_term,EPI,0,Crypt Top Fibroblasts (S2B),112,-0.7473105842944759,-0.9364389883065746
+Radial layer,radial_tissue_term,EPI,0,Crypt Bottom Fibroblasts (S2A),112,-0.7591576462645572,-0.9667438646021721
+Radial layer,radial_tissue_term,EPI,0,Lamina propria Fibroblasts (S1),112,-0.7251087460307174,-1.2007490336805846
+Radial layer,radial_tissue_term,EPI,0,Submucosal Fibroblasts (S3),112,-0.7601238389845592,-0.19002745406125354
+Radial layer,radial_tissue_term,EPI,0,Mesenchymal Lymphoid Tissue Organizer Cells (mLTo Cells),112,-0.7918680181050004,0.775359773960986
+Radial layer,radial_tissue_term,EPI,0,Fibroblastic Reticular Cells (FRC),112,-0.7918680181050004,0.7260210049821412
+Radial layer,radial_tissue_term,EPI,0,Marginal Reticular Cells (MRC),112,-0.782058979813321,0.7180089405600829
+Radial layer,radial_tissue_term,EPI,0,Follicular Dendritic Cells (fDC),112,-0.7918680181050004,0.9199842681197336
+Radial layer,radial_tissue_term,EPI,0,Muscularis Propria Fibroblasts,112,-0.7918680181050004,0.239169731299302
+Radial layer,radial_tissue_term,EPI,0,Myofibroblasts,112,-0.7606492005919068,-1.03570051751188
+Radial layer,radial_tissue_term,EPI,0,Interstitial Cells of Cajal (ICC),112,-0.7918680181050004,0.9916050158704675
+Radial layer,radial_tissue_term,EPI,0,Angiogenic Pericytes,112,-0.7722499415216413,-0.9895003655651905
+Radial layer,radial_tissue_term,EPI,0,Contractile Pericytes,112,-0.7918680181050004,-0.5085568986880477
+Radial layer,radial_tissue_term,EPI,0,Secretory Pericytes,112,-0.7918680181050004,0.7661468686375751
+Radial layer,radial_tissue_term,EPI,0,Glia,112,-0.7606492005919068,-0.9998863326563777
+Radial layer,radial_tissue_term,EPI,0,Smooth Muscle Cells (SMC),112,-0.7918680181050004,0.4599381027889821
+Radial layer,radial_tissue_term,EPI,0,Adipocytes,112,-0.7918680181050004,0.44211846073744554
+Radial layer,radial_tissue_term,EPI,0,Plasma Cells,112,-0.3087988638542462,-1.1337693699819793
+Radial layer,radial_tissue_term,EPI,0,Plasma IGA,112,-0.3544093112429197,-1.9131153838560544
+Radial layer,radial_tissue_term,EPI,0,Plasma IGG,112,-0.6324793285009006,-0.08206337744341845
+Radial layer,radial_tissue_term,EPI,0,GC B Dark Zone (GC B DZ),112,-0.04571866241233645,0.12852773405535356
+Radial layer,radial_tissue_term,EPI,0,GC B Light Zone (GC B LZ),112,-0.12059542793645912,0.09633914062127362
+Radial layer,radial_tissue_term,EPI,0,Memory B,112,0.47318915957721047,-1.8292759474086249
+Radial layer,radial_tissue_term,EPI,0,Naive B,112,0.28344510441292753,-1.4908485366509967
+Radial layer,radial_tissue_term,EPI,0,CD4 Tfh,112,0.3912711119667553,-1.4919123030605346
+Radial layer,radial_tissue_term,EPI,0,CD4 Th17,112,2.2437010266378103,-0.2859774847153367
+Radial layer,radial_tissue_term,EPI,0,CD4 Tr1,112,-0.4002699341421453,-0.2611106038052292
+Radial layer,radial_tissue_term,EPI,0,CD4 Tfr,112,-0.3890588930702027,-0.3956545388679814
+Radial layer,radial_tissue_term,EPI,0,CD4 pTreg,112,-0.080407715729322,-1.2209629257535857
+Radial layer,radial_tissue_term,EPI,0,CD4 tTreg,112,0.030446040531456987,-1.4163408797959511
+Radial layer,radial_tissue_term,EPI,0,CD4 Naive,112,0.22009481060922845,-1.0373515113345566
+Radial layer,radial_tissue_term,EPI,0,CD4 Memory,112,1.512990374565469,-0.992665776695297
+Radial layer,radial_tissue_term,EPI,0,CD8 Effector Memory,112,0.8333076847212348,-0.263576794615252
+Radial layer,radial_tissue_term,EPI,0,CD8 Circulating Effector Memory,112,0.558947319665384,-1.5056197353572032
+Radial layer,radial_tissue_term,EPI,0,CD8 Memory Exhausted,112,-0.6412246660008494,0.7828938119615981
+Radial layer,radial_tissue_term,EPI,0,CD8 TRM,112,3.1988426934591496,0.6066962087601502
+Radial layer,radial_tissue_term,EPI,0,CD8 IEL,112,2.4211472232324995,1.1073262121192893
+Radial layer,radial_tissue_term,EPI,0,CD8 Naive,112,-0.1781969928410719,-0.10234243033352444
+Radial layer,radial_tissue_term,EPI,0,Gamma Delta T Cells,112,-0.026379380080110957,0.6883727184851135
+Radial layer,radial_tissue_term,EPI,0,MAIT Cells,112,-0.3496924995310362,-0.8755491458965202
+Radial layer,radial_tissue_term,EPI,0,NKT Cells,112,2.162901668314506,1.798003022151181
+Radial layer,radial_tissue_term,EPI,0,NK Cells,112,0.89197024413608,0.32802167191296516
+Radial layer,radial_tissue_term,EPI,0,ILC3,112,-0.01708948040297473,-0.8146832566255354
+Radial layer,radial_tissue_term,EPI,0,Classical Monocytes,112,-0.4915610792037443,-1.1310451937121353
+Radial layer,radial_tissue_term,EPI,0,Nonclassical Monocytes,112,-0.7722499415216413,0.6733881130635586
+Radial layer,radial_tissue_term,EPI,0,Cycling Macrophages,112,-0.5998468117214261,-0.4951651379819765
+Radial layer,radial_tissue_term,EPI,0,Homeostatic Macrophages,112,-0.3192360066296687,-1.488636060206122
+Radial layer,radial_tissue_term,EPI,0,M0 Macrophages,112,0.08703946926055729,-1.1419976763337372
+Radial layer,radial_tissue_term,EPI,0,Perivascular Resident Macrophages,112,-0.7624409032299617,0.05836704072257713
+Radial layer,radial_tissue_term,EPI,0,Follicle Associated Resident Macrophages,112,-0.6545174222888956,0.21728944699017846
+Radial layer,radial_tissue_term,EPI,0,migDC,112,-0.7578799601606226,0.3195314551972628
+Radial layer,radial_tissue_term,EPI,0,cDC1,112,-0.6678069128974516,-0.5930997587492032
+Radial layer,radial_tissue_term,EPI,0,cDC2,112,-0.059079089046474124,-1.226377010210636
+Radial layer,radial_tissue_term,EPI,0,Tolerogenic cDC2,112,-0.5994387001354259,0.538706708216153
+Radial layer,radial_tissue_term,EPI,0,pDC,112,-0.7276925077111168,0.8697712673038929
+Radial layer,radial_tissue_term,EPI,0,Monocyte Derived Dendritic Cells (MO DC),112,-0.6841417325154061,-0.19944935348836862
+Radial layer,radial_tissue_term,EPI,0,Mast Cells,112,-0.1583346757542695,-1.0648366442830328
+Radial layer,radial_tissue_term,EPI,0,Neutrophils,112,-0.7722499415216413,0.8691511444350823
+Radial layer,radial_tissue_term,EPI,0,Eosinophils,112,-0.7774980367439817,1.1114461856179187
+Radial layer,radial_tissue_term,LP,1,Epithelial,102,-1.2135613284318172,-1.0093765433747557
+Radial layer,radial_tissue_term,LP,1,Enterocyte Progenitors,102,0.510433487324578,-0.533066674711358
+Radial layer,radial_tissue_term,LP,1,Lower Villus Enterocytes,102,0.10546591548585423,-0.8054634174873055
+Radial layer,radial_tissue_term,LP,1,Mid Villus Enterocytes,102,0.18391404409018441,-1.1426995432399887
+Radial layer,radial_tissue_term,LP,1,Villus Tip Enterocytes,102,0.11785748137735076,-1.0779591102803783
+Radial layer,radial_tissue_term,LP,1,BEST4 Enterocytes,102,-0.6344006818826524,-1.6535055091600632
+Radial layer,radial_tissue_term,LP,1,Colonocyte Progenitors,102,-0.9603367878595943,-1.1884655124977825
+Radial layer,radial_tissue_term,LP,1,Lower Crypt Colonocytes,102,-1.0365006812366135,-1.2742152827734696
+Radial layer,radial_tissue_term,LP,1,Mid Crypt Colonocytes,102,-1.3467445524998722,-1.4918889829710338
+Radial layer,radial_tissue_term,LP,1,Crypt Top Colonocytes,102,-1.22458125129714,-1.329056123167821
+Radial layer,radial_tissue_term,LP,1,BEST4 Colonocytes,102,-1.1064098529457174,-1.4006408452723458
+Radial layer,radial_tissue_term,LP,1,Microfold Cells (M Cells),102,-1.1838907216023051,-0.5181084101070406
+Radial layer,radial_tissue_term,LP,1,Enteroendocrine Cells (EEC),102,-1.3359738437874398,-1.753699401125796
+Radial layer,radial_tissue_term,LP,1,EEC Progenitors,102,-0.9315956507177653,-1.1616669255559737
+Radial layer,radial_tissue_term,LP,1,EEC S,102,-1.2026180948028269,-0.7995893230045135
+Radial layer,radial_tissue_term,LP,1,EEC Enterochromaffin (EC),102,-0.5011308332541163,-0.6793492755255769
+Radial layer,radial_tissue_term,LP,1,EEC L,102,-0.9033413968730768,-1.0922374055021684
+Radial layer,radial_tissue_term,LP,1,EEC N,102,-1.1540424624089383,-1.6779830111283045
+Radial layer,radial_tissue_term,LP,1,Brunners Gland Cells,102,-1.3359738437874398,-0.2724004720019769
+Radial layer,radial_tissue_term,LP,1,Paneth Cells,102,-0.6206402110982127,0.48827154919727794
+Radial layer,radial_tissue_term,LP,1,Tuft Cells,102,-0.9131836447393139,-1.482343221918265
+Radial layer,radial_tissue_term,LP,1,Tuft Progenitors,102,-1.1112980008486355,-1.238778853372131
+Radial layer,radial_tissue_term,LP,1,Goblet Cells,102,0.3138965323703407,-1.0418314207790713
+Radial layer,radial_tissue_term,LP,1,Mature Goblet Cells,102,-0.5778396224093055,-1.3119120498931685
+Radial layer,radial_tissue_term,LP,1,Foveolar Cells,102,-1.3467445524998722,-0.2340321185313819
+Radial layer,radial_tissue_term,LP,1,Intestinal Stem Cells (ISC),102,0.04614960171449615,-1.2697875951449462
+Radial layer,radial_tissue_term,LP,1,Transiently Amplifying Cells (TA),102,0.8474131948113547,-0.9180836444427521
+Radial layer,radial_tissue_term,LP,1,Secretory Progenitors,102,0.06776997757639262,-1.030030001797237
+Radial layer,radial_tissue_term,LP,1,Arteriolar Endothelial,102,-0.4206976814885192,0.3254549406555313
+Radial layer,radial_tissue_term,LP,1,Capillary Endothelial,102,0.10120933200799825,1.6182120559747435
+Radial layer,radial_tissue_term,LP,1,Post Arteriole Capillary Endothelial (PAC),102,1.341760306875352,1.0217384592688379
+Radial layer,radial_tissue_term,LP,1,Pre Venule Capillary Endothelial (PVC),102,-1.224013182323607,-0.34601384519954353
+Radial layer,radial_tissue_term,LP,1,Venular Endothelial,102,0.8226771107050783,1.1167695741114918
+Radial layer,radial_tissue_term,LP,1,Lymphatic Endothelial,102,-0.8599401747734597,-0.09747039686879032
+Radial layer,radial_tissue_term,LP,1,Medullary Sinus Endothelial,102,-0.2694715377330262,1.1993425809607485
+Radial layer,radial_tissue_term,LP,1,Crypt Top Fibroblasts (S2B),102,0.4537840883040331,0.8159601386551539
+Radial layer,radial_tissue_term,LP,1,Crypt Bottom Fibroblasts (S2A),102,0.6149390776873241,1.1153094094135612
+Radial layer,radial_tissue_term,LP,1,Lamina propria Fibroblasts (S1),102,1.8985657769522193,1.0281805950353495
+Radial layer,radial_tissue_term,LP,1,Submucosal Fibroblasts (S3),102,-1.0616704206950098,-0.5177333760060572
+Radial layer,radial_tissue_term,LP,1,Mesenchymal Lymphoid Tissue Organizer Cells (mLTo Cells),102,-1.187647788757316,-0.06476009920848647
+Radial layer,radial_tissue_term,LP,1,Fibroblastic Reticular Cells (FRC),102,-0.9709159671977254,0.2899386897539865
+Radial layer,radial_tissue_term,LP,1,Marginal Reticular Cells (MRC),102,-0.871294237228524,0.4540049222956754
+Radial layer,radial_tissue_term,LP,1,Follicular Dendritic Cells (fDC),102,-1.1639581178096015,0.025085615466471693
+Radial layer,radial_tissue_term,LP,1,Muscularis Propria Fibroblasts,102,-1.0598279637676176,-0.20512075197467128
+Radial layer,radial_tissue_term,LP,1,Myofibroblasts,102,0.3029176768797999,1.0355786330064178
+Radial layer,radial_tissue_term,LP,1,Interstitial Cells of Cajal (ICC),102,-1.3467445524998722,-0.22815995995380248
+Radial layer,radial_tissue_term,LP,1,Angiogenic Pericytes,102,-0.11845218164709653,1.4423926367286892
+Radial layer,radial_tissue_term,LP,1,Contractile Pericytes,102,-0.5631648114581114,0.009290599923841894
+Radial layer,radial_tissue_term,LP,1,Secretory Pericytes,102,-0.9421654452550471,0.30038361024680027
+Radial layer,radial_tissue_term,LP,1,Glia,102,0.3240822174520224,1.6535556147040986
+Radial layer,radial_tissue_term,LP,1,Smooth Muscle Cells (SMC),102,-0.9119985656276102,0.11106224164105634
+Radial layer,radial_tissue_term,LP,1,Adipocytes,102,-1.3467445524998722,-0.4119178193688824
+Radial layer,radial_tissue_term,LP,1,Plasma Cells,102,2.6365331527357925,0.7014818042256395
+Radial layer,radial_tissue_term,LP,1,Plasma IGA,102,1.3711663804091536,0.20072888323140464
+Radial layer,radial_tissue_term,LP,1,Plasma IGG,102,-0.6630893521324283,-0.1321115149344613
+Radial layer,radial_tissue_term,LP,1,GC B Dark Zone (GC B DZ),102,-0.479721952462659,-0.7985492429356873
+Radial layer,radial_tissue_term,LP,1,GC B Light Zone (GC B LZ),102,-0.4189185061734112,-0.7684298471154515
+Radial layer,radial_tissue_term,LP,1,Memory B,102,2.1668181754755422,0.46434717777790735
+Radial layer,radial_tissue_term,LP,1,Naive B,102,0.9711359876678277,-0.27744826950413354
+Radial layer,radial_tissue_term,LP,1,CD4 Tfh,102,1.2680565506948087,0.0554633672052903
+Radial layer,radial_tissue_term,LP,1,CD4 Th17,102,3.3076462265422877,1.4785277850214407
+Radial layer,radial_tissue_term,LP,1,CD4 Tr1,102,0.05830358573419679,0.8335084569570903
+Radial layer,radial_tissue_term,LP,1,CD4 Tfr,102,-0.09734941981855955,0.39483227189324466
+Radial layer,radial_tissue_term,LP,1,CD4 pTreg,102,1.142559464661543,1.3879250430227572
+Radial layer,radial_tissue_term,LP,1,CD4 tTreg,102,1.1970779378979899,0.893968005892628
+Radial layer,radial_tissue_term,LP,1,CD4 Naive,102,0.3609930336160901,-0.7218061870124854
+Radial layer,radial_tissue_term,LP,1,CD4 Memory,102,3.2086058172454206,1.499679097775304
+Radial layer,radial_tissue_term,LP,1,CD8 Effector Memory,102,1.3604918818223661,1.5534578611772796
+Radial layer,radial_tissue_term,LP,1,CD8 Circulating Effector Memory,102,2.183009746879455,1.3458017078491722
+Radial layer,radial_tissue_term,LP,1,CD8 Memory Exhausted,102,-0.9265167200958491,0.1914804660025127
+Radial layer,radial_tissue_term,LP,1,CD8 TRM,102,3.4483381671121505,1.0164816944228996
+Radial layer,radial_tissue_term,LP,1,CD8 IEL,102,1.209149230415386,-1.2700145030637138
+Radial layer,radial_tissue_term,LP,1,CD8 Naive,102,-0.23479305980983062,-0.25876117018832173
+Radial layer,radial_tissue_term,LP,1,Gamma Delta T Cells,102,0.01741182187987725,0.8010383751405094
+Radial layer,radial_tissue_term,LP,1,MAIT Cells,102,0.6047926226869389,1.5406179374815967
+Radial layer,radial_tissue_term,LP,1,NKT Cells,102,0.8356277546865033,-0.7100183379208529
+Radial layer,radial_tissue_term,LP,1,NK Cells,102,1.530848184135441,1.7800119711839548
+Radial layer,radial_tissue_term,LP,1,ILC3,102,1.0526561995639376,1.5708375738503055
+Radial layer,radial_tissue_term,LP,1,Classical Monocytes,102,0.6877881918723547,1.4416686200210882
+Radial layer,radial_tissue_term,LP,1,Nonclassical Monocytes,102,-1.032177395559038,0.12032142194551262
+Radial layer,radial_tissue_term,LP,1,Cycling Macrophages,102,0.22925431391287596,1.590390870584691
+Radial layer,radial_tissue_term,LP,1,Homeostatic Macrophages,102,1.312124451790899,1.1000255938936088
+Radial layer,radial_tissue_term,LP,1,M0 Macrophages,102,2.3195902741078784,1.4723908708011664
+Radial layer,radial_tissue_term,LP,1,Perivascular Resident Macrophages,102,-0.9879794878170616,-0.2619480742090493
+Radial layer,radial_tissue_term,LP,1,Follicle Associated Resident Macrophages,102,-0.515597891552631,0.5272020519396426
+Radial layer,radial_tissue_term,LP,1,migDC,102,-0.5342728748601219,0.8355359392250645
+Radial layer,radial_tissue_term,LP,1,cDC1,102,0.2894039830551645,1.734340387480748
+Radial layer,radial_tissue_term,LP,1,cDC2,102,1.5528012475303028,1.7561032787309447
+Radial layer,radial_tissue_term,LP,1,Tolerogenic cDC2,102,-0.5172144751390966,0.7162385661509527
+Radial layer,radial_tissue_term,LP,1,pDC,102,-1.076089024126685,0.024268562095989415
+Radial layer,radial_tissue_term,LP,1,Monocyte Derived Dendritic Cells (MO DC),102,-0.6289505695652831,-0.058804897583692825
+Radial layer,radial_tissue_term,LP,1,Mast Cells,102,1.3317931861977053,1.014252174411226
+Radial layer,radial_tissue_term,LP,1,Neutrophils,102,-1.3094243320119279,-0.27184003661206374
+Radial layer,radial_tissue_term,LP,1,Eosinophils,102,-1.3252031350750075,-0.39431420586881977
+Radial layer,radial_tissue_term,EPI_LP,2,Epithelial,158,-1.2759895779367956,-1.2763775852665307
+Radial layer,radial_tissue_term,EPI_LP,2,Enterocyte Progenitors,158,1.5818857739777776,1.1907981629858648
+Radial layer,radial_tissue_term,EPI_LP,2,Lower Villus Enterocytes,158,1.6179839145896422,1.5180148801211957
+Radial layer,radial_tissue_term,EPI_LP,2,Mid Villus Enterocytes,158,1.736593159258786,1.0410931204023748
+Radial layer,radial_tissue_term,EPI_LP,2,Villus Tip Enterocytes,158,1.6409506663465834,0.5342019214186701
+Radial layer,radial_tissue_term,EPI_LP,2,BEST4 Enterocytes,158,0.1289951009578957,0.45488299725594067
+Radial layer,radial_tissue_term,EPI_LP,2,Colonocyte Progenitors,158,-0.9434726213905648,-1.1710203780392594
+Radial layer,radial_tissue_term,EPI_LP,2,Lower Crypt Colonocytes,158,-0.7027503963814615,-1.0088287625499506
+Radial layer,radial_tissue_term,EPI_LP,2,Mid Crypt Colonocytes,158,-0.8590181126679501,-0.8901986901932017
+Radial layer,radial_tissue_term,EPI_LP,2,Crypt Top Colonocytes,158,-0.734601693916375,-0.8763345134806969
+Radial layer,radial_tissue_term,EPI_LP,2,BEST4 Colonocytes,158,-0.7858756936442334,-1.0111615776379381
+Radial layer,radial_tissue_term,EPI_LP,2,Microfold Cells (M Cells),158,-0.9022250366538214,0.20238061548846178
+Radial layer,radial_tissue_term,EPI_LP,2,Enteroendocrine Cells (EEC),158,-0.9996360199923664,-0.4567577671724346
+Radial layer,radial_tissue_term,EPI_LP,2,EEC Progenitors,158,-0.5756012562431234,-0.17229302605066898
+Radial layer,radial_tissue_term,EPI_LP,2,EEC S,158,-1.1402206135337123,-0.6074489772922198
+Radial layer,radial_tissue_term,EPI_LP,2,EEC Enterochromaffin (EC),158,-0.6050850829475499,-0.911065352557121
+Radial layer,radial_tissue_term,EPI_LP,2,EEC L,158,-0.7640903239498633,-0.6402165640471728
+Radial layer,radial_tissue_term,EPI_LP,2,EEC N,158,-0.577939533162647,0.17253278043514308
+Radial layer,radial_tissue_term,EPI_LP,2,Brunners Gland Cells,158,-1.2580754218206567,-0.11223052303754498
+Radial layer,radial_tissue_term,EPI_LP,2,Paneth Cells,158,-0.829853157129735,-0.8044093373557213
+Radial layer,radial_tissue_term,EPI_LP,2,Tuft Cells,158,0.2328512822285705,0.03729653656355443
+Radial layer,radial_tissue_term,EPI_LP,2,Tuft Progenitors,158,-0.9135622103404482,-0.8333595105084698
+Radial layer,radial_tissue_term,EPI_LP,2,Goblet Cells,158,1.68359096753427,0.08941900282012945
+Radial layer,radial_tissue_term,EPI_LP,2,Mature Goblet Cells,158,1.1953584342455843,0.2738466786741937
+Radial layer,radial_tissue_term,EPI_LP,2,Foveolar Cells,158,-1.3398388266296763,-0.21943687180775034
+Radial layer,radial_tissue_term,EPI_LP,2,Intestinal Stem Cells (ISC),158,1.2331944117459637,0.0977828572794289
+Radial layer,radial_tissue_term,EPI_LP,2,Transiently Amplifying Cells (TA),158,1.8983110858316947,0.7923853967655137
+Radial layer,radial_tissue_term,EPI_LP,2,Secretory Progenitors,158,0.8088324517634642,0.05989839910163329
+Radial layer,radial_tissue_term,EPI_LP,2,Arteriolar Endothelial,158,-0.8931917839981071,-0.4662402737177876
+Radial layer,radial_tissue_term,EPI_LP,2,Capillary Endothelial,158,-1.1129174585659738,-1.308881010806429
+Radial layer,radial_tissue_term,EPI_LP,2,Post Arteriole Capillary Endothelial (PAC),158,-0.3252532434068213,-0.7308039549957357
+Radial layer,radial_tissue_term,EPI_LP,2,Pre Venule Capillary Endothelial (PVC),158,-1.002877431384407,0.1057089741179023
+Radial layer,radial_tissue_term,EPI_LP,2,Venular Endothelial,158,-0.639793991290887,-1.1130298896196102
+Radial layer,radial_tissue_term,EPI_LP,2,Lymphatic Endothelial,158,-1.012602438939005,-0.3316033453752748
+Radial layer,radial_tissue_term,EPI_LP,2,Medullary Sinus Endothelial,158,-0.9699271004468171,-1.1910604315564743
+Radial layer,radial_tissue_term,EPI_LP,2,Crypt Top Fibroblasts (S2B),158,-0.6320087617767872,-0.7682134372932159
+Radial layer,radial_tissue_term,EPI_LP,2,Crypt Bottom Fibroblasts (S2A),158,-0.6996132182989402,-0.8765211975699289
+Radial layer,radial_tissue_term,EPI_LP,2,Lamina propria Fibroblasts (S1),158,0.009394028480795517,-0.5767558584061463
+Radial layer,radial_tissue_term,EPI_LP,2,Submucosal Fibroblasts (S3),158,-0.7927322274145661,-0.22546463903273
+Radial layer,radial_tissue_term,EPI_LP,2,Mesenchymal Lymphoid Tissue Organizer Cells (mLTo Cells),158,-1.1281444139806376,0.061547436894600106
+Radial layer,radial_tissue_term,EPI_LP,2,Fibroblastic Reticular Cells (FRC),158,-1.0833272678917707,0.01615403869897314
+Radial layer,radial_tissue_term,EPI_LP,2,Marginal Reticular Cells (MRC),158,-1.0488291130587675,-0.07123501042705702
+Radial layer,radial_tissue_term,EPI_LP,2,Follicular Dendritic Cells (fDC),158,-1.2685752518243865,-0.22652476693446366
+Radial layer,radial_tissue_term,EPI_LP,2,Muscularis Propria Fibroblasts,158,-0.7392703310359174,0.32637922729031504
+Radial layer,radial_tissue_term,EPI_LP,2,Myofibroblasts,158,-0.6435925322590852,-0.8077345647517928
+Radial layer,radial_tissue_term,EPI_LP,2,Interstitial Cells of Cajal (ICC),158,-1.2945219329107134,-0.11336086795378023
+Radial layer,radial_tissue_term,EPI_LP,2,Angiogenic Pericytes,158,-0.7983144602185488,-1.086451019907185
+Radial layer,radial_tissue_term,EPI_LP,2,Contractile Pericytes,158,-0.8551142502431034,-0.6517639117838959
+Radial layer,radial_tissue_term,EPI_LP,2,Secretory Pericytes,158,-1.130400579483637,-0.2829464648209928
+Radial layer,radial_tissue_term,EPI_LP,2,Glia,158,-0.7285554223410914,-0.921379362134989
+Radial layer,radial_tissue_term,EPI_LP,2,Smooth Muscle Cells (SMC),158,-0.9350419925250623,0.044140916728799544
+Radial layer,radial_tissue_term,EPI_LP,2,Adipocytes,158,-1.199342556080279,-0.18504455135490336
+Radial layer,radial_tissue_term,EPI_LP,2,Plasma Cells,158,0.8535265470875332,-0.4095185679579953
+Radial layer,radial_tissue_term,EPI_LP,2,Plasma IGA,158,1.6134140946760718,0.4974843049120984
+Radial layer,radial_tissue_term,EPI_LP,2,Plasma IGG,158,-0.029250833842849395,0.904229968899034
+Radial layer,radial_tissue_term,EPI_LP,2,GC B Dark Zone (GC B DZ),158,0.752102774911969,1.8327587923210709
+Radial layer,radial_tissue_term,EPI_LP,2,GC B Light Zone (GC B LZ),158,0.4950885505629151,1.8810633195187887
+Radial layer,radial_tissue_term,EPI_LP,2,Memory B,158,2.665100539636155,1.1391537278447166
+Radial layer,radial_tissue_term,EPI_LP,2,Naive B,158,2.0516837606969505,1.6291306722622043
+Radial layer,radial_tissue_term,EPI_LP,2,CD4 Tfh,158,2.1573368294044157,1.6248902834628014
+Radial layer,radial_tissue_term,EPI_LP,2,CD4 Th17,158,2.652030250619493,0.39121817119616664
+Radial layer,radial_tissue_term,EPI_LP,2,CD4 Tr1,158,0.16742345889023227,1.0939785623761127
+Radial layer,radial_tissue_term,EPI_LP,2,CD4 Tfr,158,0.338409555353112,1.5756705857963558
+Radial layer,radial_tissue_term,EPI_LP,2,CD4 pTreg,158,0.9328333906381415,0.9405280563894146
+Radial layer,radial_tissue_term,EPI_LP,2,CD4 tTreg,158,1.4237550582385796,1.3428620970685263
+Radial layer,radial_tissue_term,EPI_LP,2,CD4 Naive,158,1.4930106252081596,1.8133773692756157
+Radial layer,radial_tissue_term,EPI_LP,2,CD4 Memory,158,2.673392517723424,0.7129817781850577
+Radial layer,radial_tissue_term,EPI_LP,2,CD8 Effector Memory,158,0.8076405576388693,-0.35204314030569855
+Radial layer,radial_tissue_term,EPI_LP,2,CD8 Circulating Effector Memory,158,1.8861983606625263,0.8246798980807091
+Radial layer,radial_tissue_term,EPI_LP,2,CD8 Memory Exhausted,158,-0.9993276848004065,0.04054259149692936
+Radial layer,radial_tissue_term,EPI_LP,2,CD8 TRM,158,2.913916289374058,0.13871695780773224
+Radial layer,radial_tissue_term,EPI_LP,2,CD8 IEL,158,1.8560937468963805,-0.0010292831131640215
+Radial layer,radial_tissue_term,EPI_LP,2,CD8 Naive,158,0.366270998124471,1.4024440610160394
+Radial layer,radial_tissue_term,EPI_LP,2,Gamma Delta T Cells,158,-0.06114305276768686,0.5989330174538966
+Radial layer,radial_tissue_term,EPI_LP,2,MAIT Cells,158,0.20255849341114504,0.522409439156269
+Radial layer,radial_tissue_term,EPI_LP,2,NKT Cells,158,1.2446295866599024,0.0628329329174108
+Radial layer,radial_tissue_term,EPI_LP,2,NK Cells,158,0.6150867763829503,-0.30125676147050423
+Radial layer,radial_tissue_term,EPI_LP,2,ILC3,158,0.4984373691674405,0.33493581765560504
+Radial layer,radial_tissue_term,EPI_LP,2,Classical Monocytes,158,-0.04709449127446029,-0.16145513370797185
+Radial layer,radial_tissue_term,EPI_LP,2,Nonclassical Monocytes,158,-1.1005014185953579,-0.025056608568854912
+Radial layer,radial_tissue_term,EPI_LP,2,Cycling Macrophages,158,-0.2892189058980256,0.2862014232114501
+Radial layer,radial_tissue_term,EPI_LP,2,Homeostatic Macrophages,158,0.7286196026471509,0.17411334674861878
+Radial layer,radial_tissue_term,EPI_LP,2,M0 Macrophages,158,1.1099552606975907,0.05586950053407192
+Radial layer,radial_tissue_term,EPI_LP,2,Perivascular Resident Macrophages,158,-0.7303539708276178,0.1039376443471243
+Radial layer,radial_tissue_term,EPI_LP,2,Follicle Associated Resident Macrophages,158,-0.3956654657861076,0.7947567311861133
+Radial layer,radial_tissue_term,EPI_LP,2,migDC,158,-0.8339921774403504,0.14389191607953752
+Radial layer,radial_tissue_term,EPI_LP,2,cDC1,158,-0.40555024406878804,0.044572359515714706
+Radial layer,radial_tissue_term,EPI_LP,2,cDC2,158,0.5600075751801982,-0.08087400275788853
+Radial layer,radial_tissue_term,EPI_LP,2,Tolerogenic cDC2,158,-0.894851118068846,-0.09912375373192762
+Radial layer,radial_tissue_term,EPI_LP,2,pDC,158,-1.0589821274243094,0.06578426836188694
+Radial layer,radial_tissue_term,EPI_LP,2,Monocyte Derived Dendritic Cells (MO DC),158,-1.1519200932998304,-1.391495860933086
+Radial layer,radial_tissue_term,EPI_LP,2,Mast Cells,158,-0.0660102846154538,-0.9360217860345442
+Radial layer,radial_tissue_term,EPI_LP,2,Neutrophils,158,-1.3018395413948247,-0.25572947855603834
+Radial layer,radial_tissue_term,EPI_LP,2,Eosinophils,158,-1.3189790996296489,-0.37720297926642227
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Epithelial,103,-0.6741701170100963,1.297560085136369
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Enterocyte Progenitors,103,-0.1329493413642662,-1.5682084625172226
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Lower Villus Enterocytes,103,-0.03646222280620298,-1.0234885579067714
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Mid Villus Enterocytes,103,0.08464337585390846,-1.282320508635478
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Villus Tip Enterocytes,103,-0.10705115199238617,-1.3160200102893969
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,BEST4 Enterocytes,103,-0.11629421049858393,-0.22257052900955393
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Colonocyte Progenitors,103,0.5196947905015632,0.3425529303518618
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Lower Crypt Colonocytes,103,0.9853774089495404,0.33351125715608715
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Mid Crypt Colonocytes,103,0.33500346596390806,0.5828221152354203
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Crypt Top Colonocytes,103,0.5565020125180388,0.3165939249516324
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,BEST4 Colonocytes,103,0.8301050785351975,0.9524076376722607
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Microfold Cells (M Cells),103,-0.7210779677693081,0.6657472310346729
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Enteroendocrine Cells (EEC),103,-0.659053099754302,0.8565532487759084
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,EEC Progenitors,103,-0.5825630735705825,-0.1916411968753149
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,EEC S,103,-0.6726271659559223,0.8324098894930075
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,EEC Enterochromaffin (EC),103,-0.5762403830102917,-0.8467699463344383
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,EEC L,103,-0.615084194829996,-0.15652997942850494
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,EEC N,103,-0.6068150729159938,0.07978087866405811
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Brunners Gland Cells,103,-0.6329827066042572,1.1730467106520135
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Paneth Cells,103,-0.6768655707634776,0.14086738918939293
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Tuft Cells,103,-0.29956695316686266,-0.6686888567335433
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Tuft Progenitors,103,-0.42844813669422105,0.16127392659518766
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Goblet Cells,103,0.41440263286246193,-0.9588219802519888
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Mature Goblet Cells,103,0.04559347999205372,-0.7543801486481427
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Foveolar Cells,103,-0.7158629878461688,1.0993356204417726
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Intestinal Stem Cells (ISC),103,0.33075265377886554,-0.941902142646561
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Transiently Amplifying Cells (TA),103,0.5004860374480388,-1.482751408356701
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Secretory Progenitors,103,-0.06582883173805658,-1.2265223916700678
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Arteriolar Endothelial,103,0.40682852834034555,1.7120300039426097
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Capillary Endothelial,103,-0.7367035785696392,-0.40188097727325706
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Post Arteriole Capillary Endothelial (PAC),103,-0.07022872999850238,-0.4626949907047075
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Pre Venule Capillary Endothelial (PVC),103,-0.38986004106987754,1.3579440499362783
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Venular Endothelial,103,0.504360235704328,0.6314384135815305
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Lymphatic Endothelial,103,0.3461635635624614,1.7522900924363058
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Medullary Sinus Endothelial,103,-0.274601667201689,1.1818352934334944
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Crypt Top Fibroblasts (S2B),103,-0.562956406127931,-0.667465935439833
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Crypt Bottom Fibroblasts (S2A),103,-0.5049747694522145,-0.5816019152466416
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Lamina propria Fibroblasts (S1),103,-0.014253934483965003,-0.5968458676085853
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Submucosal Fibroblasts (S3),103,1.1790744807183906,1.9173974405849499
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Mesenchymal Lymphoid Tissue Organizer Cells (mLTo Cells),103,-0.6651052386160573,1.0444385347357885
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Fibroblastic Reticular Cells (FRC),103,-0.7317441064942413,0.872456497310593
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Marginal Reticular Cells (MRC),103,-0.7530763839441075,0.803754440610629
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Follicular Dendritic Cells (fDC),103,-0.7473697172945724,1.0270053081103852
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Muscularis Propria Fibroblasts,103,-0.11737059410988605,1.3575189149162865
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Myofibroblasts,103,-0.5187545051949125,-0.5646145427513535
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Interstitial Cells of Cajal (ICC),103,-0.7687019947444385,1.0425300454451214
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Angiogenic Pericytes,103,-0.5632374019540991,-0.21204873822478196
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Contractile Pericytes,103,0.283860289334625,1.927190379896029
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Secretory Pericytes,103,-0.712851774950015,1.011013754089462
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Glia,103,-0.4756491172064107,-0.30272649780988375
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Smooth Muscle Cells (SMC),103,-0.5347910307261095,1.2065255212492607
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Adipocytes,103,-0.044699160596064,1.5921207984180716
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Plasma Cells,103,0.32139531542655564,-0.7410922113494826
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Plasma IGA,103,1.3796197975652886,0.21108438805176213
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Plasma IGG,103,0.06295511153307919,1.0549889453446772
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,GC B Dark Zone (GC B DZ),103,-0.19350075629728405,-0.1871504646891253
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,GC B Light Zone (GC B LZ),103,-0.2740636887030521,-0.34852953429709727
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Memory B,103,1.7302546383243147,-0.12687570221755076
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Naive B,103,1.0911020728968046,-0.06577339724695985
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,CD4 Tfh,103,1.0484972943708344,-0.3320210005896805
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,CD4 Th17,103,1.447878816332458,-1.6058128333624646
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,CD4 Tr1,103,-0.25919893264492133,0.07562712845923156
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,CD4 Tfr,103,-0.277331424059771,-0.09289066333113383
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,CD4 pTreg,103,0.13569404336858792,-0.7599650442227396
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,CD4 tTreg,103,0.6221707900833443,-0.2445342886531163
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,CD4 Naive,103,0.7773705732471718,0.2106824063810403
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,CD4 Memory,103,1.4287588500141966,-1.1164756944396197
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,CD8 Effector Memory,103,0.48698242548446846,-1.4572487629136863
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,CD8 Circulating Effector Memory,103,1.1690542410219027,-0.434434336906203
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,CD8 Memory Exhausted,103,-0.5958034619788406,0.8770524324438967
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,CD8 TRM,103,1.6801134374367714,-1.8877506710054013
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,CD8 IEL,103,1.3700750331824068,-0.9543576576655568
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,CD8 Naive,103,0.06791555904452552,0.5778570480090938
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Gamma Delta T Cells,103,-0.3810260829712504,-0.22405950245299536
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,MAIT Cells,103,0.023964193932411906,0.07031892707289249
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,NKT Cells,103,0.6177483697533096,-1.1217239743543586
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,NK Cells,103,0.3403972513367528,-0.9255489786643443
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,ILC3,103,0.44531426038294974,0.21647188276132573
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Classical Monocytes,103,0.403396591095267,0.8212771738455925
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Nonclassical Monocytes,103,-0.5853759242835078,1.071013653438225
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Cycling Macrophages,103,-0.3710142218473729,0.08045002886825496
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Homeostatic Macrophages,103,0.13698494359361105,-0.7646993768422532
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,M0 Macrophages,103,0.17016487959405777,-1.0446551566114792
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Perivascular Resident Macrophages,103,0.33502822709789,1.6170180859902645
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Follicle Associated Resident Macrophages,103,-0.5610063066311933,0.4259013915570479
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,migDC,103,-0.618174987990268,0.6419201307797211
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,cDC1,103,-0.3864893853692012,0.09091847607854883
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,cDC2,103,0.271432795778525,-0.6148271579151726
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Tolerogenic cDC2,103,-0.5022481593600825,0.7485526177191602
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,pDC,103,-0.7175078242729459,0.8944878674790456
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Monocyte Derived Dendritic Cells (MO DC),103,-0.6396521746655389,-0.08607595595933144
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Mast Cells,103,0.34299993860881217,-0.36535358798925416
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Neutrophils,103,-0.5921488177246429,1.2516969202333261
+Radial layer,radial_tissue_term,EPI_LP_MUSC,3,Eosinophils,103,-0.7687019947444385,1.13562841741588
+Radial layer,radial_tissue_term,WM,4,Epithelial,27,-0.932192042576365,0.19401924419669328
+Radial layer,radial_tissue_term,WM,4,Enterocyte Progenitors,27,0.8385003543052703,-0.005238283800883033
+Radial layer,radial_tissue_term,WM,4,Lower Villus Enterocytes,27,0.2821204270441661,-0.5340928129566003
+Radial layer,radial_tissue_term,WM,4,Mid Villus Enterocytes,27,1.442310573798773,0.6271942375701037
+Radial layer,radial_tissue_term,WM,4,Villus Tip Enterocytes,27,2.216673357236206,1.1435918763319775
+Radial layer,radial_tissue_term,WM,4,BEST4 Enterocytes,27,-0.03438808906340935,0.003642307006473221
+Radial layer,radial_tissue_term,WM,4,Colonocyte Progenitors,27,1.337583799568707,1.188618092334679
+Radial layer,radial_tissue_term,WM,4,Lower Crypt Colonocytes,27,2.3157066386663137,1.3913423993209348
+Radial layer,radial_tissue_term,WM,4,Mid Crypt Colonocytes,27,0.6795878427755191,1.007923273667379
+Radial layer,radial_tissue_term,WM,4,Crypt Top Colonocytes,27,1.8196315892715758,1.4836753809375465
+Radial layer,radial_tissue_term,WM,4,BEST4 Colonocytes,27,0.5250833741084753,0.5817774673602739
+Radial layer,radial_tissue_term,WM,4,Microfold Cells (M Cells),27,-1.6153458425937943,-1.621752539736119
+Radial layer,radial_tissue_term,WM,4,Enteroendocrine Cells (EEC),27,-0.6586268791669161,0.8581967844888757
+Radial layer,radial_tissue_term,WM,4,EEC Progenitors,27,-0.6349693566300958,-0.3372878964692402
+Radial layer,radial_tissue_term,WM,4,EEC S,27,-1.256145508941218,-0.964416102041928
+Radial layer,radial_tissue_term,WM,4,EEC Enterochromaffin (EC),27,0.3968430928599599,1.322252352588629
+Radial layer,radial_tissue_term,WM,4,EEC L,27,-0.5504486279299753,0.05328257515180199
+Radial layer,radial_tissue_term,WM,4,EEC N,27,-0.6439453757529335,-0.039486370740805764
+Radial layer,radial_tissue_term,WM,4,Brunners Gland Cells,27,-2.0129313410530605,-1.6643188838326977
+Radial layer,radial_tissue_term,WM,4,Paneth Cells,27,-0.9166212328790698,-1.3405302381495385
+Radial layer,radial_tissue_term,WM,4,Tuft Cells,27,1.1866294387662222,1.3020042460230312
+Radial layer,radial_tissue_term,WM,4,Tuft Progenitors,27,-0.37176892509469717,0.277483787549813
+Radial layer,radial_tissue_term,WM,4,Goblet Cells,27,3.6548028117202818,1.717471345364912
+Radial layer,radial_tissue_term,WM,4,Mature Goblet Cells,27,2.6931277652376853,1.6132914074157831
+Radial layer,radial_tissue_term,WM,4,Foveolar Cells,27,-2.0129313410530605,-1.642017423149582
+Radial layer,radial_tissue_term,WM,4,Intestinal Stem Cells (ISC),27,2.3766554873275543,1.4151413657769512
+Radial layer,radial_tissue_term,WM,4,Transiently Amplifying Cells (TA),27,1.8218598512094486,0.6679513569783213
+Radial layer,radial_tissue_term,WM,4,Secretory Progenitors,27,1.5801811980935074,1.1943707747877685
+Radial layer,radial_tissue_term,WM,4,Arteriolar Endothelial,27,-1.3855474069431022,-1.291214783209019
+Radial layer,radial_tissue_term,WM,4,Capillary Endothelial,27,-0.34291548111213527,0.5474880826944397
+Radial layer,radial_tissue_term,WM,4,Post Arteriole Capillary Endothelial (PAC),27,1.6534638643969874,1.3494344789810688
+Radial layer,radial_tissue_term,WM,4,Pre Venule Capillary Endothelial (PVC),27,-1.8645115934518581,-1.6543854984233022
+Radial layer,radial_tissue_term,WM,4,Venular Endothelial,27,0.5234602033201554,0.6605597394586219
+Radial layer,radial_tissue_term,WM,4,Lymphatic Endothelial,27,-1.6734935685836392,-1.3451897065580567
+Radial layer,radial_tissue_term,WM,4,Medullary Sinus Endothelial,27,-0.8356878052482535,-0.7329499778431521
+Radial layer,radial_tissue_term,WM,4,Crypt Top Fibroblasts (S2B),27,0.9611159862468938,1.5561582223844692
+Radial layer,radial_tissue_term,WM,4,Crypt Bottom Fibroblasts (S2A),27,0.7431374104031923,1.3095575680051819
+Radial layer,radial_tissue_term,WM,4,Lamina propria Fibroblasts (S1),27,2.2728715072228742,1.3461701646599666
+Radial layer,radial_tissue_term,WM,4,Submucosal Fibroblasts (S3),27,-1.490875249249075,-0.9841719714849088
+Radial layer,radial_tissue_term,WM,4,Mesenchymal Lymphoid Tissue Organizer Cells (mLTo Cells),27,-2.0129313410530605,-1.8165856463828893
+Radial layer,radial_tissue_term,WM,4,Fibroblastic Reticular Cells (FRC),27,-1.8719438414319376,-1.9045702307456942
+Radial layer,radial_tissue_term,WM,4,Marginal Reticular Cells (MRC),27,-1.6684971213082136,-1.9045332930393306
+Radial layer,radial_tissue_term,WM,4,Follicular Dendritic Cells (fDC),27,-1.9001712507670079,-1.7455504247621283
+Radial layer,radial_tissue_term,WM,4,Muscularis Propria Fibroblasts,27,-1.9722419970283158,-1.7179471215312332
+Radial layer,radial_tissue_term,WM,4,Myofibroblasts,27,0.47590621597573857,1.3724709920086087
+Radial layer,radial_tissue_term,WM,4,Interstitial Cells of Cajal (ICC),27,-2.0129313410530605,-1.6926142334080048
+Radial layer,radial_tissue_term,WM,4,Angiogenic Pericytes,27,-0.27889377742108545,0.8456074869684685
+Radial layer,radial_tissue_term,WM,4,Contractile Pericytes,27,-0.910052862626145,-0.7761601693479272
+Radial layer,radial_tissue_term,WM,4,Secretory Pericytes,27,-1.6181962515247619,-1.7945977681528449
+Radial layer,radial_tissue_term,WM,4,Glia,27,-0.11869862042336614,0.5704365778971515
+Radial layer,radial_tissue_term,WM,4,Smooth Muscle Cells (SMC),27,-1.5775069075000172,-1.8216667824080988
+Radial layer,radial_tissue_term,WM,4,Adipocytes,27,-2.0129313410530605,-1.4372768884317315
+Radial layer,radial_tissue_term,WM,4,Plasma Cells,27,4.051088497621266,1.582898345063818
+Radial layer,radial_tissue_term,WM,4,Plasma IGA,27,2.026744820035529,1.0038178076607898
+Radial layer,radial_tissue_term,WM,4,Plasma IGG,27,-1.6495776537613251,-1.7450440218658319
+Radial layer,radial_tissue_term,WM,4,GC B Dark Zone (GC B DZ),27,-0.5626006046928365,-0.9755868187516121
+Radial layer,radial_tissue_term,WM,4,GC B Light Zone (GC B LZ),27,-0.45066070655559815,-0.8604430787275139
+Radial layer,radial_tissue_term,WM,4,Memory B,27,2.084340666797114,0.35265074400355134
+Radial layer,radial_tissue_term,WM,4,Naive B,27,1.2445277955304537,0.20493953113988564
+Radial layer,radial_tissue_term,WM,4,CD4 Tfh,27,1.3179856517970991,0.143579652982123
+Radial layer,radial_tissue_term,WM,4,CD4 Th17,27,2.4294292138812725,0.022044361860192783
+Radial layer,radial_tissue_term,WM,4,CD4 Tr1,27,-1.020666848906569,-1.7420035439872055
+Radial layer,radial_tissue_term,WM,4,CD4 Tfr,27,-0.7899320077479969,-1.4819576554904847
+Radial layer,radial_tissue_term,WM,4,CD4 pTreg,27,0.3290333073401858,-0.3475251294358465
+Radial layer,radial_tissue_term,WM,4,CD4 tTreg,27,0.4548139923408401,-0.5759549345120879
+Radial layer,radial_tissue_term,WM,4,CD4 Naive,27,0.5650111957611849,-0.2649020773096135
+Radial layer,radial_tissue_term,WM,4,CD4 Memory,27,2.117902774285275,-0.10351940482544614
+Radial layer,radial_tissue_term,WM,4,CD8 Effector Memory,27,1.060479304380039,0.5194108366573569
+Radial layer,radial_tissue_term,WM,4,CD8 Circulating Effector Memory,27,1.2852488445334513,-0.23042753366647709
+Radial layer,radial_tissue_term,WM,4,CD8 Memory Exhausted,27,-1.931552653003571,-1.891969301904937
+Radial layer,radial_tissue_term,WM,4,CD8 TRM,27,2.9060858554699034,0.12585581001461893
+Radial layer,radial_tissue_term,WM,4,CD8 IEL,27,2.4266272076964093,1.1180752317231433
+Radial layer,radial_tissue_term,WM,4,CD8 Naive,27,-0.727031689154889,-1.6191975085032873
+Radial layer,radial_tissue_term,WM,4,Gamma Delta T Cells,27,-1.018553356290951,-1.8642846086265246
+Radial layer,radial_tissue_term,WM,4,MAIT Cells,27,-0.5006961461260195,-1.257797157814238
+Radial layer,radial_tissue_term,WM,4,NKT Cells,27,1.1959809794939025,-0.029093642793379303
+Radial layer,radial_tissue_term,WM,4,NK Cells,27,0.3598985920533134,-0.8812279029620704
+Radial layer,radial_tissue_term,WM,4,ILC3,27,-0.2381124614680011,-1.3075620176417013
+Radial layer,radial_tissue_term,WM,4,Classical Monocytes,27,-0.4179410868537903,-0.9704454664465734
+Radial layer,radial_tissue_term,WM,4,Nonclassical Monocytes,27,-1.9533225294814271,-1.8396665798784415
+Radial layer,radial_tissue_term,WM,4,Cycling Macrophages,27,-0.9841577785769375,-1.4618771846824197
+Radial layer,radial_tissue_term,WM,4,Homeostatic Macrophages,27,1.2359786134363535,0.9791964964061474
+Radial layer,radial_tissue_term,WM,4,M0 Macrophages,27,1.624478292541179,0.6583924616099777
+Radial layer,radial_tissue_term,WM,4,Perivascular Resident Macrophages,27,-1.8719438414319376,-1.5173746968509167
+Radial layer,radial_tissue_term,WM,4,Follicle Associated Resident Macrophages,27,-1.6328042245588945,-1.9651496216729827
+Radial layer,radial_tissue_term,WM,4,migDC,27,-1.7374138746680288,-1.9408794412815842
+Radial layer,radial_tissue_term,WM,4,cDC1,27,-0.9489654717787955,-1.2767314643258083
+Radial layer,radial_tissue_term,WM,4,cDC2,27,0.693416966446744,0.16597489215275157
+Radial layer,radial_tissue_term,WM,4,Tolerogenic cDC2,27,-1.7309563418108145,-1.9043741383543384
+Radial layer,radial_tissue_term,WM,4,pDC,27,-1.8501739649540814,-1.8543119652408149
+Radial layer,radial_tissue_term,WM,4,Monocyte Derived Dendritic Cells (MO DC),27,0.07529169450260953,1.735826067964478
+Radial layer,radial_tissue_term,WM,4,Mast Cells,27,1.5738355669602486,1.3519598438956053
+Radial layer,radial_tissue_term,WM,4,Neutrophils,27,-1.931552653003571,-1.593278549500307
+Radial layer,radial_tissue_term,WM,4,Eosinophils,27,-1.71849440712114,-1.475557417898558

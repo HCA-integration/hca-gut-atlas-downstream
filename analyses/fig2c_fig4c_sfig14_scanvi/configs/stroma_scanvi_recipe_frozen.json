@@ -1,0 +1,100 @@
+{
+  "frozen_utc": "2026-08-08T18:50:00Z",
+  "lineage": "stroma",
+  "purpose": "Freeze the exact project-matched full-reference SCANVI recipe for jackknife. Do not redesign for performance.",
+  "sources_verified_from_code": [
+    "reference_mapping_benchmark/scripts/train_pangi_full_reference.py",
+    "reference_mapping_benchmark/notebooks/04_train_full_models.ipynb",
+    "reference_mapping_benchmark/configs/stroma.yaml",
+    "reference_mapping_benchmark/data/pangi_full_reference_run_20260716.json",
+    "reference_mapping_benchmark/data/pangi_full_reference_run_20260716_artifacts/models/stroma_training_manifest.json",
+    "reference_mapping_benchmark/src/data/preparation.py"
+  ],
+  "shared_preprocess": {
+    "gene_filter_min_cells": 10,
+    "normalization_target_sum": 10000,
+    "hvg_count": 4000,
+    "hvg_fallback_order": ["seurat_v3", "seurat", "cell_ranger"],
+    "hvg_selected_on": "reference cells only (then query intersected to reference genes)",
+    "counts_layer": "counts",
+    "n_latent": 30,
+    "n_layers": 2,
+    "dropout_rate": 0.1,
+    "gene_likelihood": "nb",
+    "n_epochs": 10,
+    "batch_size": 256,
+    "early_stopping": false,
+    "unlabeled_category": "Unknown",
+    "n_hidden_default_scvi_tools": 128,
+    "query_procedure": "load model; subset to model genes; SCANVI.predict / soft probabilities"
+  },
+  "PanGI": {
+    "reference_h5ad": "reference_uncertainty/data/pangi_healthy_full.h5ad",
+    "lineage_subset": {
+      "column": "level_1_annot",
+      "values": ["Mesenchymal", "Endothelial"]
+    },
+    "n_cells_expected": 323760,
+    "labels_key": "level_3_annot",
+    "n_labels_expected": 30,
+    "batch_key": "sampleID",
+    "study_key": "study",
+    "counts_source": ".raw.X integer counts (X is normalized; do not train on X)",
+    "model_class": "direct SCANVI from scratch (no scVI pretraining)",
+    "use_scvi_pretrain": false,
+    "seed_policy_full_reference_historical": 0,
+    "seed_policy_jackknife": "integer seeds 0..9 for full; 0..2 minimum for representative jackknives",
+    "train_size_note": "scvi-tools default when not passed to model.train (manifest documents default ~0.9); do not invent a new value",
+    "training_script": "reference_mapping_benchmark/scripts/train_pangi_full_reference.py",
+    "jackknife_change_allowed": "omit one study from reference cells only"
+  },
+  "HGCA": {
+    "reference_h5ad": "reference_uncertainty/data/hgca_stroma.h5ad",
+    "n_cells_expected": 52159,
+    "labels_key": "hgca_celltype_v1",
+    "n_labels_expected": 24,
+    "exclude_labels": ["Epithelial"],
+    "batch_key": "sample_id",
+    "study_key": "dataset_id",
+    "model_class": "SCANVI with scVI pretrain as executed in 04_train_full_models.ipynb",
+    "use_scvi_pretrain": true,
+    "scvi_epochs": 10,
+    "scanvi_epochs": 10,
+    "seed_policy_config": 42,
+    "seed_policy_jackknife": "integer seeds 0..9 for full; 0..2 minimum for representative jackknives; record actual seed used",
+    "existing_full_model": "reference_mapping_benchmark/results/stroma/models_full_v1/scanvi_full_hgca_celltype_v1/",
+    "jackknife_change_allowed": "omit one dataset_id from reference cells only"
+  },
+  "unavoidable_implementation_differences": [
+    {
+      "item": "scVI pretraining",
+      "HGCA": "USE_SCVI_PRETRAIN=True in executed notebook 04_train_full_models.ipynb",
+      "PanGI": "direct SCANVI; train_pangi_full_reference.py explicitly disables pretraining",
+      "action": "Do not redesign. Keep each atlas on its project-matched recipe. Document in all comparative claims."
+    },
+    {
+      "item": "historical default seed",
+      "HGCA": "config random_seed 42",
+      "PanGI": "full-ref run seed 0",
+      "action": "Jackknife uses explicit multi-seed schedules; do not hide seed under a single default."
+    },
+    {
+      "item": "label/batch column names",
+      "HGCA": "hgca_celltype_v1 / sample_id / dataset_id",
+      "PanGI": "level_3_annot / sampleID / study",
+      "action": "Native columns retained; no forced renaming of biology."
+    },
+    {
+      "item": "taxonomy size",
+      "HGCA": "24 stromal leaves",
+      "PanGI": "30 stromal leaves",
+      "action": "Normalize hierarchical depths; do not compare raw entropy across atlases without calibration."
+    }
+  ],
+  "forbidden_changes": [
+    "Do not enable MapQC",
+    "Do not switch to frozen-latent LODO recipe (pangi_stroma.yaml n_epochs=0)",
+    "Do not change HVG count, epochs, latent dim, or likelihood to chase performance",
+    "Do not discard model checkpoints"
+  ]
+}

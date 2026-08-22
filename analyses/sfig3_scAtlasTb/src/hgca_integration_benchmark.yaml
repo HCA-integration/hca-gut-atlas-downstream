@@ -1,0 +1,246 @@
+# =============================================================================
+# HGCA integration benchmark — preprocessing + integration + metrics
+# =============================================================================
+
+output_dir: /lustre/groups/ml01/workspace/christopher.lance/hca_gut/hca-gut-atlas-extension/data/reproducibility/scatlasTb_out
+images: /lustre/groups/ml01/workspace/christopher.lance/hca_gut/hca-gut-atlas-extension/data/reproducibility/scatlasTb_out/images
+
+use_gpu: true
+env_mode: local
+os: intel
+
+# Cluster resources
+resources:
+  cpu_merged:
+    partition: cpu_p
+    qos: cpu_normal
+    gpu: 0
+    mem_mb: 300000
+    disk_mb: 200000
+  cpu:
+    partition: cpu_p
+    qos: cpu_normal
+    gpu: 0
+    mem_mb: 300000
+  gpu:
+    partition: gpu_p
+    qos: gpu_normal
+    gpu: 1
+    mem_mb: 200000
+
+defaults:
+
+  datasets:
+    - hgca_full
+    - hgca_epithelial
+    - hgca_lymphoid
+    - hgca_myeloid
+    - hgca_stromal
+    - hgca_per_lineage
+
+
+  preprocessing:
+    raw_counts: X
+    dask: true
+    normalize:
+      target_sum: 10000
+    highly_variable_genes:
+      n_top_genes: 3000
+      batch_key: donor_id
+      min_cells: 20
+    pca:
+      n_comps: 50
+    neighbors:
+      n_neighbors: 15
+    umap:
+      min_dist: 0.5
+    colors:
+      - hgca_celltype_level1
+      - closest_GCA_celltype
+      - dataset_id
+      - donor_id
+      - assay_ontology_term
+      - disease_ontology_term
+      - tissue_level_2
+    plot_centroids:
+      - closest_GCA_celltype
+    assemble:
+      - normalize
+      - highly_variable_genes
+      - pca
+      - neighbors
+      - umap
+
+  # ---------------
+  # Integration
+  # ---------------
+  integration:
+    raw_counts: layers/counts
+    norm_counts: layers/normcounts
+    var_mask: highly_variable
+    label: closest_GCA_celltype
+    batch:
+      - dataset_id
+      - donor_id
+    output_types:
+      - full
+      - embed
+      - knn
+    seed: 0
+    threads: 10
+    neighbors:
+      n_neighbors: 15
+    umap_colors:
+      - hgca_celltype_level1
+      - assay_ontology_term
+      - disease_ontology_term
+      - tissue_level_2
+      - closest_GCA_celltype
+      - dataset_id
+      - donor_id
+    methods:
+      unintegrated:
+      # bbknn excluded from the benchmark: computing the UMAP on its 457,912-cell kNN
+      # graph runs out of GPU memory, so its integration output never completes and the
+      # missing file blocks the whole metrics aggregation. Existing bbknn outputs stay
+      # on disk; re-enable by uncommenting these two lines.
+      # bbknn:
+      #   neighbors_within_batch: 3
+      combat:
+      harmonypy:
+        max_iter_harmony: 20
+      scvi:
+        n_latent: 30
+        n_hidden: 128
+        n_layers: 2
+        dispersion: gene-batch
+        dropout_rate: 0.15
+        max_epochs: 60
+        early_stopping: true
+      scpoli:
+        embedding_dims: 10
+        latent_dim: 30
+        recon_loss: nb
+        n_epochs: 40
+        eta: 5
+        early_stopping_kwargs:
+          early_stopping_metric: val_prototype_loss
+          mode: min
+          threshold: 0
+          patience: 10
+          reduce_lr: true
+          lr_patience: 5
+          lr_factor: 0.1
+
+  # -------------
+  # Metrics
+  # -------------
+  metrics:
+    unintegrated: layers/normcounts
+    corrected: X
+    raw_counts: layers/counts
+    var_mask: highly_variable
+    label: closest_GCA_celltype
+    batch: dataset_id
+    parse_file_id: false
+    funkyheatmap:
+      group_col: output_type
+      weight_batch: 0.4
+      n_top: 60
+    metrics:
+      # batch correction
+      - graph_connectivity
+      - ilisi
+      - kbet_y
+      - asw_batch_y
+      - pcr_comparison
+      # bio conservation
+      - clisi
+      - nmi_leiden_y
+      - ari_leiden_y
+      - asw_label_y
+      - isolated_label_asw_y
+
+# -------------
+# Tasks
+# -------------
+DATASETS:
+
+  hgca_full:
+    input:
+      preprocessing:
+        hgca_full: /lustre/groups/ml01/workspace/christopher.lance/hca_gut/hca-gut-atlas-tutorial/data/hgca_benchmark_subset.h5ad
+      integration: preprocessing
+      split_data: integration            # split the 16 integration outputs by lineage
+      metrics: integration               # run A: whole object, all methods, both batches
+    split_data:
+      key: hgca_celltype_level1
+      values: [Epithelial, Lymphoid, Myeloid, Stromal]
+
+  hgca_epithelial:
+    input:
+      split_data:
+        hgca: /lustre/groups/ml01/workspace/christopher.lance/hca_gut/hca-gut-atlas-tutorial/data/hgca_benchmark_subset.h5ad
+      preprocessing: split_data
+      integration: preprocessing
+    split_data:
+      key: hgca_celltype_level1
+      values:
+        - Epithelial
+
+  hgca_lymphoid:
+    input:
+      split_data:
+        hgca: /lustre/groups/ml01/workspace/christopher.lance/hca_gut/hca-gut-atlas-tutorial/data/hgca_benchmark_subset.h5ad
+      preprocessing: split_data
+      integration: preprocessing
+    split_data:
+      key: hgca_celltype_level1
+      values:
+        - Lymphoid
+
+  hgca_myeloid:
+    input:
+      split_data:
+        hgca: /lustre/groups/ml01/workspace/christopher.lance/hca_gut/hca-gut-atlas-tutorial/data/hgca_benchmark_subset.h5ad
+      preprocessing: split_data
+      integration: preprocessing
+    split_data:
+      key: hgca_celltype_level1
+      values:
+        - Myeloid
+
+  hgca_stromal:
+    input:
+      split_data:
+        hgca: /lustre/groups/ml01/workspace/christopher.lance/hca_gut/hca-gut-atlas-tutorial/data/hgca_benchmark_subset.h5ad
+      preprocessing: split_data
+      integration: preprocessing
+    split_data:
+      key: hgca_celltype_level1
+      values:
+        - Stromal
+
+  hgca_per_lineage:
+    input:
+      metrics:
+        harmonypy_Epithelial--source=full_integration: /lustre/groups/ml01/workspace/christopher.lance/hca_gut/hca-gut-atlas-extension/data/reproducibility/scatlasTb_out/split_data/dataset~hgca_full/file_id~integration:preprocessing:hgca_full--integration=529e3ed8bd/key~hgca_celltype_level1/value~Epithelial.zarr
+        harmonypy_Epithelial--source=lineage_integration: /lustre/groups/ml01/workspace/christopher.lance/hca_gut/hca-gut-atlas-extension/data/reproducibility/scatlasTb_out/integration/dataset~hgca_epithelial/file_id~preprocessing:split_data:hgca--split_data_key=hgca_celltype_level1--split_data_value=Epithelial/batch~donor_id/var_mask~highly_variable/method~harmonypy--hyperparams~c5fbd85180--label~None--output_type~embed.zarr
+        harmonypy_Lymphoid--source=full_integration: /lustre/groups/ml01/workspace/christopher.lance/hca_gut/hca-gut-atlas-extension/data/reproducibility/scatlasTb_out/split_data/dataset~hgca_full/file_id~integration:preprocessing:hgca_full--integration=529e3ed8bd/key~hgca_celltype_level1/value~Lymphoid.zarr
+        harmonypy_Lymphoid--source=lineage_integration: /lustre/groups/ml01/workspace/christopher.lance/hca_gut/hca-gut-atlas-extension/data/reproducibility/scatlasTb_out/integration/dataset~hgca_lymphoid/file_id~preprocessing:split_data:hgca--split_data_key=hgca_celltype_level1--split_data_value=Lymphoid/batch~donor_id/var_mask~highly_variable/method~harmonypy--hyperparams~c5fbd85180--label~None--output_type~embed.zarr
+        harmonypy_Myeloid--source=full_integration: /lustre/groups/ml01/workspace/christopher.lance/hca_gut/hca-gut-atlas-extension/data/reproducibility/scatlasTb_out/split_data/dataset~hgca_full/file_id~integration:preprocessing:hgca_full--integration=529e3ed8bd/key~hgca_celltype_level1/value~Myeloid.zarr
+        harmonypy_Myeloid--source=lineage_integration: /lustre/groups/ml01/workspace/christopher.lance/hca_gut/hca-gut-atlas-extension/data/reproducibility/scatlasTb_out/integration/dataset~hgca_myeloid/file_id~preprocessing:split_data:hgca--split_data_key=hgca_celltype_level1--split_data_value=Myeloid/batch~donor_id/var_mask~highly_variable/method~harmonypy--hyperparams~c5fbd85180--label~None--output_type~embed.zarr
+        harmonypy_Stromal--source=full_integration: /lustre/groups/ml01/workspace/christopher.lance/hca_gut/hca-gut-atlas-extension/data/reproducibility/scatlasTb_out/split_data/dataset~hgca_full/file_id~integration:preprocessing:hgca_full--integration=529e3ed8bd/key~hgca_celltype_level1/value~Stromal.zarr
+        harmonypy_Stromal--source=lineage_integration: /lustre/groups/ml01/workspace/christopher.lance/hca_gut/hca-gut-atlas-extension/data/reproducibility/scatlasTb_out/integration/dataset~hgca_stromal/file_id~preprocessing:split_data:hgca--split_data_key=hgca_celltype_level1--split_data_value=Stromal/batch~donor_id/var_mask~highly_variable/method~harmonypy--hyperparams~c5fbd85180--label~None--output_type~embed.zarr
+        scvi_Epithelial--source=full_integration: /lustre/groups/ml01/workspace/christopher.lance/hca_gut/hca-gut-atlas-extension/data/reproducibility/scatlasTb_out/split_data/dataset~hgca_full/file_id~integration:preprocessing:hgca_full--integration=c0442015b3/key~hgca_celltype_level1/value~Epithelial.zarr
+        scvi_Epithelial--source=lineage_integration: /lustre/groups/ml01/workspace/christopher.lance/hca_gut/hca-gut-atlas-extension/data/reproducibility/scatlasTb_out/integration/dataset~hgca_epithelial/file_id~preprocessing:split_data:hgca--split_data_key=hgca_celltype_level1--split_data_value=Epithelial/batch~donor_id/var_mask~highly_variable/method~scvi--hyperparams~964756fd7f--label~None--output_type~embed.zarr
+        scvi_Lymphoid--source=full_integration: /lustre/groups/ml01/workspace/christopher.lance/hca_gut/hca-gut-atlas-extension/data/reproducibility/scatlasTb_out/split_data/dataset~hgca_full/file_id~integration:preprocessing:hgca_full--integration=c0442015b3/key~hgca_celltype_level1/value~Lymphoid.zarr
+        scvi_Lymphoid--source=lineage_integration: /lustre/groups/ml01/workspace/christopher.lance/hca_gut/hca-gut-atlas-extension/data/reproducibility/scatlasTb_out/integration/dataset~hgca_lymphoid/file_id~preprocessing:split_data:hgca--split_data_key=hgca_celltype_level1--split_data_value=Lymphoid/batch~donor_id/var_mask~highly_variable/method~scvi--hyperparams~964756fd7f--label~None--output_type~embed.zarr
+        scvi_Myeloid--source=full_integration: /lustre/groups/ml01/workspace/christopher.lance/hca_gut/hca-gut-atlas-extension/data/reproducibility/scatlasTb_out/split_data/dataset~hgca_full/file_id~integration:preprocessing:hgca_full--integration=c0442015b3/key~hgca_celltype_level1/value~Myeloid.zarr
+        scvi_Myeloid--source=lineage_integration: /lustre/groups/ml01/workspace/christopher.lance/hca_gut/hca-gut-atlas-extension/data/reproducibility/scatlasTb_out/integration/dataset~hgca_myeloid/file_id~preprocessing:split_data:hgca--split_data_key=hgca_celltype_level1--split_data_value=Myeloid/batch~donor_id/var_mask~highly_variable/method~scvi--hyperparams~964756fd7f--label~None--output_type~embed.zarr
+        scvi_Stromal--source=full_integration: /lustre/groups/ml01/workspace/christopher.lance/hca_gut/hca-gut-atlas-extension/data/reproducibility/scatlasTb_out/split_data/dataset~hgca_full/file_id~integration:preprocessing:hgca_full--integration=c0442015b3/key~hgca_celltype_level1/value~Stromal.zarr
+        scvi_Stromal--source=lineage_integration: /lustre/groups/ml01/workspace/christopher.lance/hca_gut/hca-gut-atlas-extension/data/reproducibility/scatlasTb_out/integration/dataset~hgca_stromal/file_id~preprocessing:split_data:hgca--split_data_key=hgca_celltype_level1--split_data_value=Stromal/batch~donor_id/var_mask~highly_variable/method~scvi--hyperparams~964756fd7f--label~None--output_type~embed.zarr
+    metrics:
+      batch: dataset_id
+      recompute_neighbors: true
+      parse_file_id: true

@@ -1,0 +1,81 @@
+{
+  "n_cells": 3185,
+  "n_celltypes": 94,
+  "n_samples": 131,
+  "n_donors": 105,
+  "n_datasets": 23,
+  "contrasts_n_samples": {
+    "ileum|biopsy": 59,
+    "ileum|surgical resection": 12,
+    "colon|biopsy": 26,
+    "colon|surgical resection": 16
+  },
+  "n_samples_gcb_ge3": 17,
+  "n_samples_gcb_zero": 109,
+  "tissues": {
+    "ileum": 1510,
+    "colon": 1059,
+    "jejunum": 364,
+    "duodenum": 124,
+    "accessory": 68,
+    "mesentery": 60
+  },
+  "collections": {
+    "biopsy": 1720,
+    "surgical resection": 1465
+  },
+  "radials": {
+    "EPI": 833,
+    "EPI_LP_MUSC": 828,
+    "LP": 762,
+    "EPI_LP": 724,
+    "WM": 38
+  },
+  "conditions": {
+    "healthy": 2451,
+    "adjacent": 734
+  },
+  "ages": {
+    "50-59": 854,
+    "60-69": 663,
+    "20-29": 484,
+    "40-49": 325,
+    "30-39": 265,
+    "70-79": 206,
+    "10-19": 190,
+    "0-9": 127,
+    "unknown": 63,
+    "80-89": 8
+  },
+  "sexes": {
+    "male": 1763,
+    "female": 1361,
+    "unknown": 61
+  },
+  "featured_counts": {
+    "GC B Light Zone (GC B LZ)": 79,
+    "GC B Dark Zone (GC B DZ)": 98,
+    "BEST4 Enterocytes": 47,
+    "BEST4 Colonocytes": 55,
+    "Tuft Progenitors": 12,
+    "Tuft Cells": 23,
+    "Paneth Cells": 12,
+    "Brunners Gland Cells": 12,
+    "CD4 Tfr": 12,
+    "Follicle Associated Resident Macrophages": 12,
+    "Post Arteriole Capillary Endothelial (PAC)": 10,
+    "Submucosal Fibroblasts (S3)": 58,
+    "Goblet Cells": 108,
+    "Mature Goblet Cells": 29
+  },
+  "source": "hgca_all_lineages_v1.h5ad",
+  "out": "data/demo/hgca_all_lineages_v1_demo.h5ad",
+  "n_genes": 1668,
+  "size_mb": 1.38,
+  "seed": 20260817,
+  "created_utc": "2026-08-17T21:48:01.939084+00:00",
+  "github_warn_mb": 50,
+  "github_block_mb": 100,
+  "codeocean_workspace_gb": 5,
+  "zenodo_record_gb": 50
+}

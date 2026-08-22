@@ -1,0 +1,49 @@
+project:
+  seed: 20260718
+  figure_id: fig5
+
+inputs:
+  hgca_epithelial: ${HGCA_OBJECTS}/epithelial.h5ad
+  heoca_query: ${HEOCA_QUERY}
+  heoca_metadata: ${HEOCA_METADATA}
+  sysvi_distances: ${HEOCA_DISTANCES}
+
+columns:
+  reference_label: hgca_celltype_v1
+  query_label_raw: hgca_pred_celltype_sysvi_knn
+  query_label_confident: hgca_pred_celltype_sysvi_knn_thresh
+  confidence: hgca_pred_conf_sysvi_knn
+  entropy: hgca_pred_entropy_sysvi_knn
+  sample: sample_id
+  publication: publication
+  source: derive
+  region: tissue
+  time: time
+  matrix: gel
+  molecular: molecular
+  protocol: protocol
+  original_level1: level_1
+  original_level3: level_3
+
+filters:
+  reference_healthy_column: sampled_site_condition
+  reference_healthy_value: healthy
+  query_epithelial_value: epithelial
+  unknown_label: Unknown
+  confidence_threshold: 0.5
+  primary_min_confident_cells: 500
+  sensitivity_min_confident_cells: [200, 500, 1000, 2000]
+  sensitivity_pseudocounts: [0.1, 0.5, 1.0]
+  rare_subtype_min_total_cells: 100
+  origin_margin_cells_per_sample_subtype: 50
+
+statistics:
+  permutation_repeats: 200
+  bootstrap_repeats: 500
+  prediction_targets: [derive, tissue, time, matrix]
+
+figures:
+  width_mm: 180
+  panel_b_height_mm: 105
+  panel_c_height_mm: 92
+  supplemental_height_mm: 165

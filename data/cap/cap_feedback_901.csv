@@ -1,0 +1,236 @@
+lineage,dataset_id,label_id,label_name,score,explanation_type
+epithelial,2166,663128,Colonocytes Late,,idk
+epithelial,2166,663128,Colonocytes Late,1.0,agree
+epithelial,2166,663128,Colonocytes Late,1.0,agree
+epithelial,2166,663128,Colonocytes Late,1.0,agree
+epithelial,2166,663127,Colonocytes Laminin,1.0,agree
+epithelial,2166,663127,Colonocytes Laminin,,idk
+epithelial,2166,663127,Colonocytes Laminin,0.0,disagree
+epithelial,2166,663127,Colonocytes Laminin,1.0,agree
+epithelial,2166,663126,Secretory Goblet Cells,0.0,split
+epithelial,2166,663126,Secretory Goblet Cells,,idk
+epithelial,2166,663126,Secretory Goblet Cells,0.0,disagree
+epithelial,2166,663126,Secretory Goblet Cells,,idk
+epithelial,2166,663126,Secretory Goblet Cells,0.0,merge
+epithelial,2166,663126,Secretory Goblet Cells,,idk
+epithelial,2166,663126,Secretory Goblet Cells,0.0,split
+epithelial,2166,663126,Secretory Goblet Cells,0.0,disagree
+epithelial,2166,663126,Secretory Goblet Cells,1.0,agree
+epithelial,2166,663124,Absorptive TA,0.0,disagree
+epithelial,2166,663124,Absorptive TA,0.0,disagree
+epithelial,2166,663123,Cycling TA,0.0,merge
+epithelial,2166,663123,Cycling TA,0.0,merge
+epithelial,2166,663125,Colonocytes Early,0.0,split
+epithelial,2166,663125,Colonocytes Early,0.0,disagree
+epithelial,2166,663137,Epithelial Stem Cells (LGR5+),1.0,agree
+epithelial,2166,663137,Epithelial Stem Cells (LGR5+),1.0,agree
+epithelial,2166,663137,Epithelial Stem Cells (LGR5+),1.0,agree
+epithelial,2166,663137,Epithelial Stem Cells (LGR5+),0.0,disagree
+epithelial,2166,663137,Epithelial Stem Cells (LGR5+),1.0,agree
+epithelial,2166,663147,Secretory Paneth Cells,1.0,agree
+epithelial,2166,663147,Secretory Paneth Cells,1.0,agree
+epithelial,2166,663147,Secretory Paneth Cells,1.0,agree
+epithelial,2166,663148,Plasma Cells,0.0,disagree
+epithelial,2166,663148,Plasma Cells,0.0,disagree
+epithelial,2166,663148,Plasma Cells,,idk
+epithelial,2166,663148,Plasma Cells,0.0,disagree
+epithelial,2166,663148,Plasma Cells,1.0,agree
+epithelial,2166,663149,EEC S Cells (SCT+),1.0,agree
+epithelial,2166,663149,EEC S Cells (SCT+),1.0,agree
+epithelial,2166,663150,Monocytes,0.0,disagree
+epithelial,2166,663150,Monocytes,0.0,disagree
+epithelial,2166,663150,Monocytes,0.0,disagree
+epithelial,2166,663150,Monocytes,0.0,disagree
+epithelial,2166,663151,junk,0.0,disagree
+epithelial,2166,663151,junk,,idk
+epithelial,2166,663151,junk,,idk
+epithelial,2166,663152,doublets,0.0,disagree
+epithelial,2166,663152,doublets,0.0,split
+epithelial,2166,663152,doublets,0.0,disagree
+epithelial,2166,663152,doublets,,idk
+epithelial,2166,663152,doublets,1.0,agree
+epithelial,2166,663146,Enterocytes BEST4,1.0,agree
+epithelial,2166,663146,Enterocytes BEST4,1.0,agree
+epithelial,2166,663145,EEC N Cells,1.0,agree
+epithelial,2166,663145,EEC N Cells,1.0,agree
+epithelial,2166,663145,EEC N Cells,1.0,agree
+epithelial,2166,663144,Enterocytes Late,1.0,agree
+epithelial,2166,663144,Enterocytes Late,1.0,agree
+epithelial,2166,663143,EEC Progenitor,1.0,agree
+epithelial,2166,663143,EEC Progenitor,1.0,agree
+epithelial,2166,663142,Enteroendocrine Cells (EEC),1.0,agree
+epithelial,2166,663142,Enteroendocrine Cells (EEC),1.0,agree
+epithelial,2166,663142,Enteroendocrine Cells (EEC),0.0,disagree
+epithelial,2166,663141,EEC Enterochromaffin Cells,1.0,agree
+epithelial,2166,663141,EEC Enterochromaffin Cells,1.0,agree
+epithelial,2166,663140,EEC L Cells (PYY+),1.0,agree
+epithelial,2166,663140,EEC L Cells (PYY+),1.0,agree
+epithelial,2166,663139,Colonocytes BEST4,1.0,agree
+epithelial,2166,663139,Colonocytes BEST4,1.0,agree
+epithelial,2166,663139,Colonocytes BEST4,1.0,agree
+epithelial,2166,663138,Enterocytes,,idk
+epithelial,2166,663138,Enterocytes,0.0,disagree
+epithelial,2166,663138,Enterocytes,1.0,agree
+epithelial,2166,663136,Transiently Amplifying Cells (TA),0.0,merge
+epithelial,2166,663136,Transiently Amplifying Cells (TA),0.0,merge
+epithelial,2166,663135,Microfold Cells (M Cells),1.0,agree
+epithelial,2166,663135,Microfold Cells (M Cells),1.0,agree
+epithelial,2166,663135,Microfold Cells (M Cells),1.0,agree
+epithelial,2166,663134,Secretory Tuft Cells,1.0,agree
+epithelial,2166,663134,Secretory Tuft Cells,1.0,agree
+epithelial,2166,663134,Secretory Tuft Cells,0.0,disagree
+epithelial,2166,663134,Secretory Tuft Cells,1.0,agree
+epithelial,2166,663133,Enterocytes Early,0.0,disagree
+epithelial,2166,663133,Enterocytes Early,1.0,agree
+epithelial,2166,663133,Enterocytes Early,0.0,split
+epithelial,2166,663133,Enterocytes Early,,idk
+epithelial,2166,663132,Secretory Goblet cells Mature,0.0,split
+epithelial,2166,663132,Secretory Goblet cells Mature,0.0,disagree
+epithelial,2166,663132,Secretory Goblet cells Mature,0.0,merge
+epithelial,2166,663132,Secretory Goblet cells Mature,1.0,agree
+epithelial,2166,663131,Colonocytes,0.0,disagree
+epithelial,2166,663131,Colonocytes,1.0,agree
+epithelial,2166,663130,Follicle associated enterocyte (FAE),0.0,disagree
+epithelial,2166,663130,Follicle associated enterocyte (FAE),,idk
+epithelial,2166,663129,Secretory TA,0.0,split
+epithelial,2166,663129,Secretory TA,1.0,agree
+epithelial,2166,663129,Secretory TA,1.0,agree
+epithelial,2166,663129,Secretory TA,0.0,disagree
+myeloid,2167,663560,Macrophages Cycling,1.0,agree
+myeloid,2167,663561,Macrophages Tissue Resident,0.0,split
+myeloid,2167,663561,Macrophages Tissue Resident,0.0,split
+myeloid,2167,663561,Macrophages Tissue Resident,0.0,split
+myeloid,2167,663562,DC cDC2,0.0,split
+myeloid,2167,663564,DC migDC,0.0,disagree
+myeloid,2167,663565,Monocytes,,idk
+myeloid,2167,663565,Monocytes,0.0,disagree
+myeloid,2167,663565,Monocytes,0.0,split
+myeloid,2167,663565,Monocytes,1.0,agree
+myeloid,2167,663566,Fibroblasts Follicular Dendritic Cells (fDC),0.0,disagree
+myeloid,2167,663566,Fibroblasts Follicular Dendritic Cells (fDC),0.0,disagree
+myeloid,2167,663567,Macrophages M2,,idk
+myeloid,2167,663567,Macrophages M2,0.0,split
+myeloid,2167,663567,Macrophages M2,0.0,split
+myeloid,2167,663567,Macrophages M2,0.0,split
+myeloid,2167,663567,Macrophages M2,0.0,disagree
+myeloid,2167,663568,Granulocytes Mast Cells,0.0,disagree
+myeloid,2167,663568,Granulocytes Mast Cells,0.0,disagree
+myeloid,2167,663568,Granulocytes Mast Cells,0.0,disagree
+myeloid,2167,663570,Granulocytes,0.0,disagree
+myeloid,2167,663571,doublets,0.0,disagree
+myeloid,2167,663571,doublets,0.0,split
+myeloid,2167,663571,doublets,0.0,disagree
+stromal,2168,664051,SMC Inner Muscle Cells,0.0,disagree
+stromal,2168,664051,SMC Inner Muscle Cells,0.0,disagree
+stromal,2168,664061,vascular endothelial Lacteals,0.0,disagree
+stromal,2168,664067,Fibroblasts Submucosal (aka Crypt Support/Trophocytes/S3),,idk
+stromal,2168,664067,Fibroblasts Submucosal (aka Crypt Support/Trophocytes/S3),,idk
+stromal,2168,664067,Fibroblasts Submucosal (aka Crypt Support/Trophocytes/S3),0.0,disagree
+stromal,2168,664063,Fibroblasts mLTo Cells (mesenchymal lymphoid tissue organizer cells),,idk
+stromal,2168,664039,Fibroblasts Crypt Bottom (S2A),,idk
+stromal,2168,664039,Fibroblasts Crypt Bottom (S2A),1.0,agree
+stromal,2168,664039,Fibroblasts Crypt Bottom (S2A),1.0,agree
+stromal,2168,664040,Fibroblasts Crypt Top (S2B),1.0,agree
+stromal,2168,664040,Fibroblasts Crypt Top (S2B),0.0,merge
+stromal,2168,664041,vascular endothelial Arteriolar,1.0,agree
+stromal,2168,664041,vascular endothelial Arteriolar,,idk
+stromal,2168,664041,vascular endothelial Arteriolar,,idk
+stromal,2168,664042,vascular endothelial Pre venule capillary (PVC),,idk
+stromal,2168,664043,Fibroblasts Subserosal,,idk
+stromal,2168,664043,Fibroblasts Subserosal,0.0,disagree
+stromal,2168,664043,Fibroblasts Subserosal,0.0,disagree
+stromal,2168,664044,Fibroblasts Subepithelial (S2),0.0,disagree
+stromal,2168,664044,Fibroblasts Subepithelial (S2),0.0,merge
+stromal,2168,664044,Fibroblasts Subepithelial (S2),1.0,agree
+stromal,2168,664045,vascular endothelial Post arteriole capillary (PAC),1.0,agree
+stromal,2168,664047,Glia Submucosal Plexus / Type I,,idk
+stromal,2168,664048,Pericytes Secretory,,idk
+stromal,2168,664048,Pericytes Secretory,,idk
+stromal,2168,664049,Fibroblasts Muscularis Propria,0.0,disagree
+stromal,2168,664049,Fibroblasts Muscularis Propria,,idk
+stromal,2168,664050,Glia Mucosal/Type III,0.0,disagree
+stromal,2168,664053,Fibroblastic reticular cells,0.0,disagree
+stromal,2168,664053,Fibroblastic reticular cells,1.0,agree
+stromal,2168,664053,Fibroblastic reticular cells,1.0,agree
+stromal,2168,664054,Pericytes Angiogenic,,idk
+stromal,2168,664055,SMC Outer Muscle Cells,0.0,disagree
+stromal,2168,664055,SMC Outer Muscle Cells,0.0,disagree
+stromal,2168,664057,Pericytes Contractile,1.0,agree
+stromal,2168,664069,junk,1.0,agree
+stromal,2168,664069,junk,1.0,agree
+stromal,2168,664035,Epithelial,0.0,disagree
+stromal,2168,664035,Epithelial,1.0,agree
+stromal,2168,664036,Smooth Muscle Cells (SMC),,idk
+stromal,2168,664036,Smooth Muscle Cells (SMC),1.0,agree
+stromal,2168,664037,Fibroblasts Lamina propria (S1),1.0,agree
+stromal,2168,664037,Fibroblasts Lamina propria (S1),1.0,agree
+stromal,2168,664038,vascular endothelial Venular,1.0,agree
+stromal,2168,664038,vascular endothelial Venular,1.0,agree
+stromal,2168,664068,doublets,1.0,agree
+stromal,2168,664068,doublets,,idk
+stromal,2168,664059,vascular endothelial Lymphatic,,idk
+stromal,2168,664059,vascular endothelial Lymphatic,,idk
+stromal,2168,664059,vascular endothelial Lymphatic,0.0,disagree
+stromal,2168,664064,Plasma Cells,0.0,disagree
+stromal,2168,664064,Plasma Cells,0.0,disagree
+stromal,2168,664065,Fibroblasts Myofibroblasts,0.0,disagree
+stromal,2168,664065,Fibroblasts Myofibroblasts,0.0,disagree
+stromal,2168,664066,Glia Muscularis propria/Type IV,0.0,disagree
+lymphoid,2169,664606,Plasma IGG,1.0,agree
+lymphoid,2169,664605,Plasma Cells,,idk
+lymphoid,2169,664604,B Cycling,0.0,disagree
+lymphoid,2169,664604,B Cycling,0.0,disagree
+lymphoid,2169,664602,CD8 Naive,0.0,disagree
+lymphoid,2169,664602,CD8 Naive,0.0,disagree
+lymphoid,2169,664602,CD8 Naive,0.0,disagree
+lymphoid,2169,664601,CD8 Memory/Exhausted,0.0,disagree
+lymphoid,2169,664600,B Naive,0.0,disagree
+lymphoid,2169,664600,B Naive,0.0,disagree
+lymphoid,2169,664599,GC B Dark Zone,0.0,disagree
+lymphoid,2169,664599,GC B Dark Zone,0.0,disagree
+lymphoid,2169,664598,CD8 T,0.0,disagree
+lymphoid,2169,664598,CD8 T,0.0,disagree
+lymphoid,2169,664598,CD8 T,0.0,merge
+lymphoid,2169,664597,ILC2,0.0,disagree
+lymphoid,2169,664597,ILC2,0.0,merge
+lymphoid,2169,664597,ILC2,,idk
+lymphoid,2169,664596,GC B Germinal Center,0.0,disagree
+lymphoid,2169,664595,B Memory,1.0,agree
+lymphoid,2169,664594,ILC3,0.0,merge
+lymphoid,2169,664593,GC B Light Zone,0.0,disagree
+lymphoid,2169,664592,CD4 Tfh,,idk
+lymphoid,2169,664592,CD4 Tfh,,idk
+lymphoid,2169,664592,CD4 Tfh,1.0,agree
+lymphoid,2169,664592,CD4 Tfh,1.0,agree
+lymphoid,2169,664592,CD4 Tfh,1.0,agree
+lymphoid,2169,664590,CD4 Th1,0.0,disagree
+lymphoid,2169,664590,CD4 Th1,0.0,merge
+lymphoid,2169,664590,CD4 Th1,0.0,disagree
+lymphoid,2169,664589,CD4 Treg,1.0,agree
+lymphoid,2169,664589,CD4 Treg,,idk
+lymphoid,2169,664589,CD4 Treg,1.0,agree
+lymphoid,2169,664589,CD4 Treg,1.0,agree
+lymphoid,2169,664588,Plasma IGA,1.0,agree
+lymphoid,2169,664587,ILC NK Cells,1.0,agree
+lymphoid,2169,664586,B Marginal zone (MZB),0.0,disagree
+lymphoid,2169,664586,B Marginal zone (MZB),0.0,disagree
+lymphoid,2169,664585,CD4 Memory,0.0,disagree
+lymphoid,2169,664585,CD4 Memory,0.0,disagree
+lymphoid,2169,664583,T Cycling,1.0,agree
+lymphoid,2169,664582,CD8 IEL,0.0,disagree
+lymphoid,2169,664581,CD4 Naive,0.0,disagree
+lymphoid,2169,664581,CD4 Naive,0.0,disagree
+lymphoid,2169,664581,CD4 Naive,0.0,disagree
+lymphoid,2169,664580,CD8 TRM,0.0,disagree
+lymphoid,2169,664580,CD8 TRM,0.0,disagree
+lymphoid,2169,664579,CD8 Circulating Effector/Memory,0.0,disagree
+lymphoid,2169,664579,CD8 Circulating Effector/Memory,0.0,disagree
+lymphoid,2169,664579,CD8 Circulating Effector/Memory,0.0,disagree
+lymphoid,2169,664576,CD4 Th17,1.0,agree
+lymphoid,2169,664576,CD4 Th17,1.0,agree
+lymphoid,2169,664576,CD4 Th17,1.0,agree
+lymphoid,2169,664608,T MAIT,1.0,agree
+lymphoid,2169,664608,T MAIT,1.0,agree
+lymphoid,2169,664611,junk,1.0,agree
+lymphoid,2169,664607,ILC1,0.0,disagree
+lymphoid,2169,664610,doublets,1.0,agree

@@ -1,0 +1,108 @@
+# Myeloid Lineage Configuration
+# Extracted from baseline_pilot_myeloid notebooks
+
+lineage: myeloid
+display_name: "Myeloid"
+
+# Data paths and info
+data:
+  input_path: ""  # set HGCA_OBJECTS or PANGI_H5AD
+  format: "h5ad"  # or "10x"
+  n_cells: 52311
+  n_genes: 36353
+
+# Label types to benchmark (HGCA taxonomy columns in obs)
+labels:
+  - hgca_celltype_v1
+  - hgca_celltype_level_1
+
+# SCANVI hyperparameters (from notebook 02)
+scanvi:
+  # scVI → SCANVI workflow (RECOMMENDED for large datasets)
+  use_scvi_pretrain: true      # Train scVI first, then SCANVI (better embeddings, faster)
+  scvi_epochs: 10              # Unsupervised scVI training epochs
+  
+  # Model architecture
+  n_latent: 30
+  n_layers: 2
+  dropout_rate: 0.1
+  gene_likelihood: "nb"  # negative binomial
+  
+  # SCANVI training
+  n_epochs: 10                 # Semi-supervised SCANVI epochs (fewer needed with scVI pretrain)
+  batch_size: 256
+  train_size: 0.8
+  learning_rate: 0.001
+  early_stopping: false
+  early_stopping_patience: 20
+  unlabeled_category: "Unknown"
+
+# scimilarity settings (from notebook 03; SCANVI smoke does not load scimilarity — path for LoRA workflows)
+scimilarity:
+  model_dir: ""  # optional; not used for SCANVI LODO
+  k_neighbors: 50
+  weighting: true
+  
+  # LoRA fine-tuning parameters
+  lora:
+    rank: 8
+    alpha: 16
+    dropout: 0.1
+    epochs: 10
+    learning_rate: 0.0001
+    batch_size: 128
+    target_modules: ["network.0.1", "network.1.1", "network.2.1", "network.3"]
+
+# Taxonomy — integrated HGCA h5ad already has hgca_celltype_* in obs (no legacy CSV merge on e3)
+taxonomy:
+  skip_external_annotations: true
+
+# Output directories
+output:
+  results_dir: "results/{lineage}"
+  predictions_dir: "results/{lineage}/predictions_v1"
+  models_dir: "results/{lineage}/models_v1"
+  plots_dir: "results/{lineage}/plots_v1"
+  advanced_plots_dir: "results/{lineage}/plots_v1/advanced"
+
+# Batch key for integration
+# Use sample_id (358 samples) - this is how cluster labels were created
+batch_key: "sample_id"
+
+# Random seed for reproducibility
+random_seed: 42
+
+# Supervised training / benchmarks: remove coarse hgca_celltype_v1 buckets (default: Epithelial)
+training:
+  exclude_hgca_celltype_v1_labels:
+    - Epithelial
+
+# Leave-one-dataset-out benchmark (see DataPreparation.split_for_benchmark)
+benchmark:
+  split_mode: leave_one_dataset_out
+  dataset_id_column: null
+  holdout_dataset_id: null
+  lodo_fold_index: 0
+  test_size: 0.2
+  random_state: 42
+  max_lodo_folds: null
+  reference_name: "HGCA"
+
+# mapQC (https://github.com/theislab/mapqc) — see docs/notebooks/mapqc_detailed.ipynb
+# Fixed protocol (same hyperparameters every run) for comparable LODO / method benchmarks.
+mapqc:
+  enabled: true
+  adata_emb_loc: X_scanvi
+  n_nhoods: 120
+  k_min: 20
+  k_max: 2500
+  min_n_cells: 5
+  min_n_samples_r: 3
+  # Atlas / multi-dataset reference: avoid filtering out all cross-study ref distances
+  exclude_same_study: false
+  match_scanvi_accuracy: false
+  max_mapqc_attempts: 1
+  query_control_label: query_holdout
+  seed: 42
+  n_neighbors_umap: 15
+
